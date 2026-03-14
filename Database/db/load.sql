@@ -1,0 +1,1 @@
+\COPY Users FROM '' WITH DELIMITER ',' NULL '' CSV
