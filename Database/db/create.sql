@@ -198,3 +198,12 @@ CREATE TABLE Played_In (
     FOREIGN KEY (home_team)
         REFERENCES Game(home_team)
 );
+offensive_stats(
+    stat_name VARCHAR(50) PRIMARY KEY
+);
+defensive_stats(
+    stat_name VARCHAR(50) PRIMARY KEY
+);
+special_teams_stats(
+    stat_name VARCHAR(50) PRIMARY KEY
+);
