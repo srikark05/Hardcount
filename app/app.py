@@ -1,7 +1,7 @@
 import os
 from contextlib import contextmanager
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import psycopg
 from psycopg.rows import dict_row
 
@@ -82,28 +82,44 @@ def create_app() -> Flask:
 
     @app.route("/players")
     def players():
-        rows = run_all(
-            """
-            SELECT
-                s.player_name,
-                s.player_number,
-                s.season,
-                COALESCE(t.name, 'Unknown') AS team_name,
-                s.season_rushing_yards,
-                s.season_passing_yards,
-                s.season_receiving_yards
-            FROM season_stats s
-            LEFT JOIN playsfor pf
-                ON pf.player_name = s.player_name
-               AND pf.player_number = s.player_number
-               AND pf.season = s.season
-            LEFT JOIN team t
-                ON t.team_id = pf.team_id
-            ORDER BY s.season_rushing_yards DESC
-            LIMIT 25
-            """
-        )
-        return render_template("players.html", players=rows)
+        sort = request.args.get("sort", "rushing")
+        order = request.args.get("order", "desc")
+
+        sort_options = {
+        "rushing": "s.season_rushing_yards",
+        "passing": "s.season_passing_yards",
+        "receiving": "s.season_receiving_yards",
+        "name": "s.player_name"
+        }
+        
+
+        order_by = sort_options.get(sort, "s.season_rushing_yards")
+        
+        if order.lower() not in ["asc", "desc"]:
+            order = "desc"
+
+        query = f"""
+        SELECT
+            s.player_name,
+            s.player_number,
+            s.season,
+            COALESCE(t.name, 'Unknown') AS team_name,
+            s.season_rushing_yards,
+            s.season_passing_yards,
+            s.season_receiving_yards
+        FROM season_stats s
+        LEFT JOIN playsfor pf
+            ON pf.player_name = s.player_name
+           AND pf.player_number = s.player_number
+           AND pf.season = s.season
+        LEFT JOIN team t
+            ON t.team_id = pf.team_id
+        ORDER BY {order_by} {order.upper()}
+        LIMIT 25
+    """
+        rows = run_all(query)
+        return render_template("players.html", players=rows,current_sort=sort,
+        current_order=order)
 
     return app
 

@@ -2,17 +2,51 @@
 
 {% block content %}
 <section>
-    <h2>Top Players (Rushing Yards)</h2>
+    <h2>
+    Top Players (Sorted by {{ current_sort }} - {{ current_order|upper }})
+    </h2>
     <table>
         <thead>
             <tr>
-                <th>Player</th>
+                <th>
+                    <a href="{{ url_for('players', sort='name', order='asc' if current_sort == 'name' and current_order == 'desc' else 'desc') }}">
+                        Player
+                        {{ '↑' if current_sort == 'name' and current_order == 'asc'
+                           else '↓' if current_sort == 'name' else '' }}
+                    </a>
+                </th>
+        
                 <th>#</th>
                 <th>Season</th>
                 <th>Team</th>
-                <th>Rushing</th>
-                <th>Passing</th>
-                <th>Receiving</th>
+        
+                <th>
+                    <a href="{{ url_for('players',
+                        sort='rushing',
+                        order='asc' if current_sort == 'rushing' and current_order == 'desc' else 'desc') }}">
+                        Rushing
+                        {{ '↑' if current_sort == 'rushing' and current_order == 'asc'
+                           else '↓' if current_sort == 'rushing' else '' }}
+                    </a>
+                </th>
+        
+                <th>
+                    <a href="{{ url_for('players',
+                        sort='passing',
+                        order='asc' if current_sort == 'passing' and current_order == 'desc' else 'desc') }}">
+                        Passing
+                        {{ '↑' if current_sort == 'passing' and current_order == 'asc'
+                           else '↓' if current_sort == 'passing' else '' }}
+                    </a>
+                </th>
+        
+                <th>
+                    <a href="{{ url_for('players', sort='receiving', order='asc' if current_sort == 'receiving' and current_order == 'desc' else 'desc') }}">
+                        Receiving
+                        {{ '↑' if current_sort == 'receiving' and current_order == 'asc'
+                           else '↓' if current_sort == 'receiving' else '' }}
+                    </a>
+                </th>
             </tr>
         </thead>
         <tbody>
