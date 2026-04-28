@@ -34,12 +34,71 @@
     <thead>
       <tr>
         <th class="num">#</th>
-        <th>Player</th>
+    
+        <th>
+          <form method="get" action="{{ url_for('players.index') }}">
+            <input type="hidden" name="sort" value="name">
+            <input type="hidden" name="order"
+              value="{{ 'desc' if current_sort == 'name' and current_order == 'asc' else 'asc' }}">
+            <input type="hidden" name="q" value="{{ search_query }}">
+            <button type="submit" class="sort-btn">
+              Player
+              {% if current_sort == 'name' %}
+                {{ '↑' if current_order == 'asc' else '↓' }}
+              {% endif %}
+            </button>
+          </form>
+        </th>
+    
         <th>Team</th>
+    
         <th class="num">Season</th>
-        <th class="num">Rush Yds</th>
-        <th class="num">Pass Yds</th>
-        <th class="num">Rec Yds</th>
+    
+        <th class="num">
+          <form method="get" action="{{ url_for('players.index') }}">
+            <input type="hidden" name="sort" value="rushing">
+            <input type="hidden" name="order"
+              value="{{ 'desc' if current_sort == 'rushing' and current_order == 'asc' else 'asc' }}">
+            <input type="hidden" name="q" value="{{ search_query }}">
+            <button type="submit" class="sort-btn">
+              Rush Yds
+              {% if current_sort == 'rushing' %}
+                {{ '↑' if current_order == 'asc' else '↓' }}
+              {% endif %}
+            </button>
+          </form>
+        </th>
+    
+        <th class="num">
+          <form method="get" action="{{ url_for('players.index') }}">
+            <input type="hidden" name="sort" value="passing">
+            <input type="hidden" name="order"
+              value="{{ 'desc' if current_sort == 'passing' and current_order == 'asc' else 'asc' }}">
+            <input type="hidden" name="q" value="{{ search_query }}">
+            <button type="submit" class="sort-btn">
+              Pass Yds
+              {% if current_sort == 'passing' %}
+                {{ '↑' if current_order == 'asc' else '↓' }}
+              {% endif %}
+            </button>
+          </form>
+        </th>
+    
+        <th class="num">
+          <form method="get" action="{{ url_for('players.index') }}">
+            <input type="hidden" name="sort" value="receiving">
+            <input type="hidden" name="order"
+              value="{{ 'desc' if current_sort == 'receiving' and current_order == 'asc' else 'asc' }}">
+            <input type="hidden" name="q" value="{{ search_query }}">
+            <button type="submit" class="sort-btn">
+              Rec Yds
+              {% if current_sort == 'receiving' %}
+                {{ '↑' if current_order == 'asc' else '↓' }}
+              {% endif %}
+            </button>
+          </form>
+        </th>
+    
       </tr>
     </thead>
     <tbody>

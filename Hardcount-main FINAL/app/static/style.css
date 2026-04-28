@@ -198,7 +198,20 @@ a { text-decoration: none; color: inherit; }
   box-shadow: 0 1px 4px rgba(0,0,0,0.08);
   overflow: hidden;
 }
+/*new sort button*/
+.sort-btn {
+  background: none;
+  border: none;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  color: inherit;
+  padding: 0;
+}
 
+.sort-btn:hover {
+  text-decoration: underline;
+}
 .table-header {
   display: flex;
   align-items: center;
