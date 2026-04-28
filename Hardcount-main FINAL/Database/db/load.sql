@@ -117,14 +117,16 @@ ON CONFLICT DO NOTHING;
 -- Disable duplicate jersey trigger during bulk load (data has known jersey overlaps)
 ALTER TABLE PlaysFor DISABLE TRIGGER no_dupe_player;
 
-INSERT INTO PlaysFor (player_name, player_number, team_id, season)
+INSERT INTO PlaysFor (player_id, player_name, player_number, team_id, season)
 SELECT DISTINCT
+    p.player_id,
     s.player_name,
     s.player_number,
     t.team_id,
     s.season
 FROM staging_wnfc_player_stats s
 JOIN Team t ON t.name = TRIM(s.team)
+JOIN Player p ON p.name = s.player_name AND p.number = s.player_number
 WHERE s.player_name IS NOT NULL AND s.player_number IS NOT NULL AND s.season IS NOT NULL
 ON CONFLICT DO NOTHING;
 
@@ -134,7 +136,7 @@ ALTER TABLE PlaysFor ENABLE TRIGGER no_dupe_player;
 -- Season Stats
 -- ============================================================
 INSERT INTO season_stats (
-    player_name, player_number, season,
+    player_id, player_name, player_number, season,
     season_rushing_yards, season_rushing_attempts, season_rushing_touchdowns,
     season_receiving_yards, season_receiving_attempts, season_receiving_touchdowns,
     season_passing_yards, season_passing_attempts, season_passing_completions, season_passing_touchdowns,
@@ -148,6 +150,7 @@ INSERT INTO season_stats (
     season_extra_point_attempts, season_extra_points_made
 )
 SELECT
+    p.player_id,
     s.player_name,
     s.player_number,
     s.season,

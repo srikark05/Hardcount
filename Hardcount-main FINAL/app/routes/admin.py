@@ -105,6 +105,13 @@ def add_game():
                         continue
                     pnum = int(pnum)
 
+                    player_id_row = run_one("""
+                        SELECT player_id FROM player WHERE name = %s AND number = %s
+                    """, params=(pname, pnum))
+                    if not player_id_row or not player_id_row.get('player_id'):
+                        continue
+                    player_id = player_id_row['player_id']
+
                     stats = {f: 0 for f in stat_fields}
                     for f in stat_fields:
                         val = request.form.get(f'{prefix}_{f}', '0').strip()
@@ -112,7 +119,7 @@ def add_game():
 
                     run_all("""
                         INSERT INTO played_in (
-                            player_name, player_number, game_date, week, season, home_team,
+                            player_id, player_name, player_number, game_date, week, season, home_team,
                             game_rushing_yards, game_rushing_attempts, game_rushing_touchdowns,
                             game_receiving_yards, game_receiving_attempts, game_receiving_touchdowns,
                             game_passing_yards, game_passing_attempts, game_passing_completions,
@@ -124,7 +131,7 @@ def add_game():
                             game_extra_point_attempts, game_extra_points_made)
                         VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
                     """, params=(
-                        pname, pnum, game_date, week, season, team_id,
+                        player_id, pname, pnum, game_date, week, season, team_id,
                         stats['rushing_yards'], stats['rushing_attempts'], stats['rushing_touchdowns'],
                         stats['receiving_yards'], stats['receiving_attempts'], stats['receiving_touchdowns'],
                         stats['passing_yards'], stats['passing_attempts'], stats['passing_completions'],
@@ -138,7 +145,7 @@ def add_game():
 
                     run_all("""
                         INSERT INTO season_stats (
-                            player_name, player_number, season,
+                            player_id, player_name, player_number, season,
                             season_rushing_yards, season_rushing_attempts, season_rushing_touchdowns,
                             season_receiving_yards, season_receiving_attempts, season_receiving_touchdowns,
                             season_passing_yards, season_passing_attempts, season_passing_completions,
@@ -148,7 +155,7 @@ def add_game():
                             season_special_teams_touchdowns, season_special_teams_yards, season_punting_yards,
                             season_punting_attempts, season_kicking_attempts, season_kicking_made,
                             season_extra_point_attempts, season_extra_points_made)
-                        SELECT %s, %s, %s,
+                        SELECT %s, %s, %s, %s,
                             COALESCE(SUM(game_rushing_yards),0),
                             COALESCE(SUM(game_rushing_attempts),0),
                             COALESCE(SUM(game_rushing_touchdowns),0),
@@ -177,8 +184,8 @@ def add_game():
                             COALESCE(SUM(game_extra_point_attempts),0),
                             COALESCE(SUM(game_extra_points_made),0)
                         FROM played_in
-                        WHERE player_name = %s AND player_number = %s AND season = %s
-                        ON CONFLICT (player_name, player_number, season) DO UPDATE SET
+                        WHERE player_id = %s AND player_name = %s AND player_number = %s AND season = %s
+                        ON CONFLICT (player_id, season) DO UPDATE SET
                             season_rushing_yards = EXCLUDED.season_rushing_yards,
                             season_rushing_attempts = EXCLUDED.season_rushing_attempts,
                             season_rushing_touchdowns = EXCLUDED.season_rushing_touchdowns,
@@ -206,7 +213,7 @@ def add_game():
                             season_kicking_made = EXCLUDED.season_kicking_made,
                             season_extra_point_attempts = EXCLUDED.season_extra_point_attempts,
                             season_extra_points_made = EXCLUDED.season_extra_points_made
-                    """, params=(pname, pnum, season, pname, pnum, season))
+                    """, params=(player_id, pname, pnum, season, player_id, pname, pnum, season))
 
             flash('Game added successfully!', 'success')
             return redirect(url_for('admin.dashboard'))
