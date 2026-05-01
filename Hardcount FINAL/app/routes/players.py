@@ -220,7 +220,8 @@ def detail(name, number):
             season_passing_yards, season_passing_attempts, season_passing_completions, season_passing_touchdowns,
             season_tackles, season_defensive_sacks, season_defensive_interceptions,
             season_tackles_for_loss, season_forced_fumbles, season_fumble_recoveries,
-            season_offensive_interceptions
+            season_offensive_interceptions,
+            season_war
         FROM season_stats
         WHERE player_name = %s AND player_number = %s
         ORDER BY season DESC
@@ -240,7 +241,8 @@ def detail(name, number):
             COALESCE(SUM(season_defensive_interceptions), 0) AS career_interceptions,
             COALESCE(SUM(season_tackles_for_loss), 0)        AS career_tfl,
             COALESCE(SUM(season_forced_fumbles), 0)          AS career_forced_fumbles,
-            COALESCE(SUM(season_fumble_recoveries), 0)       AS career_fumble_recoveries
+            COALESCE(SUM(season_fumble_recoveries), 0)       AS career_fumble_recoveries,
+            ROUND(SUM(season_war)::NUMERIC, 2)               AS career_war
         FROM season_stats
         WHERE player_name = %s AND player_number = %s
     """, params=(name, number))

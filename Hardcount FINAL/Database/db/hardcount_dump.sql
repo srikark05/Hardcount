@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict F18aRKiyYv5ujjXLfTYwf5ndD0RYFe72wiYxBh5Om1luB0BwG63h58zrwZqfOhC
+\restrict hUEccLJSy1qa148I2hIc97d3tA3rI3KcU6pKdYRfQPXDIL3wtySHmytFqbthUQq
 
 -- Dumped from database version 16.13 (Homebrew)
 -- Dumped by pg_dump version 16.13 (Homebrew)
@@ -286,7 +286,8 @@ CREATE TABLE public.season_stats (
     season_kicking_attempts integer DEFAULT 0,
     season_kicking_made integer DEFAULT 0,
     season_extra_point_attempts integer DEFAULT 0,
-    season_extra_points_made integer DEFAULT 0
+    season_extra_points_made integer DEFAULT 0,
+    season_war double precision
 );
 
 
@@ -785,2012 +786,2012 @@ COPY public.played_in (player_name, player_number, game_date, week, season, home
 --
 
 COPY public.player (name, dob, "position", number, weight, height, war) FROM stdin;
-Aalicia Norrell	2002-01-01	DL	14	\N	\N	\N
-Aaliyah Knox	1995-01-01	RB	26	128	63	\N
-Abbie Medlar	\N	WR	80	155	67	\N
-Adriana Gutierrez	\N	RB	21	145	61	\N
-Adriana Gutierrez	1997-01-01	RB	27	135	61	\N
-Adriane Utt	1985-01-01	OL	98	250	66	\N
-Adrienne Jackson	\N	OL	78	275	70	\N
-Adrienne Marsh	1988-01-01	LB	33	183	65	\N
-Adrienne Procter	1976-01-01	OL	58	175	63	\N
-Aerial Green	1997-01-01	DB	41	140	64	\N
-Aezioni Nakai	\N	DL	94	\N	\N	\N
-Aezioni Nakai Fuller	\N	DL	94	285	69	\N
-Aezioni Nakai-Fuller	1994-01-01	DL	24	280	69	\N
-Aireka Fowler	1997-01-01	RB	26	115	61	\N
-Airel Gilliam	\N	DL	49	205	68	\N
-Aisling Moloney	1996-01-01	WR	28	132	65	\N
-AJ Roby	1982-01-01	OL	66	250	68	\N
-Aja Johnson	1993-01-01	WR	26	132	62	\N
-Akira Galeai	1986-01-01	LB	54	180	64	\N
-Alana Ferguson	\N	RB	38	\N	\N	\N
-Alana Stewart	1986-01-01	OL	48	206	61	\N
-Alayah Lewis	1994-01-01	DL	93	185	62	\N
-Alecsys Williams	1987-01-01	OL	94	228	63	\N
-Aleesah Wilson	2005-01-01	RB	11	140	64	\N
-Aleesah Wilson	\N	RB	28	129	63	\N
-Aleesha Cadogan	\N	OL	72	260	67	\N
-Alejandra Rivera Rivera	2001-01-01	WR	22	185	69	\N
-Aleksandra Lukasiewicz	\N	LB	52	\N	\N	\N
-Alena Kuzmova	1998-01-01	DL	39	170	66	\N
-Alesia Stewart	1996-01-01	TE	86	195	64	\N
-Alex Foley	\N	DB	39	120	63	\N
-Alex Johnson	\N	LB	53	\N	\N	\N
-Alex Perry	\N	DL	54	175	63	\N
-Alex Specht	\N	TE	88	\N	\N	\N
-Alexa Legend	\N	WR	86	135	71	\N
-Alexa Rummel	2000-01-01	OL	69	285	72	\N
-Alexandra Fabela	\N	OL	93	225	64	\N
-Alexandra Holliday	1992-01-01	WR	30	120	67	\N
-Alexandra Perry	1984-01-01	LB	54	165	63	\N
-Alexandra Sweet	\N	LB	31	175	66	\N
-Alexandra Sweet	1999-01-01	OL	71	170	66	\N
-Alexandria Bear McLean	1996-01-01	TE	14	175	68	\N
-Alexandria Clary	2000-01-01	RB	7	140	61	\N
-Alexandria Duper	1989-01-01	DB	65	154	62	\N
-Alexandria Specht	1998-01-01	TE	88	165	74	\N
-Alexis Broswell	\N	OL	63	\N	\N	\N
-Alexis Catton	2000-01-01	QB	14	140	66	\N
-Alexis Dixon Fontaine	1992-01-01	RB	13	121	63	\N
-Alexis Evans	2001-01-01	WR	22	143	66	\N
-Alexis Greer	1997-01-01	OL	94	300	69	\N
-Alexis Parrotta	1991-01-01	WR	8	130	63	\N
-Alexus Durham	\N	OL	55	225	66	\N
-Alexus Freeman	1995-01-01	WR	19	118	62	\N
-Ali Olson	1995-01-01	DB	31	140	67	\N
-Alia Karmali	1984-01-01	TE	84	197	68	\N
-Aliayah Lewis	1993-01-01	DL	93	190	63	\N
-Alicia Brown	\N	OL	91	198	71	\N
-Alicia Gelles	\N	OL	77	180	63	\N
-Alicia Zappia	1999-01-01	WR	21	120	62	\N
-Alicia Zappia-Neeley	1999-01-01	DB	25	125	62	\N
-Alimirah Hall	1992-01-01	DB	38	135	68	\N
-Alina Markl	1997-01-01	DL	77	270	68	\N
-Alisha Young	\N	DB	21	135	64	\N
-Alissa Loatman	1986-01-01	LB	33	190	64	\N
-Aliyah King	2001-01-01	OL	75	278	66	\N
-Alla Ticket Gruzdeva	1993-01-01	QB	12	145	67	\N
-Ally Cleveland	1962-01-01	OL	8	205	73	\N
-Ally Cleveland	1962-01-01	LB	62	225	73	\N
-Allyssa Weatherd	1993-01-01	LB	9	175	67	\N
-Allyssa Weatherd	1993-01-01	LB	54	195	68	\N
-Almeira Nicole Rizane	2005-01-01	QB	9	152	66	\N
-AlNisa Thomas	\N	LB	20	195	66	\N
-Alona Alexander	1986-01-01	WR	8	150	67	\N
-Alondra Rodriguez	\N	OL	76	310	72	\N
-Alondra Suarez	1995-01-01	DL	64	220	66	\N
-Alonni Hawkins	2007-01-01	LB	17	160	62	\N
-Alox Suarez	\N	DL	64	216	65	\N
-Aly Montesino	2002-01-01	OL	80	180	67	\N
-Alyshia Tauanuu	1985-01-01	DL	92	240	67	\N
-Alyshia Tauaunu	1985-01-01	DL	92	220	67	\N
-Alysia Bisquera Dominguez	1987-01-01	WR	11	102	63	\N
-Alysia Dominguez	1987-01-01	WR	11	115	63	\N
-Alysia Joubert	1994-01-01	WR	19	161	73	\N
-Alyssa Dixon	\N	QB	26	227	64	\N
-Alyssa Logan	1993-01-01	DE	8	156	67	\N
-Alyssa Lorbiecki	\N	DB	16	125	66	\N
-Alyssa McCarron	\N	WR	1	\N	\N	\N
-Alyssa McCarron	1999-01-01	WR	10	145	66	\N
-Alyssa Mcguinnis	\N	TE	88	184	73	\N
-Alyssa McGuinnis	\N	TE	88	\N	\N	\N
-Alyssa Olson	1995-01-01	LB	31	140	67	\N
-Alyssa Speckhals	1988-01-01	TE	80	175	71	\N
-Alyssa Speckhals	\N	TE	85	168	70	\N
-Alyssa Vigil	\N	WR	17	132	65	\N
-Amadi Teemer	\N	DL	92	298	66	\N
-Amanda Blackwell	1989-01-01	RB	36	130	63	\N
-Amanda Heilman	1987-01-01	WR	87	162	69	\N
-Amanda Krauss	1988-01-01	OL	99	202	72	\N
-Amanda Littorin	1994-01-01	DL	64	242	64	\N
-Amanda Morgan	1993-01-01	OL	72	260	66	\N
-Amanda Walker	1982-01-01	DL	74	285	70	\N
-Amani El Amin	1992-01-01	RB	0	135	66	\N
-Amani Perdue	2005-01-01	RB	9	135	65	\N
-Amare Mercer	2005-01-01	WR	2	140	63	\N
-Amari Hollis	\N	OL	77	210	69	\N
-Amaris Parker	1989-01-01	DE	92	184	67	\N
-Amber Cox	\N	TE	82	175	67	\N
-Amber Craft	\N	LB	40	\N	\N	\N
-Amber Grant	\N	OL	53	\N	\N	\N
-Amber Kimbrough	1996-01-01	LB	32	220	68	\N
-Amber Mendes	1993-01-01	WR	3	138	63	\N
-Amber O Connor	1997-01-01	LB	32	155	66	\N
-Amber O'Connor	1997-01-01	LB	23	160	63	\N
-Amber Perry	\N	DB	25	137	67	\N
-Amber-Lynn Twigg	1997-01-01	QB	11	190	67	\N
-Amiracle Mitchell	\N	WR	0	\N	\N	\N
-Amy Fox	1986-01-01	OL	53	150	64	\N
-Amy Steinke	\N	RB	37	150	64	\N
-Amy Van Der Kamp	\N	LB	72	250	64	\N
-Ana Barbosa	\N	WR	17	148	65	\N
-Ana Barbosa Venegas	1991-01-01	WR	17	155	65	\N
-Ana Bittencourt	1988-01-01	DL	90	250	69	\N
-Analys Colon	2005-01-01	WR	43	110	67	\N
-Anastacia Kreider	\N	LB	50	180	66	\N
-Anastasia Bosques	1987-01-01	LB	17	155	63	\N
-Anastasia Olavuo	2001-01-01	LB	3	155	65	\N
-Andraliah Lee	\N	RB	20	170	65	\N
-Andraliah Lee	\N	RB	31	176	65	\N
-Andrea Jones	\N	DB	85	155	70	\N
-Andrea Scott	\N	WR	58	\N	\N	\N
-Andrea Wright	1991-01-01	LB	17	155	61	\N
-Andy Perez	\N	OL	92	192	64	\N
-Angel Benson	\N	OL	55	200	67	\N
-Angel Duran	\N	DL	96	175	66	\N
-Angela Benson	1999-01-01	OL	55	200	67	\N
-Angela Clarke	1988-01-01	DT	61	210	64	\N
-Angela Hamilton	\N	DB	2	150	66	\N
-Angela Mims	1969-01-01	DE	44	240	70	\N
-Angelica Venom Garcia	2002-01-01	LB	53	143	63	\N
-Angelina Corona	2001-01-01	WR	30	140	63	\N
-Angelique Henderson	1985-01-01	WR	37	158	66	\N
-Angelique Jones	\N	LB	33	154	65	\N
-Angellica Grayson	1983-01-01	LB	52	150	61	\N
-Angie Hamilton	1983-01-01	DB	2	150	66	\N
-Angie Murray	\N	OL	65	240	66	\N
-Angie Patton	\N	DB	40	175	67	\N
-Angie Patton	1988-01-01	DB	80	170	67	\N
-Angie Wells	\N	DB	41	147	64	\N
-Anita Brown	1993-01-01	DB	28	145	64	\N
-Anna Malone	\N	OL	58	180	67	\N
-Anna Shields	1988-01-01	LB	28	170	62	\N
-Anna Tran	\N	WR	28	145	64	\N
-Anna Wilson	\N	OL	78	227	66	\N
-Annelise DeFrank	1988-01-01	DT	67	180	65	\N
-Annelise Lutz	2000-01-01	LB	38	150	59	\N
-Annicka Griffith	1996-01-01	WR	18	150	65	\N
-Annsleigh Anderson	2004-01-01	QB	23	165	67	\N
-Antionette Van	1998-01-01	LB	52	185	66	\N
-Antoinae Goodman	1992-01-01	WR	19	145	64	\N
-Antoinette Bell	1981-01-01	LB	24	170	68	\N
-Antoinette Harris	1996-01-01	DB	1	165	67	\N
-Antoinette Harris	\N	DB	15	155	66	\N
-April Arnold	\N	LB	16	150	65	\N
-April Fowlkes	1979-01-01	DL	89	300	69	\N
-Aria Wagaman	2003-01-01	DB	33	140	69	\N
-Ariana Gonzales	2001-01-01	DT	75	165	66	\N
-Ariana Gonzalez	\N	DL	75	170	67	\N
-Arielle Hester	1989-01-01	OL	69	250	66	\N
-Arielle Wilks	1988-01-01	DL	29	255	69	\N
-Ariyan Hudson	\N	QB	7	140	68	\N
-Ariyanna Burns	\N	DB	7	120	66	\N
-Arlyssa Perry	\N	OL	75	190	63	\N
-Armoni Stevenson	\N	DB	22	\N	\N	\N
-Armoni Stevenson	2000-01-01	DL	35	215	67	\N
-Arnetha Simmons	\N	WR	21	156	65	\N
-Arteria Ziegler	1988-01-01	DL	56	245	64	\N
-Aryan Sjodin	\N	RB	52	175	65	\N
-Aryan Sjodin	\N	DL	90	170	66	\N
-Asha Evans	\N	DL	85	182	66	\N
-Ashaniti Broxey	1992-01-01	DB	24	155	64	\N
-Ashanti Broxey	1992-01-01	WR	24	148	64	\N
-Ashanti Lewis	1994-01-01	WR	45	135	66	\N
-Ashlea Moore	\N	WR	80	115	60	\N
-Ashlea Moore	1996-01-01	RB	86	115	59	\N
-Ashley Clark	1992-01-01	QB	7	165	70	\N
-Ashley Dame	1999-01-01	WR	99	145	64	\N
-Ashley Fung	2001-01-01	WR	24	143	66	\N
-Ashley Lantz	1992-01-01	OL	55	210	67	\N
-Ashley Mcbay	1990-01-01	WR	20	138	62	\N
-Ashley McBay	1990-01-01	RB	20	145	62	\N
-Ashley Moon	1982-01-01	DE	48	155	63	\N
-Ashley Murray	1995-01-01	WR	84	185	74	\N
-Ashley Nguyen Lake	2006-01-01	OL	56	200	62	\N
-Ashlie Mcdonald	\N	OL	79	260	67	\N
-Ashlie McDonald	1986-01-01	OL	79	270	67	\N
-Ashlyn Jackson	1992-01-01	OL	60	194	62	\N
-Ashton Elliott	1997-01-01	WR	21	132	65	\N
-Ashura Powell	\N	WR	10	165	66	\N
-Ashya Elder	1996-01-01	WR	11	145	64	\N
-Asia Strickland	1992-01-01	LB	92	190	69	\N
-Asiah Walker	\N	DB	18	126	70	\N
-Aspen Baca	1996-01-01	LB	30	175	67	\N
-Aspen Baca (Verdos)	\N	LB	30	\N	\N	\N
-Aspen Verdos	\N	DL	30	180	68	\N
-Aspen Williams	1994-01-01	OL	70	235	63	\N
-Athena Reyes	1981-01-01	DB	22	165	66	\N
-AuBree Barnes	\N	WR	36	140	62	\N
-Aubrei Crooks	1986-01-01	DL	20	200	67	\N
-Audra Gutierrez	\N	OL	66	275	64	\N
-Aundrea Colbert	2006-01-01	WR	42	150	68	\N
-Aundrea King	1990-01-01	LB	53	200	67	\N
-Aundrea Radford King	\N	LB	53	200	67	\N
-Aurianna Broughton	2002-01-01	WR	21	140	65	\N
-Aurieyall Scott	\N	S	21	145	68	\N
-Aurree King	\N	RB	15	180	64	\N
-Autumn Dozier	1997-01-01	DB	16	135	61	\N
-Avanti Bryant	2000-01-01	OL	59	260	62	\N
-Ayanna Dunia	1986-01-01	DL	60	195	66	\N
-Ayanna Ford	\N	DB	28	150	65	\N
-Ayshia Slaughter	\N	DB	16	175	65	\N
-Azalia Allen	1993-01-01	RB	66	257	67	\N
-Aziah Green	\N	WR	17	115	61	\N
-Bailey Paskach	\N	DL	42	\N	\N	\N
-Baiyinah Rahim	1984-01-01	LB	35	145	62	\N
-Barbriel Crudup	\N	DL	99	250	70	\N
-Barbriel Davis	1988-01-01	DL	99	250	70	\N
-Bear McLean	1996-01-01	LB	0	162	69	\N
-Beatrice Glinton	2000-01-01	LB	45	190	62	\N
-Beatriz Rico	2004-01-01	RB	6	184	67	\N
-Bernadette Gambino	1964-01-01	WR	34	125	64	\N
-Beth Knieps	\N	RB	95	145	65	\N
-Bethany Hipps	\N	OL	66	257	69	\N
-Bethany Hipps-Jackson	1993-01-01	OL	66	259	69	\N
-Bianca Allen	1990-01-01	RB	34	180	60	\N
-Bianca Mouton	\N	DL	99	205	64	\N
-Bianca Threatts	1983-01-01	DL	56	175	67	\N
-Billie Kennedy-Jefferson	\N	RB	21	166	64	\N
-Blessing Tate	1977-01-01	LB	48	160	61	\N
-Bonique Green	1990-01-01	OL	63	140	65	\N
-Brandi Byrd	1981-01-01	DL	67	158	64	\N
-Brandy Kite	\N	OL	69	260	64	\N
-Brayana Elmore	1996-01-01	CB	44	155	69	\N
-Bre Griggs	1993-01-01	DB	1	150	67	\N
-Bre Ward	1991-01-01	DL	43	195	70	\N
-Breana Griggs	\N	WR	2	\N	\N	\N
-Breana Griggs	\N	DB	6	156	67	\N
-Breana Haines	1989-01-01	TE	88	172	69	\N
-Brenna Morris	1999-01-01	QB	14	130	66	\N
-Brenna Morris	\N	WR	29	\N	\N	\N
-Brennan Crabtree	1995-01-01	WR	12	135	68	\N
-Bri Irons	1993-01-01	RB	8	135	56	\N
-Bri Webb	\N	DB	24	150	63	\N
-Bria Truxon	1994-01-01	TE	2	189	69	\N
-Briana Gorrell	\N	RB	42	215	64	\N
-Briana Nesmith	\N	RB	69	185	66	\N
-Briann Miller	1991-01-01	DB	31	140	61	\N
-Brianna Daniel	1996-01-01	QB	5	135	67	\N
-Brianna Hollins	1995-01-01	WR	20	230	65	\N
-Brianna LaFleur	1997-01-01	WR	37	115	62	\N
-Briiana Gorrell	1995-01-01	DL	42	222	64	\N
-Brilynn Fields	1987-01-01	LB	25	220	65	\N
-Britanni Lusain	1995-01-01	LB	1	190	68	\N
-Britnee Sangalan	1994-01-01	WR	1	135	63	\N
-Britney Derhak	\N	FB	36	145	64	\N
-Brittaney Warren	1992-01-01	OL	43	340	67	\N
-Brittani Lusain	1995-01-01	LB	1	175	68	\N
-Brittany Alvarez	1992-01-01	OL	69	295	70	\N
-Brittany Bassett	\N	TE	7	178	71	\N
-Brittany Bassett	1985-01-01	WR	11	180	71	\N
-Brittany Bushman	1986-01-01	QB	8	165	67	\N
-Brittany Carney	1990-01-01	QB	7	215	66	\N
-Brittany Cleek	\N	DL	97	\N	\N	\N
-Brittany Conley	\N	DL	45	\N	\N	\N
-Brittany Howard	1990-01-01	DL	36	213	67	\N
-Brittany Johnson	1996-01-01	DL	28	200	70	\N
-Brittany Jones	\N	DB	5	145	66	\N
-Brittany Luck	1977-01-01	DL	90	150	67	\N
-Brittany Medley	1989-01-01	OL	98	413	66	\N
-Brittany Morgan	\N	OL	72	\N	\N	\N
-Brittany Morgan	\N	DL	73	250	72	\N
-Brittany OConnor	\N	DL	42	200	64	\N
-Brittany OConnor	1993-01-01	DL	56	210	70	\N
-Brittany Sanders	\N	OL	71	247	66	\N
-Brittany Satterwhite	1986-01-01	RB	17	145	65	\N
-Brittany Turner	1990-01-01	WR	88	160	69	\N
-Brittany Whitfield	1990-01-01	LB	25	210	64	\N
-Brittney Bjork	1995-01-01	LB	13	155	63	\N
-Brittney Bjork	\N	WR	29	\N	\N	\N
-Brooke Avery	1995-01-01	DL	95	195	70	\N
-Brooke Denny	1993-01-01	LB	44	155	64	\N
-Brooke Mugridge	\N	OL	92	220	64	\N
-Brooke Singer	2001-01-01	K	20	125	67	\N
-Brooke Tanner	\N	DB	34	\N	\N	\N
-Brooklyn Cousin	\N	WR	16	122	67	\N
-Brooklyn Rielly	2001-01-01	DB	80	110	63	\N
-Brooklyn Waddles	\N	DL	48	193	69	\N
-Bryanna Farrell	\N	FB	44	233	64	\N
-Bryanna Shaw	1993-01-01	DL	55	235	64	\N
-Bryn Langrock	\N	QB	15	130	66	\N
-Brynn McNabb	2003-01-01	WR	4	145	67	\N
-Brynne Butterfield	\N	OL	73	145	64	\N
-Bryt Felder-Brown	\N	TE	24	\N	\N	\N
-Cachrelle Nguyen	\N	LB	36	200	64	\N
-Caitlin Peterson	\N	OL	63	284	68	\N
-Caitlynn Jones	1992-01-01	OL	73	300	70	\N
-Cambria Davis	1999-01-01	OL	77	250	70	\N
-Cameron Davis	\N	DB	23	139	68	\N
-Camille Brimhall	1991-01-01	OL	65	240	68	\N
-Camille Calhoun	1995-01-01	OL	91	245	70	\N
-Camille Wilson	1998-01-01	RB	2	145	64	\N
-Camise Patterson	1992-01-01	RB	20	154	63	\N
-Cana Tulifua	\N	OL	52	310	68	\N
-Candace Burch	\N	DB	33	175	62	\N
-Candace Scaggs	1983-01-01	DB	25	155	67	\N
-Candace Walker	1992-01-01	OL	69	290	67	\N
-Candace Walker	\N	OL	75	210	67	\N
-Candice Davis	1991-01-01	DB	7	160	63	\N
-Candis Wall	1989-01-01	OL	61	200	65	\N
-Cara Wesemann	1992-01-01	WR	34	165	67	\N
-Carah Johnson	\N	DB	11	133	66	\N
-Carah Johnson	2000-01-01	DB	29	135	66	\N
-Carla Odom	\N	LB	44	\N	\N	\N
-Carmel Glumac	1988-01-01	WR	55	185	69	\N
-Carol Sauders	\N	WR	8	140	72	\N
-Carol Saunders	2002-01-01	WR	8	170	73	\N
-Carolina Duran Correa	1999-01-01	LB	31	189	64	\N
-Caroline Malala	1991-01-01	DT	3	157	64	\N
-Carolyn Lampkin	\N	OL	77	\N	\N	\N
-Carolyn Lewis	1986-01-01	RB	40	155	64	\N
-Carrie Mills	1992-01-01	DL	20	150	66	\N
-Carrie Walters	1973-01-01	QB	29	160	66	\N
-Carrieann Bedwell	\N	OL	97	\N	\N	\N
-Casey Cubis	\N	QB	12	172	72	\N
-Cassandra Wise-Howard	1988-01-01	DT	66	214	64	\N
-Cassidy Hollow-Horn	\N	DL	80	\N	\N	\N
-Catherine Desire	1996-01-01	DL	88	208	62	\N
-Catherine Vogt	\N	WR	85	150	68	\N
-Cathy Wabenga	1991-01-01	DB	31	135	63	\N
-Cayleigh Blackwell	1989-01-01	DB	42	141	67	\N
-CC Taualii	1994-01-01	OL	74	188	70	\N
-Celeste Robinson	1984-01-01	OL	71	235	71	\N
-Chanel Cross	1991-01-01	RB	45	158	64	\N
-Chantal Thacker Ridlon	1993-01-01	LB	47	155	69	\N
-Chantel Strozier	1996-01-01	RB	26	205	64	\N
-Chantel Talton	1992-01-01	OL	60	195	65	\N
-Charetta Santana	1989-01-01	DB	40	140	62	\N
-Charlee Ford	\N	DB	26	140	61	\N
-Charlee Ford	\N	DB	30	142	65	\N
-Charlotte CJ Madrid	1995-01-01	DL	53	175	64	\N
-Charlyshia Bradford	\N	DL	23	\N	\N	\N
-CharLyshia Bradford	1993-01-01	DL	23	145	64	\N
-Charmaine Bradford	\N	LB	51	195	62	\N
-Charmaine Bradford-Airy	1996-01-01	LB	48	190	62	\N
-Charneice Carney	1994-01-01	DB	15	128	62	\N
-Charnel Archer	1999-01-01	OT	32	181	67	\N
-Charniece Carney	\N	DB	8	128	62	\N
-Charon Sweeney	1995-01-01	RB	11	150	62	\N
-Chassidy White	\N	S	18	\N	\N	\N
-Chassidy White	1994-01-01	RB	20	145	64	\N
-Chelcie-Maree Augustin-Weaver	1994-01-01	DT	93	210	64	\N
-Chelsa Singer	1993-01-01	RB	16	145	67	\N
-Chelsea Borders	1996-01-01	LB	32	185	66	\N
-Chelsea Leyerly	\N	OL	82	200	70	\N
-Chelsea Parrish	1990-01-01	DT	32	225	67	\N
-Chelsea Whiteside	1992-01-01	DL	91	300	66	\N
-Chelsea Whiteside	1992-01-01	DT	99	270	66	\N
-Chelsey Nill	\N	TE	88	185	68	\N
-Chelsie Thompson	1995-01-01	DB	16	175	69	\N
-Cheri Gantt	\N	RB	4	140	62	\N
-Cheryl Godek	1979-01-01	OL	52	225	67	\N
-Cheyanne Kurth	1992-01-01	WR	22	151	67	\N
-Cheyene Adkins	\N	WR	3	130	63	\N
-Chiyanne Thompson	1992-01-01	LB	21	150	67	\N
-Chloe Porter	\N	WR	84	155	70	\N
-Chris Acacio	\N	LB	40	170	59	\N
-Chris Landers	1987-01-01	DL	44	195	63	\N
-Chrishuna Washington	1998-01-01	DL	33	203	67	\N
-Christi Acacio	1983-01-01	LB	40	170	59	\N
-Christian Ross	\N	LB	48	160	65	\N
-Christin Stoll	1984-01-01	WR	32	170	68	\N
-Christina Copelin	1981-01-01	TE	45	205	74	\N
-Christina Jaques	1988-01-01	QB	5	150	70	\N
-Christina Jordan	1987-01-01	WR	87	150	64	\N
-Christina Landers	\N	DL	44	195	63	\N
-Christina Mondragon Schrader	1992-01-01	DB	17	130	64	\N
-Christina Montoya	1990-01-01	WR	7	145	65	\N
-Christina Vollrath	\N	WR	14	125	63	\N
-Christine Jackman	1983-01-01	DB	12	160	69	\N
-Christine Jaqueth Mason	1988-01-01	LB	50	180	68	\N
-Christine Norman	\N	DL	66	200	66	\N
-Chrystin Lucas	2004-01-01	WR	8	160	65	\N
-Ciara Anderson	1992-01-01	WR	4	135	65	\N
-CiCi Mwendandu	1989-01-01	DT	18	175	63	\N
-Ciera Johnson	2000-01-01	DL	24	185	66	\N
-Cierra Beck	1999-01-01	OL	74	230	69	\N
-Cierra Childress	\N	DB	6	\N	\N	\N
-Cierra Childress	1985-01-01	DB	10	143	65	\N
-Cindy Cornell	2003-01-01	LB	97	190	63	\N
-Cindy Teitsma	\N	DB	3	140	66	\N
-Cindylou Rasiang	2003-01-01	QB	4	165	66	\N
-Cinna Ford	1997-01-01	WR	28	160	65	\N
-Claire Cicchetti	1998-01-01	TE	85	175	72	\N
-Claire Cicchetti	1998-01-01	WR	88	175	72	\N
-Clarissa Tullis	1991-01-01	RB	39	160	63	\N
-Colleen Sam Dreiling	1996-01-01	DB	12	145	64	\N
-Consuela Benson-Blackmon	1976-01-01	OL	68	230	69	\N
-Coretta Hopkins	\N	WR	15	130	67	\N
-Corrina Burney	\N	RB	21	\N	\N	\N
-Corrina Mahiai	\N	RB	26	165	63	\N
-Cortney Mosier	1995-01-01	LB	23	145	63	\N
-Countness Glover	1994-01-01	DT	90	250	64	\N
-Courtnee Martinez	\N	LB	44	\N	\N	\N
-Courtney Gray	1988-01-01	RB	18	160	64	\N
-Courtney Powell	1993-01-01	DE	62	210	67	\N
-Courtney Shaw	1994-01-01	DL	47	283	64	\N
-Courtney Ward-Tyson	\N	OL	41	160	65	\N
-Courtney Williams	\N	OL	98	295	67	\N
-Courtney Yeoman	\N	DL	87	165	65	\N
-Cristina Bukowski	1991-01-01	OL	60	185	66	\N
-Crys Contreras	\N	RB	4	183	64	\N
-Crystal Contreras	\N	OL	76	170	63	\N
-Crystal Daniels	1991-01-01	WR	19	135	65	\N
-Crystal Reese	\N	DB	5	135	66	\N
-Crystal Rhodes	\N	DB	5	\N	\N	\N
-Cyerius Searcy	1989-01-01	OL	61	252	64	\N
-Cyla Simon	2005-01-01	DL	52	158	59	\N
-Cynthia Williams-Walker	\N	LB	58	180	65	\N
-D. Schafaun Jones	1991-01-01	TE	73	290	67	\N
-Daisha Lawson	\N	DB	13	130	62	\N
-Daisy Avila	1996-01-01	LB	5	200	64	\N
-Daisy Avilaromero	1996-01-01	DB	5	190	64	\N
-DAjah Scott	1992-01-01	WR	4	165	68	\N
-Dajour Miles	2001-01-01	WR	12	140	66	\N
-Dakota Latimer	2001-01-01	DB	30	128	66	\N
-Dalphne Armstrong	1992-01-01	DL	44	284	69	\N
-DaMaree Mitchell	\N	OL	47	237	72	\N
-Dana Harris	1997-01-01	QB	5	165	63	\N
-Danaisha White	1988-01-01	OL	58	190	67	\N
-Danell Robb	1980-01-01	DL	53	170	62	\N
-Daniel Doriscar	1999-01-01	RB	6	135	61	\N
-Daniela De La Garza	1986-01-01	LB	50	155	67	\N
-Daniela Martinez De La Garza	1986-01-01	LB	50	155	67	\N
-Daniela Ottaino	1983-01-01	K	48	170	67	\N
-Danielle Arnold	1979-01-01	DE	92	170	71	\N
-Danielle Farrell	1993-01-01	DL	97	160	71	\N
-Danielle Galloway	1997-01-01	WR	0	155	63	\N
-Danielle Izykowicz	1996-01-01	WR	34	155	67	\N
-Danielle Spearman	1991-01-01	DB	3	125	61	\N
-Danielle Trainor	1995-01-01	QB	17	162	67	\N
-Danneille Ayala	1987-01-01	QB	14	175	68	\N
-Danny Trainor	1995-01-01	QB	17	162	67	\N
-Darcy Leslie	1986-01-01	LB	29	170	67	\N
-Darian Johnson	\N	RB	24	145	64	\N
-Darion Mitchell	\N	LB	20	172	62	\N
-Darlene Martinez	2005-01-01	OL	65	182	65	\N
-Dasha Jones	1997-01-01	WR	3	140	65	\N
-Dasha Owens	\N	WR	84	140	65	\N
-Dawna Zike	\N	LB	52	200	69	\N
-Dayanna Rangel	\N	RB	13	135	64	\N
-Dayna Moneta	1989-01-01	OL	75	290	66	\N
-Dayton Yingling	1996-01-01	RB	72	190	64	\N
-Daziah Green	\N	WR	7	110	61	\N
-Deana Simmons-Guidry	1978-01-01	LB	0	185	66	\N
-Deana Simmons-Guidry	1978-01-01	LB	11	188	66	\N
-DeAnna Hightower Riley	1978-01-01	DL	11	185	72	\N
-Debrina Wright	1976-01-01	DL	67	165	65	\N
-Dee Dalphne Armstrong	\N	DL	91	295	68	\N
-Dee Jackson-Ross	1986-01-01	DB	30	145	67	\N
-Deja Douglas	2002-01-01	DB	44	150	68	\N
-Deja Mosley	1997-01-01	QB	2	125	64	\N
-Deja Terry	\N	LB	17	135	62	\N
-Dejanatta Douglas	1993-01-01	LB	77	207	65	\N
-Delia Phlatts	1986-01-01	LB	14	130	62	\N
-Dena Triggs	1985-01-01	RB	27	185	62	\N
-Denesha Richardson	1994-01-01	DB	16	185	69	\N
-Denesha Richardson	1994-01-01	DB	21	170	68	\N
-Denetria Crawford	1989-01-01	LB	37	189	67	\N
-Denise Arceneaux	1985-01-01	DL	11	225	69	\N
-Denitra Parker	\N	OL	59	220	70	\N
-Denitra Parker	1985-01-01	OL	70	215	69	\N
-Desiray Mosley	1996-01-01	DB	10	140	64	\N
-Desirea Mcginnis	1997-01-01	OL	84	240	71	\N
-Desirea McGinnis	1997-01-01	OL	84	230	70	\N
-Desiree Conner	1999-01-01	DB	42	128	65	\N
-Desiree Spivey	\N	LB	44	\N	\N	\N
-Desiree Spivey	1985-01-01	LB	52	185	65	\N
-Destanie Yarbrough	1990-01-01	RB	36	205	67	\N
-Destinnee Banks	\N	DL	62	\N	\N	\N
-Devon Clay	1985-01-01	OL	68	280	74	\N
-Deysha Pollard	1996-01-01	LB	44	185	66	\N
-Deztine Thomas	1993-01-01	DB	14	120	65	\N
-Dia'Sha Pearson	1993-01-01	DB	39	125	61	\N
-Diamond Acklin	1999-01-01	LB	15	185	65	\N
-Diamond Brown	2000-01-01	DL	0	178	68	\N
-Diamond Griggs Tucker	\N	DB	20	132	66	\N
-Diamond Scott	1996-01-01	WR	1	130	61	\N
-Diamond Scott	\N	WR	11	130	61	\N
-Diamond Wright	1993-01-01	DB	10	145	67	\N
-Diana Huynh	1988-01-01	DB	12	135	62	\N
-Diane Koinva	1988-01-01	OL	91	230	61	\N
-Dionna Jackson-Ross	\N	DB	30	153	67	\N
-Dmayla Holliday	\N	DL	50	230	69	\N
-DMayla Holliday	1993-01-01	DL	50	230	69	\N
-Dominique Maloy	1989-01-01	RB	88	145	67	\N
-Dominique Trappio	\N	S	15	\N	\N	\N
-Dominique Williams	1996-01-01	TE	0	180	69	\N
-Dominique Woodall	\N	DL	64	\N	\N	\N
-Doneisha Hawkins	1993-01-01	LB	42	175	65	\N
-Donnell Finnaman	1982-01-01	LB	78	300	67	\N
-Dora Alvarez	\N	OL	96	200	62	\N
-Doshia Collins	2002-01-01	DB	18	120	62	\N
-Drea Scott	1988-01-01	LB	58	129	65	\N
-Dumatra McDaniel-Walker	1988-01-01	OL	88	275	68	\N
-Ebele Okonkwo	1989-01-01	DL	6	230	66	\N
-Eboni Chambers	1985-01-01	TE	8	210	68	\N
-Ebonie Graham	1989-01-01	LB	28	180	66	\N
-Ebony Goolsby	1991-01-01	RB	38	240	67	\N
-Ebony Minter	1989-01-01	RB	22	155	62	\N
-Eby Okonkwo	\N	LB	6	200	66	\N
-Echo Le Veil	\N	OL	84	\N	\N	\N
-Echo Levell	1990-01-01	DB	84	160	67	\N
-Edeline Sosa	1984-01-01	OL	70	160	60	\N
-Eden Henry	1996-01-01	DL	97	145	64	\N
-Eli Rojas	1993-01-01	OL	64	280	71	\N
-Elisa Nguyen	1989-01-01	LB	22	160	64	\N
-Elizabeth Engeldrum	\N	RB	23	140	64	\N
-Elizabeth Freeland	1999-01-01	DL	54	150	67	\N
-Elizabeth Jenkins	1981-01-01	OL	62	230	66	\N
-Elizabeth Mely	1983-01-01	DL	72	240	72	\N
-Elizabeth Tapler	\N	WR	80	150	70	\N
-Elizia Casillas	\N	WR	29	140	65	\N
-Ella Meyer	\N	LB	64	150	63	\N
-Ella Morgan	\N	OL	57	210	62	\N
-Ellana Watson	1995-01-01	OL	64	238	65	\N
-Elliot (Elisa) Nguyen	\N	LB	22	\N	\N	\N
-Elliot Nguyen	\N	LB	22	\N	\N	\N
-Eloisa Torres Torres	1993-01-01	WR	82	164	66	\N
-Elora Maestas	\N	WR	14	125	63	\N
-Emily Varnadoe	2005-01-01	OL	55	220	65	\N
-Emma Jones	2007-01-01	WR	3	105	64	\N
-Enedina Gomez	1978-01-01	OL	53	225	64	\N
-English Bennett	1991-01-01	DL	29	145	64	\N
-Erica Arie	1992-01-01	WR	31	145	70	\N
-Erica Dabney	1990-01-01	WR	32	154	66	\N
-Erica Elliott	\N	OL	65	260	67	\N
-Erica Jackson	1999-01-01	CB	26	150	67	\N
-Erica Jones	1999-01-01	OL	51	250	64	\N
-Erica Mason-Austin	1999-01-01	WR	1	175	68	\N
-Erica Mathia	1990-01-01	OL	52	145	61	\N
-Erica Moore	1978-01-01	DL	68	185	67	\N
-Erica Swain	\N	DL	87	240	69	\N
-Ericka Davis	1997-01-01	RB	1	145	63	\N
-Ericka Davis	\N	RB	18	\N	\N	\N
-Erin Fleming	2000-01-01	RB	39	140	65	\N
-Erin Miller	1982-01-01	DB	14	140	67	\N
-Erinn Payton	\N	RB	4	202	70	\N
-Errin McIsaac	\N	QB	14	130	65	\N
-Errin McIssac	\N	LB	13	145	65	\N
-Eshombi Singleton	1983-01-01	DB	2	176	69	\N
-Essence Lipscomb	\N	OL	72	240	70	\N
-Eva Lampert	\N	WR	8	150	66	\N
-Faith Robinson	1991-01-01	DB	17	140	63	\N
-Faith Rogers	1984-01-01	DL	93	188	66	\N
-Fancy Robinson	1984-01-01	DL	55	231	67	\N
-Fanny Feldman	1991-01-01	DB	13	147	63	\N
-Fantasia Roberts	1994-01-01	RB	20	140	65	\N
-Fatasia Smith	\N	WR	8	145	63	\N
-Felecia Hawkins	\N	WR	31	175	65	\N
-Felicia Lepore	\N	WR	81	145	62	\N
-Felicia Lilo	\N	OL	54	250	66	\N
-Ferkeshia Cousar	\N	DB	88	215	68	\N
-FerKeshia Cousar	1983-01-01	DL	88	215	68	\N
-Fernanda Zaldo	2001-01-01	OL	58	212	64	\N
-Fita Boyce-Jennings	\N	DL	99	275	65	\N
-Gabby Madden	1995-01-01	OL	79	270	71	\N
-Gabriel Rahming	1994-01-01	DB	10	158	64	\N
-Gabrielle Juarbe	1996-01-01	DB	0	125	65	\N
-Gianna Zamora	1997-01-01	WR	27	153	66	\N
-GiGi Chandler	1977-01-01	DE	87	145	63	\N
-Gilliana Chau	\N	LB	31	176	64	\N
-Gina Capardi	1987-01-01	WR	2	140	63	\N
-Gina Carnovale	1994-01-01	WR	14	140	65	\N
-Gina Magana	1993-01-01	RB	26	128	60	\N
-Gina Silvestri	\N	RB	22	150	64	\N
-Girly Tambeagbor	\N	LB	55	160	65	\N
-Girly Tambeahbor	1998-01-01	WR	55	170	64	\N
-Glorena Pugh	1983-01-01	OL	71	390	73	\N
-Gloria Winner	\N	DB	31	130	62	\N
-Grace Cooper	\N	RB	24	\N	\N	\N
-Grace Murphy	\N	WR	41	148	67	\N
-Grace Wiley	2001-01-01	DB	18	160	68	\N
-Gretchen Pietras	\N	OL	64	233	68	\N
-Greys Bernal	1993-01-01	OL	64	216	66	\N
-Greys Bernal	\N	OL	70	216	66	\N
-Guadalupe Korpie	1992-01-01	OL	72	290	65	\N
-Hadiisha Butts	1992-01-01	DL	35	230	62	\N
-Haley Brown	\N	QB	18	142	62	\N
-Haley Hagar	1991-01-01	DL	98	305	66	\N
-Haley Thompson	1992-01-01	DB	34	140	65	\N
-Hana Willis	\N	DL	95	267	66	\N
-Hana Yocom	1998-01-01	LB	41	155	66	\N
-Hanna McEwen	1998-01-01	DB	12	148	67	\N
-Hannah Crittendon	\N	QB	29	140	70	\N
-Hannah Leonard	1998-01-01	WR	38	153	66	\N
-Hannah Makasini	1999-01-01	RB	20	200	67	\N
-Hannah Powell	2003-01-01	RB	31	180	62	\N
-Harley Foltz	2005-01-01	RB	23	150	63	\N
-Harmine Christina Leo	1992-01-01	DB	18	140	65	\N
-Heather Dulin	1984-01-01	OL	90	240	65	\N
-Heather Puletasi	1987-01-01	RB	44	215	65	\N
-Helenna Wells	1984-01-01	OG	94	260	70	\N
-Hollie Petrie	\N	QB	9	200	66	\N
-Hollie Sanders	1984-01-01	DB	7	133	66	\N
-Holly Custis	1984-01-01	LB	21	195	67	\N
-Holly HannahTodd	1986-01-01	WR	10	138	70	\N
-Hope Memmott	1998-01-01	CB	8	132	64	\N
-Ida Edwards	1985-01-01	DE	6	180	72	\N
-Ida Edwards	\N	DL	12	185	72	\N
-Ida Handel	\N	OL	61	\N	\N	\N
-Iemah Meno Perry	\N	WR	22	145	64	\N
-Ikeisha Dobbin	\N	DB	16	130	65	\N
-Ikeisha Dobbin	1991-01-01	WR	19	135	65	\N
-Ileshia Preston	1992-01-01	LB	17	145	64	\N
-Imani Nettles	2000-01-01	LB	27	170	65	\N
-Imani Thompson	1998-01-01	WR	15	160	65	\N
-India Parker	2000-01-01	RB	7	150	66	\N
-Infinity Brooks	1999-01-01	OL	66	215	65	\N
-Ingrid Cleveland	1995-01-01	WR	28	113	59	\N
-Ingrid Clevland	\N	WR	28	113	59	\N
-Irlanda Diaz	1994-01-01	DL	36	140	69	\N
-Irlanda Diaz	\N	DL	82	\N	\N	\N
-Isabel Warren	2000-01-01	WR	0	170	66	\N
-Isis Woods	1992-01-01	DL	99	280	67	\N
-Ivette Nava Garcia	1984-01-01	RB	78	170	63	\N
-Izabelle Bateman	\N	OL	15	175	65	\N
-Jacki Waring	1995-01-01	WR	81	140	72	\N
-Jackie Espinoza	1992-01-01	RB	15	110	61	\N
-Jackie McCall	\N	WR	19	165	67	\N
-Jackie Price	1985-01-01	DL	60	255	63	\N
-Jacklyn Dwyer	1994-01-01	LB	92	165	66	\N
-Jaclyn Price	1985-01-01	DT	63	145	67	\N
-Jacora Garry	1994-01-01	LB	58	193	62	\N
-Jacqueline Lopez	\N	WR	1	110	63	\N
-Jada Joyner	2001-01-01	OL	53	260	64	\N
-Jada Victor	2004-01-01	LB	29	155	63	\N
-Jadacee Vick	\N	FB	11	190	67	\N
-Jade Austin	\N	DB	29	169	67	\N
-Jade Ross	1991-01-01	OL	75	370	69	\N
-Jadira Valentin	1988-01-01	WR	39	136	62	\N
-Jahnique Carter	1996-01-01	DT	99	195	63	\N
-Jahogany Ezelle	2003-01-01	OL	66	200	67	\N
-Jahogony Ezelle	\N	DL	66	200	67	\N
-Jakaya Holloway	1997-01-01	DB	31	158	66	\N
-JaKeira Mallory	\N	DL	99	\N	\N	\N
-JaKiera Mallory	\N	DL	99	250	70	\N
-Jaleesa Harvey	\N	OL	61	\N	\N	\N
-Jalessa Harvey	1990-01-01	OL	61	\N	\N	\N
-Jamie Blue	1999-01-01	WR	11	165	70	\N
-Jamie Brann	\N	WR	1	180	69	\N
-Jamie Brann	\N	WR	2	185	70	\N
-Jamie Fornal	1986-01-01	LB	14	158	68	\N
-Jamie Lock	1988-01-01	DB	2	130	63	\N
-Jamie Lock	1990-01-01	DB	21	135	62	\N
-Jamila Nared	1997-01-01	WR	80	126	62	\N
-Janae Hammond	2001-01-01	DL	64	275	67	\N
-Janasha Smith	1990-01-01	LB	44	190	68	\N
-Jane (Redd) Brinkman	1970-01-01	DL	2	176	72	\N
-Jane Brinkman	1970-01-01	DE	2	180	72	\N
-Jane Crosby	1991-01-01	LB	12	200	65	\N
-Jane Leroy	2002-01-01	RB	29	170	69	\N
-Janei Benamon	1997-01-01	DB	19	126	67	\N
-Janelle Small-Williams	1979-01-01	OL	79	200	67	\N
-Janiah Lee	2002-01-01	LB	25	158	63	\N
-Janice Mitchell	1986-01-01	DB	33	185	64	\N
-Jaquela Stewart	1992-01-01	RB	1	120	60	\N
-Jaquela Stewart	1992-01-01	WR	10	120	61	\N
-Jarrah Floyde	1999-01-01	DL	88	170	67	\N
-Jasmine Ballard	2001-01-01	RB	9	197	66	\N
-Jasmine Bonaparte	1998-01-01	WR	42	180	66	\N
-Jasmine Coleman	1993-01-01	WR	2	145	64	\N
-Jasmine Johnson	1992-01-01	OL	43	222	63	\N
-Jasmine Logan	\N	DL	32	160	62	\N
-Jasmine McDonald	\N	S	10	\N	\N	\N
-Jasmine Nelson	1994-01-01	DB	23	120	64	\N
-Jasmine Poole	1994-01-01	DB	23	160	66	\N
-Jasmine Redmon	\N	DB	9	\N	\N	\N
-Jasmine Terry	\N	OL	65	255	63	\N
-Jasmine Thomas	\N	DB	2	138	64	\N
-Jasmine Thomas	\N	WR	3	128	63	\N
-Jasmyn Chachrelle Nguyen	\N	LB	33	\N	\N	\N
-Jasmyn Moxley	1990-01-01	DB	24	145	67	\N
-Jasmyn Moxley	\N	DB	25	\N	\N	\N
-Javanna Wilkins	1995-01-01	DB	29	170	64	\N
-Jaynna Valdez	2002-01-01	DB	52	145	63	\N
-Jazlyn Villalona	\N	DL	56	225	67	\N
-Jazmin Florez	\N	OL	57	220	64	\N
-Jazmin Gamble	1990-01-01	LB	9	200	65	\N
-Jazmin Gamble Tello	\N	RB	9	195	64	\N
-Jazmin Henderson	\N	DL	85	\N	\N	\N
-Jazmine Allen	1994-01-01	RB	28	140	61	\N
-Jazmine Rambo	\N	RB	9	140	65	\N
-Jazmine Rambo	1993-01-01	RB	26	130	61	\N
-Jazmyn Freeman	1998-01-01	OL	57	235	69	\N
-Jazpony Harris	1995-01-01	DB	40	120	63	\N
-Jazpony Harris	\N	DB	43	120	63	\N
-Jazzmon J Stovall	\N	DB	16	\N	\N	\N
-Jazzmon JaNae Stovall	1998-01-01	DB	16	125	63	\N
-Jelani Kelly	1990-01-01	FB	27	220	66	\N
-Jelisa Fladger	1991-01-01	LB	1	160	63	\N
-Jen Dulski	1980-01-01	DL	50	145	64	\N
-Jen Strother	1971-01-01	K	4	195	65	\N
-Jene Walker	\N	RB	22	\N	\N	\N
-Jenea Walker	1993-01-01	RB	22	175	66	\N
-Jenessa White	\N	TE	83	230	68	\N
-Jenna Sukle	\N	WR	33	145	66	\N
-Jenna Trahan	2003-01-01	DB	25	97	61	\N
-Jennell Thomas	1980-01-01	QB	12	190	65	\N
-Jennifer Court	1980-01-01	OL	64	268	67	\N
-Jennifer Erickson	1984-01-01	LB	41	145	64	\N
-Jennifer Galarza	\N	DB	26	138	65	\N
-Jennifer Green	1992-01-01	OL	79	199	69	\N
-Jennifer Herrera	1984-01-01	DB	20	160	66	\N
-Jennifer Ingargiola	1991-01-01	RB	23	190	64	\N
-Jennifer Ingargiolia	\N	RB	23	190	64	\N
-Jennifer Ramirez	1995-01-01	OL	67	280	67	\N
-Jennifer Schulz	1970-01-01	DL	57	260	68	\N
-Jennifer Southall	\N	WR	18	140	61	\N
-Jennifer Strother	1971-01-01	RB	4	195	65	\N
-Jennifer Vinson	1982-01-01	OL	53	178	68	\N
-Jenyll Alcantara	1989-01-01	DL	63	190	67	\N
-Jeree Clark	1988-01-01	RB	14	150	63	\N
-Jeree Clark	1988-01-01	RB	36	168	64	\N
-Jess Sherman	1996-01-01	WR	43	132	69	\N
-Jesseka Forbes	1987-01-01	RB	22	175	62	\N
-Jessica Beckham	1989-01-01	LB	4	170	66	\N
-Jessica Cannon	1994-01-01	RB	32	140	62	\N
-Jessica Collins	1989-01-01	DB	4	152	65	\N
-Jessica Estes	\N	LB	81	170	64	\N
-Jessica Gerdes	\N	LB	37	180	66	\N
-Jessica Hill	\N	LB	68	188	65	\N
-Jessica Jackson	1982-01-01	OL	54	200	60	\N
-Jessica Jeans	1989-01-01	LB	49	175	64	\N
-Jessica Johnson	\N	S	10	155	69	\N
-Jessica Johnson	\N	DB	27	155	69	\N
-Jessica Phillips	\N	DL	93	365	71	\N
-Jessica Ruiz	1990-01-01	RB	35	145	61	\N
-Jessica Salazar	1987-01-01	DB	25	175	67	\N
-Jessie Beck	1992-01-01	DB	86	150	66	\N
-Jessie Huron	\N	OL	93	200	68	\N
-Jessie Warr	1999-01-01	OL	55	260	69	\N
-Jewelle Grimsley	1988-01-01	DB	13	164	68	\N
-Jianna Schirmacher	1999-01-01	WR	20	125	64	\N
-Jimeriam Jackson	1991-01-01	LB	34	180	69	\N
-Jimeriam Jackson	1991-01-01	DL	42	185	70	\N
-Jkera Shamburger	\N	WR	5	118	66	\N
-Jo Hutchins	\N	WR	17	140	68	\N
-Jo-Jo Mamuyac	1988-01-01	DL	36	215	64	\N
-Joalis Rosario	\N	RB	8	160	61	\N
-Joann Mae Glasper Mamuyac	1988-01-01	DL	36	200	64	\N
-Joann Mamuyac	1988-01-01	DL	3	215	64	\N
-Joanna Young	\N	WR	6	138	64	\N
-Jocelyn Charette	\N	K	16	160	70	\N
-Jocelyn Fernandez	1998-01-01	WR	11	150	64	\N
-Jocelyn Martin	1989-01-01	OL	99	310	71	\N
-Jocelyn Montoya	1995-01-01	OL	57	245	65	\N
-Johanna Aspenberg	1996-01-01	DL	70	252	67	\N
-Jonquil Curry	1992-01-01	DB	81	120	60	\N
-Jordan Krahn	1994-01-01	DL	87	181	67	\N
-Jordan Thomas	\N	WR	15	135	65	\N
-Jordan Williams	2003-01-01	RB	35	195	64	\N
-Jordyn White	\N	C	32	200	72	\N
-Jordyn Williams	2001-01-01	OT	49	204	65	\N
-Joselan Teregeyo	2006-01-01	WR	25	135	66	\N
-Joselyn Lazaro	\N	LB	38	150	67	\N
-Josie Ellis	2007-01-01	DL	51	246	65	\N
-JoVonna Cram	\N	OL	74	213	66	\N
-Joy Longley	\N	DL	48	\N	\N	\N
-Judea McDonald	1997-01-01	DL	19	180	66	\N
-Julia Stevenson	1981-01-01	OL	82	255	66	\N
-K.J. Johnson	\N	DB	9	117	62	\N
-Kacey Grierson	\N	OL	69	\N	\N	\N
-Kahriya Williams	1999-01-01	RB	22	170	66	\N
-Kahriya Williams	1999-01-01	RB	26	170	66	\N
-Kailima Ross	1983-01-01	OT	70	185	66	\N
-Kaire Phelps	\N	DB	13	\N	\N	\N
-Kaire Phelps	\N	DL	28	155	67	\N
-Kaitlyn Easton	1997-01-01	TE	25	170	67	\N
-Kaitlyn Marie Iverson	1985-01-01	LB	28	150	68	\N
-Kaitlynn dela Pena	1995-01-01	OL	95	310	67	\N
-Kaitlynn Dela Pena	\N	OL	95	310	67	\N
-Kala Monserret	1991-01-01	DB	39	130	65	\N
-Kaleigh Walsh	\N	OL	70	205	69	\N
-Kali Jones	1997-01-01	WR	1	172	74	\N
-Kalyx Lewis	1997-01-01	RB	9	140	65	\N
-KaMari House	2006-01-01	WR	99	145	64	\N
-Kamaria Massey	1990-01-01	DB	15	155	69	\N
-Kamsin Lawrence	1991-01-01	OL	58	180	66	\N
-Kandra Davis	1992-01-01	DL	60	215	62	\N
-Kandy Bortz	\N	WR	10	160	66	\N
-Kandy Cooke (Bortz)	1985-01-01	DL	10	160	66	\N
-Kanesha Sheriff	\N	WR	88	\N	\N	\N
-KaNesha Sheriff	1991-01-01	WR	11	145	65	\N
-KaNesha Sheriff	1991-01-01	WR	88	164	70	\N
-Kaneskiia Oliver	1989-01-01	LB	45	135	61	\N
-Kara Cochran	\N	LB	51	145	64	\N
-Kara Corcoran	\N	OL	51	170	66	\N
-Kara Galiunas	1997-01-01	LB	43	170	68	\N
-Karen Mulligan	1977-01-01	QB	30	168	68	\N
-Karena Brooks	\N	LB	21	200	67	\N
-Karissa Burnett	1991-01-01	DB	88	136	65	\N
-Karla Granados Rodriguez	\N	RB	25	\N	\N	\N
-Karla Romero	\N	RB	44	134	61	\N
-Karmen Henson	1989-01-01	LB	3	156	65	\N
-Kasee Hilliard	\N	WR	81	160	67	\N
-Kassandra Payne	\N	OL	78	\N	\N	\N
-Kassiah Moore	\N	OL	78	220	66	\N
-Kassiah Sage Moore	2002-01-01	DL	78	220	66	\N
-Kassidi Wynter	\N	DL	82	\N	\N	\N
-Kassidy Snowden	\N	DB	33	\N	\N	\N
-Katelyn Bailey	1987-01-01	OL	63	250	67	\N
-Katherine Claxton	1998-01-01	WR	10	185	72	\N
-Katherine Lane	\N	WR	26	\N	\N	\N
-Katherine Ott Hicks	1976-01-01	WR	41	145	66	\N
-Katherine Wise	1989-01-01	TE	48	200	71	\N
-Kathleen Carroll	1991-01-01	WR	15	147	60	\N
-Kathryn Floor	\N	WR	87	145	68	\N
-Katie Claxton	1998-01-01	LB	10	200	\N	\N
-Katie Margheim	\N	DL	98	211	63	\N
-Katie Miller Lite Miller	1990-01-01	LB	50	185	64	\N
-Katie Montgomery	1985-01-01	OL	68	203	67	\N
-Katie Ott (Hicks)	\N	DB	41	\N	\N	\N
-Katie Williams	\N	DL	70	237	66	\N
-Kay Lewis	1997-01-01	WR	9	145	65	\N
-Kayelle Brown	1990-01-01	DL	4	180	72	\N
-Kayla Chambers	1992-01-01	DB	15	155	69	\N
-Kayla Fisher	2000-01-01	OL	23	210	65	\N
-Kayla Holbert	\N	DB	4	165	61	\N
-Kayla Lilly	\N	QB	2	130	67	\N
-Kayla Russell	1999-01-01	LB	1	170	62	\N
-Kaylee Parker	\N	QB	10	\N	\N	\N
-Kaytlin Harvey	\N	OL	51	275	68	\N
-Kazzette Collins	\N	DL	56	189	71	\N
-Kea Mercer	1993-01-01	RB	10	125	62	\N
-Kechelle Herring	\N	DB	32	132	62	\N
-Keena Samuels	1995-01-01	WR	15	150	66	\N
-Keeysha Cox	1988-01-01	RB	21	170	65	\N
-Keiloni Kalasa	\N	OL	96	\N	\N	\N
-Keisha Parker	1991-01-01	DL	92	275	67	\N
-Kelli Jones	\N	DB	33	130	63	\N
-Kelli Smith	1991-01-01	RB	14	152	65	\N
-Kellie Bell	1993-01-01	DE	55	180	69	\N
-Kellie Erickson	\N	OL	50	\N	\N	\N
-Kelly Cammon	1982-01-01	OL	66	199	65	\N
-Kelly Rosso	1995-01-01	DB	40	140	66	\N
-Kelly Schaeffer	\N	WR	12	120	63	\N
-Kelly Stack	1990-01-01	WR	6	150	72	\N
-Kelly Stack (Johnston)	1990-01-01	WR	6	160	72	\N
-Kelly Stack/Johnston	1990-01-01	WR	6	150	72	\N
-Kelly Washington	\N	QB	19	185	67	\N
-Kelly Whitehead	\N	LB	49	\N	\N	\N
-Kelsey Prall	1996-01-01	LB	25	157	63	\N
-Kelsie Young	1989-01-01	DL	96	280	66	\N
-Kemmi Crosby	1990-01-01	WR	88	130	65	\N
-Kemoni Sharp-Garland	2004-01-01	DB	82	81	56	\N
-Ken Gabriel	\N	RB	22	165	66	\N
-Kennedy Banks	2005-01-01	WR	1	130	68	\N
-Kennetta Murry	\N	DL	5	185	68	\N
-Kenzie Carney	\N	DL	95	\N	\N	\N
-Kenzie May	\N	WR	20	145	64	\N
-Keresa Taylor	\N	DL	43	215	64	\N
-Kerrie Isom	2000-01-01	LB	22	165	66	\N
-Kesha Smith	\N	WR	10	175	65	\N
-Keshia Ray	1990-01-01	LB	12	180	66	\N
-Kesz Wesley	1992-01-01	RB	24	\N	\N	\N
-Ketie Leverette	\N	LB	16	\N	\N	\N
-Key Cannon	\N	WR	84	170	68	\N
-Keyarie Fountain	2002-01-01	RB	29	137	63	\N
-Kezia Oscar	1991-01-01	DB	23	174	65	\N
-Khadijah Ellison	1992-01-01	DB	24	150	69	\N
-Khadijah Jones	1994-01-01	DB	45	140	65	\N
-Khahina Yisrael	1993-01-01	DB	27	135	70	\N
-Khyla Easler	\N	OL	17	\N	\N	\N
-Kia Armstrong	\N	WR	28	170	69	\N
-Kiana Flippin	1998-01-01	LB	38	210	65	\N
-Kiana Moore	\N	WR	19	\N	\N	\N
-Kiana Stafford	1995-01-01	OL	72	250	73	\N
-Kiana Stafford	\N	OL	77	250	72	\N
-Kiara Ireland	1988-01-01	DB	20	150	62	\N
-Kiara Watts	\N	WR	37	\N	\N	\N
-Kiera Smith	1983-01-01	OL	74	220	68	\N
-Kiersten Zangl	1996-01-01	DB	39	140	66	\N
-Kiki Peoples	1993-01-01	DL	24	193	68	\N
-Kiki Stonebraker	\N	QB	4	175	67	\N
-Kim Cade-Henry	1979-01-01	DL	29	200	63	\N
-Kim Krinke	1980-01-01	RB	28	145	66	\N
-Kimberly Abraham	1992-01-01	RB	32	150	67	\N
-Kimberly Normand	1985-01-01	DL	34	185	69	\N
-Kimberly Rose	1987-01-01	LB	43	175	64	\N
-Kimberly Thomas	\N	OL	54	245	66	\N
-Kimberly Weaver	\N	DL	93	\N	\N	\N
-Kirstyanna Quinn Pierce	\N	DL	82	168	68	\N
-Kiyana Jones	1995-01-01	WR	81	130	67	\N
-Knengi Martin	1983-01-01	QB	11	200	71	\N
-Knengi Martin	1983-01-01	LB	47	210	71	\N
-Kola Shippentower Thompson	\N	RB	29	180	65	\N
-Kola ShippentowerThompson	1989-01-01	LB	29	180	65	\N
-Kourtney Purham	\N	OL	53	280	67	\N
-Kris Davis	1987-01-01	DL	41	170	69	\N
-Kris Grimes	\N	RB	26	201	63	\N
-Kris Grimes	\N	RB	37	216	63	\N
-Krista Seaman	\N	WR	6	130	65	\N
-Kristel Reid	\N	LB	14	160	69	\N
-Kristen Dietz	1985-01-01	LB	44	152	66	\N
-Kristen London	\N	DB	0	165	69	\N
-Kristen London	\N	DB	1	173	69	\N
-Kristen London	1987-01-01	DB	9	160	69	\N
-Kristi Taylor	1985-01-01	QB	5	200	66	\N
-Kristianna Ibsen	\N	DL	99	218	70	\N
-Kristin Carter	\N	LB	26	190	64	\N
-Kristin Smereczynski	\N	WR	7	\N	\N	\N
-Kristin Smereczynski	\N	WR	13	\N	\N	\N
-Kristina Cooper	\N	LB	19	165	64	\N
-Kristine Eisler	1984-01-01	DL	64	190	65	\N
-Kristy Hice-Jones	1998-01-01	OL	56	183	64	\N
-Kristyanna Pierce	1986-01-01	DL	82	168	68	\N
-Kristyn Aoake Taylor	1991-01-01	DL	59	190	67	\N
-Kritt Tucker	\N	LB	22	175	65	\N
-Kritt Tucker	1987-01-01	DE	32	175	65	\N
-Krystal Williams	1985-01-01	DL	90	210	66	\N
-Kyelah Hodges	1996-01-01	DB	25	162	65	\N
-Kyhle Jamerson	1985-01-01	WR	8	180	68	\N
-Kyiah VonBorries	\N	OL	76	305	72	\N
-Kyla McBride	1999-01-01	DL	54	190	68	\N
-Kylee OConnor-Harrel	1996-01-01	DB	6	135	67	\N
-Kylie Edwards	\N	WR	69	\N	\N	\N
-Kylie Latimer	1998-01-01	OL	62	210	66	\N
-Kylie Mitchell	1994-01-01	WR	88	155	67	\N
-Kymesha Andrew	1992-01-01	DB	15	178	67	\N
-Kymesha Taylor	1992-01-01	DB	15	170	67	\N
-Kymesha Taylor-Andrew	\N	S	15	\N	\N	\N
-La Shun Mosley	\N	LB	32	203	63	\N
-Labrille May	1992-01-01	RB	72	203	67	\N
-Lace Jennings	1994-01-01	LB	57	193	67	\N
-LaCreisha Lane	\N	LB	34	185	67	\N
-Lacy Mile	1988-01-01	LB	23	135	62	\N
-LaDella Alexander	1992-01-01	OL	62	240	70	\N
-LaDonna Leachman	\N	OL	94	\N	\N	\N
-Laila Finley	2006-01-01	DB	10	165	71	\N
-Lainie Thompson	1990-01-01	LB	84	160	70	\N
-Lamikia Lawson	\N	WR	16	137	63	\N
-LaNia Charity	\N	DB	21	170	66	\N
-Lanie Ford	\N	OL	79	250	69	\N
-Lanika Manning	1979-01-01	DB	8	145	69	\N
-Lanika Manning	1978-01-01	DB	80	148	67	\N
-Lanuola Lewis	1980-01-01	DL	96	300	71	\N
-LaQuanta Glass	1989-01-01	DE	47	160	65	\N
-Laque Moen-Davis	1993-01-01	LB	48	150	67	\N
-LaQunana Cistrunk	1988-01-01	LB	32	160	66	\N
-LaRoyia Bauer	1987-01-01	LB	33	200	66	\N
-Lasha Morales	1981-01-01	OL	53	185	68	\N
-LaShanda Griffin	1984-01-01	DB	11	147	67	\N
-LaShanda Griffin	\N	DB	24	\N	\N	\N
-LaShanda Williams	1983-01-01	LB	45	166	68	\N
-Lashantel Wilson	1984-01-01	LB	13	205	69	\N
-LaShantel Wilson	\N	DB	13	205	69	\N
-Lashawna Ervin	1987-01-01	LB	36	165	65	\N
-Latangela Dorsey	\N	DL	99	\N	\N	\N
-Latanglia Dorsey	1986-01-01	DL	99	320	69	\N
-Latasha Cummings	1986-01-01	DL	28	223	65	\N
-Latasha Cummings	\N	OL	51	215	67	\N
-LaTasha Cummings	1986-01-01	OL	51	239	65	\N
-Latasha Dragon Richardson	1986-01-01	DE	5	205	73	\N
-LaTasha Husband	1984-01-01	OL	70	235	63	\N
-Laterricka Smith	1994-01-01	RB	86	140	63	\N
-Latia Matthews	\N	OL	77	250	74	\N
-Latoria Randile	1982-01-01	DL	86	226	70	\N
-LaToya Brown	\N	DB	35	\N	\N	\N
-Latraell Purham	1989-01-01	OL	69	235	72	\N
-Laura Goetz	2004-01-01	LB	7	150	65	\N
-Laura Marraccini	\N	DB	29	147	63	\N
-Laura Saettele	1990-01-01	WR	17	122	63	\N
-Laura St Ruth	\N	LB	35	165	69	\N
-Lauran Glover	\N	OL	30	188	68	\N
-Laure Gelis-Diaz	\N	DB	89	135	69	\N
-Lauren Butz	2000-01-01	CB	83	145	65	\N
-Lauren Crouch	1996-01-01	QB	8	130	65	\N
-Lauren Davis	1982-01-01	LB	44	175	67	\N
-Lauren Kelly	\N	WR	18	140	69	\N
-Lauria Saettele	1990-01-01	DB	17	145	64	\N
-Laurisa Hollenshed	1988-01-01	LB	7	175	66	\N
-Lavonna Collymore	\N	DL	70	258	66	\N
-Lawanda Pearson	1995-01-01	DB	5	142	67	\N
-Lawanda Pearson	\N	WR	24	140	67	\N
-Leeya Zander	2002-01-01	LB	22	185	70	\N
-Leialoha Tela	\N	DL	59	145	64	\N
-Lelatasiosamoa Vaeao	1984-01-01	OL	58	260	70	\N
-Lena (Magda) Vargas	\N	WR	37	\N	\N	\N
-LeOndrea McIntyre	\N	OL	55	\N	\N	\N
-LeShaunte Bowman	1992-01-01	DL	57	250	68	\N
-Lesley Farquharson	1988-01-01	OL	58	210	63	\N
-Leslie Hubbell	1978-01-01	S	4	155	67	\N
-Leslie Medina	1982-01-01	LB	18	145	65	\N
-Leslie Robinson	1985-01-01	RB	2	145	62	\N
-Lexie Neslen	1996-01-01	DL	37	180	68	\N
-Lily Bell	2008-01-01	OL	65	237	65	\N
-Lindey Larry	\N	LB	9	145	67	\N
-Lindsay Powell	1990-01-01	DL	77	260	67	\N
-Lindsey Barnes	1987-01-01	OL	52	195	71	\N
-Lindsey Moore	1992-01-01	LB	33	175	66	\N
-Lindsi Cash	\N	RB	30	165	63	\N
-Lisa Fisher	\N	OL	60	240	64	\N
-Lisa Fisher II	1993-01-01	DT	60	230	64	\N
-LiTara Faatili	1989-01-01	DL	48	275	68	\N
-Liz LaFisca	1996-01-01	LB	9	175	65	\N
-Liz Landry	1980-01-01	WR	1	175	69	\N
-London Hester-Williams	\N	OL	59	220	63	\N
-London Ortiz	1999-01-01	DB	27	175	68	\N
-Loren Diaz	\N	DL	70	245	61	\N
-Lorena Duran	\N	DL	96	175	66	\N
-Lorenna Duran	\N	DL	96	\N	\N	\N
-Loriage Reid	\N	RB	17	140	66	\N
-Lucille Kituku	\N	DL	74	175	63	\N
-Lucinda Watkins	1976-01-01	OL	76	253	66	\N
-Lydia Evans	1996-01-01	DL	76	180	65	\N
-Lydia Morgan	\N	WR	4	115	63	\N
-Lydia Qualls Jarrett	\N	LB	22	180	67	\N
-Mackenzie Dykes	\N	QB	7	139	66	\N
-Mackenzie Grause	1992-01-01	TE	92	215	68	\N
-Mackenzie Harmer	2002-01-01	RB	17	140	66	\N
-Mackenzie Vest	2003-01-01	WR	2	145	67	\N
-Madalyn Garrison	\N	DB	38	120	66	\N
-Maddie Garrison	2004-01-01	DB	38	130	66	\N
-Madeline Kop	\N	OL	55	220	68	\N
-Madeline Murphy	1995-01-01	RB	18	115	63	\N
-Madisen Mode	1999-01-01	DL	73	200	65	\N
-Madison Grayson	2002-01-01	WR	21	190	71	\N
-Madison Jones	1994-01-01	OL	71	250	72	\N
-Mae Larimer	1993-01-01	OL	38	170	68	\N
-Maggie Justinak	1998-01-01	P/	2	150	67	\N
-Maha Hawwass	1985-01-01	LB	13	160	65	\N
-Mahlayshia Dockery	\N	OL	79	278	68	\N
-Mahogany Gaines	1997-01-01	LB	18	145	67	\N
-Maikia Williams	2001-01-01	DB	19	125	68	\N
-MaiKia Williams	\N	S	0	\N	\N	\N
-Makayla Brown	1996-01-01	OL	89	225	64	\N
-Makayla Sutton	2000-01-01	WR	82	145	67	\N
-Maki Yamagata	1973-01-01	DB	22	123	62	\N
-Makiya Adams	2004-01-01	DL	96	145	64	\N
-Malak Bentoudjamalak	1998-01-01	WR	17	136	67	\N
-Malaysia Flowers	1999-01-01	DB	27	145	68	\N
-Malaysia Quimby	\N	RB	87	215	70	\N
-Malissa Miles	1988-01-01	WR	5	170	69	\N
-Mallory Torres	\N	DB	19	\N	\N	\N
-Mandy Rodriguez	1998-01-01	RB	18	165	63	\N
-Marcela Ortiz Nava	\N	OL	71	\N	\N	\N
-Marcy Van Hartesveldt	\N	WR	17	165	70	\N
-Margo Smith	1993-01-01	DB	28	155	63	\N
-Maria Acension	1990-01-01	DB	2	135	64	\N
-Maria Acension	\N	DB	28	\N	\N	\N
-Maria Fautali	1998-01-01	RB	4	135	65	\N
-Maria J Boira Lopez	1999-01-01	WR	19	130	62	\N
-Maria Jackson	1995-01-01	WR	11	165	67	\N
-Maria Jackson	1985-01-01	WR	81	170	66	\N
-Maria Trevino	1994-01-01	OL	55	214	66	\N
-Mariah Makupson	1994-01-01	LB	15	185	63	\N
-Mariane McClinton	1991-01-01	DL	42	165	68	\N
-Marianne McClinton	\N	DL	42	\N	\N	\N
-Marica Johnson	\N	DL	37	200	66	\N
-Marielle Alexander	1991-01-01	WR	47	155	66	\N
-Marisa Goddard	\N	DL	99	299	68	\N
-Marissa Blash	\N	RB	40	145	64	\N
-Marissa Lopez	\N	QB	5	\N	\N	\N
-Marissa Lopez	1993-01-01	QB	21	135	65	\N
-Markeisha Perry	1993-01-01	DB	9	\N	\N	\N
-Markell Marquez	\N	DL	60	175	66	\N
-Marlen Garces	\N	DL	77	185	66	\N
-Marlette Wilber	1994-01-01	OL	54	210	66	\N
-Marrhea Everheart	\N	DB	2	145	67	\N
-MarRhea Everheart	1995-01-01	DB	2	160	68	\N
-Mary Rachel Love	1991-01-01	LB	41	180	67	\N
-Mary Woodard	1997-01-01	WR	12	\N	\N	\N
-Maryfrances Husband	\N	OL	22	205	66	\N
-MaryJane Merriam	\N	DE	33	156	66	\N
-Matalya Johnson	2000-01-01	DL	75	165	65	\N
-Mattique Jones	1993-01-01	RB	44	145	62	\N
-Maya Jamison	1997-01-01	RB	5	156	66	\N
-Maya Johnson	1994-01-01	LB	43	160	63	\N
-Mayra Capetillo	\N	OL	59	\N	\N	\N
-McKenna Morgan	2001-01-01	OL	49	230	66	\N
-McKenna Morgan	2001-01-01	OL	50	237	66	\N
-McKenzie Tolliver	\N	WR	25	\N	\N	\N
-McKenzie Tolliver	\N	WR	84	140	67	\N
-Mea Williams	1980-01-01	OL	57	198	62	\N
-Meagan Curtis	1997-01-01	RB	38	175	68	\N
-Meagan Robinson	1990-01-01	LB	41	150	67	\N
-Meagan Tyler Curtis	\N	RB	38	\N	\N	\N
-Meaghan Bossard	1994-01-01	LB	18	168	67	\N
-Mechelle Nance	1993-01-01	DL	75	250	71	\N
-Megan Biggers	1997-01-01	K	10	150	65	\N
-Megan McDonald	\N	WR	31	\N	\N	\N
-Megan Robertson	1990-01-01	LB	12	200	67	\N
-Megan Robertson	1990-01-01	LB	21	175	67	\N
-Megan Stier	1997-01-01	WR	99	150	62	\N
-Megan Thompson	1979-01-01	OL	78	178	68	\N
-Megan Thomson	\N	DE	78	165	68	\N
-Mel Bayani	1981-01-01	DL	43	160	68	\N
-Mel Garces	1977-01-01	DE	77	183	70	\N
-Melany Frierson	1995-01-01	WR	9	150	63	\N
-Melina Malaxos	2001-01-01	RB	26	110	59	\N
-Melissa Chandler	\N	LB	87	145	64	\N
-Melissa Faison	1979-01-01	OL	76	180	64	\N
-Melissa Fawcett	1982-01-01	OL	72	220	69	\N
-Melissa Hastings	\N	DT	51	200	69	\N
-Melissa Merino	1989-01-01	LB	89	165	64	\N
-Melissa Uhl	1989-01-01	OL	47	205	62	\N
-Melissa Uhl	1989-01-01	OL	68	218	62	\N
-Melonie Washington	1989-01-01	LB	24	180	66	\N
-Melyse Brown	\N	QB	8	\N	\N	\N
-Memory Ware	1985-01-01	DB	9	155	79	\N
-Mercedes Green	\N	DE	54	165	66	\N
-Mercedes Pettegrew	\N	LB	11	\N	\N	\N
-Mercedes Tyler	1990-01-01	LB	39	175	64	\N
-Merci Scott	1997-01-01	S	35	160	64	\N
-Meredith Mitchiner	2000-01-01	P/	56	175	67	\N
-Meryem Zaefari	\N	RB	36	154	68	\N
-Michell Zamudio	\N	DB	7	163	65	\N
-Michelle Angel	1993-01-01	QB	7	140	69	\N
-Michelle Dunham	\N	WR	18	135	65	\N
-Michelle Oetjen	\N	QB	0	150	69	\N
-Michelle Thornton	1981-01-01	OL	76	217	64	\N
-Mickayla Martin	1989-01-01	TE	17	198	61	\N
-Mikaile Fortson	1992-01-01	LB	7	175	68	\N
-Mikaile Fortson	1992-01-01	LB	41	155	68	\N
-Mikal Chancy	\N	DB	8	145	72	\N
-Mikayla Kiki Stonebraker	1994-01-01	QB	4	175	67	\N
-Mikayla Taylor	1997-01-01	OL	90	255	66	\N
-Mila Porter Lawson	1998-01-01	OL	62	245	68	\N
-Mila Porter-Lawson	\N	OL	62	240	68	\N
-Mildred Byrd	1983-01-01	DL	83	160	64	\N
-Mio Yoshisa	1995-01-01	RB	1	121	62	\N
-Miriah Lopez	1994-01-01	WR	1	135	63	\N
-Missy (Chelseney) Lewis	\N	LB	20	\N	\N	\N
-Missy Hastings	\N	OL	51	190	69	\N
-Mitzi Macias	\N	WR	35	140	65	\N
-Mo Kirk	1989-01-01	WR	88	155	69	\N
-Molly Cichosz	\N	TE	82	235	73	\N
-Molly Richardson	1989-01-01	QB	1	130	64	\N
-Molly Tester	1993-01-01	LB	23	170	62	\N
-Monae Clancy	1996-01-01	RB	3	160	65	\N
-Monica Johnson	1985-01-01	DL	51	180	69	\N
-Monica Johnson	1985-01-01	DL	56	\N	\N	\N
-Monica Pickens	\N	DL	64	220	69	\N
-Monica Salazar	1996-01-01	WR	85	159	59	\N
-Monique Ani-Opiopio	\N	RB	9	160	65	\N
-Monique Benitez	1987-01-01	DL	74	150	67	\N
-Monique Dingle	1986-01-01	DB	11	135	62	\N
-Monique Dingle	1986-01-01	WR	86	125	63	\N
-Monique Gonzalez	\N	OL	75	\N	68	\N
-Monique Larrieu	\N	DL	72	\N	\N	\N
-Monique Pineda	1998-01-01	DB	51	120	60	\N
-Monique Tribble	1998-01-01	DL	37	170	66	\N
-Monique Wilson	1990-01-01	OL	56	230	64	\N
-Monisha Kirk	\N	WR	88	150	69	\N
-Montana Meier	2003-01-01	OL	70	210	64	\N
-Montanna Meier	2003-01-01	DL	70	220	64	\N
-Montasia Wynn	1999-01-01	OL	75	235	67	\N
-Montoya Arnold	\N	DB	4	\N	\N	\N
-Montye Cook	\N	OL	75	\N	\N	\N
-Montye Cooke	2000-01-01	OL	75	145	64	\N
-Morgan Alston	1995-01-01	RB	0	205	64	\N
-Morgan Augustine	\N	DE	12	190	69	\N
-Morgan Darden	\N	OL	69	275	72	\N
-Morgan Hutchins	2005-01-01	OL	50	240	68	\N
-Morgan Saybold	2003-01-01	DB	39	110	62	\N
-Morgan Saybolt	\N	DB	39	115	62	\N
-Morgan Smith	1992-01-01	OL	0	192	64	\N
-Myeisha Johnson	\N	DL	54	\N	\N	\N
-Myeshia Johnson	1985-01-01	OL	51	145	64	\N
-Myeshia Johnson	1985-01-01	OL	54	\N	\N	\N
-Mykaleen Hiura	\N	QB	11	135	60	\N
-Mykayla Maddox	2004-01-01	QB	14	195	66	\N
-Myla Somerville	1993-01-01	DB	9	145	66	\N
-Myla Somerville	\N	WR	86	\N	\N	\N
-Mylashia Johnson	1995-01-01	RB	4	123	64	\N
-Myshaunique Loggins	1996-01-01	LB	62	175	65	\N
-Na'ava Willis	\N	S	8	\N	\N	\N
-Naena Bland	1996-01-01	WR	16	135	69	\N
-Najiaa Michel	1996-01-01	LB	6	165	64	\N
-Nancy Toutai	1991-01-01	DL	93	310	65	\N
-Nandi Curtis	\N	DL	53	\N	\N	\N
-Naomi Lee	\N	OL	54	188	63	\N
-Nashi Catron	\N	QB	11	195	70	\N
-Nashi Catron	1987-01-01	QB	13	200	72	\N
-Natalia Escoto	2003-01-01	LB	8	107	60	\N
-Natalie Laurent	\N	DL	90	157	66	\N
-Natalie Nicks	\N	WR	13	\N	\N	\N
-Natalie Wiggins	1986-01-01	DE	36	140	64	\N
-Natasha Jackson	1982-01-01	OL	77	160	63	\N
-Natasha Johnson	\N	LB	31	\N	\N	\N
-Natasha Santiago	1986-01-01	FB	33	200	62	\N
-Natasha Stoney	2001-01-01	OL	77	215	66	\N
-Natasha Ware	1993-01-01	DE	38	125	68	\N
-Nathalie Irmer	1995-01-01	OL	50	315	72	\N
-Nayla Cerna	1995-01-01	OL	73	265	68	\N
-Neese Allen	\N	DB	20	162	69	\N
-Nellie Mixon	1985-01-01	TE	13	190	68	\N
-Neshara Watrous	\N	DB	24	145	63	\N
-Neshara Watrous	1994-01-01	DB	27	145	64	\N
-Nevaeh Simril	2006-01-01	DL	63	315	64	\N
-Nhandi Brown	1996-01-01	DB	31	165	68	\N
-NiaMaya Outlaw	1996-01-01	DB	13	177	68	\N
-Nichelle Blake	\N	LB	0	185	64	\N
-Nichelle Blake	1993-01-01	LB	50	195	64	\N
-Nichole Albert	\N	OL	76	195	66	\N
-Nichole Bressner	\N	LB	69	195	64	\N
-Nicole Attleson	1983-01-01	DL	5	180	71	\N
-Nicole Chaves	\N	DB	7	155	73	\N
-Nicole Fairman	1995-01-01	LB	22	170	64	\N
-Nicole Fairman	1995-01-01	LB	48	170	64	\N
-Nicole Grabowski	1996-01-01	LB	58	185	65	\N
-Nicole Matheson	\N	DB	7	\N	\N	\N
-Nicole Morris	\N	LB	32	200	66	\N
-Nicole Muccio	1996-01-01	LB	32	160	63	\N
-Nicole Pike	\N	LB	11	\N	\N	\N
-Nicole Pike	1992-01-01	LB	81	165	67	\N
-Nicole Santos-Adam	\N	OL	50	180	62	\N
-Nicole Walmer	1991-01-01	QB	11	170	65	\N
-Nikayla Ramsey	\N	WR	41	145	64	\N
-Nikki Gilbreth	1991-01-01	OL	43	190	68	\N
-Nisha Taylor	1994-01-01	DB	14	135	66	\N
-Norianna Haynes	\N	S	9	\N	\N	\N
-Nova Nystrom	\N	OL	48	187	67	\N
-Nyeisha Wright	1989-01-01	WR	18	175	67	\N
-Nyshavia Riley-Marsh	\N	DL	52	180	63	\N
-Octavia Brown	1988-01-01	DL	26	160	63	\N
-Octavia Langston	1991-01-01	QB	6	180	68	\N
-Octavia Langston	\N	WR	83	\N	\N	\N
-Olga Valdez	\N	OL	50	250	64	\N
-Olga Valdez Lopez	2000-01-01	OL	50	250	64	\N
-Olivia Freeman	1997-01-01	RB	17	185	65	\N
-Olivia Grabmayer	\N	WR	15	\N	\N	\N
-Olivia Griswold	1986-01-01	DL	6	210	70	\N
-Olivia James	1992-01-01	WR	16	165	69	\N
-Olivia Morgan	1988-01-01	WR	85	170	67	\N
-Olivia Quarles	1987-01-01	DE	95	203	64	\N
-Olivia Valentine	\N	DL	90	150	68	\N
-Olivia Wilson	\N	WR	11	150	66	\N
-Oluwabunmi Olusina	1998-01-01	OL	54	280	71	\N
-Omariyana Womack	1990-01-01	DE	89	215	67	\N
-Omariyana Womack	1990-01-01	DL	95	200	67	\N
-Osmara Gissell Nunez Barrera	1999-01-01	DL	50	170	64	\N
-Paige Goldsack	1993-01-01	DL	61	230	64	\N
-Paige Jones	1985-01-01	LB	3	144	62	\N
-Pam Melchi	\N	OL	78	250	67	\N
-Pamela Larde	1976-01-01	RB	94	148	63	\N
-Pamela Melchi	1987-01-01	OL	78	230	67	\N
-Pasha Johnson-Rivers	1997-01-01	RB	10	215	64	\N
-Pasha Johnson-Rivers	1997-01-01	RB	33	185	64	\N
-Pasha Rivers	\N	LB	33	185	64	\N
-Patricia Fultz	\N	OL	69	\N	\N	\N
-Patricia OConnell	\N	RB	48	180	66	\N
-Paulina Lopez	1999-01-01	LB	13	147	62	\N
-Paytience Kamuta	2005-01-01	QB	3	245	68	\N
-Penny Fagnani	1987-01-01	DL	71	200	69	\N
-Perenise Liusamoa	\N	OL	53	270	65	\N
-Petra Johanna Monica Aspenberg	1996-01-01	OL	70	238	67	\N
-Pita Lou	\N	WR	21	120	66	\N
-Porsche Elam	1987-01-01	OL	68	205	64	\N
-Porsche Yarbough	\N	DL	50	267	62	\N
-Precious Moses	1994-01-01	DL	50	230	66	\N
-Quiana Ford	\N	DB	2	155	68	\N
-Quiana Ford	1990-01-01	DB	27	155	67	\N
-Quiani Miller	1984-01-01	OL	74	205	66	\N
-Quineshia Leonard	\N	DL	99	290	78	\N
-Quiniesha Leonard	1993-01-01	DL	92	290	74	\N
-Rabihah Harrison	\N	LB	31	165	60	\N
-Rachel Bailey	\N	OL	80	\N	\N	\N
-Rachel Calar	1991-01-01	LB	44	178	62	\N
-Rachel Karos	1983-01-01	QB	35	180	70	\N
-Rachel Love	\N	LB	43	165	65	\N
-Rachel Lund	1994-01-01	S	30	170	71	\N
-Rachel May	1982-01-01	OL	82	255	71	\N
-Rachel Robinson	\N	OL	36	\N	\N	\N
-Rachel Scattergood	1990-01-01	WR	23	135	67	\N
-Rachel Van Devender	\N	OL	75	264	72	\N
-Rachel Woods	\N	QB	7	145	66	\N
-Rachell Sims	1990-01-01	LB	42	195	64	\N
-Racquell Ray	1990-01-01	DB	21	135	63	\N
-Radiyah Snoop Robertson	1996-01-01	DB	10	150	66	\N
-RaeJean Marshall	1994-01-01	RB	43	150	58	\N
-Raina Royale	\N	DB	5	145	65	\N
-Ramzeh Deen-sie	1992-01-01	LB	22	206	67	\N
-Ramzeh Deen-Sie	1992-01-01	LB	22	215	67	\N
-Ramzeh Deensie	\N	LB	22	210	67	\N
-Raquel Sharper	1970-01-01	OL	25	160	66	\N
-Rasan Gore	\N	QB	1	150	67	\N
-Rashida Young	1991-01-01	WR	19	145	64	\N
-Raven Preston	\N	LB	17	\N	\N	\N
-Ravyn Santiago	\N	RB	30	\N	\N	\N
-Rayna Lorraine	\N	DL	84	130	64	\N
-Rea Schmidt	1987-01-01	OL	66	234	70	\N
-Reagan Price	1998-01-01	RB	45	175	67	\N
-Rebeca Barrios	\N	OL	50	\N	\N	\N
-Rebecca Banks	\N	QB	3	200	68	\N
-Rebecca Banks	\N	DL	97	210	68	\N
-Rebecca Bautista	\N	OL	90	265	67	\N
-Rebecca Becky Boehme	1981-01-01	WR	31	135	63	\N
-Rebecca Munoa	1981-01-01	OL	65	225	70	\N
-Rebecca Southerland	1987-01-01	OL	97	222	67	\N
-Rebecca Tillman	1995-01-01	OL	67	190	71	\N
-Rebeka Bell	1990-01-01	WR	11	110	61	\N
-Rebekah LaMie	\N	OL	68	\N	\N	\N
-Reese Green	1989-01-01	LB	17	169	64	\N
-Regena Jackson	\N	QB	3	\N	\N	\N
-Regina Escoto Macias	2003-01-01	RB	6	120	61	\N
-Reina Martin	1999-01-01	OT	53	220	70	\N
-Renate Meckl	1995-01-01	DB	80	175	67	\N
-Renee Fruean	1985-01-01	DL	75	330	70	\N
-Renee Langalais	\N	QB	12	173	68	\N
-Renee Langlais	1984-01-01	QB	15	180	68	\N
-Renica Tese/Rueckert	1983-01-01	DL	56	220	66	\N
-Rheanna Deeds	\N	OL	41	190	72	\N
-Riah Bentley	1992-01-01	WR	5	136	67	\N
-Richelle Lenoir	1995-01-01	OL	69	263	68	\N
-Ricki Alex	1992-01-01	S	6	150	71	\N
-Riian McCray-Smith	1989-01-01	WR	5	180	74	\N
-Riquessa Exum	1992-01-01	OL	66	265	64	\N
-Robin Cooper	1993-01-01	OL	65	145	64	\N
-Robin Johnson	1990-01-01	QB	20	145	66	\N
-Rocky Baxter	1995-01-01	RB	25	128	64	\N
-Rocky Ray	1990-01-01	DB	21	135	63	\N
-Ronnika Burks	\N	OL	53	290	66	\N
-Ronnise Wilson	1989-01-01	RB	36	145	61	\N
-Rosa Climaco	1991-01-01	OL	79	270	69	\N
-Rosalie Mora	\N	TE	86	185	67	\N
-Rose Bruce	1991-01-01	OL	27	240	68	\N
-Rose DeLuco	1983-01-01	DL	37	180	63	\N
-Rose DeLuco	\N	OL	87	\N	\N	\N
-Ruby Albright	1990-01-01	RB	15	135	63	\N
-Ruby Watson	2005-01-01	OL	62	288	65	\N
-Ryan Meismer-Thompson	2004-01-01	DB	26	125	66	\N
-Ryvan Buchanan	1991-01-01	QB	0	150	67	\N
-Ryvan Buchanan	\N	QB	1	\N	\N	\N
-Sabirah BB Lucas	1996-01-01	OL	68	217	65	\N
-Sabirah Lucas	1996-01-01	DT	59	220	65	\N
-Sabrina Casillas	2001-01-01	DL	79	300	70	\N
-Sabrina Ceniza	1996-01-01	OL	78	205	63	\N
-Sabrina Cervantes	\N	LB	35	145	63	\N
-Sabrina Kessler	1983-01-01	DL	59	200	69	\N
-Sabrina Webb	\N	DB	24	\N	\N	\N
-Sade Minor	1994-01-01	DB	27	130	66	\N
-Sakendra Gabriel	\N	RB	22	155	67	\N
-Saks Roberson	1999-01-01	WR	2	145	\N	\N
-Sakura Roberson	1999-01-01	WR	2	155	72	\N
-Salina Samario	1994-01-01	DB	35	160	68	\N
-Samantha Caruth	1998-01-01	WR	8	170	70	\N
-Samantha Heck	1991-01-01	WR	13	140	71	\N
-Samantha Mendez	\N	LB	44	180	65	\N
-Samantha Vasquez	\N	DL	63	205	63	\N
-Samantha Williams	\N	WR	39	\N	\N	\N
-Sammy Heck	1991-01-01	WR	17	150	71	\N
-Samonah Betts	\N	TE	3	\N	\N	\N
-Sara Fernandez	1995-01-01	DB	13	140	67	\N
-Sara Galica	1991-01-01	QB	10	135	62	\N
-Sara Lou	1992-01-01	TE	88	185	65	\N
-Sara Thacker	1988-01-01	DB	82	165	66	\N
-Sarah A Levrets	\N	WR	14	140	69	\N
-Sarah Cabot	\N	DB	21	145	66	\N
-Sarah Clark	1990-01-01	OL	85	222	74	\N
-Sarah Colangelo	\N	LB	25	180	69	\N
-Sarah De La Torre	1994-01-01	WR	83	195	67	\N
-Sarah Gomez	1993-01-01	QB	5	165	68	\N
-Sarah Gomez	1993-01-01	QB	15	165	68	\N
-Sarah Levin	\N	LB	45	160	66	\N
-Sarah Menne	\N	WR	25	115	63	\N
-Sarah Schwartz	1998-01-01	DL	76	225	68	\N
-Sarah Sifuentes	\N	LB	34	185	62	\N
-Sarah Teubner	1999-01-01	QB	8	170	67	\N
-Sarah Topps	2001-01-01	TE	52	200	68	\N
-Sarah Vann	1993-01-01	QB	18	200	68	\N
-Sarah Watson De La Torre	1994-01-01	WR	83	162	67	\N
-Sarai Sifuentes	\N	RB	34	172	62	\N
-Sarena Shipp	2000-01-01	LB	52	205	65	\N
-Sari Stissi	1998-01-01	RB	98	240	70	\N
-Sasha Gomez	1985-01-01	DL	55	180	69	\N
-Sasha Gomez	1985-01-01	DL	68	170	69	\N
-Sasha Hendrix	1992-01-01	DL	99	203	68	\N
-Sasha Stevenson	\N	LB	48	185	62	\N
-Satoria Bell	1990-01-01	QB	0	215	70	\N
-Satoria Bell	1990-01-01	WR	8	225	70	\N
-Saudia Hasan	\N	DL	58	215	79	\N
-Savannah Congdon	2000-01-01	CB	89	130	65	\N
-Sckiya Banister	\N	LB	36	160	64	\N
-Seini Pailate	\N	DL	56	300	69	\N
-Selena Thomas	\N	OL	78	275	67	\N
-Semeret Abdulkarim	2002-01-01	OL	55	220	69	\N
-Semone Simmons	1994-01-01	DL	92	215	66	\N
-Serena Smith	1988-01-01	OL	36	205	64	\N
-Serika Shillingsworth	1999-01-01	WR	4	155	69	\N
-Shabria Hall	1998-01-01	OL	63	195	69	\N
-Shadella Reese	\N	TE	6	165	65	\N
-ShaDella Reese	1990-01-01	WR	29	155	65	\N
-Shaiana Cato	\N	OL	59	\N	\N	\N
-Shaina Cato	1984-01-01	DL	59	260	67	\N
-Shainna Cato	\N	OL	59	265	64	\N
-Shakira Murphy	\N	RB	31	\N	\N	\N
-Shalynn Splettstoesser	1991-01-01	LB	33	185	65	\N
-Shamaya Smith	1991-01-01	DL	91	315	72	\N
-Shamia Bell	1987-01-01	DB	35	130	64	\N
-Shamika Bama Johnson	1991-01-01	OL	86	230	66	\N
-Shamira Vega	\N	OL	71	210	70	\N
-Shana Sumers	1990-01-01	TE	61	185	68	\N
-Shanice Cole	\N	DL	11	215	71	\N
-Shanice Wheeler	1990-01-01	RB	21	145	64	\N
-Shaniqual Davis	\N	DB	25	\N	\N	\N
-Shanise Vann	1975-01-01	WR	19	165	68	\N
-Shaniya Lacey	2001-01-01	WR	4	135	66	\N
-Shannon Brown	1987-01-01	DE	48	185	71	\N
-Shannon Burrell	1988-01-01	DB	28	132	67	\N
-Shannon Cooley	\N	TE	40	\N	\N	\N
-Shannon Delarosbil	\N	LB	39	170	66	\N
-Shannon Drayton	\N	DL	52	195	66	\N
-Shannon Nelson-Brown	1987-01-01	DL	48	235	68	\N
-Shannon Richards-Gebbia	1985-01-01	LB	77	185	66	\N
-Shantavia James	1989-01-01	LB	66	190	65	\N
-Shantel Sherrod	\N	DB	14	165	68	\N
-Shantia Creech	1991-01-01	DB	3	150	67	\N
-Shanysse Emerenciana	1996-01-01	WR	5	140	63	\N
-Shanysse Emerenciana	1996-01-01	WR	9	130	63	\N
-Shaquanda Gainey	1991-01-01	WR	83	135	64	\N
-Shardae Anderson-Bell	\N	OL	21	\N	\N	\N
-Shardae Bell	\N	LB	21	167	64	\N
-Shardae Bell	1986-01-01	OL	95	180	64	\N
-Shardonay Jenkins	0220-01-01	DL	31	220	69	\N
-Sharea Golson	1995-01-01	RB	24	105	60	\N
-Shari Cherenfant	\N	OL	70	215	63	\N
-Sharifah Robertson	1990-01-01	RB	12	145	61	\N
-Sharketie Leverette	1991-01-01	RB	16	145	64	\N
-Sharolin Sanders	1994-01-01	DL	51	180	67	\N
-Shatonya Spicer	1988-01-01	DL	24	215	69	\N
-Shauna Floyd	1998-01-01	DB	18	150	65	\N
-Shauna Loftin	1971-01-01	OL	72	185	68	\N
-Shauntavia Brigham	1992-01-01	DL	95	290	69	\N
-Shaunte Bowman	\N	DL	57	220	66	\N
-Shaunya Kahananui	\N	WR	10	150	69	\N
-Shavonne Ford	1978-01-01	OL	80	234	70	\N
-Shavonne Randolph	1992-01-01	DL	30	170	65	\N
-Shavonne Richardson	\N	OL	70	200	65	\N
-Shavonne Verdree	\N	DB	5	154	66	\N
-Shavonne Verdree	1990-01-01	LB	46	162	66	\N
-Shawnee Phillips	\N	QB	10	190	68	\N
-Shawntae Barnes	1989-01-01	RB	18	190	63	\N
-Shayla Brown	\N	OL	72	220	67	\N
-Shayla Jones	1992-01-01	WR	19	160	67	\N
-Shayla Rogers	\N	OL	50	220	63	\N
-Shayla Thevenin	2005-01-01	WR	45	143	65	\N
-Shayna Allwar	1999-01-01	OL	63	255	68	\N
-Sheila Sickau	1988-01-01	WR	7	143	68	\N
-Sheka Houseton	1995-01-01	LB	56	175	66	\N
-Shelby Buren	1992-01-01	OL	56	227	64	\N
-Shelby Towkach	\N	K	45	160	65	\N
-Sheldon Bins	\N	OL	51	255	66	\N
-Shenelle Bush	\N	DB	50	130	65	\N
-Shequa Fitzgerald	\N	DB	20	125	68	\N
-Sheri Kinder	1993-01-01	WR	9	145	67	\N
-Sherrella Scott	\N	FB	44	190	64	\N
-Sherrette Spicer	1981-01-01	DL	98	254	70	\N
-Shian Galbreath	\N	QB	14	\N	\N	\N
-ShNiyah Hutchinson	2006-01-01	DB	9	145	64	\N
-Shondra Carpenter	\N	DL	57	\N	\N	\N
-Shonna Williams	\N	LB	64	185	66	\N
-Shucoya Thomas	\N	WR	3	130	64	\N
-Sierra Bakanoff	\N	DL	68	200	64	\N
-Sierra Call-Rust	1996-01-01	OL	90	195	60	\N
-Sierra Dejesus	\N	WR	14	125	67	\N
-Sigourney Gonzalez	\N	QB	6	175	64	\N
-Sigourney Gonzalez	1988-01-01	QB	8	165	64	\N
-Similiti Lealiki	\N	DL	70	180	64	\N
-Similti Lealiki	1990-01-01	DL	57	235	64	\N
-Skylar Pringle-Hicks	2003-01-01	DL	6	\N	\N	\N
-Skylar Pringle-Hicks	\N	DL	31	190	68	\N
-Solana Sperry	1999-01-01	DB	15	140	67	\N
-Sooaemalealagi Shelton	1991-01-01	DT	42	240	65	\N
-Sophia Darwish	2004-01-01	RB	27	155	65	\N
-Srey (Uk) Routh (Thach)	\N	RB	5	125	59	\N
-Srey Routh	\N	RB	5	125	59	\N
-Stacey Grob	1998-01-01	DL	25	187	68	\N
-Stacey Kremer	1989-01-01	WR	14	155	67	\N
-Starry Bady	1977-01-01	DB	5	150	66	\N
-Stella Martin	1998-01-01	WR	21	185	70	\N
-Stephanie Daniels	1994-01-01	DL	87	180	67	\N
-Stephanie Fogarty-Yee	1993-01-01	WR	6	130	64	\N
-Stephanie Hobson	1992-01-01	WR	26	135	65	\N
-Stephanie Howard	\N	RB	32	148	67	\N
-Stephanie Lopez	\N	LB	55	185	64	\N
-Stephanie Miller	1989-01-01	QB	3	130	67	\N
-Stephanie Raymond-Young	1985-01-01	QB	16	140	65	\N
-Storm Cuthbert	\N	DB	28	145	64	\N
-Suellen Siquiera-Fisher	\N	WR	87	139	65	\N
-Sumatra McDaniel	1988-01-01	OL	98	292	69	\N
-Summer Mcneal	2003-01-01	WR	23	155	70	\N
-Sydnee Burns	2004-01-01	LB	30	145	67	\N
-Sydney Blahnik	\N	LB	25	225	67	\N
-Sydney Holt	\N	DB	22	170	63	\N
-Sydney Smith	\N	S	6	130	66	\N
-Sydney Wickman	\N	WR	51	\N	\N	\N
-Sylvana Holmes	\N	DL	88	210	71	\N
-Syreeta Gapelu	1982-01-01	DL	61	236	66	\N
-Syreeta Gapelu	\N	DL	79	\N	\N	\N
-Ta Shaun Leigh	\N	DB	5	145	68	\N
-Tabitha Ayala	1988-01-01	DB	32	145	62	\N
-Tabitha Lefever	1987-01-01	DB	14	125	61	\N
-Tahj Reddick	\N	DB	18	\N	\N	\N
-Taiyana Murray	1996-01-01	TE	89	160	68	\N
-Taja Maybee	\N	LB	50	200	65	\N
-Taja Sloss	1996-01-01	DL	36	170	72	\N
-Takera Mitchell	1993-01-01	DB	5	\N	\N	\N
-Talia Ramos	2004-01-01	OL	58	245	64	\N
-Tameka Heard	1985-01-01	OL	71	198	67	\N
-Tammie Moore	1993-01-01	OL	78	285	68	\N
-Tanaysa Henderson	\N	WR	3	175	71	\N
-Tanaysa Henderson	1994-01-01	WR	8	185	72	\N
-Tanea Carlton	\N	DL	79	215	66	\N
-Taneisha Sweetenburg	1989-01-01	DB	34	137	58	\N
-Tanisha Norman	1995-01-01	DB	2	150	67	\N
-Tanishia Burch	1995-01-01	DB	37	153	72	\N
-Tanishia Norman	\N	DB	2	140	68	\N
-Tanishia Norman	\N	DB	17	130	67	\N
-Tanya Luna	1988-01-01	OL	77	238	68	\N
-Tara Haddock	\N	DL	46	190	70	\N
-Tara Page	\N	DL	46	195	67	\N
-Tara Thomas	1989-01-01	RB	0	145	64	\N
-Tara Thomas	1989-01-01	RB	15	151	64	\N
-Taranisha Taylor	1994-01-01	DB	14	135	66	\N
-Tarnisha Taylor	\N	WR	14	\N	\N	\N
-Tasha Dailey	\N	LB	32	150	63	\N
-Tasha Owens	\N	OL	96	\N	\N	\N
-Tasha Owens-Price	\N	OL	96	\N	\N	\N
-Tasha Wilson	1987-01-01	DE	34	160	63	\N
-Tashaun Leigh	1996-01-01	DB	5	145	68	\N
-TaShaun Leigh	1996-01-01	DB	5	145	68	\N
-Tasheonna Wilder	\N	DB	33	\N	\N	\N
-Tatanisha Young	\N	RB	44	170	60	\N
-Tatiana Larry	1994-01-01	DL	55	260	69	\N
-Tatiana Perez	1993-01-01	DB	11	124	62	\N
-Tatiana Rice	2003-01-01	DL	93	150	67	\N
-Tatjana Tschirpke	\N	QB	13	125	69	\N
-Taurus Pyles	\N	LB	43	\N	\N	\N
-Tawny Hall	1993-01-01	C	63	180	62	\N
-Taylor Baldwin	1992-01-01	K	0	135	61	\N
-Taylor Brashears	1998-01-01	DL	87	185	68	\N
-Taylor Coleman	\N	WR	88	145	65	\N
-Taylor Snoopy Snow	1995-01-01	DB	9	140	68	\N
-Taylor Thatcher	\N	LB	4	190	65	\N
-Taylor Wells	1994-01-01	DB	21	138	67	\N
-Te Kesha Zorial Williams	\N	OL	53	\N	\N	\N
-Teasha Martin-Palmer	1992-01-01	OL	47	216	63	\N
-Tehya Brown	1999-01-01	LB	49	180	71	\N
-Tehya Demski-Hamelin	1992-01-01	DB	13	128	64	\N
-Tekesha Zo Williams	1989-01-01	OL	53	145	64	\N
-Temeka Heard	\N	OL	71	198	67	\N
-Temeka Washington	1979-01-01	OL	58	220	71	\N
-Tenazhia Hinkson	\N	WR	6	\N	\N	\N
-Tenisha Williams	1988-01-01	OL	73	305	70	\N
-Teresa McCann	1991-01-01	OL	91	220	67	\N
-Terese Bair	\N	TE	40	230	68	\N
-Terry Cornell (Peterson)	1980-01-01	LB	45	176	61	\N
-Terry Peterson	1980-01-01	WR	45	150	62	\N
-Terry Viena	1991-01-01	DB	45	180	64	\N
-Tess McCann	1991-01-01	OL	91	220	67	\N
-Tessa Ortiz-Marsh	\N	QB	13	180	68	\N
-Thaycha Rodriguez	\N	QB	12	180	68	\N
-Theresa Honeycutt	1991-01-01	OL	53	305	71	\N
-Tia Matthew	1993-01-01	OL	64	285	74	\N
-Tia McCants	\N	RB	7	120	62	\N
-Tiana Bell	\N	LB	20	210	65	\N
-Tiara Woodard	\N	DL	44	180	66	\N
-Tierra Lassiter	1982-01-01	DL	69	200	72	\N
-Tierra Mccormick	1992-01-01	RB	26	225	60	\N
-Tierra McCormick	1992-01-01	TE	26	210	63	\N
-Tiffani Penix	\N	DL	58	186	66	\N
-Tiffany Cushman	\N	OL	65	211	66	\N
-Tiffany Gonzales	1981-01-01	OL	43	200	62	\N
-Tiffany Hopkins	\N	DL	27	200	62	\N
-Tiffany Sarroca	1991-01-01	WR	7	130	65	\N
-Tiffany Ware	\N	OL	69	255	63	\N
-Tiia Jansen	2002-01-01	TE	9	145	64	\N
-Tikia Constantine	1987-01-01	RB	16	130	63	\N
-Timesha Wharton	1988-01-01	DB	37	150	67	\N
-Tina Frisby	\N	QB	6	170	69	\N
-Tina Orrick	2001-01-01	OL	90	245	66	\N
-Tina Tela	1980-01-01	DL	3	190	66	\N
-Tina Vang	\N	RB	46	\N	\N	\N
-Tinika Burns	\N	DL	35	\N	\N	\N
-Tinisha Quintana	1997-01-01	RB	0	145	67	\N
-Tinoi Jones	1986-01-01	RB	31	190	67	\N
-Tironeisha Jenee Sheriy	\N	DL	62	\N	\N	\N
-Tonette Bell	\N	LB	24	168	67	\N
-Toneyell Shropshire	\N	RB	21	155	62	\N
-Toniquea Jackson	\N	OL	96	210	70	\N
-Tonya Erickson	\N	LB	48	156	64	\N
-Tori Leech	1998-01-01	WR	27	150	68	\N
-Tori Tagaloa	\N	QB	6	180	70	\N
-Tosha Bins	\N	DL	58	215	69	\N
-Tracie Williams	1969-01-01	DB	38	152	64	\N
-Tracy Dorcemont	1995-01-01	OL	68	145	64	\N
-Tracy Jackson	1988-01-01	DL	77	340	71	\N
-Tracy Richmond	1991-01-01	DL	42	213	63	\N
-Trayounda Ford	1998-01-01	RB	64	110	61	\N
-Treasure McFarland	1996-01-01	WR	20	143	68	\N
-Trei Brown	\N	RB	24	\N	\N	\N
-Trevanna Berryman	1995-01-01	RB	3	212	65	\N
-Trevez Bridgewater	\N	DL	53	180	67	\N
-Trevez Bridgewater	\N	DL	91	170	68	\N
-Trish Stephens	1987-01-01	DB	11	140	66	\N
-Troineshia Webb	\N	DL	74	\N	\N	\N
-Ty Dossman	1985-01-01	TE	87	165	68	\N
-Ty Rodriguez	1986-01-01	QB	12	170	69	\N
-Tyara Blades	1996-01-01	LB	45	170	64	\N
-Tye Ferguson	1981-01-01	DL	54	155	67	\N
-Tyee Griffith	\N	OL	70	200	69	\N
-Tymija Hackett	1998-01-01	OL	55	210	65	\N
-Tyneika Jordan	1992-01-01	OL	60	200	68	\N
-Tynisha Dossman	1985-01-01	WR	19	165	68	\N
-Tynisha McMillian	1988-01-01	WR	77	275	72	\N
-Tyra Williams	1992-01-01	OL	92	245	65	\N
-Tyteania Whitehead	1992-01-01	DB	25	165	66	\N
-Umeki Webb	1975-01-01	OL	51	210	70	\N
-Unique Rowan	\N	DB	43	\N	\N	\N
-Va Leomiti	1987-01-01	DL	76	350	70	\N
-Valerie Tyler	1993-01-01	DL	91	150	67	\N
-Vanesia Thompson	2001-01-01	RB	34	128	63	\N
-Vanesia Thompson	\N	DB	39	128	63	\N
-Vanessa Bell-Carmichael	1988-01-01	DE	20	157	65	\N
-Vanessa Hernandez	\N	DE	60	190	64	\N
-Vanessa Jenkins	\N	OL	65	270	70	\N
-Vanessa Palmeri	\N	WR	7	170	64	\N
-Venisha Ford	\N	OL	71	300	69	\N
-Venom Garcia	2002-01-01	LB	33	145	64	\N
-Veronica Wiebold	1996-01-01	OL	74	200	66	\N
-Veronique Pope	1991-01-01	DL	56	250	65	\N
-Versace Lee	1998-01-01	DL	41	145	64	\N
-Vianca Borrero	1992-01-01	DL	58	195	62	\N
-Victoria Archuleta	\N	S	17	125	66	\N
-Victoria Nichols	1992-01-01	WR	0	143	65	\N
-Victoria Reed	1998-01-01	OL	97	235	67	\N
-Victoria Young	1993-01-01	DE	45	174	67	\N
-Victorianna Dixson	\N	OL	76	245	71	\N
-Viola Hall	1986-01-01	OL	75	185	69	\N
-Virginia Kim	\N	WR	13	150	62	\N
-Voldavia Roberts	1990-01-01	OL	50	145	64	\N
-Wanita McCoy	1989-01-01	DL	96	270	67	\N
-Waynicia Thomas	1993-01-01	DE	9	170	66	\N
-Wendy Sun	\N	RB	9	130	63	\N
-Whitley Conn	\N	OL	58	200	67	\N
-Whitley Conn	1991-01-01	LB	59	145	67	\N
-Whitney Gifford	\N	DL	47	220	68	\N
-Whitney Gifford	\N	DL	92	195	68	\N
-Whitney Harrison	1985-01-01	DL	85	180	66	\N
-Whitney Jones	\N	LB	2	\N	\N	\N
-Whitney Morrell	\N	OL	69	260	67	\N
-Whitney Porter	\N	OL	55	195	65	\N
-Whitney Ramsey	\N	OL	97	273	66	\N
-Xaviera Talai	\N	LB	43	150	63	\N
-Xiana Dillon	2000-01-01	OL	24	275	64	\N
-Xiarysse Emerenciana	1996-01-01	WR	2	130	62	\N
-Xiarysse Emerenciana	1996-01-01	WR	10	132	62	\N
-Yamilex Jimenez	1995-01-01	LB	95	200	68	\N
-Yanah Floridis	1987-01-01	DB	44	163	64	\N
-Yesenia Fragoso Grijalva	1997-01-01	DB	28	150	67	\N
-Yesenia Quiroga	\N	LB	45	158	63	\N
-Yesenia Quiroga	1994-01-01	LB	49	145	67	\N
-Yohnee Miller	1983-01-01	OL	55	240	65	\N
-Yolanda Johnson	1970-01-01	OL	54	198	67	\N
-Ysabella Cobbinah-Fears	2003-01-01	TE	86	210	70	\N
-Yvonne LuLu Harris	\N	RB	60	165	63	\N
-Za Karia Adams	1998-01-01	DL	89	270	73	\N
-Zaire Nelson	1998-01-01	DL	80	238	72	\N
-Zay Dollente	\N	OL	60	295	66	\N
-Zharyah Willis	\N	DB	8	150	67	\N
-Zshalyn Canfield	\N	RB	15	117	65	\N
-Abby Pelletier	\N	WR	24	150	65	\N
-Adrienne Watson	\N	RB	45	175	66	\N
-Aezioni Fuller	1994-01-01	DL	60	280	69	\N
-Ajane Rosen Lawton	1995-01-01	OL	74	213	67	\N
-Alaina Valmassei	\N	QB	20	135	67	\N
-Alexandra Sweet	1987-01-01	LB	33	186	66	\N
-Alexandria Duper	1989-01-01	DB	26	138	62	\N
-Alexis Contreras	\N	WR	17	146	66	\N
-Alia Karmali	1984-01-01	QB	8	197	68	\N
-Alma Rauline Martinez	1997-01-01	DB	1	145	66	\N
-Alysia Dominguez Bisquera	1987-01-01	DB	11	120	63	\N
-Alyson Azevedo	2000-01-01	LB	98	170	65	\N
-Alyssa Gillespie	2001-01-01	DB	8	140	64	\N
-Alyssa Vigil	1999-01-01	WR	88	145	64	\N
-Amari Trevino-Beverly	2003-01-01	LB	62	245	68	\N
-Anastasia Dawson	2002-01-01	RB	14	136	69	\N
-Anastasia Olavuo	2001-01-01	LB	6	175	65	\N
-Andrea Kelley	1988-01-01	WR	58	135	64	\N
-Angela Morales-Benson	1999-01-01	OL	55	200	67	\N
-Angelica Sofia Garcia Rivera	2002-01-01	LB	22	153	62	\N
-Angelina Faulkner	1986-01-01	OL	76	215	65	\N
-Angelina Tuakalau	\N	DL	45	315	65	\N
-Anissa Babitu	2001-01-01	LB	4	229	65	\N
-Anna Melton	1995-01-01	RB	41	150	65	\N
-Annamarie Fagnani	1987-01-01	DL	71	235	69	\N
-Anne Morgan	\N	OL	82	175	71	\N
-Aria Wagaman	2003-01-01	LB	27	150	69	\N
-Asherah Ulmer	\N	LB	20	150	66	\N
-Ashleigh Hayes	1985-01-01	OL	56	230	66	\N
-Ashley Menchaca	\N	OL	40	280	69	\N
-Ashley Watkins	1984-01-01	LB	67	250	65	\N
-Ashya Elder	1996-01-01	WR	12	160	67	\N
-AuBree Barnes	1996-01-01	OL	22	150	62	\N
-AuBree Barnes	1996-01-01	OL	33	180	65	\N
-Auree King	1991-01-01	RB	15	180	64	\N
-Autumeize Gardner	1998-01-01	OL	90	350	73	\N
-Ava Travis	\N	OL	60	270	64	\N
-Ayana Mcafee	\N	OL	65	215	62	\N
-Aylin Alejandra Rivera Rivera	2001-01-01	TE	36	176	68	\N
-Bergen Meyer	1998-01-01	RB	36	152	64	\N
-Bethany Hipps	1993-01-01	OL	65	260	69	\N
-Brandi Ransom	1996-01-01	WR	14	170	71	\N
-Breana Griggs	1993-01-01	S	1	140	66	\N
-Brenda Paz	1991-01-01	RB	26	166	63	\N
-Breonna Brewer	1990-01-01	DB	81	160	67	\N
-Brianna Marks-Green	1992-01-01	OL	75	219	66	\N
-Brianna Rastello	1995-01-01	LB	31	160	65	\N
-BriLana Gorrell	\N	DL	41	222	64	\N
-Britt Hennings	2002-01-01	RB	83	125	64	\N
-Brittenee Johnson	1997-01-01	OL	55	190	68	\N
-Brooklyn Riley	2001-01-01	DB	7	\N	\N	\N
-Cachrelle Nguyen	1990-01-01	LB	33	195	64	\N
-Cam Evans	2007-01-01	OL	79	250	74	\N
-Candace Jensen Lopez	1979-01-01	OL	96	170	66	\N
-Candace Rucker	\N	WR	21	140	70	\N
-Carolynn Torve-Williams	2000-01-01	OL	56	223	63	\N
-Catherine Norris	1987-01-01	OL	66	230	70	\N
-Chanel Cross	1991-01-01	RB	29	165	64	\N
-Charmaine Bradford-Airy	1996-01-01	LB	54	170	62	\N
-Charon Sweeney	\N	WR	8	145	63	\N
-Chelcie-Maree Weaver	1994-01-01	DL	93	210	64	\N
-Chelsea Monsees	1998-01-01	OL	90	200	68	\N
-Chelsea Parrish	1990-01-01	DL	91	225	67	\N
-Chloe Williams	2001-01-01	DL	56	210	68	\N
-Christina Copelin	1981-01-01	TE	80	214	74	\N
-Christina Tela	1980-01-01	DL	3	200	66	\N
-Christine Norman	1992-01-01	OL	70	260	67	\N
-Chyna Cole	1991-01-01	DB	28	140	66	\N
-Cierra McGinnis	1999-01-01	OL	74	240	67	\N
-Claire Nickison	1998-01-01	OL	99	300	67	\N
-Courtenay Williams	1990-01-01	OL	52	220	73	\N
-Courtney Chidley	1997-01-01	RB	19	150	70	\N
-Courtney Powell	1993-01-01	DL	24	210	67	\N
-Crystal Daniels	1991-01-01	WR	12	140	65	\N
-Crystal Johnson	\N	WR	14	150	67	\N
-D'Ajah Scott	1992-01-01	RB	4	165	68	\N
-Dajia Anderson	\N	DL	50	175	64	\N
-Dalphine Armstrong	\N	DL	44	280	68	\N
-DaMaree Mitchell	1993-01-01	RB	27	\N	\N	\N
-DaNi Jolley	2000-01-01	OL	75	300	65	\N
-Danielle Spearman	1991-01-01	DB	35	124	60	\N
-Dannielle Lawrence	1988-01-01	DL	33	165	70	\N
-Darcy Leslie	1986-01-01	LB	27	170	66	\N
-Darla Espinosa	\N	DL	19	180	63	\N
-Darlene Martinez	2005-01-01	OL	54	182	65	\N
-Darnisha Lee	1993-01-01	DL	21	170	70	\N
-Deana Guidry	1978-01-01	LB	0	186	66	\N
-Demiera Lockhart	1996-01-01	OL	69	215	65	\N
-Desiree Conner	1999-01-01	DB	4	130	65	\N
-Destini Perry	\N	OL	91	352	68	\N
-Diana Johnson	2001-01-01	DB	25	125	64	\N
-Dominique Stewart-Thomas	1991-01-01	WR	82	140	64	\N
-Dorothy Angilau	1990-01-01	DL	65	213	63	\N
-Dorothy Angilau	1990-01-01	DL	77	213	63	\N
-Dorothy Mao	2001-01-01	DB	16	170	67	\N
-Doshia Collins	2002-01-01	WR	27	115	61	\N
-DYana Bolden	2001-01-01	LB	16	170	68	\N
-Echo Le Vell	1990-01-01	DB	84	160	67	\N
-Elizabeth Landry	1980-01-01	WR	1	174	69	\N
-Elizabeth Nelson	\N	RB	17	130	62	\N
-Elizabeth Spence	\N	RB	45	133	62	\N
-Ella Morgan	2003-01-01	DL	49	180	62	\N
-Ellie Gilbert	\N	WR	2	105	59	\N
-Emily Rose	1984-01-01	P/	89	160	67	\N
-Emmalee Munns	1992-01-01	DL	83	230	62	\N
-Emry Miller	\N	OL	54	200	68	\N
-Erica Mathia	1990-01-01	OL	33	127	59	\N
-Esperanza Poyle Maciel	1996-01-01	DB	29	140	61	\N
-Evett Van Beek	1982-01-01	QB	96	210	64	\N
-Faatupu Malaulu	1999-01-01	OL	95	290	67	\N
-Faith Robinson	1991-01-01	DB	85	125	63	\N
-Fannie Robinson	1984-01-01	DL	55	231	67	\N
-Fanny Feldman	\N	RB	3	137	63	\N
-Franziska Diegel	\N	DB	24	145	68	\N
-Gabrielle Kredel	1988-01-01	OL	79	253	66	\N
-Gabrielle Madden	1995-01-01	OL	65	220	69	\N
-Genessa Bingham	\N	RB	23	195	66	\N
-Gina Mondragon	2003-01-01	RB	26	126	61	\N
-Grace Cooper	\N	RB	19	188	67	\N
-Grace Mole	2000-01-01	WR	88	145	65	\N
-Hannah DeGraffinreed	1990-01-01	TE	84	200	70	\N
-Holly Hannah	1986-01-01	TE	10	155	70	\N
-Imelda Elizabeth De Leon	1983-01-01	WR	16	150	66	\N
-Inaya Freeman	1999-01-01	DL	5	215	62	\N
-Irlanda Diaz	1994-01-01	DL	43	141	66	\N
-Isabelle Bartter	1988-01-01	TE	9	132	65	\N
-Iyona Copeland	1993-01-01	WR	8	155	69	\N
-Jada Hampton	1995-01-01	RB	7	150	66	\N
-Jadacee Vick	\N	RB	0	150	67	\N
-Jadacee Vick	\N	RB	40	150	67	\N
-Jaiden Rogers	\N	DB	6	130	64	\N
-Jamari Avery	\N	DL	60	317	71	\N
-Jamila Gordon	\N	LB	19	165	68	\N
-Janelle Small	1979-01-01	OL	79	212	67	\N
-Janiah Bond-Clough	2004-01-01	WR	12	130	65	\N
-Jasmine Edmond	\N	DL	83	165	68	\N
-Jasmine Holland	\N	DL	67	175	66	\N
-Jasmine Ward	1993-01-01	DB	86	143	66	\N
-Jasmyn Moxley	1990-01-01	DB	1	145	67	\N
-Jayna Valdez	2002-01-01	LB	52	150	63	\N
-Jazmin Gamble-Tello	1990-01-01	LB	9	200	65	\N
-Jazpony Harris	1995-01-01	DB	88	130	63	\N
-Jeanenne Colbert	1984-01-01	LB	45	172	64	\N
-Jenji Lee Hooker	\N	DL	33	230	\N	\N
-Jenna Sukle	1990-01-01	LB	17	135	66	\N
-Jennifer Southall	2005-01-01	DB	38	140	62	\N
-Jensine Alvarez	1993-01-01	TE	45	176	71	\N
-Jerrica Davenport	1989-01-01	OL	55	185	70	\N
-Jerrica Johnson	2000-01-01	WR	18	140	64	\N
-Jocelyn Charette	1988-01-01	P/	84	160	70	\N
-Jocelyn Howard	\N	DB	44	128	65	\N
-Julia Mullin	\N	WR	9	140	70	\N
-Julia Viles	1991-01-01	OL	64	175	66	\N
-Julysil Paycoan	2005-01-01	RB	10	130	58	\N
-Kahriya Williams	1999-01-01	LB	11	196	66	\N
-Kara Gailiunas	\N	LB	32	170	68	\N
-Karli Singrey	\N	OL	73	240	69	\N
-Katherine Montgomery	1985-01-01	OL	68	210	67	\N
-Kayla Vincent	1993-01-01	WR	27	140	64	\N
-Keanu Malala	\N	LB	33	157	64	\N
-Keisha Howard	1980-01-01	DL	40	175	66	\N
-Kelly Johnston	1990-01-01	WR	6	155	72	\N
-Kelly Rosso	1995-01-01	DB	11	140	66	\N
-Kellye Lofquist	1990-01-01	RB	25	170	66	\N
-Kelsea Phillips	1991-01-01	RB	36	165	63	\N
-Kelsey Walthall	1994-01-01	DL	52	175	68	\N
-Kendra Gabriel	1993-01-01	RB	2	166	66	\N
-Kenyatta Sears	1992-01-01	LB	30	165	65	\N
-Keyla Rea	2007-01-01	WR	13	135	64	\N
-Kiana Gordon	\N	WR	11	140	66	\N
-Kiara Ireland	1988-01-01	DB	6	145	62	\N
-Kola Thompson	1989-01-01	LB	29	195	65	\N
-Kris Grimes	1992-01-01	RB	9	200	63	\N
-Krisja Norman	1996-01-01	RB	49	140	66	\N
-Kristen Davis	1987-01-01	LB	41	175	69	\N
-Kristi Derouen	1998-01-01	WR	7	185	69	\N
-Kristyanna Quinn	1986-01-01	DL	82	168	68	\N
-Kylah Hodges	1996-01-01	LB	43	170	65	\N
-Kylee OConnor-Harrel	1996-01-01	DB	19	135	67	\N
-Kyvondra Toalepai	1994-01-01	OL	50	265	69	\N
-Laila Finley	2006-01-01	DL	9	165	70	\N
-Lanuola Jacobsen	\N	DL	0	\N	\N	\N
-LaQue Moen-Davis	\N	DB	3	170	74	\N
-LaTerricka Smith	1994-01-01	RB	18	145	63	\N
-Laura Bongers	2000-01-01	WR	37	135	70	\N
-Laura Burnham	\N	DB	0	\N	\N	\N
-Lauren Blaser	1994-01-01	WR	20	150	64	\N
-LaVerna Tela-Lesa	\N	DL	72	\N	\N	\N
-Lavinia Culbreath	\N	DL	48	175	69	\N
-Laylee Dieringer	2004-01-01	OL	62	290	67	\N
-Leilani Caamal	2005-01-01	LB	43	155	65	\N
-Lisa Fisher II	1993-01-01	DL	50	240	64	\N
-Lisa Scurry	1993-01-01	OL	77	315	70	\N
-Liv Offenbach	\N	DB	15	135	65	\N
-Lorena Diaz	\N	OL	55	187	73	\N
-Louise Bean	1972-01-01	QB	12	165	66	\N
-Luma Barbedo	\N	OL	70	245	72	\N
-Lydia Morgan	1993-01-01	QB	33	120	63	\N
-Lyrica Arielle Macdonald	1999-01-01	OL	61	270	66	\N
-Macie Ables	2010-01-01	OL	71	280	67	\N
-Maggie Justinak	\N	LB	4	170	70	\N
-Mahiya Ellis	\N	DL	77	287	68	\N
-Makayla Edwards	\N	WR	17	120	65	\N
-Margaret Pan	\N	DL	71	220	66	\N
-Maria Hernandez Lucio	\N	OL	62	\N	\N	\N
-Mariane McClinton	1991-01-01	DE	28	195	68	\N
-Marico Davis	\N	DB	8	165	65	\N
-Marine Paris	1993-01-01	QB	17	134	63	\N
-MarRhea Everheart	1995-01-01	DB	27	162	68	\N
-Martha Gomez	1989-01-01	DL	80	214	67	\N
-Mary Lee	\N	OL	62	200	64	\N
-Masae Fualole Loua	1998-01-01	OL	24	197	68	\N
-Melanie Bartholomew	1991-01-01	WR	34	150	65	\N
-Melanie Hunter	1988-01-01	DB	42	155	63	\N
-Mercy Molina-Guevara	1991-01-01	OL	62	210	65	\N
-Meredith Mitchner	2000-01-01	P/	26	180	66	\N
-Midajah Davis	2001-01-01	DL	60	180	64	\N
-Mikaile Fortson	1992-01-01	DB	28	165	68	\N
-Monique Calhoun	1993-01-01	DL	93	230	62	\N
-Monique Garcia	\N	OL	59	280	69	\N
-Morgan Lewis	1998-01-01	DB	23	150	69	\N
-Moriah Thomas	2001-01-01	DB	22	155	67	\N
-Myeshia Johnson	1985-01-01	OL	64	250	73	\N
-Najae Lewis Elliot	\N	LB	53	179	66	\N
-Najia McGee	1988-01-01	LB	0	160	65	\N
-Najma Muhammad	1998-01-01	DL	72	225	67	\N
-Nakisha Harris	1978-01-01	DL	47	200	67	\N
-Naomi Stuger	1995-01-01	WR	82	145	69	\N
-Natalia Brown Quinones	2005-01-01	WR	13	128	64	\N
-Natalia Ceron Parra	1999-01-01	LB	47	169	64	\N
-Natasha Johnson	1985-01-01	RB	11	170	67	\N
-Nikayla Ramsey	1997-01-01	RB	31	155	64	\N
-Nikki Pike	1992-01-01	LB	32	160	67	\N
-Nina Gomez	1978-01-01	OL	53	220	64	\N
-Nina Wilkerson	2007-01-01	LB	16	130	61	\N
-Norianna Haynes	1992-01-01	OL	24	220	73	\N
-Nova Nyström	2006-01-01	OL	52	212	67	\N
-Olivia Green	\N	RB	8	135	66	\N
-Olivia James	1992-01-01	WR	24	155	69	\N
-Olivia Johnson	1991-01-01	OL	24	200	66	\N
-Orianna Baxter	1995-01-01	RB	25	145	64	\N
-Phylicia Allen	2000-01-01	DB	41	125	66	\N
-Priscilla Petersen	\N	LB	36	210	67	\N
-Rachel Davis	\N	RB	50	238	67	\N
-Rachel Slamin	2001-01-01	DB	32	135	64	\N
-Raejean Marshall	1994-01-01	RB	19	155	58	\N
-Ramona Martinez	\N	DL	57	190	69	\N
-Rebecca Geller	1990-01-01	OL	84	180	67	\N
-Rhey Acevedo	1983-01-01	DL	63	235	67	\N
-Riian Smith	\N	WR	46	180	72	\N
-Rilee Irby	2005-01-01	WR	16	130	62	\N
-Rosa Egbert	\N	DL	74	\N	\N	\N
-Rylee Fenrick	2003-01-01	WR	85	150	68	\N
-Sacoyia Todd	1991-01-01	LB	97	175	63	\N
-Sam Rozell	1998-01-01	OL	98	240	67	\N
-Samantha Vasquez	1993-01-01	OL	77	240	67	\N
-Sarah Antonie	1988-01-01	DB	7	145	68	\N
-Sarah Guerra	\N	OL	72	205	65	\N
-Sarah Novak	\N	QB	3	160	65	\N
-Sarah Rexrode	\N	OL	51	340	68	\N
-Sarah Yochem	\N	QB	15	130	65	\N
-Sav Congdon	2000-01-01	WR	89	126	65	\N
-Savannah Morefield	2005-01-01	DL	2	175	67	\N
-Sckiya Banister	1998-01-01	DB	18	160	68	\N
-Shaniqua Bennett	1990-01-01	DL	25	170	69	\N
-Shaniya Lacey	2001-01-01	RB	0	145	64	\N
-Shardae Anderson-Bell	1986-01-01	OL	95	180	64	\N
-Shauntavia Brigham	1992-01-01	DL	92	290	70	\N
-Shelby Presley	1992-01-01	DL	56	198	68	\N
-Shelia Sickau	1988-01-01	P/	7	0	\N	\N
-Shermanda Fambro	1990-01-01	DB	37	155	65	\N
-Shicarea Hutchins	2003-01-01	DL	56	200	70	\N
-Shonna Williams	\N	LB	60	185	66	\N
-Shonte Williams	1990-01-01	DB	15	135	63	\N
-Sierra Cash	\N	OL	63	230	68	\N
-Sierra Cornell	1995-01-01	DL	68	170	64	\N
-Sierra Le Grande	2004-01-01	DB	46	155	68	\N
-Sigourney Gonzalez	1988-01-01	QB	3	169	64	\N
-Similiti Lealiki	1990-01-01	DL	97	250	64	\N
-Solina Pascual	1996-01-01	LB	16	174	64	\N
-Stacy Primeaux	1985-01-01	LB	21	167	63	\N
-Stephanie Elizondo	2000-01-01	QB	12	210	70	\N
-Stephanie Miller	1989-01-01	QB	16	130	67	\N
-Stephanie Pascual	1991-01-01	WR	39	190	64	\N
-Summer McNeal	2003-01-01	WR	23	165	70	\N
-Sydney Dela Cruz	\N	RB	36	150	60	\N
-Sydney Jessup	2006-01-01	OL	66	185	70	\N
-Sydney Lambert	\N	DB	21	140	67	\N
-Sylvia Sloss	1999-01-01	WR	4	140	64	\N
-Tanisha Thermidor	\N	WR	28	158	64	\N
-Tashani Cardwell	2000-01-01	P/	25	110	63	\N
-Tatyana Guidry	1978-01-01	RB	25	130	61	\N
-Tauva Leiomiti	\N	DL	76	305	71	\N
-Taylor Baldwin	1992-01-01	P/	42	135	61	\N
-Taylor Coleman	2000-01-01	TE	77	175	65	\N
-Taylor McGhee	1999-01-01	DL	27	195	64	\N
-Tekesha Williams	1989-01-01	OL	53	255	72	\N
-Thalia Sweet	\N	LB	35	183	64	\N
-Tia Thompson	1994-01-01	LB	52	210	68	\N
-Tianna Bell	1998-01-01	LB	52	220	66	\N
-Tiffany Gonzales	1981-01-01	OL	70	190	62	\N
-Timesha Wharton	\N	DB	20	155	67	\N
-Tino'j Jones	1996-01-01	LB	31	155	68	\N
-Tori Dixson	1992-01-01	OL	76	255	71	\N
-Tori Spann	1995-01-01	WR	97	135	68	\N
-Tracey Dorcemont	1995-01-01	OL	68	250	71	\N
-Treva Mason	1992-01-01	TE	86	200	69	\N
-Trevez Bridgewater	\N	DL	77	175	68	\N
-Trinity Scott-Gooden	2001-01-01	LB	50	168	65	\N
-Trinity Smith	1991-01-01	DB	38	155	68	\N
-Tyree Hale	2003-01-01	DL	53	182	67	\N
-Vanessa McGinnis	1989-01-01	WR	8	164	66	\N
-Vernisha Tavares	1992-01-01	DL	77	243	67	\N
-Victoria McIntyre	\N	OL	64	380	67	\N
-Viktoria Donetz	1998-01-01	WR	20	170	68	\N
-Whitney Palmer	1986-01-01	DL	5	161	68	\N
-Winry Vitkovich	1989-01-01	OL	96	340	68	\N
-Xebulynn Whitney	1994-01-01	OL	69	190	65	\N
-Yasmene Harris	1989-01-01	DB	0	155	67	\N
-Yolanda Johnson	1970-01-01	OL	52	198	67	\N
-Zaya Dove	2003-01-01	RB	29	157	63	\N
-ZiArion Hutsell	\N	DL	51	180	63	\N
-Zoe Jackson	2005-01-01	WR	82	151	67	\N
-Zomi Anderson	1989-01-01	DL	3	250	69	\N
-Zyaire Xamaica	1989-01-01	DL	69	170	68	\N
+Corrina Burney	\N	RB	21	\N	\N	0.01
+Elliot Nguyen	\N	LB	22	\N	\N	0.13
+Whitney Jones	\N	LB	2	\N	\N	0.01
+ZiArion Hutsell	\N	DL	51	180	63	0
+Sabirah BB Lucas	1996-01-01	OL	68	217	65	0
+Tabitha Ayala	1988-01-01	DB	32	145	62	0.01
+Bethany Hipps	\N	OL	66	257	69	0
+Marissa Blash	\N	RB	40	145	64	0.02
+Bri Irons	1993-01-01	RB	8	135	56	0
+Alexandra Sweet	1987-01-01	LB	33	186	66	0
+Jessica Collins	1989-01-01	DB	4	152	65	0.07
+Antoinae Goodman	1992-01-01	WR	19	145	64	0.03
+Christine Jackman	1983-01-01	DB	12	160	69	0
+Lashawna Ervin	1987-01-01	LB	36	165	65	0.02
+Latasha Cummings	\N	OL	51	215	67	0
+Deja Terry	\N	LB	17	135	62	0.01
+Na'ava Willis	\N	S	8	\N	\N	0
+Melissa Uhl	1989-01-01	OL	47	205	62	0
+Eby Okonkwo	\N	LB	6	200	66	0.02
+Sydney Jessup	2006-01-01	OL	66	185	70	0
+MaryJane Merriam	\N	DE	33	156	66	0
+Infinity Brooks	1999-01-01	OL	66	215	65	0
+Jasmine Bonaparte	1998-01-01	WR	42	180	66	0
+Kayla Lilly	\N	QB	2	130	67	0
+Lyrica Arielle Macdonald	1999-01-01	OL	61	270	66	0
+Tiffani Penix	\N	DL	58	186	66	0
+Lauren Blaser	1994-01-01	WR	20	150	64	0
+Tinisha Quintana	1997-01-01	RB	0	145	67	0
+Alexandra Holliday	1992-01-01	WR	30	120	67	0.02
+Kristyn Aoake Taylor	1991-01-01	DL	59	190	67	0.01
+Brittany Whitfield	1990-01-01	LB	25	210	64	0
+Shayna Allwar	1999-01-01	OL	63	255	68	0
+Destanie Yarbrough	1990-01-01	RB	36	205	67	0.73
+Shaniqual Davis	\N	DB	25	\N	\N	0
+Genessa Bingham	\N	RB	23	195	66	0
+Maria Jackson	1995-01-01	WR	11	165	67	0.21
+Kristi Derouen	1998-01-01	WR	7	185	69	0
+Alonni Hawkins	2007-01-01	LB	17	160	62	0
+Eden Henry	1996-01-01	DL	97	145	64	0
+Alicia Brown	\N	OL	91	198	71	0
+Octavia Brown	1988-01-01	DL	26	160	63	0
+Jazmin Henderson	\N	DL	85	\N	\N	0
+Candace Walker	\N	OL	75	210	67	0
+Jasmine Holland	\N	DL	67	175	66	0
+Adriane Utt	1985-01-01	OL	98	250	66	0
+Ana Barbosa	\N	WR	17	148	65	0.15
+Carmel Glumac	1988-01-01	WR	55	185	69	0.08
+Alexandra Sweet	1999-01-01	OL	71	170	66	0
+Casey Cubis	\N	QB	12	172	72	0.52
+Jaleesa Harvey	\N	OL	61	\N	\N	0
+Savannah Congdon	2000-01-01	CB	89	130	65	0
+Alina Markl	1997-01-01	DL	77	270	68	0
+Keresa Taylor	\N	DL	43	215	64	0
+Jade Austin	\N	DB	29	169	67	0
+Brianna Marks-Green	1992-01-01	OL	75	219	66	0
+Julia Viles	1991-01-01	OL	64	175	66	0
+Dominique Stewart-Thomas	1991-01-01	WR	82	140	64	0
+Erica Jackson	1999-01-01	CB	26	150	67	0.04
+Lisa Fisher II	1993-01-01	DT	60	230	64	0.01
+Lawanda Pearson	1995-01-01	DB	5	142	67	0.01
+Dasha Jones	1997-01-01	WR	3	140	65	0
+Sarah Menne	\N	WR	25	115	63	0
+Kyla McBride	1999-01-01	DL	54	190	68	0.01
+Pamela Larde	1976-01-01	RB	94	148	63	0
+Vanessa Hernandez	\N	DE	60	190	64	0.01
+Rilee Irby	2005-01-01	WR	16	130	62	0
+Judea McDonald	1997-01-01	DL	19	180	66	0.01
+Danielle Trainor	1995-01-01	QB	17	162	67	0.2
+Ashanti Lewis	1994-01-01	WR	45	135	66	0.08
+Jenna Sukle	1990-01-01	LB	17	135	66	0
+Rosa Climaco	1991-01-01	OL	79	270	69	0
+Stephanie Howard	\N	RB	32	148	67	0
+Alexis Dixon Fontaine	1992-01-01	RB	13	121	63	0.01
+Fanny Feldman	1991-01-01	DB	13	147	63	0.01
+Danielle Arnold	1979-01-01	DE	92	170	71	0.01
+Ellie Gilbert	\N	WR	2	105	59	0
+Jennifer Ramirez	1995-01-01	OL	67	280	67	0
+Tina Orrick	2001-01-01	OL	90	245	66	0.05
+Aryan Sjodin	\N	DL	90	170	66	0.01
+Sabrina Casillas	2001-01-01	DL	79	300	70	0.01
+Monique Garcia	\N	OL	59	280	69	0
+Kahriya Williams	1999-01-01	RB	22	170	66	0.11
+Chanel Cross	1991-01-01	RB	29	165	64	0
+Anastasia Olavuo	2001-01-01	LB	6	175	65	0
+Marlen Garces	\N	DL	77	185	66	0.04
+Danielle Spearman	1991-01-01	DB	3	125	61	0
+Olivia Valentine	\N	DL	90	150	68	0
+Kristi Taylor	1985-01-01	QB	5	200	66	0
+Sharifah Robertson	1990-01-01	RB	12	145	61	0
+JaKiera Mallory	\N	DL	99	250	70	0.01
+Jazmin Gamble Tello	\N	RB	9	195	64	0.03
+Jadacee Vick	\N	FB	11	190	67	0.02
+Dumatra McDaniel-Walker	1988-01-01	OL	88	275	68	0
+Makayla Sutton	2000-01-01	WR	82	145	67	0
+Jen Dulski	1980-01-01	DL	50	145	64	0.04
+Katie Margheim	\N	DL	98	211	63	0
+Arielle Wilks	1988-01-01	DL	29	255	69	0.02
+Alyssa Speckhals	\N	TE	85	168	70	0
+Maggie Justinak	\N	LB	4	170	70	0
+Armoni Stevenson	\N	DB	22	\N	\N	0.08
+JoVonna Cram	\N	OL	74	213	66	0
+Mayra Capetillo	\N	OL	59	\N	\N	0
+Shannon Brown	1987-01-01	DE	48	185	71	0.08
+Liz LaFisca	1996-01-01	LB	9	175	65	0.03
+Leilani Caamal	2005-01-01	LB	43	155	65	0
+Sasha Gomez	1985-01-01	DL	55	180	69	0.04
+Danny Trainor	1995-01-01	QB	17	162	67	0.64
+Kayla Russell	1999-01-01	LB	1	170	62	0.11
+Shauna Loftin	1971-01-01	OL	72	185	68	0
+Nicole Fairman	1995-01-01	LB	48	170	64	0.06
+CiCi Mwendandu	1989-01-01	DT	18	175	63	0.02
+Tara Haddock	\N	DL	46	190	70	0.01
+Lorena Duran	\N	DL	96	175	66	0.01
+Chelsa Singer	1993-01-01	RB	16	145	67	0
+Desirea McGinnis	1997-01-01	OL	84	230	70	0
+Eboni Chambers	1985-01-01	TE	8	210	68	0.08
+Nashi Catron	1987-01-01	QB	13	200	72	0.65
+Janiah Lee	2002-01-01	LB	25	158	63	0.03
+Annicka Griffith	1996-01-01	WR	18	150	65	0.14
+Karen Mulligan	1977-01-01	QB	30	168	68	0.48
+Ashlyn Jackson	1992-01-01	OL	60	194	62	0
+Mikaile Fortson	1992-01-01	DB	28	165	68	0
+Melissa Chandler	\N	LB	87	145	64	0
+Tori Tagaloa	\N	QB	6	180	70	0.31
+Airel Gilliam	\N	DL	49	205	68	0
+Jalessa Harvey	1990-01-01	OL	61	\N	\N	0
+Chelsey Nill	\N	TE	88	185	68	0.04
+Britnee Sangalan	1994-01-01	WR	1	135	63	0.18
+Akira Galeai	1986-01-01	LB	54	180	64	0.02
+Marielle Alexander	1991-01-01	WR	47	155	66	0.14
+Maha Hawwass	1985-01-01	LB	13	160	65	0.05
+Amber Kimbrough	1996-01-01	LB	32	220	68	0.13
+Thalia Sweet	\N	LB	35	183	64	0
+Doneisha Hawkins	1993-01-01	LB	42	175	65	0
+Jasmine Thomas	\N	DB	2	138	64	0.05
+Courtney Powell	1993-01-01	DE	62	210	67	0.05
+Monique Tribble	1998-01-01	DL	37	170	66	0.02
+DaMaree Mitchell	\N	OL	47	237	72	0.01
+Unique Rowan	\N	DB	43	\N	\N	0
+Ashleigh Hayes	1985-01-01	OL	56	230	66	0
+Ella Morgan	\N	OL	57	210	62	0
+Gina Silvestri	\N	RB	22	150	64	0.04
+Solana Sperry	1999-01-01	DB	15	140	67	0
+Briana Nesmith	\N	RB	69	185	66	0
+Jazzmon J Stovall	\N	DB	16	\N	\N	0.04
+Desiree Conner	1999-01-01	DB	4	130	65	0
+Nikayla Ramsey	1997-01-01	RB	31	155	64	0
+Sarah Watson De La Torre	1994-01-01	WR	83	162	67	0.14
+Darla Espinosa	\N	DL	19	180	63	0
+Shanise Vann	1975-01-01	WR	19	165	68	0
+Lydia Evans	1996-01-01	DL	76	180	65	0
+Quineshia Leonard	\N	DL	99	290	78	0
+Tiffany Gonzales	1981-01-01	OL	43	200	62	0
+Maki Yamagata	1973-01-01	DB	22	123	62	0.04
+Myeshia Johnson	1985-01-01	OL	51	145	64	0
+Alaina Valmassei	\N	QB	20	135	67	0
+Jeanenne Colbert	1984-01-01	LB	45	172	64	0
+Stella Martin	1998-01-01	WR	21	185	70	0.04
+Rebecca Southerland	1987-01-01	OL	97	222	67	0
+Sabrina Kessler	1983-01-01	DL	59	200	69	0.11
+Jasmine Ward	1993-01-01	DB	86	143	66	0
+Jamie Brann	\N	WR	1	180	69	0.05
+Amber Perry	\N	DB	25	137	67	0.01
+Alissa Loatman	1986-01-01	LB	33	190	64	0.06
+Jadacee Vick	\N	RB	40	150	67	0
+Tiara Woodard	\N	DL	44	180	66	0.04
+Kiana Stafford	1995-01-01	OL	72	250	73	0
+Erica Mathia	1990-01-01	OL	52	145	61	0
+Brenda Paz	1991-01-01	RB	26	166	63	0
+Brilynn Fields	1987-01-01	LB	25	220	65	0.04
+Megan Biggers	1997-01-01	K	10	150	65	0.01
+Myla Somerville	1993-01-01	DB	9	145	66	0.12
+Danielle Spearman	1991-01-01	DB	35	124	60	0
+Rachel Davis	\N	RB	50	238	67	0
+Olivia Griswold	1986-01-01	DL	6	210	70	0.14
+Jennifer Southall	2005-01-01	DB	38	140	62	0
+Lauren Davis	1982-01-01	LB	44	175	67	0.08
+Almeira Nicole Rizane	2005-01-01	QB	9	152	66	0.04
+La Shun Mosley	\N	LB	32	203	63	0
+Lashantel Wilson	1984-01-01	LB	13	205	69	0.04
+Kola Thompson	1989-01-01	LB	29	195	65	0
+Kim Krinke	1980-01-01	RB	28	145	66	0.06
+Jada Hampton	1995-01-01	RB	7	150	66	0
+Danielle Farrell	1993-01-01	DL	97	160	71	0.02
+Victoria Young	1993-01-01	DE	45	174	67	0
+Kimberly Rose	1987-01-01	LB	43	175	64	0.08
+Amani El Amin	1992-01-01	RB	0	135	66	0.02
+Chantel Strozier	1996-01-01	RB	26	205	64	0
+Ashley Dame	1999-01-01	WR	99	145	64	0
+Maddie Garrison	2004-01-01	DB	38	130	66	0.03
+Taylor Coleman	2000-01-01	TE	77	175	65	0
+Beatriz Rico	2004-01-01	RB	6	184	67	0.07
+Lydia Morgan	\N	WR	4	115	63	0.37
+Lelatasiosamoa Vaeao	1984-01-01	OL	58	260	70	0
+Kylah Hodges	1996-01-01	LB	43	170	65	0
+Alysia Bisquera Dominguez	1987-01-01	WR	11	102	63	0
+Nicole Fairman	1995-01-01	LB	22	170	64	0.06
+Ariyan Hudson	\N	QB	7	140	68	0.03
+Kemoni Sharp-Garland	2004-01-01	DB	82	81	56	0
+Tasha Wilson	1987-01-01	DE	34	160	63	0
+KaNesha Sheriff	1991-01-01	WR	11	145	65	0
+Rayna Lorraine	\N	DL	84	130	64	0.01
+Najia McGee	1988-01-01	LB	0	160	65	0
+Kasee Hilliard	\N	WR	81	160	67	0.44
+Crys Contreras	\N	RB	4	183	64	0
+Anastacia Kreider	\N	LB	50	180	66	0
+Alecsys Williams	1987-01-01	OL	94	228	63	0
+Darlene Martinez	2005-01-01	OL	54	182	65	0
+Stephanie Elizondo	2000-01-01	QB	12	210	70	0
+Pasha Johnson-Rivers	1997-01-01	RB	10	215	64	0.02
+Ashley Clark	1992-01-01	QB	7	165	70	1.37
+Amadi Teemer	\N	DL	92	298	66	0
+Nandi Curtis	\N	DL	53	\N	\N	0
+Laura Bongers	2000-01-01	WR	37	135	70	0
+Rosalie Mora	\N	TE	86	185	67	0.1
+Neshara Watrous	1994-01-01	DB	27	145	64	0.02
+Gina Carnovale	1994-01-01	WR	14	140	65	0
+Nikki Pike	1992-01-01	LB	32	160	67	0
+Madalyn Garrison	\N	DB	38	120	66	0.03
+Elizia Casillas	\N	WR	29	140	65	0
+Caitlin Peterson	\N	OL	63	284	68	0
+Khyla Easler	\N	OL	17	\N	\N	0
+Alyssa Vigil	\N	WR	17	132	65	0.15
+Taylor Thatcher	\N	LB	4	190	65	0.03
+Asia Strickland	1992-01-01	LB	92	190	69	0.08
+Norianna Haynes	1992-01-01	OL	24	220	73	0
+Shondra Carpenter	\N	DL	57	\N	\N	0
+Sckiya Banister	1998-01-01	DB	18	160	68	0
+Sheka Houseton	1995-01-01	LB	56	175	66	0
+Jada Joyner	2001-01-01	OL	53	260	64	0
+LaShanda Griffin	1984-01-01	DB	11	147	67	0.01
+Laura St Ruth	\N	LB	35	165	69	0.04
+Janiah Bond-Clough	2004-01-01	WR	12	130	65	0
+Jane (Redd) Brinkman	1970-01-01	DL	2	176	72	0.05
+Karena Brooks	\N	LB	21	200	67	0
+Aezioni Nakai Fuller	\N	DL	94	285	69	0.03
+Timesha Wharton	\N	DB	20	155	67	0
+Shonna Williams	\N	LB	64	185	66	0.02
+Hadiisha Butts	1992-01-01	DL	35	230	62	0.03
+Jennifer Ingargiolia	\N	RB	23	190	64	0.02
+Allyssa Weatherd	1993-01-01	LB	54	195	68	0.03
+Leslie Medina	1982-01-01	LB	18	145	65	0
+Shaunte Bowman	\N	DL	57	220	66	0
+Catherine Desire	1996-01-01	DL	88	208	62	0
+Brooke Mugridge	\N	OL	92	220	64	0
+Ashton Elliott	1997-01-01	WR	21	132	65	0
+Tyee Griffith	\N	OL	70	200	69	0
+Laila Finley	2006-01-01	DL	9	165	70	0
+Terry Peterson	1980-01-01	WR	45	150	62	0
+Joanna Young	\N	WR	6	138	64	0.12
+Jazmyn Freeman	1998-01-01	OL	57	235	69	0
+Shavonne Verdree	1990-01-01	LB	46	162	66	0.1
+Dominique Maloy	1989-01-01	RB	88	145	67	0.08
+Shamia Bell	1987-01-01	DB	35	130	64	0
+Krisja Norman	1996-01-01	RB	49	140	66	0
+Ebele Okonkwo	1989-01-01	DL	6	230	66	0.02
+Doshia Collins	2002-01-01	WR	27	115	61	0
+Aurree King	\N	RB	15	180	64	0.05
+AuBree Barnes	1996-01-01	OL	22	150	62	0
+Ryan Meismer-Thompson	2004-01-01	DB	26	125	66	0
+Daniela De La Garza	1986-01-01	LB	50	155	67	0.01
+Kelly Cammon	1982-01-01	OL	66	199	65	0
+Jo-Jo Mamuyac	1988-01-01	DL	36	215	64	0
+Javanna Wilkins	1995-01-01	DB	29	170	64	0.01
+Amber Cox	\N	TE	82	175	67	0.01
+Shucoya Thomas	\N	WR	3	130	64	0
+Ashley Menchaca	\N	OL	40	280	69	0
+Stacey Grob	1998-01-01	DL	25	187	68	0
+Khadijah Ellison	1992-01-01	DB	24	150	69	0.02
+Gilliana Chau	\N	LB	31	176	64	0.01
+Jenji Lee Hooker	\N	DL	33	230	\N	0
+Alyssa Vigil	1999-01-01	WR	88	145	64	0
+Shayla Rogers	\N	OL	50	220	63	0
+Natalia Brown Quinones	2005-01-01	WR	13	128	64	0
+Najma Muhammad	1998-01-01	DL	72	225	67	0
+Kennetta Murry	\N	DL	5	185	68	0.07
+Paulina Lopez	1999-01-01	LB	13	147	62	0.09
+Jessica Jeans	1989-01-01	LB	49	175	64	0.07
+Taranisha Taylor	1994-01-01	DB	14	135	66	0.11
+Veronique Pope	1991-01-01	DL	56	250	65	0.02
+Missy (Chelseney) Lewis	\N	LB	20	\N	\N	0
+McKenna Morgan	2001-01-01	OL	49	230	66	0
+Ta Shaun Leigh	\N	DB	5	145	68	0.2
+Rachel Karos	1983-01-01	QB	35	180	70	0.01
+Va Leomiti	1987-01-01	DL	76	350	70	0.01
+Tironeisha Jenee Sheriy	\N	DL	62	\N	\N	0
+Lisa Fisher	\N	OL	60	240	64	0
+Mylashia Johnson	1995-01-01	RB	4	123	64	0
+Doshia Collins	2002-01-01	DB	18	120	62	0
+Kara Cochran	\N	LB	51	145	64	0
+Ayana Mcafee	\N	OL	65	215	62	0
+Jane Crosby	1991-01-01	LB	12	200	65	0.01
+Kathleen Carroll	1991-01-01	WR	15	147	60	0
+Ashley Nguyen Lake	2006-01-01	OL	56	200	62	0.01
+Ashley Fung	2001-01-01	WR	24	143	66	0.04
+Kaitlynn Dela Pena	\N	OL	95	310	67	0
+Dayanna Rangel	\N	RB	13	135	64	0
+Gina Capardi	1987-01-01	WR	2	140	63	0.1
+Sigourney Gonzalez	1988-01-01	QB	3	169	64	0
+Asha Evans	\N	DL	85	182	66	0
+Rachel Scattergood	1990-01-01	WR	23	135	67	0
+Kali Jones	1997-01-01	WR	1	172	74	0.15
+Sckiya Banister	\N	LB	36	160	64	0.13
+Jadira Valentin	1988-01-01	WR	39	136	62	0
+Montana Meier	2003-01-01	OL	70	210	64	0
+Michelle Dunham	\N	WR	18	135	65	0
+AJ Roby	1982-01-01	OL	66	250	68	0.06
+Mikal Chancy	\N	DB	8	145	72	0.04
+Brittany Morgan	\N	DL	73	250	72	0
+Kenzie May	\N	WR	20	145	64	0
+Tanishia Norman	\N	DB	2	140	68	0.01
+Alia Karmali	1984-01-01	QB	8	197	68	0
+Melanie Bartholomew	1991-01-01	WR	34	150	65	0
+Ayanna Ford	\N	DB	28	150	65	0.09
+Carol Sauders	\N	WR	8	140	72	0.07
+Kyhle Jamerson	1985-01-01	WR	8	180	68	0
+Najiaa Michel	1996-01-01	LB	6	165	64	0
+Saks Roberson	1999-01-01	WR	2	145	\N	0
+Rachel Slamin	2001-01-01	DB	32	135	64	0
+Alexandria Clary	2000-01-01	RB	7	140	61	0.03
+Sherrette Spicer	1981-01-01	DL	98	254	70	0
+Nakisha Harris	1978-01-01	DL	47	200	67	0
+Paytience Kamuta	2005-01-01	QB	3	245	68	0.87
+Whitney Harrison	1985-01-01	DL	85	180	66	0.01
+Kiara Watts	\N	WR	37	\N	\N	0.02
+Jerrica Johnson	2000-01-01	WR	18	140	64	0
+Malaysia Quimby	\N	RB	87	215	70	0.18
+Sarah Novak	\N	QB	3	160	65	0
+LaQuanta Glass	1989-01-01	DE	47	160	65	0
+Natasha Stoney	2001-01-01	OL	77	215	66	0.01
+LaShanda Williams	1983-01-01	LB	45	166	68	0.05
+Sakura Roberson	1999-01-01	WR	2	155	72	0.31
+Kennedy Banks	2005-01-01	WR	1	130	68	0
+Zyaire Xamaica	1989-01-01	DL	69	170	68	0
+Ashlie McDonald	1986-01-01	OL	79	270	67	0
+Cierra Beck	1999-01-01	OL	74	230	69	0
+Jessica Ruiz	1990-01-01	RB	35	145	61	0.01
+Brooke Singer	2001-01-01	K	20	125	67	0
+Caroline Malala	1991-01-01	DT	3	157	64	0
+Melissa Fawcett	1982-01-01	OL	72	220	69	0
+Lena (Magda) Vargas	\N	WR	37	\N	\N	0
+Khahina Yisrael	1993-01-01	DB	27	135	70	0.02
+Anna Melton	1995-01-01	RB	41	150	65	0
+Amanda Littorin	1994-01-01	DL	64	242	64	0
+Carrieann Bedwell	\N	OL	97	\N	\N	0
+Maria J Boira Lopez	1999-01-01	WR	19	130	62	0
+Kylie Mitchell	1994-01-01	WR	88	155	67	0
+Shawntae Barnes	1989-01-01	RB	18	190	63	0.09
+Christina Landers	\N	DL	44	195	63	0.02
+Eshombi Singleton	1983-01-01	DB	2	176	69	0.02
+Amy Steinke	\N	RB	37	150	64	0
+Ally Cleveland	1962-01-01	OL	8	205	73	0
+Kanesha Sheriff	\N	WR	88	\N	\N	0
+Anastasia Olavuo	2001-01-01	LB	3	155	65	0.11
+DaNi Jolley	2000-01-01	OL	75	300	65	0
+Jocelyn Charette	1988-01-01	P/	84	160	70	0
+Ebony Minter	1989-01-01	RB	22	155	62	0.2
+Cassandra Wise-Howard	1988-01-01	DT	66	214	64	0
+Fancy Robinson	1984-01-01	DL	55	231	67	0.03
+Nicole Morris	\N	LB	32	200	66	0.01
+LeOndrea McIntyre	\N	OL	55	\N	\N	0
+BriLana Gorrell	\N	DL	41	222	64	0
+Diamond Griggs Tucker	\N	DB	20	132	66	0.02
+Chris Acacio	\N	LB	40	170	59	0
+Trayounda Ford	1998-01-01	RB	64	110	61	0
+Angelina Corona	2001-01-01	WR	30	140	63	0
+Angelina Tuakalau	\N	DL	45	315	65	0
+Lucille Kituku	\N	DL	74	175	63	0
+Montye Cook	\N	OL	75	\N	\N	0
+Girly Tambeahbor	1998-01-01	WR	55	170	64	0.01
+Angellica Grayson	1983-01-01	LB	52	150	61	0.02
+Kezia Oscar	1991-01-01	DB	23	174	65	0.1
+Lanika Manning	1979-01-01	DB	8	145	69	0.03
+Amanda Blackwell	1989-01-01	RB	36	130	63	0.33
+Rachel Robinson	\N	OL	36	\N	\N	0.06
+Chelcie-Maree Augustin-Weaver	1994-01-01	DT	93	210	64	0.01
+Kelly Whitehead	\N	LB	49	\N	\N	0.2
+Diamond Acklin	1999-01-01	LB	15	185	65	0.03
+Olivia Grabmayer	\N	WR	15	\N	\N	0.04
+Moriah Thomas	2001-01-01	DB	22	155	67	0
+Danneille Ayala	1987-01-01	QB	14	175	68	0
+Storm Cuthbert	\N	DB	28	145	64	0.03
+Penny Fagnani	1987-01-01	DL	71	200	69	0.04
+Adrienne Marsh	1988-01-01	LB	33	183	65	0.02
+Nyshavia Riley-Marsh	\N	DL	52	180	63	0.07
+Sharketie Leverette	1991-01-01	RB	16	145	64	0.02
+Srey Routh	\N	RB	5	125	59	0.08
+Sarah Clark	1990-01-01	OL	85	222	74	0.05
+Daisy Avilaromero	1996-01-01	DB	5	190	64	0
+Mila Porter-Lawson	\N	OL	62	240	68	0
+Gabby Madden	1995-01-01	OL	79	270	71	0
+Lorena Diaz	\N	OL	55	187	73	0
+Jen Strother	1971-01-01	K	4	195	65	0
+Iyona Copeland	1993-01-01	WR	8	155	69	0
+Jazmin Gamble	1990-01-01	LB	9	200	65	0.59
+Jaiden Rogers	\N	DB	6	130	64	0
+Jenna Trahan	2003-01-01	DB	25	97	61	0
+Krystal Williams	1985-01-01	DL	90	210	66	0
+Joselan Teregeyo	2006-01-01	WR	25	135	66	0
+Amber O Connor	1997-01-01	LB	32	155	66	0.2
+Haley Thompson	1992-01-01	DB	34	140	65	0
+Alexis Evans	2001-01-01	WR	22	143	66	0
+Mariane McClinton	1991-01-01	DL	42	165	68	0.03
+Memory Ware	1985-01-01	DB	9	155	79	0
+LaTasha Cummings	1986-01-01	OL	51	239	65	0
+Baiyinah Rahim	1984-01-01	LB	35	145	62	0
+Deysha Pollard	1996-01-01	LB	44	185	66	0
+Bethany Hipps-Jackson	1993-01-01	OL	66	259	69	0
+Barbriel Crudup	\N	DL	99	250	70	0
+Cierra Childress	1985-01-01	DB	10	143	65	0.01
+Aisling Moloney	1996-01-01	WR	28	132	65	0.01
+Bri Webb	\N	DB	24	150	63	0
+Amaris Parker	1989-01-01	DE	92	184	67	0.02
+Xiarysse Emerenciana	1996-01-01	WR	10	132	62	0.13
+Sasha Hendrix	1992-01-01	DL	99	203	68	0.01
+Brianna LaFleur	1997-01-01	WR	37	115	62	0
+Autumeize Gardner	1998-01-01	OL	90	350	73	0
+Mel Bayani	1981-01-01	DL	43	160	68	0
+Carah Johnson	\N	DB	11	133	66	0
+Sacoyia Todd	1991-01-01	LB	97	175	63	0
+Tyara Blades	1996-01-01	LB	45	170	64	0.01
+Viola Hall	1986-01-01	OL	75	185	69	0
+Veronica Wiebold	1996-01-01	OL	74	200	66	0
+Dayton Yingling	1996-01-01	RB	72	190	64	0.07
+Shardonay Jenkins	0220-01-01	DL	31	220	69	0.14
+Jasmine Nelson	1994-01-01	DB	23	120	64	0.01
+Charnel Archer	1999-01-01	OT	32	181	67	0
+Deztine Thomas	1993-01-01	DB	14	120	65	0
+Michelle Thornton	1981-01-01	OL	76	217	64	0
+LeShaunte Bowman	1992-01-01	DL	57	250	68	0.01
+Courtney Shaw	1994-01-01	DL	47	283	64	0
+Porsche Elam	1987-01-01	OL	68	205	64	0
+Rebecca Tillman	1995-01-01	OL	67	190	71	0.01
+Antoinette Harris	1996-01-01	DB	1	165	67	0.02
+Breana Griggs	\N	WR	2	\N	\N	0.03
+Seini Pailate	\N	DL	56	300	69	0
+Mila Porter Lawson	1998-01-01	OL	62	245	68	0
+Ronnise Wilson	1989-01-01	RB	36	145	61	0.25
+Vanesia Thompson	2001-01-01	RB	34	128	63	0
+Shauna Floyd	1998-01-01	DB	18	150	65	0.01
+Jennifer Erickson	1984-01-01	LB	41	145	64	0.01
+Cheyanne Kurth	1992-01-01	WR	22	151	67	0.17
+Coretta Hopkins	\N	WR	15	130	67	0.12
+Kassidi Wynter	\N	DL	82	\N	\N	0.14
+Ellana Watson	1995-01-01	OL	64	238	65	0.01
+Desiree Spivey	\N	LB	44	\N	\N	0.02
+Morgan Smith	1992-01-01	OL	0	192	64	0
+Reese Green	1989-01-01	LB	17	169	64	0.01
+Charmaine Bradford-Airy	1996-01-01	LB	48	190	62	0.03
+Jessica Jackson	1982-01-01	OL	54	200	60	0
+Aria Wagaman	2003-01-01	LB	27	150	69	0
+Kristyanna Pierce	1986-01-01	DL	82	168	68	0
+Darnisha Lee	1993-01-01	DL	21	170	70	0
+Gabrielle Madden	1995-01-01	OL	65	220	69	0
+Mitzi Macias	\N	WR	35	140	65	0
+Mackenzie Grause	1992-01-01	TE	92	215	68	0.01
+Brianna Daniel	1996-01-01	QB	5	135	67	0
+Sasha Gomez	1985-01-01	DL	68	170	69	0
+Andrea Wright	1991-01-01	LB	17	155	61	0
+Marico Davis	\N	DB	8	165	65	0
+Jordyn White	\N	C	32	200	72	0
+Jamie Brann	\N	WR	2	185	70	0
+McKenna Morgan	2001-01-01	OL	50	237	66	0.01
+Rocky Baxter	1995-01-01	RB	25	128	64	0.06
+NiaMaya Outlaw	1996-01-01	DB	13	177	68	0.09
+Shamaya Smith	1991-01-01	DL	91	315	72	0
+Faatupu Malaulu	1999-01-01	OL	95	290	67	0
+Erinn Payton	\N	RB	4	202	70	0.02
+Dee Jackson-Ross	1986-01-01	DB	30	145	67	0.02
+Shadella Reese	\N	TE	6	165	65	0.09
+Katherine Claxton	1998-01-01	WR	10	185	72	0.07
+Christina Jaques	1988-01-01	QB	5	150	70	0.03
+Monique Calhoun	1993-01-01	DL	93	230	62	0
+Michelle Oetjen	\N	QB	0	150	69	0
+Tanaysa Henderson	\N	WR	3	175	71	0.07
+Gabriel Rahming	1994-01-01	DB	10	158	64	0.01
+GiGi Chandler	1977-01-01	DE	87	145	63	0
+Fanny Feldman	\N	RB	3	137	63	0
+Breana Griggs	1993-01-01	S	1	140	66	0
+Jeree Clark	1988-01-01	RB	14	150	63	0.06
+Rabihah Harrison	\N	LB	31	165	60	0
+Maria Jackson	1985-01-01	WR	81	170	66	0.71
+Cierra Childress	\N	DB	6	\N	\N	0.04
+Mahiya Ellis	\N	DL	77	287	68	0
+Alysia Joubert	1994-01-01	WR	19	161	73	0.03
+Kim Cade-Henry	1979-01-01	DL	29	200	63	0.05
+Omariyana Womack	1990-01-01	DL	95	200	67	0.04
+Shana Sumers	1990-01-01	TE	61	185	68	0
+Faith Rogers	1984-01-01	DL	93	188	66	0
+Tracy Richmond	1991-01-01	DL	42	213	63	0
+Rebecca Banks	\N	DL	97	210	68	0.01
+Imelda Elizabeth De Leon	1983-01-01	WR	16	150	66	0
+Aireka Fowler	1997-01-01	RB	26	115	61	0
+Jelani Kelly	1990-01-01	FB	27	220	66	0.16
+Chloe Williams	2001-01-01	DL	56	210	68	0
+Rosa Egbert	\N	DL	74	\N	\N	0
+Enedina Gomez	1978-01-01	OL	53	225	64	0
+Sigourney Gonzalez	1988-01-01	QB	8	165	64	0
+Amari Trevino-Beverly	2003-01-01	LB	62	245	68	0
+Sarah Guerra	\N	OL	72	205	65	0
+Rebecca Becky Boehme	1981-01-01	WR	31	135	63	0
+Ayanna Dunia	1986-01-01	DL	60	195	66	0.01
+Isabelle Bartter	1988-01-01	TE	9	132	65	0
+Shelby Towkach	\N	K	45	160	65	0.01
+Allyssa Weatherd	1993-01-01	LB	9	175	67	0.16
+Treva Mason	1992-01-01	TE	86	200	69	0
+Macie Ables	2010-01-01	OL	71	280	67	0
+Brynn McNabb	2003-01-01	WR	4	145	67	0.27
+Samonah Betts	\N	TE	3	\N	\N	0.01
+Tinoi Jones	1986-01-01	RB	31	190	67	0.09
+Jessica Johnson	\N	S	10	155	69	0
+Olivia Wilson	\N	WR	11	150	66	0.08
+Rea Schmidt	1987-01-01	OL	66	234	70	0
+Cayleigh Blackwell	1989-01-01	DB	42	141	67	0.01
+Sharolin Sanders	1994-01-01	DL	51	180	67	0
+Alla Ticket Gruzdeva	1993-01-01	QB	12	145	67	0.39
+Lauria Saettele	1990-01-01	DB	17	145	64	0
+Marissa Lopez	\N	QB	5	\N	\N	0.28
+Jasmine Redmon	\N	DB	9	\N	\N	0
+Kassiah Moore	\N	OL	78	220	66	0
+DeAnna Hightower Riley	1978-01-01	DL	11	185	72	0.03
+Lily Bell	2008-01-01	OL	65	237	65	0
+Brittany OConnor	1993-01-01	DL	56	210	70	0.03
+Samantha Williams	\N	WR	39	\N	\N	0
+MaiKia Williams	\N	S	0	\N	\N	0.06
+Tasha Owens	\N	OL	96	\N	\N	0
+Ronnika Burks	\N	OL	53	290	66	0
+Naena Bland	1996-01-01	WR	16	135	69	0.34
+Tatjana Tschirpke	\N	QB	13	125	69	0.03
+Shelia Sickau	1988-01-01	P/	7	0	\N	0
+Shavonne Richardson	\N	OL	70	200	65	0.03
+Jessica Estes	\N	LB	81	170	64	0
+Armoni Stevenson	2000-01-01	DL	35	215	67	0.03
+Brooke Avery	1995-01-01	DL	95	195	70	0.07
+Bryt Felder-Brown	\N	TE	24	\N	\N	0
+Angela Hamilton	\N	DB	2	150	66	0.03
+Erica Jones	1999-01-01	OL	51	250	64	0
+LaCreisha Lane	\N	LB	34	185	67	0
+Alexandria Specht	1998-01-01	TE	88	165	74	0
+Sam Rozell	1998-01-01	OL	98	240	67	0
+Ashley Murray	1995-01-01	WR	84	185	74	0
+Dalphine Armstrong	\N	DL	44	280	68	0
+Kacey Grierson	\N	OL	69	\N	\N	0
+Britt Hennings	2002-01-01	RB	83	125	64	0
+Tanea Carlton	\N	DL	79	215	66	0
+Megan Thompson	1979-01-01	OL	78	178	68	0
+Tatiana Larry	1994-01-01	DL	55	260	69	0.01
+Melonie Washington	1989-01-01	LB	24	180	66	0.02
+Shannon Nelson-Brown	1987-01-01	DL	48	235	68	0.04
+Emry Miller	\N	OL	54	200	68	0
+Charon Sweeney	\N	WR	8	145	63	0
+Jennifer Galarza	\N	DB	26	138	65	0
+Anna Wilson	\N	OL	78	227	66	0
+Sabrina Ceniza	1996-01-01	OL	78	205	63	0
+Daniela Ottaino	1983-01-01	K	48	170	67	0
+Shaniya Lacey	2001-01-01	RB	0	145	64	0
+Rebecca Munoa	1981-01-01	OL	65	225	70	0
+Victoria Archuleta	\N	S	17	125	66	0
+Amanda Morgan	1993-01-01	OL	72	260	66	0
+Charlyshia Bradford	\N	DL	23	\N	\N	0.05
+Taylor Coleman	\N	WR	88	145	65	0.15
+Taylor Baldwin	1992-01-01	K	0	135	61	0.06
+Teresa McCann	1991-01-01	OL	91	220	67	0
+India Parker	2000-01-01	RB	7	150	66	0.02
+Nicole Attleson	1983-01-01	DL	5	180	71	0.05
+Hanna McEwen	1998-01-01	DB	12	148	67	0.04
+Aleesah Wilson	2005-01-01	RB	11	140	64	0.1
+Cara Wesemann	1992-01-01	WR	34	165	67	0.02
+Kimberly Abraham	1992-01-01	RB	32	150	67	0
+Myla Somerville	\N	WR	86	\N	\N	0.06
+Lauren Crouch	1996-01-01	QB	8	130	65	0.12
+Felicia Lepore	\N	WR	81	145	62	0
+Nichole Bressner	\N	LB	69	195	64	0
+Jocelyn Montoya	1995-01-01	OL	57	245	65	0
+Holly Hannah	1986-01-01	TE	10	155	70	0
+Xebulynn Whitney	1994-01-01	OL	69	190	65	0
+Alisha Young	\N	DB	21	135	64	0.02
+Louise Bean	1972-01-01	QB	12	165	66	0
+Aspen Williams	1994-01-01	OL	70	235	63	0
+Nicole Walmer	1991-01-01	QB	11	170	65	0
+Billie Kennedy-Jefferson	\N	RB	21	166	64	0
+Xiarysse Emerenciana	1996-01-01	WR	2	130	62	0
+Tehya Demski-Hamelin	1992-01-01	DB	13	128	64	0.02
+Jessica Gerdes	\N	LB	37	180	66	0.03
+Aylin Alejandra Rivera Rivera	2001-01-01	TE	36	176	68	0
+Christina Mondragon Schrader	1992-01-01	DB	17	130	64	0
+Jamie Lock	1990-01-01	DB	21	135	62	0.11
+Donnell Finnaman	1982-01-01	LB	78	300	67	0.01
+Isabel Warren	2000-01-01	WR	0	170	66	0.27
+Adriana Gutierrez	1997-01-01	RB	27	135	61	1.03
+Chantel Talton	1992-01-01	OL	60	195	65	0
+Kelly Rosso	1995-01-01	DB	11	140	66	0
+Daniela Martinez De La Garza	1986-01-01	LB	50	155	67	0
+Latanglia Dorsey	1986-01-01	DL	99	320	69	0.02
+Dorothy Angilau	1990-01-01	DL	77	213	63	0
+Lindey Larry	\N	LB	9	145	67	0.03
+Shantavia James	1989-01-01	LB	66	190	65	0.01
+Brittany Jones	\N	DB	5	145	66	0.08
+Tekesha Zo Williams	1989-01-01	OL	53	145	64	0
+Aundrea King	1990-01-01	LB	53	200	67	0.04
+Olivia James	1992-01-01	WR	24	155	69	0
+Jahnique Carter	1996-01-01	DT	99	195	63	0
+Amanda Krauss	1988-01-01	OL	99	202	72	0
+Natasha Jackson	1982-01-01	OL	77	160	63	0
+Eloisa Torres Torres	1993-01-01	WR	82	164	66	0
+LaDonna Leachman	\N	OL	94	\N	\N	0
+Morgan Saybold	2003-01-01	DB	39	110	62	0
+Annamarie Fagnani	1987-01-01	DL	71	235	69	0
+Kylie Latimer	1998-01-01	OL	62	210	66	0.01
+Tara Thomas	1989-01-01	RB	15	151	64	1.84
+Sydney Smith	\N	S	6	130	66	0.04
+Bethany Hipps	1993-01-01	OL	65	260	69	0
+Whitney Ramsey	\N	OL	97	273	66	0
+Sydney Lambert	\N	DB	21	140	67	0
+Anastasia Bosques	1987-01-01	LB	17	155	63	0.03
+Monique Gonzalez	\N	OL	75	\N	68	0
+Denesha Richardson	1994-01-01	DB	16	185	69	0
+Regina Escoto Macias	2003-01-01	RB	6	120	61	0.41
+Knengi Martin	1983-01-01	QB	11	200	71	0.49
+Margo Smith	1993-01-01	DB	28	155	63	0.04
+Brooklyn Rielly	2001-01-01	DB	80	110	63	0.06
+Annelise DeFrank	1988-01-01	DT	67	180	65	0
+Haley Brown	\N	QB	18	142	62	0
+Valerie Tyler	1993-01-01	DL	91	150	67	0.03
+Brooke Denny	1993-01-01	LB	44	155	64	0
+Venom Garcia	2002-01-01	LB	33	145	64	0.04
+Morgan Darden	\N	OL	69	275	72	0
+Fernanda Zaldo	2001-01-01	OL	58	212	64	0
+Kaire Phelps	\N	DB	13	\N	\N	0.03
+Rebecca Banks	\N	QB	3	200	68	0
+Alysia Dominguez	1987-01-01	WR	11	115	63	0
+Alysia Dominguez Bisquera	1987-01-01	DB	11	120	63	0
+DAjah Scott	1992-01-01	WR	4	165	68	0.65
+Jacki Waring	1995-01-01	WR	81	140	72	0.01
+Shenelle Bush	\N	DB	50	130	65	0
+Kandy Cooke (Bortz)	1985-01-01	DL	10	160	66	0.01
+Shantia Creech	1991-01-01	DB	3	150	67	0.11
+Ava Travis	\N	OL	60	270	64	0
+Brittany Luck	1977-01-01	DL	90	150	67	0
+Rose DeLuco	1983-01-01	DL	37	180	63	0
+Asiah Walker	\N	DB	18	126	70	0.01
+Quiana Ford	1990-01-01	DB	27	155	67	0.01
+Vanessa Palmeri	\N	WR	7	170	64	0.03
+Syreeta Gapelu	1982-01-01	DL	61	236	66	0.08
+Brittany Carney	1990-01-01	QB	7	215	66	-0.01
+Nina Gomez	1978-01-01	OL	53	220	64	0
+Madison Jones	1994-01-01	OL	71	250	72	0
+Wendy Sun	\N	RB	9	130	63	0.1
+Tahj Reddick	\N	DB	18	\N	\N	0
+Mariane McClinton	1991-01-01	DE	28	195	68	0
+Angie Wells	\N	DB	41	147	64	0.07
+Catherine Norris	1987-01-01	OL	66	230	70	0
+Taneisha Sweetenburg	1989-01-01	DB	34	137	58	0
+Shaniqua Bennett	1990-01-01	DL	25	170	69	0
+Elora Maestas	\N	WR	14	125	63	0
+Ebonie Graham	1989-01-01	LB	28	180	66	0
+Tasha Owens-Price	\N	OL	96	\N	\N	0
+Jordan Thomas	\N	WR	15	135	65	0
+Dana Harris	1997-01-01	QB	5	165	63	0
+Deana Guidry	1978-01-01	LB	0	186	66	0
+Zaire Nelson	1998-01-01	DL	80	238	72	0.01
+Nova Nyström	2006-01-01	OL	52	212	67	0
+Olivia James	1992-01-01	WR	16	165	69	0
+Kesha Smith	\N	WR	10	175	65	0
+Harley Foltz	2005-01-01	RB	23	150	63	0.01
+Kea Mercer	1993-01-01	RB	10	125	62	0.26
+Crystal Johnson	\N	WR	14	150	67	0
+Cinna Ford	1997-01-01	WR	28	160	65	0
+Shavonne Verdree	\N	DB	5	154	66	0.04
+Jonquil Curry	1992-01-01	DB	81	120	60	0
+Angel Duran	\N	DL	96	175	66	0.01
+Sara Fernandez	1995-01-01	DB	13	140	67	0
+Laura Saettele	1990-01-01	WR	17	122	63	0
+Ashya Elder	1996-01-01	WR	11	145	64	0.03
+Fannie Robinson	1984-01-01	DL	55	231	67	0
+Alyshia Tauaunu	1985-01-01	DL	92	220	67	0
+Haley Hagar	1991-01-01	DL	98	305	66	0
+Stephanie Fogarty-Yee	1993-01-01	WR	6	130	64	0.06
+Brittany Turner	1990-01-01	WR	88	160	69	0.01
+Anna Shields	1988-01-01	LB	28	170	62	0
+Chelsea Monsees	1998-01-01	OL	90	200	68	0
+Yolanda Johnson	1970-01-01	OL	52	198	67	0
+Yesenia Quiroga	1994-01-01	LB	49	145	67	0.01
+Christina Copelin	1981-01-01	TE	80	214	74	0
+Skylar Pringle-Hicks	\N	DL	31	190	68	0.04
+Grace Wiley	2001-01-01	DB	18	160	68	0.05
+Carolyn Lewis	1986-01-01	RB	40	155	64	0.03
+Mea Williams	1980-01-01	OL	57	198	62	0
+Alyson Azevedo	2000-01-01	LB	98	170	65	0
+Bailey Paskach	\N	DL	42	\N	\N	0.1
+Julysil Paycoan	2005-01-01	RB	10	130	58	0
+Inaya Freeman	1999-01-01	DL	5	215	62	0
+Alyssa Lorbiecki	\N	DB	16	125	66	0.03
+Marica Johnson	\N	DL	37	200	66	0
+Aria Wagaman	2003-01-01	DB	33	140	69	0
+Cambria Davis	1999-01-01	OL	77	250	70	0
+Adrienne Watson	\N	RB	45	175	66	0
+Ebony Goolsby	1991-01-01	RB	38	240	67	0.04
+Sydney Dela Cruz	\N	RB	36	150	60	0
+Morgan Lewis	1998-01-01	DB	23	150	69	0
+Zomi Anderson	1989-01-01	DL	3	250	69	0
+Emmalee Munns	1992-01-01	DL	83	230	62	0
+Shainna Cato	\N	OL	59	265	64	0
+Serena Smith	1988-01-01	OL	36	205	64	0
+Christine Jaqueth Mason	1988-01-01	LB	50	180	68	0.05
+Cheyene Adkins	\N	WR	3	130	63	0
+Tianna Bell	1998-01-01	LB	52	220	66	0
+Naomi Lee	\N	OL	54	188	63	0
+Laura Marraccini	\N	DB	29	147	63	0
+Jade Ross	1991-01-01	OL	75	370	69	0
+Essence Lipscomb	\N	OL	72	240	70	0
+Sheila Sickau	1988-01-01	WR	7	143	68	0
+Barbriel Davis	1988-01-01	DL	99	250	70	0
+Alexandra Sweet	\N	LB	31	175	66	0.09
+Marisa Goddard	\N	DL	99	299	68	0
+Heather Dulin	1984-01-01	OL	90	240	65	0
+Angela Benson	1999-01-01	OL	55	200	67	0
+Natasha Johnson	\N	LB	31	\N	\N	0.04
+Tarnisha Taylor	\N	WR	14	\N	\N	0
+Kellye Lofquist	1990-01-01	RB	25	170	66	0
+Shonte Williams	1990-01-01	DB	15	135	63	0
+Jennifer Green	1992-01-01	OL	79	199	69	0
+Tracey Dorcemont	1995-01-01	OL	68	250	71	0
+Mio Yoshisa	1995-01-01	RB	1	121	62	0
+Maya Johnson	1994-01-01	LB	43	160	63	0
+Robin Johnson	1990-01-01	QB	20	145	66	0.23
+Desirea Mcginnis	1997-01-01	OL	84	240	71	0
+Jocelyn Charette	\N	K	16	160	70	0.03
+Kelli Jones	\N	DB	33	130	63	0
+Alyssa McCarron	1999-01-01	WR	10	145	66	0.05
+Greys Bernal	\N	OL	70	216	66	0
+Arielle Hester	1989-01-01	OL	69	250	66	0
+Salina Samario	1994-01-01	DB	35	160	68	0
+Natalie Wiggins	1986-01-01	DE	36	140	64	0.01
+KaNesha Sheriff	1991-01-01	WR	88	164	70	0.08
+Lavonna Collymore	\N	DL	70	258	66	0.02
+Faith Robinson	1991-01-01	DB	85	125	63	0
+Ysabella Cobbinah-Fears	2003-01-01	TE	86	210	70	0
+RaeJean Marshall	1994-01-01	RB	43	150	58	0
+Sierra Le Grande	2004-01-01	DB	46	155	68	0
+Nevaeh Simril	2006-01-01	DL	63	315	64	0
+Diamond Scott	1996-01-01	WR	1	130	61	0
+Tiana Bell	\N	LB	20	210	65	0.01
+Kristel Reid	\N	LB	14	160	69	0.01
+Morgan Hutchins	2005-01-01	OL	50	240	68	0
+Megan McDonald	\N	WR	31	\N	\N	0.02
+DYana Bolden	2001-01-01	LB	16	170	68	0
+Monica Salazar	1996-01-01	WR	85	159	59	0
+Pamela Melchi	1987-01-01	OL	78	230	67	0
+Latia Matthews	\N	OL	77	250	74	0
+Lacy Mile	1988-01-01	LB	23	135	62	0.05
+Monique Benitez	1987-01-01	DL	74	150	67	0.02
+Pasha Johnson-Rivers	1997-01-01	RB	33	185	64	0.22
+Yesenia Quiroga	\N	LB	45	158	63	0
+Tori Dixson	1992-01-01	OL	76	255	71	0
+Laila Finley	2006-01-01	DB	10	165	71	0.09
+Naomi Stuger	1995-01-01	WR	82	145	69	0
+Kassandra Payne	\N	OL	78	\N	\N	0
+Rebekah LaMie	\N	OL	68	\N	\N	0
+Dayna Moneta	1989-01-01	OL	75	290	66	0
+Alimirah Hall	1992-01-01	DB	38	135	68	0.02
+Brooklyn Waddles	\N	DL	48	193	69	0
+Daniel Doriscar	1999-01-01	RB	6	135	61	0.12
+Amanda Walker	1982-01-01	DL	74	285	70	0.03
+Mallory Torres	\N	DB	19	\N	\N	0.01
+Brittany Johnson	1996-01-01	DL	28	200	70	0
+Lainie Thompson	1990-01-01	LB	84	160	70	0.07
+Kerrie Isom	2000-01-01	LB	22	165	66	0.04
+Chelsea Parrish	1990-01-01	DL	91	225	67	0
+Leeya Zander	2002-01-01	LB	22	185	70	0.01
+Chassidy White	1994-01-01	RB	20	145	64	0
+London Ortiz	1999-01-01	DB	27	175	68	0
+Makiya Adams	2004-01-01	DL	96	145	64	0
+Bria Truxon	1994-01-01	TE	2	189	69	0.01
+Mariah Makupson	1994-01-01	LB	15	185	63	0.02
+Hannah DeGraffinreed	1990-01-01	TE	84	200	70	0
+Tina Tela	1980-01-01	DL	3	190	66	0.27
+Tehya Brown	1999-01-01	LB	49	180	71	0.01
+Darcy Leslie	1986-01-01	LB	27	170	66	0
+LaShanda Griffin	\N	DB	24	\N	\N	0.01
+Tessa Ortiz-Marsh	\N	QB	13	180	68	0.21
+Yasmene Harris	1989-01-01	DB	0	155	67	0
+Shardae Anderson-Bell	1986-01-01	OL	95	180	64	0
+Kaylee Parker	\N	QB	10	\N	\N	0.15
+Radiyah Snoop Robertson	1996-01-01	DB	10	150	66	0
+Danielle Izykowicz	1996-01-01	WR	34	155	67	0
+Amber Mendes	1993-01-01	WR	3	138	63	0
+Amiracle Mitchell	\N	WR	0	\N	\N	0.03
+Orianna Baxter	1995-01-01	RB	25	145	64	0
+Jessie Warr	1999-01-01	OL	55	260	69	0
+Kris Grimes	\N	RB	26	201	63	0.3
+Luma Barbedo	\N	OL	70	245	72	0
+Kritt Tucker	\N	LB	22	175	65	0.07
+Katie Miller Lite Miller	1990-01-01	LB	50	185	64	0
+Michell Zamudio	\N	DB	7	163	65	0.02
+Jamie Fornal	1986-01-01	LB	14	158	68	0.07
+Quiani Miller	1984-01-01	OL	74	205	66	0
+Margaret Pan	\N	DL	71	220	66	0
+Brennan Crabtree	1995-01-01	WR	12	135	68	0.11
+Samantha Vasquez	\N	DL	63	205	63	0.01
+Alyssa Olson	1995-01-01	LB	31	140	67	0.01
+Dajour Miles	2001-01-01	WR	12	140	66	0.58
+Erica Dabney	1990-01-01	WR	32	154	66	0
+Porsche Yarbough	\N	DL	50	267	62	0
+Amy Fox	1986-01-01	OL	53	150	64	0
+Monica Pickens	\N	DL	64	220	69	0
+Julia Mullin	\N	WR	9	140	70	0
+Trevez Bridgewater	\N	DL	53	180	67	0
+Dorothy Angilau	1990-01-01	DL	65	213	63	0
+Keeysha Cox	1988-01-01	RB	21	170	65	0.06
+Kristine Eisler	1984-01-01	DL	64	190	65	0
+Tatiana Perez	1993-01-01	DB	11	124	62	0
+Brittany Bassett	\N	TE	7	178	71	0.01
+Britanni Lusain	1995-01-01	LB	1	190	68	0.11
+Tori Leech	1998-01-01	WR	27	150	68	0.04
+Terese Bair	\N	TE	40	230	68	0.03
+Tyteania Whitehead	1992-01-01	DB	25	165	66	0
+Renee Langlais	1984-01-01	QB	15	180	68	0.27
+Riian McCray-Smith	1989-01-01	WR	5	180	74	0
+Darcy Leslie	1986-01-01	LB	29	170	67	0.07
+Angelina Faulkner	1986-01-01	OL	76	215	65	0
+Tierra Lassiter	1982-01-01	DL	69	200	72	0
+Sigourney Gonzalez	\N	QB	6	175	64	0
+Ciera Johnson	2000-01-01	DL	24	185	66	0.01
+Maria Hernandez Lucio	\N	OL	62	\N	\N	0
+Megan Robertson	1990-01-01	LB	21	175	67	0.17
+Ramzeh Deen-Sie	1992-01-01	LB	22	215	67	0.03
+Nikki Gilbreth	1991-01-01	OL	43	190	68	0
+Lindsey Moore	1992-01-01	LB	33	175	66	0.02
+Ashley Moon	1982-01-01	DE	48	155	63	0
+Aezioni Nakai-Fuller	1994-01-01	DL	24	280	69	0.02
+Viktoria Donetz	1998-01-01	WR	20	170	68	0
+Jacora Garry	1994-01-01	LB	58	193	62	0
+Tashani Cardwell	2000-01-01	P/	25	110	63	0
+Sharea Golson	1995-01-01	RB	24	105	60	0
+Melyse Brown	\N	QB	8	\N	\N	1.49
+Cana Tulifua	\N	OL	52	310	68	0.03
+Taylor Snoopy Snow	1995-01-01	DB	9	140	68	0
+Alyssa Gillespie	2001-01-01	DB	8	140	64	0
+Janelle Small-Williams	1979-01-01	OL	79	200	67	0
+Kiyana Jones	1995-01-01	WR	81	130	67	0.02
+Bergen Meyer	1998-01-01	RB	36	152	64	0
+Faith Robinson	1991-01-01	DB	17	140	63	0
+Kelsey Walthall	1994-01-01	DL	52	175	68	0
+Latraell Purham	1989-01-01	OL	69	235	72	0
+Wanita McCoy	1989-01-01	DL	96	270	67	0.02
+Darlene Martinez	2005-01-01	OL	65	182	65	0
+Kristen London	\N	DB	0	165	69	0.05
+Jaquela Stewart	1992-01-01	WR	10	120	61	0.03
+Alexandra Fabela	\N	OL	93	225	64	0
+Tasheonna Wilder	\N	DB	33	\N	\N	0
+Kelsie Young	1989-01-01	DL	96	280	66	0
+Kiana Flippin	1998-01-01	LB	38	210	65	0
+Brenna Morris	1999-01-01	QB	14	130	66	0.04
+Tinika Burns	\N	DL	35	\N	\N	0.05
+Candace Jensen Lopez	1979-01-01	OL	96	170	66	0
+Ryvan Buchanan	1991-01-01	QB	0	150	67	0
+Nathalie Irmer	1995-01-01	OL	50	315	72	0
+Ariana Gonzalez	\N	DL	75	170	67	0.07
+Antionette Van	1998-01-01	LB	52	185	66	0
+Kelli Smith	1991-01-01	RB	14	152	65	0
+Nina Wilkerson	2007-01-01	LB	16	130	61	0
+Whitney Morrell	\N	OL	69	260	67	0
+London Hester-Williams	\N	OL	59	220	63	0
+Latangela Dorsey	\N	DL	99	\N	\N	0
+Mahogany Gaines	1997-01-01	LB	18	145	67	0.15
+Madison Grayson	2002-01-01	WR	21	190	71	0.33
+Celeste Robinson	1984-01-01	OL	71	235	71	0
+Rachel Lund	1994-01-01	S	30	170	71	0.03
+Shalynn Splettstoesser	1991-01-01	LB	33	185	65	0.01
+Bianca Mouton	\N	DL	99	205	64	0.01
+Anna Tran	\N	WR	28	145	64	0
+Drea Scott	1988-01-01	LB	58	129	65	0
+Tanisha Norman	1995-01-01	DB	2	150	67	0
+Mandy Rodriguez	1998-01-01	RB	18	165	63	0
+Denitra Parker	1985-01-01	OL	70	215	69	0
+Krista Seaman	\N	WR	6	130	65	0.05
+Racquell Ray	1990-01-01	DB	21	135	63	0.02
+Tiffany Hopkins	\N	DL	27	200	62	0.04
+Brianna Rastello	1995-01-01	LB	31	160	65	0
+Natasha Johnson	1985-01-01	RB	11	170	67	0
+Lavinia Culbreath	\N	DL	48	175	69	0
+Karla Granados Rodriguez	\N	RB	25	\N	\N	0.14
+Heather Puletasi	1987-01-01	RB	44	215	65	0.01
+Sierra Call-Rust	1996-01-01	OL	90	195	60	0.01
+Kenyatta Sears	1992-01-01	LB	30	165	65	0
+Lindsey Barnes	1987-01-01	OL	52	195	71	0
+Chelsea Whiteside	1992-01-01	DL	91	300	66	0.01
+Arlyssa Perry	\N	OL	75	190	63	0
+Dominique Trappio	\N	S	15	\N	\N	0
+Jamari Avery	\N	DL	60	317	71	0
+Precious Moses	1994-01-01	DL	50	230	66	0.06
+Stephanie Miller	1989-01-01	QB	16	130	67	0
+Alia Karmali	1984-01-01	TE	84	197	68	0.21
+Trish Stephens	1987-01-01	DB	11	140	66	0.03
+Maria Acension	1990-01-01	DB	2	135	64	0.05
+Kimberly Thomas	\N	OL	54	245	66	0
+Jasmine Poole	1994-01-01	DB	23	160	66	0.02
+Victoria McIntyre	\N	OL	64	380	67	0
+Jenyll Alcantara	1989-01-01	DL	63	190	67	0
+LaShantel Wilson	\N	DB	13	205	69	0.16
+Isis Woods	1992-01-01	DL	99	280	67	0
+Monique Dingle	1986-01-01	WR	86	125	63	0.02
+Denetria Crawford	1989-01-01	LB	37	189	67	0.05
+Mickayla Martin	1989-01-01	TE	17	198	61	0.02
+Katie Claxton	1998-01-01	LB	10	200	\N	0.41
+Brittany Satterwhite	1986-01-01	RB	17	145	65	0.77
+Autumn Dozier	1997-01-01	DB	16	135	61	0
+Kaytlin Harvey	\N	OL	51	275	68	0
+Joselyn Lazaro	\N	LB	38	150	67	0.02
+Jennell Thomas	1980-01-01	QB	12	190	65	0.57
+Te Kesha Zorial Williams	\N	OL	53	\N	\N	0
+Alicia Zappia-Neeley	1999-01-01	DB	25	125	62	0.11
+Courtenay Williams	1990-01-01	OL	52	220	73	0
+LaTerricka Smith	1994-01-01	RB	18	145	63	0
+Shicarea Hutchins	2003-01-01	DL	56	200	70	0
+Ruby Albright	1990-01-01	RB	15	135	63	0
+Rheanna Deeds	\N	OL	41	190	72	0
+Trei Brown	\N	RB	24	\N	\N	0.01
+Elliot (Elisa) Nguyen	\N	LB	22	\N	\N	0.03
+Alesia Stewart	1996-01-01	TE	86	195	64	0.04
+Kylie Edwards	\N	WR	69	\N	\N	0
+Summer McNeal	2003-01-01	WR	23	165	70	0
+Meaghan Bossard	1994-01-01	LB	18	168	67	0.01
+Grace Mole	2000-01-01	WR	88	145	65	0
+Elizabeth Jenkins	1981-01-01	OL	62	230	66	0
+Shaunya Kahananui	\N	WR	10	150	69	0.22
+Marlette Wilber	1994-01-01	OL	54	210	66	0
+Tatiana Rice	2003-01-01	DL	93	150	67	0
+Mikaile Fortson	1992-01-01	LB	7	175	68	0.03
+Jocelyn Fernandez	1998-01-01	WR	11	150	64	0.01
+Lindsay Powell	1990-01-01	DL	77	260	67	0.02
+Shauntavia Brigham	1992-01-01	DL	95	290	69	0.05
+Jasmine Coleman	1993-01-01	WR	2	145	64	0.04
+Alayah Lewis	1994-01-01	DL	93	185	62	0
+DaMaree Mitchell	1993-01-01	RB	27	\N	\N	0
+Daisy Avila	1996-01-01	LB	5	200	64	0.02
+Victorianna Dixson	\N	OL	76	245	71	0
+Taylor Baldwin	1992-01-01	P/	42	135	61	0
+Cortney Mosier	1995-01-01	LB	23	145	63	0.11
+Janelle Small	1979-01-01	OL	79	212	67	0
+Blessing Tate	1977-01-01	LB	48	160	61	0.01
+Jess Sherman	1996-01-01	WR	43	132	69	0.01
+Laurisa Hollenshed	1988-01-01	LB	7	175	66	0.37
+Courtney Gray	1988-01-01	RB	18	160	64	0
+Deja Mosley	1997-01-01	QB	2	125	64	0.06
+Janice Mitchell	1986-01-01	DB	33	185	64	0.2
+Raven Preston	\N	LB	17	\N	\N	0.02
+Lisa Scurry	1993-01-01	OL	77	315	70	0
+Tara Page	\N	DL	46	195	67	0
+Ty Rodriguez	1986-01-01	QB	12	170	69	0.33
+Similiti Lealiki	\N	DL	70	180	64	0.07
+Evett Van Beek	1982-01-01	QB	96	210	64	0
+Kemmi Crosby	1990-01-01	WR	88	130	65	0.01
+Olivia Green	\N	RB	8	135	66	0
+Key Cannon	\N	WR	84	170	68	0.18
+Brandy Kite	\N	OL	69	260	64	0
+Shanice Cole	\N	DL	11	215	71	0.06
+Alexis Catton	2000-01-01	QB	14	140	66	-0.02
+Kelly Stack/Johnston	1990-01-01	WR	6	150	72	0.29
+Mykaleen Hiura	\N	QB	11	135	60	0
+Fatasia Smith	\N	WR	8	145	63	0
+Tara Thomas	1989-01-01	RB	0	145	64	0.19
+Ariyanna Burns	\N	DB	7	120	66	0
+Kiana Moore	\N	WR	19	\N	\N	0
+Umeki Webb	1975-01-01	OL	51	210	70	0.06
+Christina Tela	1980-01-01	DL	3	200	66	0
+Robin Cooper	1993-01-01	OL	65	145	64	0
+Shanysse Emerenciana	1996-01-01	WR	9	130	63	0.04
+Tammie Moore	1993-01-01	OL	78	285	68	0
+Suellen Siquiera-Fisher	\N	WR	87	139	65	0
+Erica Swain	\N	DL	87	240	69	0.02
+Sierra Bakanoff	\N	DL	68	200	64	0.01
+JaKeira Mallory	\N	DL	99	\N	\N	0.06
+Arteria Ziegler	1988-01-01	DL	56	245	64	0.04
+Emma Jones	2007-01-01	WR	3	105	64	0
+ShNiyah Hutchinson	2006-01-01	DB	9	145	64	0
+Brandi Byrd	1981-01-01	DL	67	158	64	0
+Whitney Porter	\N	OL	55	195	65	0
+English Bennett	1991-01-01	DL	29	145	64	0.14
+Madisen Mode	1999-01-01	DL	73	200	65	0.01
+Alyssa McGuinnis	\N	TE	88	\N	\N	0
+Angie Hamilton	1983-01-01	DB	2	150	66	0.15
+Annsleigh Anderson	2004-01-01	QB	23	165	67	0.3
+Imani Thompson	1998-01-01	WR	15	160	65	0
+Brooke Tanner	\N	DB	34	\N	\N	0.02
+Katherine Montgomery	1985-01-01	OL	68	210	67	0
+Latoria Randile	1982-01-01	DL	86	226	70	0.02
+Holly Custis	1984-01-01	LB	21	195	67	0
+Liv Offenbach	\N	DB	15	135	65	0
+Sarah Gomez	1993-01-01	QB	5	165	68	0.01
+Sakendra Gabriel	\N	RB	22	155	67	0.25
+Pita Lou	\N	WR	21	120	66	0.02
+Temeka Heard	\N	OL	71	198	67	0
+Sarena Shipp	2000-01-01	LB	52	205	65	0.03
+Amber Grant	\N	OL	53	\N	\N	0
+Antoinette Harris	\N	DB	15	155	66	0.01
+Camise Patterson	1992-01-01	RB	20	154	63	0
+Hana Willis	\N	DL	95	267	66	0
+Tatanisha Young	\N	RB	44	170	60	0.05
+Destinnee Banks	\N	DL	62	\N	\N	0
+Stephanie Hobson	1992-01-01	WR	26	135	65	0
+Charon Sweeney	1995-01-01	RB	11	150	62	0
+Jerrica Davenport	1989-01-01	OL	55	185	70	0
+Azalia Allen	1993-01-01	RB	66	257	67	0
+Ruby Watson	2005-01-01	OL	62	288	65	0
+Starry Bady	1977-01-01	DB	5	150	66	0.08
+Chelsea Leyerly	\N	OL	82	200	70	0
+Jasmine Edmond	\N	DL	83	165	68	0
+Anna Malone	\N	OL	58	180	67	0
+Hannah Makasini	1999-01-01	RB	20	200	67	0.1
+Sarah Teubner	1999-01-01	QB	8	170	67	1.16
+Erica Mason-Austin	1999-01-01	WR	1	175	68	0.04
+Christian Ross	\N	LB	48	160	65	0
+Keanu Malala	\N	LB	33	157	64	0
+LaRoyia Bauer	1987-01-01	LB	33	200	66	0.05
+Molly Richardson	1989-01-01	QB	1	130	64	0.09
+Holly HannahTodd	1986-01-01	WR	10	138	70	0
+Carrie Mills	1992-01-01	DL	20	150	66	0.02
+Kendra Gabriel	1993-01-01	RB	2	166	66	0
+Renate Meckl	1995-01-01	DB	80	175	67	0.07
+Tiffany Ware	\N	OL	69	255	63	0
+Shelby Presley	1992-01-01	DL	56	198	68	0
+Caitlynn Jones	1992-01-01	OL	73	300	70	0
+Ashya Elder	1996-01-01	WR	12	160	67	0
+Lawanda Pearson	\N	WR	24	140	67	0
+Rocky Ray	1990-01-01	DB	21	135	63	0.02
+LaNia Charity	\N	DB	21	170	66	0.01
+Guadalupe Korpie	1992-01-01	OL	72	290	65	0
+Karissa Burnett	1991-01-01	DB	88	136	65	0.05
+Taja Maybee	\N	LB	50	200	65	0
+Quiniesha Leonard	1993-01-01	DL	92	290	74	0
+Kristen London	\N	DB	1	173	69	0.05
+Yohnee Miller	1983-01-01	OL	55	240	65	0
+Christina Montoya	1990-01-01	WR	7	145	65	0
+Julia Stevenson	1981-01-01	OL	82	255	66	0
+Osmara Gissell Nunez Barrera	1999-01-01	DL	50	170	64	0.13
+Taylor Brashears	1998-01-01	DL	87	185	68	0.08
+Ivette Nava Garcia	1984-01-01	RB	78	170	63	0.01
+Zshalyn Canfield	\N	RB	15	117	65	0.01
+Kymesha Taylor	1992-01-01	DB	15	170	67	0.02
+Sarai Sifuentes	\N	RB	34	172	62	0.02
+Ella Meyer	\N	LB	64	150	63	0.01
+Leslie Robinson	1985-01-01	RB	2	145	62	0
+Ashley McBay	1990-01-01	RB	20	145	62	0.08
+Daisha Lawson	\N	DB	13	130	62	0.02
+Andraliah Lee	\N	RB	20	170	65	0.49
+Chantal Thacker Ridlon	1993-01-01	LB	47	155	69	0.05
+Megan Stier	1997-01-01	WR	99	150	62	0
+Myeisha Johnson	\N	DL	54	\N	\N	0
+Reagan Price	1998-01-01	RB	45	175	67	0.04
+Shaniya Lacey	2001-01-01	WR	4	135	66	0.08
+Priscilla Petersen	\N	LB	36	210	67	0
+Grace Cooper	\N	RB	24	\N	\N	0.44
+AlNisa Thomas	\N	LB	20	195	66	0.1
+Whitley Conn	\N	OL	58	200	67	0
+Jasmyn Chachrelle Nguyen	\N	LB	33	\N	\N	0.03
+Trevez Bridgewater	\N	DL	77	175	68	0
+Aleesah Wilson	\N	RB	28	129	63	0.01
+Christine Norman	1992-01-01	OL	70	260	67	0
+Aundrea Radford King	\N	LB	53	200	67	0.04
+Monique Dingle	1986-01-01	DB	11	135	62	0.03
+Sade Minor	1994-01-01	DB	27	130	66	0.01
+Andrea Kelley	1988-01-01	WR	58	135	64	0
+Tonette Bell	\N	LB	24	168	67	0
+McKenzie Tolliver	\N	WR	84	140	67	0.04
+Kylee OConnor-Harrel	1996-01-01	DB	6	135	67	0.01
+Jasmine McDonald	\N	S	10	\N	\N	0.04
+Kelly Stack	1990-01-01	WR	6	150	72	0.36
+Jessica Salazar	1987-01-01	DB	25	175	67	0.02
+Aaliyah Knox	1995-01-01	RB	26	128	63	0
+Nicole Santos-Adam	\N	OL	50	180	62	0
+Ella Morgan	2003-01-01	DL	49	180	62	0
+Aspen Baca	1996-01-01	LB	30	175	67	0.04
+Denitra Parker	\N	OL	59	220	70	0
+Anissa Babitu	2001-01-01	LB	4	229	65	0
+Ericka Davis	\N	RB	18	\N	\N	0.02
+Alex Specht	\N	TE	88	\N	\N	0.04
+Angelica Venom Garcia	2002-01-01	LB	53	143	63	0.03
+Ricki Alex	1992-01-01	S	6	150	71	0.1
+Malissa Miles	1988-01-01	WR	5	170	69	0.07
+Tekesha Williams	1989-01-01	OL	53	255	72	0
+Natalie Laurent	\N	DL	90	157	66	0
+Kayla Holbert	\N	DB	4	165	61	0
+Ida Edwards	1985-01-01	DE	6	180	72	0.04
+Tikia Constantine	1987-01-01	RB	16	130	63	0.02
+Sammy Heck	1991-01-01	WR	17	150	71	0
+Keyla Rea	2007-01-01	WR	13	135	64	0
+Masae Fualole Loua	1998-01-01	OL	24	197	68	0
+Maya Jamison	1997-01-01	RB	5	156	66	0.01
+Christine Norman	\N	DL	66	200	66	0
+Nichelle Blake	1993-01-01	LB	50	195	64	0.04
+Alexandra Perry	1984-01-01	LB	54	165	63	0.03
+Jackie Price	1985-01-01	DL	60	255	63	0
+Countness Glover	1994-01-01	DT	90	250	64	0
+Hollie Sanders	1984-01-01	DB	7	133	66	0.02
+Dia'Sha Pearson	1993-01-01	DB	39	125	61	0.01
+Brittney Bjork	\N	WR	29	\N	\N	0.02
+Hollie Petrie	\N	QB	9	200	66	0.08
+Myeshia Johnson	1985-01-01	OL	64	250	73	0
+Mary Lee	\N	OL	62	200	64	0
+Lexie Neslen	1996-01-01	DL	37	180	68	0.01
+Johanna Aspenberg	1996-01-01	DL	70	252	67	0.09
+Brittney Bjork	1995-01-01	LB	13	155	63	0.1
+Aurieyall Scott	\N	S	21	145	68	0.04
+Harmine Christina Leo	1992-01-01	DB	18	140	65	0.07
+Elisa Nguyen	1989-01-01	LB	22	160	64	0.08
+Kelly Schaeffer	\N	WR	12	120	63	0.05
+Monica Johnson	1985-01-01	DL	51	180	69	0
+Ajane Rosen Lawton	1995-01-01	OL	74	213	67	0
+Alexus Durham	\N	OL	55	225	66	0.04
+Erica Elliott	\N	OL	65	260	67	0
+Erin Miller	1982-01-01	DB	14	140	67	0.15
+Mercy Molina-Guevara	1991-01-01	OL	62	210	65	0
+Loren Diaz	\N	DL	70	245	61	0
+Cindy Cornell	2003-01-01	LB	97	190	63	0.02
+Erica Mathia	1990-01-01	OL	33	127	59	0
+Vanessa Bell-Carmichael	1988-01-01	DE	20	157	65	0.01
+Sierra Dejesus	\N	WR	14	125	67	0
+Tosha Bins	\N	DL	58	215	69	0
+Brittany Alvarez	1992-01-01	OL	69	295	70	0
+KaMari House	2006-01-01	WR	99	145	64	0
+Shamira Vega	\N	OL	71	210	70	0
+Semone Simmons	1994-01-01	DL	92	215	66	0
+Kourtney Purham	\N	OL	53	280	67	0
+Vanessa McGinnis	1989-01-01	WR	8	164	66	0
+Tina Vang	\N	RB	46	\N	\N	0
+Mercedes Green	\N	DE	54	165	66	0
+Nova Nystrom	\N	OL	48	187	67	0.02
+Jamie Lock	1988-01-01	DB	2	130	63	0.01
+Dakota Latimer	2001-01-01	DB	30	128	66	0
+Neshara Watrous	\N	DB	24	145	63	0.01
+Ashlea Moore	1996-01-01	RB	86	115	59	0
+Angelica Sofia Garcia Rivera	2002-01-01	LB	22	153	62	0
+Omariyana Womack	1990-01-01	DE	89	215	67	0.03
+Nicole Pike	1992-01-01	LB	81	165	67	0
+Shelby Buren	1992-01-01	OL	56	227	64	0
+Aleksandra Lukasiewicz	\N	LB	52	\N	\N	0.04
+Annelise Lutz	2000-01-01	LB	38	150	59	0
+Sierra Cash	\N	OL	63	230	68	0
+Thaycha Rodriguez	\N	QB	12	180	68	0
+Tiffany Sarroca	1991-01-01	WR	7	130	65	0
+Shauntavia Brigham	1992-01-01	DL	92	290	70	0
+Nicole Grabowski	1996-01-01	LB	58	185	65	0
+Jazzmon JaNae Stovall	1998-01-01	DB	16	125	63	0.01
+Karla Romero	\N	RB	44	134	61	0.06
+Kelly Johnston	1990-01-01	WR	6	155	72	0
+Cyerius Searcy	1989-01-01	OL	61	252	64	0
+Chrystin Lucas	2004-01-01	WR	8	160	65	0
+Chelsea Parrish	1990-01-01	DT	32	225	67	0.07
+Mercedes Pettegrew	\N	LB	11	\N	\N	0
+Rebeka Bell	1990-01-01	WR	11	110	61	0
+Melissa Hastings	\N	DT	51	200	69	0
+Jarrah Floyde	1999-01-01	DL	88	170	67	0
+Aliyah King	2001-01-01	OL	75	278	66	0
+Katie Williams	\N	DL	70	237	66	0
+Auree King	1991-01-01	RB	15	180	64	0
+Kayla Vincent	1993-01-01	WR	27	140	64	0
+Brittany Conley	\N	DL	45	\N	\N	0
+Alana Ferguson	\N	RB	38	\N	\N	0
+Gloria Winner	\N	DB	31	130	62	0.01
+Kristina Cooper	\N	LB	19	165	64	0.05
+ShaDella Reese	1990-01-01	WR	29	155	65	0.23
+Danielle Galloway	1997-01-01	WR	0	155	63	0
+April Arnold	\N	LB	16	150	65	0.01
+Saudia Hasan	\N	DL	58	215	79	0
+Ashlea Moore	\N	WR	80	115	60	0
+Sarah Colangelo	\N	LB	25	180	69	0.02
+Kola Shippentower Thompson	\N	RB	29	180	65	0
+Joalis Rosario	\N	RB	8	160	61	0
+Rasan Gore	\N	QB	1	150	67	1.23
+Kyvondra Toalepai	1994-01-01	OL	50	265	69	0
+Alex Perry	\N	DL	54	175	63	0
+Izabelle Bateman	\N	OL	15	175	65	0
+Joy Longley	\N	DL	48	\N	\N	0.02
+Cameron Davis	\N	DB	23	139	68	0.01
+Charneice Carney	1994-01-01	DB	15	128	62	0.03
+Jasmyn Moxley	1990-01-01	DB	24	145	67	0
+Terry Viena	1991-01-01	DB	45	180	64	0
+Aundrea Colbert	2006-01-01	WR	42	150	68	0.21
+Kellie Bell	1993-01-01	DE	55	180	69	0.05
+Elizabeth Spence	\N	RB	45	133	62	0
+Elizabeth Landry	1980-01-01	WR	1	174	69	0
+Christin Stoll	1984-01-01	WR	32	170	68	0
+Kaitlynn dela Pena	1995-01-01	OL	95	310	67	0
+Charniece Carney	\N	DB	8	128	62	0
+Dajia Anderson	\N	DL	50	175	64	0
+Aly Montesino	2002-01-01	OL	80	180	67	0
+Sabirah Lucas	1996-01-01	DT	59	220	65	0
+Christi Acacio	1983-01-01	LB	40	170	59	0
+Reina Martin	1999-01-01	OT	53	220	70	0
+Shardae Bell	1986-01-01	OL	95	180	64	0.01
+Similiti Lealiki	1990-01-01	DL	97	250	64	0
+Eli Rojas	1993-01-01	OL	64	280	71	0
+Jianna Schirmacher	1999-01-01	WR	20	125	64	0
+Amy Van Der Kamp	\N	LB	72	250	64	0
+Bear McLean	1996-01-01	LB	0	162	69	0.01
+Keisha Howard	1980-01-01	DL	40	175	66	0
+Alexis Parrotta	1991-01-01	WR	8	130	63	0.09
+Raina Royale	\N	DB	5	145	65	0
+Toniquea Jackson	\N	OL	96	210	70	0.01
+Hana Yocom	1998-01-01	LB	41	155	66	0
+Amber O'Connor	1997-01-01	LB	23	160	63	0
+Gianna Zamora	1997-01-01	WR	27	153	66	0.03
+Sylvana Holmes	\N	DL	88	210	71	0.01
+Monica Johnson	1985-01-01	DL	56	\N	\N	0
+Abby Pelletier	\N	WR	24	150	65	0
+Nicole Chaves	\N	DB	7	155	73	0
+Renee Langalais	\N	QB	12	173	68	0.32
+Knengi Martin	1983-01-01	LB	47	210	71	0.1
+Rachel Woods	\N	QB	7	145	66	0.37
+Similti Lealiki	1990-01-01	DL	57	235	64	0
+Dalphne Armstrong	1992-01-01	DL	44	284	69	0.01
+Mercedes Tyler	1990-01-01	LB	39	175	64	0.24
+Chelsea Whiteside	1992-01-01	DT	99	270	66	0.03
+Jessica Cannon	1994-01-01	RB	32	140	62	0.14
+Meredith Mitchner	2000-01-01	P/	26	180	66	0
+Cyla Simon	2005-01-01	DL	52	158	59	0
+Toneyell Shropshire	\N	RB	21	155	62	0.01
+Gabrielle Juarbe	1996-01-01	DB	0	125	65	0.01
+Nicole Muccio	1996-01-01	LB	32	160	63	0.04
+Hope Memmott	1998-01-01	CB	8	132	64	0
+Latasha Dragon Richardson	1986-01-01	DE	5	205	73	0.01
+Beatrice Glinton	2000-01-01	LB	45	190	62	0
+Brittany Cleek	\N	DL	97	\N	\N	0
+Sierra Cornell	1995-01-01	DL	68	170	64	0
+Elizabeth Mely	1983-01-01	DL	72	240	72	0
+Brenna Morris	\N	WR	29	\N	\N	0
+Rylee Fenrick	2003-01-01	WR	85	150	68	0
+Jazmin Florez	\N	OL	57	220	64	0
+Lindsi Cash	\N	RB	30	165	63	0.03
+Kiana Stafford	\N	OL	77	250	72	0.01
+Mildred Byrd	1983-01-01	DL	83	160	64	0
+Hannah Leonard	1998-01-01	WR	38	153	66	0
+Kayla Chambers	1992-01-01	DB	15	155	69	0.01
+Sherrella Scott	\N	FB	44	190	64	0
+Raejean Marshall	1994-01-01	RB	19	155	58	0
+Alyssa McCarron	\N	WR	1	\N	\N	0.02
+Gina Mondragon	2003-01-01	RB	26	126	61	0
+Bonique Green	1990-01-01	OL	63	140	65	0
+Janasha Smith	1990-01-01	LB	44	190	68	0
+CharLyshia Bradford	1993-01-01	DL	23	145	64	0.13
+Ty Dossman	1985-01-01	TE	87	165	68	0
+Cathy Wabenga	1991-01-01	DB	31	135	63	0
+Rebecca Geller	1990-01-01	OL	84	180	67	0
+Jessica Phillips	\N	DL	93	365	71	0.22
+Tynisha Dossman	1985-01-01	WR	19	165	68	0.01
+Tenisha Williams	1988-01-01	OL	73	305	70	0
+Mel Garces	1977-01-01	DE	77	183	70	0.02
+Satoria Bell	1990-01-01	QB	0	215	70	0.17
+Melina Malaxos	2001-01-01	RB	26	110	59	0.63
+Echo Le Veil	\N	OL	84	\N	\N	0.01
+Stephanie Daniels	1994-01-01	DL	87	180	67	0
+Alana Stewart	1986-01-01	OL	48	206	61	0
+Eva Lampert	\N	WR	8	150	66	0.27
+Myshaunique Loggins	1996-01-01	LB	62	175	65	0.01
+Ramzeh Deen-sie	1992-01-01	LB	22	206	67	0.07
+Shanice Wheeler	1990-01-01	RB	21	145	64	0.05
+Mackenzie Vest	2003-01-01	WR	2	145	67	0.25
+Carrie Walters	1973-01-01	QB	29	160	66	0
+Alyssa Dixon	\N	QB	26	227	64	0.03
+Alexus Freeman	1995-01-01	WR	19	118	62	0.09
+Rashida Young	1991-01-01	WR	19	145	64	0.67
+Octavia Langston	1991-01-01	QB	6	180	68	0.05
+Andraliah Lee	\N	RB	31	176	65	0.12
+Sav Congdon	2000-01-01	WR	89	126	65	0
+Loriage Reid	\N	RB	17	140	66	0
+Rose Bruce	1991-01-01	OL	27	240	68	0.02
+Mattique Jones	1993-01-01	RB	44	145	62	0.06
+Meryem Zaefari	\N	RB	36	154	68	0
+Kymesha Taylor-Andrew	\N	S	15	\N	\N	0.01
+Brayana Elmore	1996-01-01	CB	44	155	69	0.04
+Teasha Martin-Palmer	1992-01-01	OL	47	216	63	0
+Maryfrances Husband	\N	OL	22	205	66	0.02
+Tameka Heard	1985-01-01	OL	71	198	67	0
+Oluwabunmi Olusina	1998-01-01	OL	54	280	71	0
+Rebecca Bautista	\N	OL	90	265	67	0
+Madeline Kop	\N	OL	55	220	68	0
+Adrienne Procter	1976-01-01	OL	58	175	63	0
+Jamila Nared	1997-01-01	WR	80	126	62	0
+Dannielle Lawrence	1988-01-01	DL	33	165	70	0
+Aja Johnson	1993-01-01	WR	26	132	62	0.01
+Kymesha Andrew	1992-01-01	DB	15	178	67	0.1
+Aezioni Fuller	1994-01-01	DL	60	280	69	0
+Pasha Rivers	\N	LB	33	185	64	0.02
+Deana Simmons-Guidry	1978-01-01	LB	0	185	66	0.14
+Markell Marquez	\N	DL	60	175	66	0.04
+Gretchen Pietras	\N	OL	64	233	68	0
+Dena Triggs	1985-01-01	RB	27	185	62	0
+Shantel Sherrod	\N	DB	14	165	68	0
+Alondra Rodriguez	\N	OL	76	310	72	0
+Tanaysa Henderson	1994-01-01	WR	8	185	72	0
+Nichole Albert	\N	OL	76	195	66	0.01
+Monisha Kirk	\N	WR	88	150	69	0.06
+Desiray Mosley	1996-01-01	DB	10	140	64	0.04
+Alona Alexander	1986-01-01	WR	8	150	67	0
+Denise Arceneaux	1985-01-01	DL	11	225	69	0.02
+Carla Odom	\N	LB	44	\N	\N	0.09
+Midajah Davis	2001-01-01	DL	60	180	64	0
+Leialoha Tela	\N	DL	59	145	64	0
+Breonna Brewer	1990-01-01	DB	81	160	67	0
+Adrienne Jackson	\N	OL	78	275	70	0
+Jahogony Ezelle	\N	DL	66	200	67	0
+Pam Melchi	\N	OL	78	250	67	0
+Aalicia Norrell	2002-01-01	DL	14	\N	\N	0.05
+Maikia Williams	2001-01-01	DB	19	125	68	0.1
+Monique Pineda	1998-01-01	DB	51	120	60	0.01
+Jeree Clark	1988-01-01	RB	36	168	64	0.01
+Shayla Thevenin	2005-01-01	WR	45	143	65	0
+Bre Ward	1991-01-01	DL	43	195	70	0.01
+Brianna Hollins	1995-01-01	WR	20	230	65	0
+Jene Walker	\N	RB	22	\N	\N	0.11
+Brittany Bassett	1985-01-01	WR	11	180	71	0.05
+Terry Cornell (Peterson)	1980-01-01	LB	45	176	61	0
+Megan Thomson	\N	DE	78	165	68	0
+Jazmin Gamble-Tello	1990-01-01	LB	9	200	65	0
+Hannah Crittendon	\N	QB	29	140	70	0
+Tia Matthew	1993-01-01	OL	64	285	74	0
+Sara Galica	1991-01-01	QB	10	135	62	1.29
+Shonna Williams	\N	LB	60	185	66	0
+Kristen Dietz	1985-01-01	LB	44	152	66	0.01
+Glorena Pugh	1983-01-01	OL	71	390	73	0
+Lanie Ford	\N	OL	79	250	69	0
+Aliayah Lewis	1993-01-01	DL	93	190	63	0
+Darion Mitchell	\N	LB	20	172	62	0.01
+Cindylou Rasiang	2003-01-01	QB	4	165	66	0.08
+Katherine Wise	1989-01-01	TE	48	200	71	0
+Jackie Espinoza	1992-01-01	RB	15	110	61	0
+Perenise Liusamoa	\N	OL	53	270	65	0.01
+Chyna Cole	1991-01-01	DB	28	140	66	0
+Kris Davis	1987-01-01	DL	41	170	69	0.01
+Echo Le Vell	1990-01-01	DB	84	160	67	0
+Stephanie Raymond-Young	1985-01-01	QB	16	140	65	0
+Tia McCants	\N	RB	7	120	62	0
+Demiera Lockhart	1996-01-01	OL	69	215	65	0
+Brittany Sanders	\N	OL	71	247	66	0
+Alyssa Speckhals	1988-01-01	TE	80	175	71	0.01
+Alexa Legend	\N	WR	86	135	71	0
+Dmayla Holliday	\N	DL	50	230	69	0.07
+Xaviera Talai	\N	LB	43	150	63	0
+Kala Monserret	1991-01-01	DB	39	130	65	0
+Rebeca Barrios	\N	OL	50	\N	\N	0
+Amber Craft	\N	LB	40	\N	\N	0.24
+Shanysse Emerenciana	1996-01-01	WR	5	140	63	0
+Kylee OConnor-Harrel	1996-01-01	DB	19	135	67	0
+Meagan Tyler Curtis	\N	RB	38	\N	\N	0.63
+Regena Jackson	\N	QB	3	\N	\N	0.69
+Jimeriam Jackson	1991-01-01	DL	42	185	70	0.01
+Kesz Wesley	1992-01-01	RB	24	\N	\N	0.7
+Serika Shillingsworth	1999-01-01	WR	4	155	69	0.03
+Diamond Wright	1993-01-01	DB	10	145	67	0.07
+Marianne McClinton	\N	DL	42	\N	\N	0.01
+Richelle Lenoir	1995-01-01	OL	69	263	68	0
+Tracy Jackson	1988-01-01	DL	77	340	71	0
+Andrea Scott	\N	WR	58	\N	\N	0
+Morgan Alston	1995-01-01	RB	0	205	64	0.34
+Ikeisha Dobbin	\N	DB	16	130	65	0.02
+Mikaile Fortson	1992-01-01	LB	41	155	68	0.01
+Nyeisha Wright	1989-01-01	WR	18	175	67	0.16
+Shamika Bama Johnson	1991-01-01	OL	86	230	66	0
+Danaisha White	1988-01-01	OL	58	190	67	0
+Mary Woodard	1997-01-01	WR	12	\N	\N	0.13
+Jennifer Vinson	1982-01-01	OL	53	178	68	0
+Shabria Hall	1998-01-01	OL	63	195	69	0
+Brittany OConnor	\N	DL	42	200	64	0.09
+Kaitlyn Marie Iverson	1985-01-01	LB	28	150	68	0
+Laterricka Smith	1994-01-01	RB	86	140	63	0.05
+Tynisha McMillian	1988-01-01	WR	77	275	72	0
+Tyree Hale	2003-01-01	DL	53	182	67	0
+Melissa Faison	1979-01-01	OL	76	180	64	0.03
+Cheryl Godek	1979-01-01	OL	52	225	67	0
+Brittany Medley	1989-01-01	OL	98	413	66	0
+Tye Ferguson	1981-01-01	DL	54	155	67	0.02
+Sarah De La Torre	1994-01-01	WR	83	195	67	0
+Maria Acension	\N	DB	28	\N	\N	0.01
+Missy Hastings	\N	OL	51	190	69	0.04
+Kassidy Snowden	\N	DB	33	\N	\N	0.33
+Angie Patton	1988-01-01	DB	80	170	67	0.16
+Ana Barbosa Venegas	1991-01-01	WR	17	155	65	0
+TaShaun Leigh	1996-01-01	DB	5	145	68	0.06
+Shayla Brown	\N	OL	72	220	67	0
+Laque Moen-Davis	1993-01-01	LB	48	150	67	0.02
+Charlotte CJ Madrid	1995-01-01	DL	53	175	64	0.07
+Tawny Hall	1993-01-01	C	63	180	62	0
+Yvonne LuLu Harris	\N	RB	60	165	63	0
+Brittenee Johnson	1997-01-01	OL	55	190	68	0
+Jasmine Thomas	\N	WR	3	128	63	0.01
+Tyneika Jordan	1992-01-01	OL	60	200	68	0
+Shannon Cooley	\N	TE	40	\N	\N	0.07
+Jazpony Harris	1995-01-01	DB	40	120	63	0.01
+Iemah Meno Perry	\N	WR	22	145	64	0
+Sarah Schwartz	1998-01-01	DL	76	225	68	0.01
+Alyssa Logan	1993-01-01	DE	8	156	67	0
+Carolynn Torve-Williams	2000-01-01	OL	56	223	63	0
+Alondra Suarez	1995-01-01	DL	64	220	66	0.03
+Sabrina Webb	\N	DB	24	\N	\N	0
+Tiia Jansen	2002-01-01	TE	9	145	64	0.26
+Ana Bittencourt	1988-01-01	DL	90	250	69	0.06
+Girly Tambeagbor	\N	LB	55	160	65	0
+Melanie Hunter	1988-01-01	DB	42	155	63	0
+Marissa Lopez	1993-01-01	QB	21	135	65	0.08
+Nellie Mixon	1985-01-01	TE	13	190	68	0.02
+Debrina Wright	1976-01-01	DL	67	165	65	0
+Matalya Johnson	2000-01-01	DL	75	165	65	0.04
+Shari Cherenfant	\N	OL	70	215	63	0
+Elizabeth Freeland	1999-01-01	DL	54	150	67	0
+LaToya Brown	\N	DB	35	\N	\N	0.02
+Yamilex Jimenez	1995-01-01	LB	95	200	68	0.02
+Kandy Bortz	\N	WR	10	160	66	0
+Natalia Ceron Parra	1999-01-01	LB	47	169	64	0
+Jennifer Strother	1971-01-01	RB	4	195	65	0
+Dora Alvarez	\N	OL	96	200	62	0
+Aezioni Nakai	\N	DL	94	\N	\N	0.01
+Waynicia Thomas	1993-01-01	DE	9	170	66	0.03
+Jennifer Schulz	1970-01-01	DL	57	260	68	0
+Kazzette Collins	\N	DL	56	189	71	0.12
+Emily Varnadoe	2005-01-01	OL	55	220	65	0
+Lorenna Duran	\N	DL	96	\N	\N	0
+Asherah Ulmer	\N	LB	20	150	66	0
+Stephanie Miller	1989-01-01	QB	3	130	67	0
+Kiana Gordon	\N	WR	11	140	66	0
+Irlanda Diaz	1994-01-01	DL	36	140	69	0
+Jenna Sukle	\N	WR	33	145	66	0
+Stephanie Pascual	1991-01-01	WR	39	190	64	0
+Greys Bernal	1993-01-01	OL	64	216	66	0
+Lauren Butz	2000-01-01	CB	83	145	65	0
+Cam Evans	2007-01-01	OL	79	250	74	0
+Aryan Sjodin	\N	RB	52	175	65	0.03
+Anne Morgan	\N	OL	82	175	71	0
+Lanika Manning	1978-01-01	DB	80	148	67	0.04
+Grace Murphy	\N	WR	41	148	67	0.11
+Samantha Mendez	\N	LB	44	180	65	0.08
+Aerial Green	1997-01-01	DB	41	140	64	0
+Amber-Lynn Twigg	1997-01-01	QB	11	190	67	0.07
+Avanti Bryant	2000-01-01	OL	59	260	62	0
+Beth Knieps	\N	RB	95	145	65	0
+Ayshia Slaughter	\N	DB	16	175	65	0
+Sarah Topps	2001-01-01	TE	52	200	68	0.04
+Jkera Shamburger	\N	WR	5	118	66	0.01
+Yanah Floridis	1987-01-01	DB	44	163	64	0.01
+Kritt Tucker	1987-01-01	DE	32	175	65	0.07
+Kechelle Herring	\N	DB	32	132	62	0
+Jelisa Fladger	1991-01-01	LB	1	160	63	0.02
+Brittany Bushman	1986-01-01	QB	8	165	67	1.05
+Melany Frierson	1995-01-01	WR	9	150	63	0
+Briann Miller	1991-01-01	DB	31	140	61	0.02
+Sarah A Levrets	\N	WR	14	140	69	0
+Alexandria Bear McLean	1996-01-01	TE	14	175	68	0
+Mechelle Nance	1993-01-01	DL	75	250	71	0.1
+Shaina Cato	1984-01-01	DL	59	260	67	0.01
+Sara Lou	1992-01-01	TE	88	185	65	0
+Temeka Washington	1979-01-01	OL	58	220	71	0
+Jewelle Grimsley	1988-01-01	DB	13	164	68	0.1
+Makayla Brown	1996-01-01	OL	89	225	64	0
+Mackenzie Dykes	\N	QB	7	139	66	0.05
+Brooklyn Riley	2001-01-01	DB	7	\N	\N	0
+Tonya Erickson	\N	LB	48	156	64	0
+Kiara Ireland	1988-01-01	DB	20	150	62	0.01
+Nayla Cerna	1995-01-01	OL	73	265	68	0
+Dominique Williams	1996-01-01	TE	0	180	69	0.11
+Amare Mercer	2005-01-01	WR	2	140	63	0.01
+Briiana Gorrell	1995-01-01	DL	42	222	64	0
+Jessie Huron	\N	OL	93	200	68	0
+LiTara Faatili	1989-01-01	DL	48	275	68	0.05
+Crystal Reese	\N	DB	5	135	66	0.05
+Jacqueline Lopez	\N	WR	1	110	63	0.13
+Jayna Valdez	2002-01-01	LB	52	150	63	0
+Olivia Morgan	1988-01-01	WR	85	170	67	0.28
+Ashley Lantz	1992-01-01	OL	55	210	67	0.02
+Diamond Brown	2000-01-01	DL	0	178	68	0
+Sabrina Cervantes	\N	LB	35	145	63	0.01
+Katelyn Bailey	1987-01-01	OL	63	250	67	0
+Ashaniti Broxey	1992-01-01	DB	24	155	64	0.2
+Nhandi Brown	1996-01-01	DB	31	165	68	0.07
+Whitley Conn	1991-01-01	LB	59	145	67	0.02
+Chanel Cross	1991-01-01	RB	45	158	64	0.01
+Virginia Kim	\N	WR	13	150	62	0.01
+Chassidy White	\N	S	18	\N	\N	0
+Katherine Ott Hicks	1976-01-01	WR	41	145	66	0.03
+Jasmyn Moxley	\N	DB	25	\N	\N	0.01
+Alma Rauline Martinez	1997-01-01	DB	1	145	66	0
+Patricia Fultz	\N	OL	69	\N	\N	0
+Taylor McGhee	1999-01-01	DL	27	195	64	0
+Olga Valdez Lopez	2000-01-01	OL	50	250	64	0.01
+Lauren Kelly	\N	WR	18	140	69	0.08
+Jaquela Stewart	1992-01-01	RB	1	120	60	0.02
+Angelique Jones	\N	LB	33	154	65	0.02
+Michelle Angel	1993-01-01	QB	7	140	69	1.01
+Samantha Vasquez	1993-01-01	OL	77	240	67	0
+Lauran Glover	\N	OL	30	188	68	0
+Treasure McFarland	1996-01-01	WR	20	143	68	0
+Shian Galbreath	\N	QB	14	\N	\N	0.07
+Victoria Nichols	1992-01-01	WR	0	143	65	0.23
+Emily Rose	1984-01-01	P/	89	160	67	0
+Candace Scaggs	1983-01-01	DB	25	155	67	0
+Kristen London	1987-01-01	DB	9	160	69	0.03
+Nicole Pike	\N	LB	11	\N	\N	0.02
+Liz Landry	1980-01-01	WR	1	175	69	1.54
+Ashley Watkins	1984-01-01	LB	67	250	65	0
+Voldavia Roberts	1990-01-01	OL	50	145	64	0.01
+Jasmine Logan	\N	DL	32	160	62	0
+Lesley Farquharson	1988-01-01	OL	58	210	63	0
+Courtney Chidley	1997-01-01	RB	19	150	70	0
+Shannon Delarosbil	\N	LB	39	170	66	0.01
+Angie Murray	\N	OL	65	240	66	0
+MarRhea Everheart	1995-01-01	DB	27	162	68	0
+Kaire Phelps	\N	DL	28	155	67	0
+Olivia Quarles	1987-01-01	DE	95	203	64	0.01
+Chelcie-Maree Weaver	1994-01-01	DL	93	210	64	0
+Nashi Catron	\N	QB	11	195	70	0
+Brandi Ransom	1996-01-01	WR	14	170	71	0
+Mackenzie Harmer	2002-01-01	RB	17	140	66	0
+Ida Edwards	\N	DL	12	185	72	0.03
+Anastasia Dawson	2002-01-01	RB	14	136	69	0
+Kelsea Phillips	1991-01-01	RB	36	165	63	0
+Alicia Gelles	\N	OL	77	180	63	0
+Kara Corcoran	\N	OL	51	170	66	0.18
+Venisha Ford	\N	OL	71	300	69	0
+Makayla Edwards	\N	WR	17	120	65	0
+Elizabeth Engeldrum	\N	RB	23	140	64	0.03
+Kiki Stonebraker	\N	QB	4	175	67	0.03
+Tierra McCormick	1992-01-01	TE	26	210	63	0.23
+Amari Hollis	\N	OL	77	210	69	0
+Kyiah VonBorries	\N	OL	76	305	72	0
+Ingrid Cleveland	1995-01-01	WR	28	113	59	0.01
+Nikayla Ramsey	\N	WR	41	145	64	0.26
+Tenazhia Hinkson	\N	WR	6	\N	\N	0.03
+Ramona Martinez	\N	DL	57	190	69	0
+Camille Wilson	1998-01-01	RB	2	145	64	0.01
+Sarah Antonie	1988-01-01	DB	7	145	68	0
+Kristen Davis	1987-01-01	LB	41	175	69	0
+Montoya Arnold	\N	DB	4	\N	\N	0
+Courtney Yeoman	\N	DL	87	165	65	0
+Tasha Dailey	\N	LB	32	150	63	0.01
+Tanisha Thermidor	\N	WR	28	158	64	0
+Natasha Santiago	1986-01-01	FB	33	200	62	0
+Syreeta Gapelu	\N	DL	79	\N	\N	0.09
+Ashley Mcbay	1990-01-01	WR	20	138	62	0.44
+Jesseka Forbes	1987-01-01	RB	22	175	62	0
+Kandra Davis	1992-01-01	DL	60	215	62	0
+Ericka Davis	1997-01-01	RB	1	145	63	0.03
+Charmaine Bradford-Airy	1996-01-01	LB	54	170	62	0
+Josie Ellis	2007-01-01	DL	51	246	65	0
+Megan Robertson	1990-01-01	LB	12	200	67	0.1
+AuBree Barnes	\N	WR	36	140	62	0
+Renica Tese/Rueckert	1983-01-01	DL	56	220	66	0.06
+Crystal Contreras	\N	OL	76	170	63	0
+Shatonya Spicer	1988-01-01	DL	24	215	69	0.06
+Raquel Sharper	1970-01-01	OL	25	160	66	0
+Alexis Broswell	\N	OL	63	\N	\N	0
+Britney Derhak	\N	FB	36	145	64	0.02
+Ferkeshia Cousar	\N	DB	88	215	68	0.04
+Kahriya Williams	1999-01-01	RB	26	170	66	0.04
+Destini Perry	\N	OL	91	352	68	0
+Shardae Anderson-Bell	\N	OL	21	\N	\N	0
+Bryanna Farrell	\N	FB	44	233	64	0
+Jazmine Rambo	\N	RB	9	140	65	0.24
+Chiyanne Thompson	1992-01-01	LB	21	150	67	0
+Alexandria Duper	1989-01-01	DB	65	154	62	0
+Kelly Rosso	1995-01-01	DB	40	140	66	0.01
+Dionna Jackson-Ross	\N	DB	30	153	67	0.15
+Jacklyn Dwyer	1994-01-01	LB	92	165	66	0
+LaQue Moen-Davis	\N	DB	3	170	74	0
+Chrishuna Washington	1998-01-01	DL	33	203	67	0.02
+Marrhea Everheart	\N	DB	2	145	67	0.03
+Jazlyn Villalona	\N	DL	56	225	67	0
+Miriah Lopez	1994-01-01	WR	1	135	63	0.42
+Sheri Kinder	1993-01-01	WR	9	145	67	0
+Ali Olson	1995-01-01	DB	31	140	67	0.03
+Monique Larrieu	\N	DL	72	\N	\N	0.09
+Tierra Mccormick	1992-01-01	RB	26	225	60	0.01
+Carol Saunders	2002-01-01	WR	8	170	73	0.06
+Meagan Robinson	1990-01-01	LB	41	150	67	0.02
+Sarah Rexrode	\N	OL	51	340	68	0
+Jada Victor	2004-01-01	LB	29	155	63	0
+Shardae Bell	\N	LB	21	167	64	0
+Monae Clancy	1996-01-01	RB	3	160	65	0.04
+Kaneskiia Oliver	1989-01-01	LB	45	135	61	0
+Kenzie Carney	\N	DL	95	\N	\N	0
+Whitney Gifford	\N	DL	47	220	68	0.18
+Alexandria Duper	1989-01-01	DB	26	138	62	0
+Kris Grimes	\N	RB	37	216	63	0.21
+Rose DeLuco	\N	OL	87	\N	\N	0
+Angie Patton	\N	DB	40	175	67	0.06
+Kimberly Normand	1985-01-01	DL	34	185	69	0.01
+Ikeisha Dobbin	1991-01-01	WR	19	135	65	0
+Janae Hammond	2001-01-01	DL	64	275	67	0.01
+Stacey Kremer	1989-01-01	WR	14	155	67	0.04
+Cachrelle Nguyen	1990-01-01	LB	33	195	64	0
+Jennifer Southall	\N	WR	18	140	61	0
+D'Ajah Scott	1992-01-01	RB	4	165	68	0
+FerKeshia Cousar	1983-01-01	DL	88	215	68	0.06
+Tori Spann	1995-01-01	WR	97	135	68	0
+Jocelyn Martin	1989-01-01	OL	99	310	71	0
+Dejanatta Douglas	1993-01-01	LB	77	207	65	0.01
+Jamila Gordon	\N	LB	19	165	68	0
+Consuela Benson-Blackmon	1976-01-01	OL	68	230	69	0
+Kalyx Lewis	1997-01-01	RB	9	140	65	0.35
+Erica Moore	1978-01-01	DL	68	185	67	0.04
+Phylicia Allen	2000-01-01	DB	41	125	66	0
+Clarissa Tullis	1991-01-01	RB	39	160	63	0
+Ramzeh Deensie	\N	LB	22	210	67	0.04
+Aurianna Broughton	2002-01-01	WR	21	140	65	0
+Whitney Palmer	1986-01-01	DL	5	161	68	0
+Candace Walker	1992-01-01	OL	69	290	67	0
+Angela Mims	1969-01-01	DE	44	240	70	0.05
+Jennifer Court	1980-01-01	OL	64	268	67	0.03
+Ketie Leverette	\N	LB	16	\N	\N	0
+Paige Jones	1985-01-01	LB	3	144	62	0.09
+Victoria Reed	1998-01-01	OL	97	235	67	0
+Devon Clay	1985-01-01	OL	68	280	74	0
+Sarah Cabot	\N	DB	21	145	66	0.09
+Katie Ott (Hicks)	\N	DB	41	\N	\N	0
+Candace Burch	\N	DB	33	175	62	0
+Jenessa White	\N	TE	83	230	68	0.09
+Alexis Greer	1997-01-01	OL	94	300	69	0.1
+DMayla Holliday	1993-01-01	DL	50	230	69	0.03
+Patricia OConnell	\N	RB	48	180	66	0.01
+Ariana Gonzales	2001-01-01	DT	75	165	66	0.07
+Alyshia Tauanuu	1985-01-01	DL	92	240	67	0.02
+Mikayla Kiki Stonebraker	1994-01-01	QB	4	175	67	0.32
+Kamaria Massey	1990-01-01	DB	15	155	69	0
+Carah Johnson	2000-01-01	DB	29	135	66	0
+Melissa Uhl	1989-01-01	OL	68	218	62	0
+Jennifer Ingargiola	1991-01-01	RB	23	190	64	0.36
+Bianca Threatts	1983-01-01	DL	56	175	67	0
+Irlanda Diaz	\N	DL	82	\N	\N	0.04
+Desiree Spivey	1985-01-01	LB	52	185	65	0.04
+Kimberly Weaver	\N	DL	93	\N	\N	0
+Courtney Ward-Tyson	\N	OL	41	160	65	0
+Audra Gutierrez	\N	OL	66	275	64	0
+Kamsin Lawrence	1991-01-01	OL	58	180	66	0.02
+Kayla Fisher	2000-01-01	OL	23	210	65	0
+Jazpony Harris	1995-01-01	DB	88	130	63	0
+Camille Brimhall	1991-01-01	OL	65	240	68	0
+Jakaya Holloway	1997-01-01	DB	31	158	66	0.03
+Lasha Morales	1981-01-01	OL	53	185	68	0
+Helenna Wells	1984-01-01	OG	94	260	70	0
+Mykayla Maddox	2004-01-01	QB	14	195	66	-0.01
+Mary Rachel Love	1991-01-01	LB	41	180	67	0.01
+Rachel Love	\N	LB	43	165	65	0.02
+Keisha Parker	1991-01-01	DL	92	275	67	0
+Cassidy Hollow-Horn	\N	DL	80	\N	\N	0
+Jimeriam Jackson	1991-01-01	LB	34	180	69	0
+Joann Mae Glasper Mamuyac	1988-01-01	DL	36	200	64	0
+Camille Calhoun	1995-01-01	OL	91	245	70	0.03
+Aspen Verdos	\N	DL	30	180	68	0.03
+Alex Johnson	\N	LB	53	\N	\N	0.02
+Chelsea Borders	1996-01-01	LB	32	185	66	0.03
+Katherine Lane	\N	WR	26	\N	\N	0.02
+Trinity Smith	1991-01-01	DB	38	155	68	0
+Laura Goetz	2004-01-01	LB	7	150	65	0.59
+Sumatra McDaniel	1988-01-01	OL	98	292	69	0
+Kelly Stack (Johnston)	1990-01-01	WR	6	160	72	0.08
+Rachell Sims	1990-01-01	LB	42	195	64	0.03
+Kirstyanna Quinn Pierce	\N	DL	82	168	68	0
+Aspen Baca (Verdos)	\N	LB	30	\N	\N	0.01
+Franziska Diegel	\N	DB	24	145	68	0
+Angela Morales-Benson	1999-01-01	OL	55	200	67	0
+Maria Trevino	1994-01-01	OL	55	214	66	0
+Rachel Bailey	\N	OL	80	\N	\N	0
+Imani Nettles	2000-01-01	LB	27	170	65	0.01
+Desiree Conner	1999-01-01	DB	42	128	65	0.06
+Aubrei Crooks	1986-01-01	DL	20	200	67	0.01
+Jadacee Vick	\N	RB	0	150	67	0
+Lace Jennings	1994-01-01	LB	57	193	67	0
+Solina Pascual	1996-01-01	LB	16	174	64	0
+Alexa Rummel	2000-01-01	OL	69	285	72	0
+Trevanna Berryman	1995-01-01	RB	3	212	65	0
+Trevez Bridgewater	\N	DL	91	170	68	0.04
+Jordan Williams	2003-01-01	RB	35	195	64	0.02
+Hannah Powell	2003-01-01	RB	31	180	62	0
+Vanessa Jenkins	\N	OL	65	270	70	0.01
+Tino'j Jones	1996-01-01	LB	31	155	68	0
+Riquessa Exum	1992-01-01	OL	66	265	64	0
+Cristina Bukowski	1991-01-01	OL	60	185	66	0
+Dominique Woodall	\N	DL	64	\N	\N	0
+Paige Goldsack	1993-01-01	DL	61	230	64	0
+Alejandra Rivera Rivera	2001-01-01	WR	22	185	69	0.01
+Kristyanna Quinn	1986-01-01	DL	82	168	68	0
+Jamie Blue	1999-01-01	WR	11	165	70	0.03
+Arnetha Simmons	\N	WR	21	156	65	0
+Kathryn Floor	\N	WR	87	145	68	0.5
+LaQunana Cistrunk	1988-01-01	LB	32	160	66	0
+Shaquanda Gainey	1991-01-01	WR	83	135	64	0.26
+Alyssa Mcguinnis	\N	TE	88	184	73	0.07
+Athena Reyes	1981-01-01	DB	22	165	66	0
+Marine Paris	1993-01-01	QB	17	134	63	0
+Kelly Washington	\N	QB	19	185	67	0.02
+Zay Dollente	\N	OL	60	295	66	0
+Erica Arie	1992-01-01	WR	31	145	70	0.05
+Kay Lewis	1997-01-01	WR	9	145	65	0.14
+Adriana Gutierrez	\N	RB	21	145	61	0.37
+Bernadette Gambino	1964-01-01	WR	34	125	64	0
+Nancy Toutai	1991-01-01	DL	93	310	65	0.02
+Tanishia Norman	\N	DB	17	130	67	0
+Shakira Murphy	\N	RB	31	\N	\N	0.05
+Brittani Lusain	1995-01-01	LB	1	175	68	0.34
+Catherine Vogt	\N	WR	85	150	68	0.01
+Tymija Hackett	1998-01-01	OL	55	210	65	0
+Deja Douglas	2002-01-01	DB	44	150	68	0
+Breana Griggs	\N	DB	6	156	67	0.03
+Christina Vollrath	\N	WR	14	125	63	0
+Brittany Morgan	\N	OL	72	\N	\N	0
+Renee Fruean	1985-01-01	DL	75	330	70	0.04
+Rhey Acevedo	1983-01-01	DL	63	235	67	0
+Kristin Smereczynski	\N	WR	7	\N	\N	0.01
+Sheldon Bins	\N	OL	51	255	66	0.01
+Ashura Powell	\N	WR	10	165	66	0.07
+Ryvan Buchanan	\N	QB	1	\N	\N	0.03
+Gabrielle Kredel	1988-01-01	OL	79	253	66	0
+Marcela Ortiz Nava	\N	OL	71	\N	\N	0
+Charetta Santana	1989-01-01	DB	40	140	62	0
+Markeisha Perry	1993-01-01	DB	9	\N	\N	0.03
+Rachel Calar	1991-01-01	LB	44	178	62	0.01
+April Fowlkes	1979-01-01	DL	89	300	69	0.01
+Lamikia Lawson	\N	WR	16	137	63	0.02
+Olivia Johnson	1991-01-01	OL	24	200	66	0
+Dee Dalphne Armstrong	\N	DL	91	295	68	0.01
+Deana Simmons-Guidry	1978-01-01	LB	11	188	66	0.51
+Alena Kuzmova	1998-01-01	DL	39	170	66	0.1
+Breana Haines	1989-01-01	TE	88	172	69	0.04
+Grace Cooper	\N	RB	19	188	67	0
+Samantha Caruth	1998-01-01	WR	8	170	70	0
+Jazpony Harris	\N	DB	43	120	63	0
+Myeshia Johnson	1985-01-01	OL	54	\N	\N	0
+Tashaun Leigh	1996-01-01	DB	5	145	68	0.07
+Stephanie Lopez	\N	LB	55	185	64	0
+Natasha Ware	1993-01-01	DE	38	125	68	0.05
+Sarah Yochem	\N	QB	15	130	65	0
+Za Karia Adams	1998-01-01	DL	89	270	73	0
+Laure Gelis-Diaz	\N	DB	89	135	69	0.1
+Jordyn Williams	2001-01-01	OT	49	204	65	0
+Vanesia Thompson	\N	DB	39	128	63	0
+Alicia Zappia	1999-01-01	WR	21	120	62	0
+Maggie Justinak	1998-01-01	P/	2	150	67	0.01
+Claire Cicchetti	1998-01-01	TE	85	175	72	0
+Echo Levell	1990-01-01	DB	84	160	67	0.01
+Molly Cichosz	\N	TE	82	235	73	0
+Kara Galiunas	1997-01-01	LB	43	170	68	0.04
+Jasmine Terry	\N	OL	65	255	63	0
+Malaysia Flowers	1999-01-01	DB	27	145	68	0.03
+Kris Grimes	1992-01-01	RB	9	200	63	0
+Jasmine Johnson	1992-01-01	OL	43	222	63	0
+Kristin Carter	\N	LB	26	190	64	0.12
+Nisha Taylor	1994-01-01	DB	14	135	66	0.19
+Kyelah Hodges	1996-01-01	DB	25	162	65	0
+Ravyn Santiago	\N	RB	30	\N	\N	0.04
+Meredith Mitchiner	2000-01-01	P/	56	175	67	0
+Jane Brinkman	1970-01-01	DE	2	180	72	0.01
+Kaleigh Walsh	\N	OL	70	205	69	0
+Jaclyn Price	1985-01-01	DT	63	145	67	0.01
+Shermanda Fambro	1990-01-01	DB	37	155	65	0
+Carolina Duran Correa	1999-01-01	LB	31	189	64	0
+Denesha Richardson	1994-01-01	DB	21	170	68	0.03
+Selena Thomas	\N	OL	78	275	67	0
+Corrina Mahiai	\N	RB	26	165	63	0
+Alexis Contreras	\N	WR	17	146	66	0
+Kia Armstrong	\N	WR	28	170	69	0
+Labrille May	1992-01-01	RB	72	203	67	0
+Srey (Uk) Routh (Thach)	\N	RB	5	125	59	0.22
+Charmaine Bradford	\N	LB	51	195	62	0.02
+Taurus Pyles	\N	LB	43	\N	\N	0
+Summer Mcneal	2003-01-01	WR	23	155	70	0.24
+Kiara Ireland	1988-01-01	DB	6	145	62	0
+Lanuola Jacobsen	\N	DL	0	\N	\N	0
+Angel Benson	\N	OL	55	200	67	0
+Jocelyn Howard	\N	DB	44	128	65	0
+Stacy Primeaux	1985-01-01	LB	21	167	63	0
+Courtnee Martinez	\N	LB	44	\N	\N	0.09
+Aleesha Cadogan	\N	OL	72	260	67	0
+Dawna Zike	\N	LB	52	200	69	0.07
+Crystal Daniels	1991-01-01	WR	19	135	65	0.26
+Marcy Van Hartesveldt	\N	WR	17	165	70	0
+Theresa Honeycutt	1991-01-01	OL	53	305	71	0
+Montanna Meier	2003-01-01	DL	70	220	64	0
+Mae Larimer	1993-01-01	OL	38	170	68	0.01
+Daziah Green	\N	WR	7	110	61	0.01
+Kristianna Ibsen	\N	DL	99	218	70	0
+Melissa Merino	1989-01-01	LB	89	165	64	0
+Jordan Krahn	1994-01-01	DL	87	181	67	0.01
+Elizabeth Tapler	\N	WR	80	150	70	0.25
+Winry Vitkovich	1989-01-01	OL	96	340	68	0
+Fantasia Roberts	1994-01-01	RB	20	140	65	0
+Briana Gorrell	\N	RB	42	215	64	0
+Tina Frisby	\N	QB	6	170	69	0.33
+Errin McIssac	\N	LB	13	145	65	0.06
+Montasia Wynn	1999-01-01	OL	75	235	67	0
+Tracy Dorcemont	1995-01-01	OL	68	145	64	0
+Taja Sloss	1996-01-01	DL	36	170	72	0.01
+Tiffany Gonzales	1981-01-01	OL	70	190	62	0
+Edeline Sosa	1984-01-01	OL	70	160	60	0
+Cindy Teitsma	\N	DB	3	140	66	0
+Lydia Morgan	1993-01-01	QB	33	120	63	0
+Candis Wall	1989-01-01	OL	61	200	65	0
+Kiki Peoples	1993-01-01	DL	24	193	68	0
+Yolanda Johnson	1970-01-01	OL	54	198	67	0
+Takera Mitchell	1993-01-01	DB	5	\N	\N	0.09
+Bre Griggs	1993-01-01	DB	1	150	67	0.07
+Kelsey Prall	1996-01-01	LB	25	157	63	0.03
+Talia Ramos	2004-01-01	OL	58	245	64	0
+Sydnee Burns	2004-01-01	LB	30	145	67	0.01
+Natalie Nicks	\N	WR	13	\N	\N	0.68
+LaTasha Husband	1984-01-01	OL	70	235	63	0
+Trinity Scott-Gooden	2001-01-01	LB	50	168	65	0
+Sarah Sifuentes	\N	LB	34	185	62	0.05
+Kara Gailiunas	\N	LB	32	170	68	0
+Molly Tester	1993-01-01	LB	23	170	62	0.11
+Felicia Lilo	\N	OL	54	250	66	0.01
+Rachel Van Devender	\N	OL	75	264	72	0
+Timesha Wharton	1988-01-01	DB	37	150	67	0.01
+Kristin Smereczynski	\N	WR	13	\N	\N	0.22
+Taiyana Murray	1996-01-01	TE	89	160	68	0
+Sydney Wickman	\N	WR	51	\N	\N	0
+Tanya Luna	1988-01-01	OL	77	238	68	0.03
+Shayla Jones	1992-01-01	WR	19	160	67	0
+Vernisha Tavares	1992-01-01	DL	77	243	67	0
+Laura Burnham	\N	DB	0	\N	\N	0
+LaDella Alexander	1992-01-01	OL	62	240	70	0
+Norianna Haynes	\N	S	9	\N	\N	0.03
+Jessica Johnson	\N	DB	27	155	69	0.03
+Ashlie Mcdonald	\N	OL	79	260	67	0
+Ciara Anderson	1992-01-01	WR	4	135	65	0.09
+Errin McIsaac	\N	QB	14	130	65	0.23
+Felecia Hawkins	\N	WR	31	175	65	0
+Aziah Green	\N	WR	17	115	61	0
+Karli Singrey	\N	OL	73	240	69	0
+Versace Lee	1998-01-01	DL	41	145	64	0.01
+Brittany Howard	1990-01-01	DL	36	213	67	0.06
+Sooaemalealagi Shelton	1991-01-01	DT	42	240	65	0.01
+Diana Johnson	2001-01-01	DB	25	125	64	0
+Jessica Hill	\N	LB	68	188	65	0.09
+Cachrelle Nguyen	\N	LB	36	200	64	0.03
+Darian Johnson	\N	RB	24	145	64	0
+Shavonne Ford	1978-01-01	OL	80	234	70	0
+Morgan Saybolt	\N	DB	39	115	62	0.01
+Ingrid Clevland	\N	WR	28	113	59	0
+Karmen Henson	1989-01-01	LB	3	156	65	0.01
+Tia Thompson	1994-01-01	LB	52	210	68	0
+Tracie Williams	1969-01-01	DB	38	152	64	0
+Bianca Allen	1990-01-01	RB	34	180	60	0.06
+Keshia Ray	1990-01-01	LB	12	180	66	0
+Chris Landers	1987-01-01	DL	44	195	63	0
+Jaynna Valdez	2002-01-01	DB	52	145	63	0.08
+Quiana Ford	\N	DB	2	155	68	0.03
+Kiersten Zangl	1996-01-01	DB	39	140	66	0.04
+Amani Perdue	2005-01-01	RB	9	135	65	0.02
+Sara Thacker	1988-01-01	DB	82	165	66	0.08
+Lydia Qualls Jarrett	\N	LB	22	180	67	0.04
+Shawnee Phillips	\N	QB	10	190	68	0.06
+D. Schafaun Jones	1991-01-01	TE	73	290	67	0
+Gina Magana	1993-01-01	RB	26	128	60	0.36
+Brooklyn Cousin	\N	WR	16	122	67	0.08
+Jensine Alvarez	1993-01-01	TE	45	176	71	0
+Sarah Vann	1993-01-01	QB	18	200	68	0
+Jenea Walker	1993-01-01	RB	22	175	66	0.33
+Zharyah Willis	\N	DB	8	150	67	0.02
+Yesenia Fragoso Grijalva	1997-01-01	DB	28	150	67	0.05
+Monique Ani-Opiopio	\N	RB	9	160	65	0
+Khadijah Jones	1994-01-01	DB	45	140	65	0
+Kailima Ross	1983-01-01	OT	70	185	66	0
+Morgan Augustine	\N	DE	12	190	69	0.06
+Riian Smith	\N	WR	46	180	72	0
+Delia Phlatts	1986-01-01	LB	14	130	62	0
+Cynthia Williams-Walker	\N	LB	58	180	65	0.01
+Dorothy Mao	2001-01-01	DB	16	170	67	0
+Kola ShippentowerThompson	1989-01-01	LB	29	180	65	0.03
+Shannon Richards-Gebbia	1985-01-01	LB	77	185	66	0
+Antoinette Bell	1981-01-01	LB	24	170	68	0.02
+Ileshia Preston	1992-01-01	LB	17	145	64	0.01
+Riah Bentley	1992-01-01	WR	5	136	67	0
+Rachel May	1982-01-01	OL	82	255	71	0
+Crystal Rhodes	\N	DB	5	\N	\N	0.02
+Ida Handel	\N	OL	61	\N	\N	0
+Zoe Jackson	2005-01-01	WR	82	151	67	0
+Kiera Smith	1983-01-01	OL	74	220	68	0
+Bryn Langrock	\N	QB	15	130	66	0
+Kaitlyn Easton	1997-01-01	TE	25	170	67	0.01
+Nicole Matheson	\N	DB	7	\N	\N	0.13
+Jazmine Allen	1994-01-01	RB	28	140	61	0.08
+Kayelle Brown	1990-01-01	DL	4	180	72	0
+Keiloni Kalasa	\N	OL	96	\N	\N	0
+Najae Lewis Elliot	\N	LB	53	179	66	0
+Olga Valdez	\N	OL	50	250	64	0
+Candace Rucker	\N	WR	21	140	70	0
+Joann Mamuyac	1988-01-01	DL	3	215	64	0.01
+Crystal Daniels	1991-01-01	WR	12	140	65	0
+Carolyn Lampkin	\N	OL	77	\N	\N	0
+Mikayla Taylor	1997-01-01	OL	90	255	66	0
+Jennifer Herrera	1984-01-01	DB	20	160	66	0
+Tauva Leiomiti	\N	DL	76	305	71	0
+Kristy Hice-Jones	1998-01-01	OL	56	183	64	0
+Diana Huynh	1988-01-01	DB	12	135	62	0.01
+Christina Copelin	1981-01-01	TE	45	205	74	0
+Neese Allen	\N	DB	20	162	69	0.02
+Claire Cicchetti	1998-01-01	WR	88	175	72	0
+K.J. Johnson	\N	DB	9	117	62	0
+Zaya Dove	2003-01-01	RB	29	157	63	0
+Nichelle Blake	\N	LB	0	185	64	0.02
+Jahogany Ezelle	2003-01-01	OL	66	200	67	0
+Kellie Erickson	\N	OL	50	\N	\N	0
+Esperanza Poyle Maciel	1996-01-01	DB	29	140	61	0
+Danell Robb	1980-01-01	DL	53	170	62	0
+LaVerna Tela-Lesa	\N	DL	72	\N	\N	0
+Jazmine Rambo	1993-01-01	RB	26	130	61	0.25
+Tanishia Burch	1995-01-01	DB	37	153	72	0
+Irlanda Diaz	1994-01-01	DL	43	141	66	0
+Charlee Ford	\N	DB	26	140	61	0
+Chelsie Thompson	1995-01-01	DB	16	175	69	0.01
+Elizabeth Nelson	\N	RB	17	130	62	0
+Diamond Scott	\N	WR	11	130	61	0.03
+Lisa Fisher II	1993-01-01	DL	50	240	64	0
+Semeret Abdulkarim	2002-01-01	OL	55	220	69	0
+Courtney Powell	1993-01-01	DL	24	210	67	0
+Courtney Williams	\N	OL	98	295	67	0.03
+Mahlayshia Dockery	\N	OL	79	278	68	0
+Shannon Drayton	\N	DL	52	195	66	0.04
+Dasha Owens	\N	WR	84	140	65	0
+Sylvia Sloss	1999-01-01	WR	4	140	64	0
+AuBree Barnes	1996-01-01	OL	33	180	65	0
+Ken Gabriel	\N	RB	22	165	66	0.27
+Sari Stissi	1998-01-01	RB	98	240	70	0
+MarRhea Everheart	1995-01-01	DB	2	160	68	0.05
+Keena Samuels	1995-01-01	WR	15	150	66	0.19
+Whitney Gifford	\N	DL	92	195	68	0.02
+Jackie McCall	\N	WR	19	165	67	0.07
+Lanuola Lewis	1980-01-01	DL	96	300	71	0
+Cheri Gantt	\N	RB	4	140	62	0.41
+Janei Benamon	1997-01-01	DB	19	126	67	0
+Maria Fautali	1998-01-01	RB	4	135	65	0.43
+Shaiana Cato	\N	OL	59	\N	\N	0
+Anita Brown	1993-01-01	DB	28	145	64	0.03
+Mo Kirk	1989-01-01	WR	88	155	69	0.01
+Tatyana Guidry	1978-01-01	RB	25	130	61	0
+Ally Cleveland	1962-01-01	LB	62	225	73	0.08
+Kahriya Williams	1999-01-01	LB	11	196	66	0
+Andrea Jones	\N	DB	85	155	70	0.07
+Erin Fleming	2000-01-01	RB	39	140	65	0.03
+CC Taualii	1994-01-01	OL	74	188	70	0
+Natalia Escoto	2003-01-01	LB	8	107	60	0.07
+Xiana Dillon	2000-01-01	OL	24	275	64	0
+Skylar Pringle-Hicks	2003-01-01	DL	6	\N	\N	0
+Leslie Hubbell	1978-01-01	S	4	155	67	0.07
+Christina Jordan	1987-01-01	WR	87	150	64	0.03
+Fita Boyce-Jennings	\N	DL	99	275	65	0.06
+Latasha Cummings	1986-01-01	DL	28	223	65	0.01
+Kassiah Sage Moore	2002-01-01	DL	78	220	66	0
+Jessie Beck	1992-01-01	DB	86	150	66	0
+Amanda Heilman	1987-01-01	WR	87	162	69	0.13
+Tyra Williams	1992-01-01	OL	92	245	65	0
+Samantha Heck	1991-01-01	WR	13	140	71	0.01
+Madeline Murphy	1995-01-01	RB	18	115	63	0.57
+Claire Nickison	1998-01-01	OL	99	300	67	0
+Satoria Bell	1990-01-01	WR	8	225	70	0.14
+Sophia Darwish	2004-01-01	RB	27	155	65	0.03
+Sarah Levin	\N	LB	45	160	66	0.02
+Montye Cooke	2000-01-01	OL	75	145	64	0
+Octavia Langston	\N	WR	83	\N	\N	0
+Bryanna Shaw	1993-01-01	DL	55	235	64	0
+Abbie Medlar	\N	WR	80	155	67	0.04
+Keyarie Fountain	2002-01-01	RB	29	137	63	0
+Olivia Freeman	1997-01-01	RB	17	185	65	0
+Sarah Gomez	1993-01-01	QB	15	165	68	0.02
+Merci Scott	1997-01-01	S	35	160	64	0.15
+Lucinda Watkins	1976-01-01	OL	76	253	66	0
+Jessica Beckham	1989-01-01	LB	4	170	66	0.03
+Jane Leroy	2002-01-01	RB	29	170	69	0.14
+Charlee Ford	\N	DB	30	142	65	0.05
+Jasmyn Moxley	1990-01-01	DB	1	145	67	0
+Diane Koinva	1988-01-01	OL	91	230	61	0
+Savannah Morefield	2005-01-01	DL	2	175	67	0
+Angelique Henderson	1985-01-01	WR	37	158	66	0.01
+Taylor Wells	1994-01-01	DB	21	138	67	0
+Tess McCann	1991-01-01	OL	91	220	67	0
+Petra Johanna Monica Aspenberg	1996-01-01	OL	70	238	67	0
+Jo Hutchins	\N	WR	17	140	68	0
+Martha Gomez	1989-01-01	DL	80	214	67	0
+Ashanti Broxey	1992-01-01	WR	24	148	64	0.04
+Katie Montgomery	1985-01-01	OL	68	203	67	0.03
+Tabitha Lefever	1987-01-01	DB	14	125	61	0
+McKenzie Tolliver	\N	WR	25	\N	\N	0
+Andy Perez	\N	OL	92	192	64	0
+Analys Colon	2005-01-01	WR	43	110	67	0
+Troineshia Webb	\N	DL	74	\N	\N	0
+Tiffany Cushman	\N	OL	65	211	66	0
+Chloe Porter	\N	WR	84	155	70	0.03
+Brittaney Warren	1992-01-01	OL	43	340	67	0
+Laylee Dieringer	2004-01-01	OL	62	290	67	0
+Angela Clarke	1988-01-01	DT	61	210	64	0.03
+Alox Suarez	\N	DL	64	216	65	0.05
+Shequa Fitzgerald	\N	DB	20	125	68	0.02
+Candice Davis	1991-01-01	DB	7	160	63	0.13
+Shavonne Randolph	1992-01-01	DL	30	170	65	0
+Sydney Blahnik	\N	LB	25	225	67	0.02
+Meagan Curtis	1997-01-01	RB	38	175	68	0.43
+Alex Foley	\N	DB	39	120	63	0
+Cierra McGinnis	1999-01-01	OL	74	240	67	0
+Brynne Butterfield	\N	OL	73	145	64	0
+Colleen Sam Dreiling	1996-01-01	DB	12	145	64	0.02
+Sasha Stevenson	\N	LB	48	185	62	0
+Monique Wilson	1990-01-01	OL	56	230	64	0
+Vianca Borrero	1992-01-01	DL	58	195	62	0
+Jasmine Ballard	2001-01-01	RB	9	197	66	0.67
+Shannon Burrell	1988-01-01	DB	28	132	67	0
+Sydney Holt	\N	DB	22	170	63	0
+Malak Bentoudjamalak	1998-01-01	WR	17	136	67	0
 \.
 
 
@@ -5759,2930 +5760,2930 @@ P/
 -- Data for Name: season_stats; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.season_stats (player_name, player_number, season, season_rushing_yards, season_rushing_attempts, season_rushing_touchdowns, season_receiving_yards, season_receiving_attempts, season_receiving_touchdowns, season_passing_yards, season_passing_attempts, season_passing_completions, season_passing_touchdowns, season_offensive_interceptions, season_defensive_interceptions, season_offensive_sacks, season_defensive_sacks, season_tackles, season_tackles_for_loss, season_fumbles, season_forced_fumbles, season_fumble_recoveries, season_special_teams_returns, season_special_teams_touchdowns, season_special_teams_yards, season_punting_yards, season_punting_attempts, season_kicking_attempts, season_kicking_made, season_extra_point_attempts, season_extra_points_made) FROM stdin;
-Molly Richardson	1	2023	24	26	0	7	1	0	424	137	52	1	11	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Paige Jones	3	2023	45	18	1	30	4	0	0	0	0	0	0	0	0	0	5	3	0	0	0	1	0	7	0	0	0	0	0	0
-Leslie Hubbell	4	2023	8	3	0	0	0	0	0	0	0	0	0	0	0	0	17	1	0	0	1	0	0	0	0	0	0	0	0	0
-Brianna Daniel	5	2023	0	1	0	0	0	0	56	29	8	0	2	0	0	0	0	0	0	0	0	5	0	30	0	0	0	0	0	0
-Sydney Smith	6	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	6	0	0	0	0	2	0	22	0	0	0	0	0	0
-Tiffany Sarroca	7	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chrystin Lucas	8	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	1	0	0	0	0	0	0	0	0
-Shanysse Emerenciana	9	2023	7	2	0	48	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	57	0	0	0	0	0	0
-Xiarysse Emerenciana	10	2023	6	1	0	56	4	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rebeka Bell	11	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shauna Floyd	18	2023	10	12	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Camise Patterson	20	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aurieyall Scott	21	2023	35	12	0	14	4	0	0	0	0	0	0	0	0	0	2	0	0	0	0	2	0	14	0	0	0	0	0	0
-Jesseka Forbes	22	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashaniti Broxey	24	2023	7	1	0	180	15	1	0	0	0	0	0	0	0	0	2	0	0	0	0	14	0	150	0	0	0	0	1	1
-Jessica Salazar	25	2023	19	23	0	17	4	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rose Bruce	27	2023	1	2	0	0	0	0	0	0	0	0	0	0	0	0	8	2	0	0	0	0	0	0	0	0	0	0	0	0
-Margo Smith	28	2023	0	0	0	8	1	0	0	0	0	0	0	0	0	0	5	1	0	0	0	2	0	0	0	0	0	0	0	0
-Elizia Casillas	29	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexandra Holliday	30	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	0	0	1	0	12	0	0	0	0	0	0
-Chelsea Parrish	32	2023	0	0	0	50	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	9	0	0	0	0	0	0
-LaRoyia Bauer	33	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	23	2	0	0	0	0	0	0	0	0	0	0	0	0
-Yanah Floridis	44	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	0	0	0	321	14	0	0	0	0
-Khadijah Jones	45	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Erica Jones	51	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cheryl Godek	52	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Vinson	53	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexandra Perry	54	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	24	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashley Lantz	55	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	7	3	0	0	0	0	0	0	0	0	0	0	0	0
-Kristy Hice-Jones	56	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chantel Talton	60	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cyerius Searcy	61	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Vanessa Jenkins	65	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Riquessa Exum	66	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Arielle Hester	69	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kiana Stafford	72	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sabrina Ceniza	78	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angie Patton	80	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	30	2	0	1	1	2	0	2	0	0	0	0	0	0
-Breana Haines	88	2023	0	0	0	16	3	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mikayla Taylor	90	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Danielle Arnold	92	2023	0	0	0	8	1	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amanda Krauss	99	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dominique Williams	0	2023	0	0	0	159	11	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jelisa Fladger	1	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	13	2	0	0	0	0	0	0	0	0	0	0	0	0
-Deja Mosley	2	2023	7	3	0	89	7	0	13	3	2	0	0	0	0	0	5	0	0	0	0	6	0	63	0	0	0	0	0	0
-Karmen Henson	3	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	1	0	0	0	0	0	0	0	0
-Serika Shillingsworth	4	2023	3	1	0	48	5	0	0	0	0	0	0	0	0	0	1	0	0	0	0	7	0	149	0	0	0	0	0	0
-Latasha Dragon Richardson	5	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0
-Najiaa Michel	6	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-India Parker	7	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Taylor Snoopy Snow	9	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Radiyah Snoop Robertson	10	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maria Jackson	11	2023	261	72	2	36	7	0	0	2	0	0	0	0	0	0	4	0	0	0	0	7	0	112	0	0	0	0	0	0
-Alla Ticket Gruzdeva	12	2023	208	62	4	0	0	0	389	109	36	1	6	0	0	0	1	0	0	0	1	0	0	0	349	17	0	0	0	0
-Nellie Mixon	13	2023	0	0	0	50	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexandria Bear McLean	14	2023	2	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Charneice Carney	15	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	1	0	1	0	2	0	13	0	0	0	0	0	0
-Autumn Dozier	16	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Malak Bentoudjamalak	17	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mandy Rodriguez	18	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Judea McDonald	19	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Vanessa Bell-Carmichael	20	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0
-Nicole Fairman	22	2023	0	0	0	0	0	0	0	0	0	0	0	2	0	0	20	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmine Poole	23	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	2	0	0	0	2	0	15	0	0	0	0	0	0
-Sharea Golson	24	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aireka Fowler	26	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Neshara Watrous	27	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	2	0	0	0	0	0	0	0	0	0	0	0	0
-Latasha Cummings	28	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	0	0	0	0	0	0	0	0	0
-Javanna Wilkins	29	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shavonne Randolph	30	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Felecia Hawkins	31	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Erica Dabney	32	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Natasha Santiago	33	2023	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bianca Allen	34	2023	47	15	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shamia Bell	35	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Meryem Zaefari	36	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tanishia Burch	37	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Annelise Lutz	38	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kiersten Zangl	39	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	22	1	0	1	0	0	0	0	0	0	0	0	0	0
-Mel Bayani	43	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Beatrice Glinton	45	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-Melissa Uhl	47	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Katie Miller Lite Miller	50	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sharolin Sanders	51	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angelica Venom Garcia	53	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	19	1	0	0	0	0	0	0	0	0	0	0	0	0
-Tatiana Larry	55	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monique Wilson	56	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mea Williams	57	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ayanna Dunia	60	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0
-Amanda Littorin	64	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ellana Watson	64	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Sabirah BB Lucas	68	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Candace Walker	69	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Melissa Fawcett	72	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	0
-Jade Ross	75	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dejanatta Douglas	77	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	2	0	0	0	0	0	0	0	0	0	0	0	0
-Ashley Murray	84	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shamika Bama Johnson	86	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Turner	88	2023	0	0	0	28	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	9	0	0	0	0	0	0
-Tyra Williams	92	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Omariyana Womack	95	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	11	5	0	0	0	0	0	0	0	0	0	0	0	0
-Kelsie Young	96	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kayla Lilly	2	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rebecca Banks	3	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Taylor Thatcher	4	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	14	1	0	0	0	1	0	8	33	2	1	0	1	1
-Srey (Uk) Routh (Thach)	5	2023	248	52	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Krista Seaman	6	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel Woods	7	2023	26	13	0	0	0	0	582	113	43	5	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Joalis Rosario	8	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monique Ani-Opiopio	9	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shaunya Kahananui	10	2023	0	1	0	134	9	3	0	1	0	0	1	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mykaleen Hiura	11	2023	2	1	0	10	2	0	0	3	0	0	1	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Virginia Kim	13	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bryn Langrock	15	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-April Arnold	16	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0
-Tanishia Norman	17	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Haley Brown	18	2023	5	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jackie McCall	19	2023	5	2	0	40	3	0	0	0	0	0	0	0	0	0	26	5	0	0	0	10	0	179	197	8	0	0	4	1
-Toneyell Shropshire	21	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Molly Tester	23	2023	7	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Corrina Mahiai	26	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Andraliah Lee	31	2023	113	22	1	0	0	0	0	0	0	0	0	0	0	0	16	4	0	0	0	2	0	0	0	0	0	0	0	0
-Stephanie Howard	32	2023	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amy Steinke	37	2023	2	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Madalyn Garrison	38	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	4	1	0	0	0	3	0	34	0	0	0	0	0	0
-Rachell Sims	42	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	14	2	0	0	0	0	0	0	0	0	0	0	0	0
-Xaviera Talai	43	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-DaMaree Mitchell	47	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Patricia OConnell	48	2023	15	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nicole Santos-Adam	50	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aryan Sjodin	52	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	13	1	0	0	1	0	0	0	0	0	0	0	0	0
-Perenise Liusamoa	53	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	1	0	0	0	0	0	0	0	0	0
-Naomi Lee	54	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Zay Dollente	60	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Whitney Morrell	69	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shavonne Richardson	70	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	1	0	0	0	0	0	0	0	0	0	0	0	0
-Venisha Ford	71	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aleesha Cadogan	72	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-JoVonna Cram	74	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	1	0	3	0	0	0	0	0	0
-Crystal Contreras	76	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alicia Gelles	77	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mahlayshia Dockery	79	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Elizabeth Tapler	80	2023	63	18	0	296	19	2	0	0	0	0	0	0	0	0	5	0	0	0	0	7	0	110	0	0	0	0	0	0
-Amber Cox	82	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	1	0	0	0	0	0	0	0	0	0	0	0	0
-McKenzie Tolliver	84	2023	4	4	0	77	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
-Catherine Vogt	85	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	0	0	0	0	2	0	14	0	0	0	0	0	0
-Rosalie Mora	86	2023	0	0	0	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Suellen Siquiera-Fisher	87	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chelsey Nill	88	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	13	4	0	1	0	0	0	0	0	0	0	0	0	0
-Beth Knieps	95	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Liz Landry	1	2023	7	1	0	276	19	4	0	0	0	0	0	0	0	0	3	0	0	0	0	3	35	91	0	0	0	0	0	0
-Eshombi Singleton	2	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shantia Creech	3	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	3	1	0	0	1	0	0	0	0	0	0	0	0	0
-Jessica Collins	4	2023	0	0	0	0	0	0	0	0	0	0	0	4	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristi Taylor	5	2023	0	1	0	0	0	0	6	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Olivia Griswold	6	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	4	18	7	0	3	0	0	0	0	0	0	0	0	0	0
-Michelle Angel	7	2023	12	5	1	0	0	0	65	20	8	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Bushman	8	2023	0	12	0	0	0	0	940	114	67	16	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Allyssa Weatherd	9	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	36	8	0	0	0	0	0	0	0	0	0	0	0	0
-Desiray Mosley	10	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0
-Deana Simmons-Guidry	11	2023	0	0	0	17	1	0	0	0	0	0	0	0	0	1	21	6	0	0	0	0	14	3	0	0	0	0	0	0
-Hanna McEwen	12	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	8	0	0	0	1	0	0	0	0	0	0	0	0	0
-Jewelle Grimsley	13	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tara Thomas	15	2023	290	39	4	65	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	35	188	31	2	0	0	0	0
-Brittany Satterwhite	17	2023	265	38	4	121	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	1	12	10	0	0	0	0	0	0
-Nyeisha Wright	18	2023	74	1	0	2	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashley McBay	20	2023	42	11	1	48	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Denesha Richardson	21	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0
-Kahriya Williams	22	2023	76	15	0	15	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sabrina Cervantes	35	2023	12	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kesz Wesley	24	2023	115	17	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Candace Scaggs	25	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jelani Kelly	27	2023	83	13	1	0	0	0	45	7	4	0	0	0	0	0	3	0	0	0	1	0	0	0	0	0	0	0	0	0
-Arielle Wilks	29	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jakaya Holloway	31	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	3	0	0	0	1	0	0	0	0	0	0	0	0	0
-Amber Kimbrough	32	2023	28	5	2	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0
-Janice Mitchell	33	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	2	0	0	0	0	0	0	0	0	0	0	0	0
-Cara Wesemann	34	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	66	7	1	0	33	31
-Tracie Williams	38	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jadira Valentin	39	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jazpony Harris	40	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mikaile Fortson	41	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0
-Deja Douglas	44	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Teasha Martin-Palmer	47	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Daniela Ottaino	48	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Jeans	49	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	8	0	2	0	0	0	0	0	0	0	0	0	0
-Umeki Webb	51	2023	0	0	0	8	2	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
-Angellica Grayson	52	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	3	0	0	0	0	0	0	0	0	0	0	0	0
-Fancy Robinson	55	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	2	0	0	0	0	0	0	0	0	0	0	0	0
-LeShaunte Bowman	57	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nicole Grabowski	58	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-Latraell Purham	69	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amanda Morgan	72	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Renee Fruean	75	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lucinda Watkins	76	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tammie Moore	78	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shavonne Ford	80	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maria Jackson	81	2023	0	0	0	377	26	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel May	82	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Octavia Langston	83	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Desirea McGinnis	84	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Clark	85	2023	0	0	0	31	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Latoria Randile	86	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	5	2	0	0	0	0	0	0	0	0	0	0	0	0
-Amanda Heilman	87	2023	0	0	0	80	8	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mo Kirk	88	2023	0	0	0	6	1	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Semone Simmons	92	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Haley Hagar	98	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Danielle Galloway	0	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Miriah Lopez	1	2023	0	0	0	125	8	2	0	0	0	0	0	1	0	0	0	0	0	0	0	4	0	33	0	0	0	0	0	0
-Maria Acension	2	2023	0	0	0	45	2	0	0	0	0	0	0	1	0	0	10	0	0	0	0	1	0	6	0	0	0	0	0	0
-Cindy Teitsma	3	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cindylou Rasiang	4	2023	26	9	0	0	0	0	151	49	15	1	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Malissa Miles	5	2023	2	1	0	54	9	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Skylar Pringle-Hicks	6	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christina Montoya	7	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Samantha Caruth	8	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kalyx Lewis	9	2023	231	58	1	58	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Megan Biggers	10	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	1	0	0	0	0	1	0	7	6
-Alysia Bisquera Dominguez	11	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	12	0	0	0	0	0	0
-Ty Rodriguez	12	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maha Hawwass	13	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	9	0	0	0	2	0	0	0	0	0	0	0	0	0
-Christina Vollrath	14	2023	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mariah Makupson	15	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	2	0	0	0	0	0	0	0	0	0	0	0	0
-Khyla Easler	17	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mahogany Gaines	18	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	3	32	9	0	1	0	0	0	0	0	0	0	0	0	0
-Maikia Williams	19	2023	0	0	0	0	0	0	0	0	0	0	0	2	0	0	25	0	0	3	2	3	0	26	0	0	0	0	0	0
-Robin Johnson	20	2023	65	33	1	34	1	0	189	48	20	3	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Marissa Lopez	21	2023	0	0	0	0	0	0	90	14	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alejandra Rivera Rivera	22	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Ingargiola	23	2023	157	31	2	71	9	2	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	12	0	0	0	0	0	0
-Xiana Dillon	24	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Raquel Sharper	25	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristin Carter	26	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Malaysia Flowers	27	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	2	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel Lund	30	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shalynn Splettstoesser	33	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Serena Smith	36	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christi Acacio	40	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittaney Warren	43	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Heather Puletasi	44	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Terry Viena	45	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Osmara Gissell Nunez Barrera	50	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	3	16	7	0	3	1	0	0	0	0	0	0	0	0	0
-Jaynna Valdez	52	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	12	2	0	0	0	0	0	0	0	0	0	0	0	0
-Charlotte CJ Madrid	53	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	3	31	7	0	0	0	6	0	77	219	9	0	0	0	0
-Felicia Lilo	54	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monica Johnson	56	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Yvonne LuLu Harris	60	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	1	0	4	0	0	0	0	0	0
-Kristine Eisler	64	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Audra Gutierrez	66	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Debrina Wright	67	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Hill	68	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0
-Similiti Lealiki	70	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	12	5	0	0	0	0	0	0	0	0	0	0	0	0
-Dayton Yingling	72	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Caitlynn Jones	73	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ariana Gonzalez	75	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	5	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Schwartz	76	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Estes	81	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Irlanda Diaz	82	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	20	3	0	1	0	0	0	0	0	0	0	0	0	0
-Kylie Mitchell	88	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Diane Koinva	91	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kimberly Weaver	93	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alecsys Williams	94	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Yamilex Jimenez	95	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	1	0	0	0	0	0	0	0	0	0
-Dora Alvarez	96	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Victoria Reed	97	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Adriane Utt	98	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Barbriel Davis	99	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Britnee Sangalan	1	2023	0	0	0	95	5	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Quiana Ford	2	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	0	0	1	0	6	0	94	0	0	0	0	0	0
-Dasha Jones	3	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cheri Gantt	4	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-TaShaun Leigh	5	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	36	1	0	0	0	2	0	32	0	0	0	0	0	0
-Ashley Clark	7	2023	5	3	0	0	0	0	584	99	37	7	2	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tanaysa Henderson	8	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmine Ballard	9	2023	779	92	9	24	2	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	2	1
-Kea Mercer	10	2023	149	18	3	47	6	2	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	105	0	0	0	0	0	0
-LaShantel Wilson	13	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	14	2	0	0	1	0	0	0	0	0	0	0	0	0
-Jeree Clark	14	2023	51	12	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mickayla Martin	17	2023	0	0	0	6	1	0	0	0	0	0	0	0	0	0	2	6	0	0	0	0	0	0	0	0	0	0	0	0
-Shawntae Barnes	18	2023	48	8	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	17	0	0	0	0	0	0
-Carrie Mills	20	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Karena Brooks	21	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-Ramzeh Deen-sie	22	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	1	34	1	0	0	0	3	0	19	0	0	0	0	0	0
-Antoinette Bell	24	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	2	2	0	0	0	0	0	0	0	0	0	0	0	0
-Brilynn Fields	25	2023	0	0	0	83	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tierra McCormick	26	2023	71	14	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jazmine Allen	28	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tinoi Jones	31	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	1	0	0	0	0	0	0	0	0	0
-Candace Burch	33	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Natalie Wiggins	36	2023	11	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Natasha Ware	38	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	4	1	0	2	2	0	0	0	0	0	0	0	0	0
-Charetta Santana	40	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maya Johnson	43	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christina Copelin	45	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chantal Thacker Ridlon	47	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	23	3	0	1	0	0	0	0	0	0	0	0	0	0
-Shannon Nelson-Brown	48	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	13	5	0	1	0	0	0	0	0	0	0	0	0	0
-Tehya Brown	49	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nichelle Blake	50	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	13	2	0	0	2	0	0	0	0	0	0	0	0	0
-Missy Hastings	51	2023	0	0	0	0	0	1	0	0	0	0	0	0	0	0	3	3	0	0	0	0	0	0	0	0	0	0	0	0
-Kourtney Purham	53	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bryanna Shaw	55	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Veronique Pope	56	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	3	3	0	1	0	0	0	0	0	0	0	0	0	0
-Lace Jennings	57	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Danaisha White	58	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bonique Green	63	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Porsche Elam	68	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tierra Lassiter	69	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tameka Heard	71	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amanda Walker	74	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	2	0	1	0	0	0	0	0	0	0	0	0	0
-Viola Hall	75	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-Lydia Evans	76	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tynisha McMillian	77	2023	5	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	143	6	0	0	0	0
-Donnell Finnaman	78	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	1	0	0	0	0	0	0	0	0	0	0	0	0
-Kasee Hilliard	81	2023	0	0	0	235	11	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sara Thacker	82	2023	0	0	0	94	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monique Dingle	86	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-FerKeshia Cousar	88	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	3	20	5	0	0	1	1	0	12	0	0	0	0	0	0
-Krystal Williams	90	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chelsea Whiteside	91	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	2	0	0	0	0	0	0	0	0	0	0	0	0
-Quiniesha Leonard	92	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Faith Rogers	93	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Toniquea Jackson	96	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Danielle Farrell	97	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	1	1	0	0	0	0	0	0	0	0	0
-Jocelyn Martin	99	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angela Hamilton	2	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	1	0	0	1	0	0	0	0	0	0	0	0	0
-Raina Royale	5	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jkera Shamburger	5	2023	0	0	0	18	3	0	0	0	0	0	0	0	0	0	2	0	0	0	0	6	0	63	0	0	0	0	0	0
-Tina Frisby	6	2023	34	29	0	0	0	0	446	74	33	5	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Laurisa Hollenshed	7	2023	33	5	0	3	1	0	0	0	0	0	0	0	0	4	24	6	0	0	0	3	0	29	0	0	0	0	0	0
-Jazmin Gamble Tello	9	2023	21	8	0	0	0	0	0	0	0	0	0	0	0	3	1	2	0	0	0	0	0	0	0	0	0	0	0	0
-Ashura Powell	10	2023	6	4	0	10	2	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nashi Catron	11	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dayanna Rangel	13	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Deztine Thomas	14	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Antoinette Harris	15	2023	6	2	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	2	0	38	0	0	0	0	0	0
-Mallory Torres	19	2023	0	0	0	3	1	0	0	0	0	0	0	0	0	0	4	0	0	0	0	1	0	7	0	0	0	0	0	0
-Neese Allen	20	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	1	0	0	0	0	0	0	20	1	0	0	0	0
-Shardae Bell	21	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maryfrances Husband	22	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	0	0	0	0	0	0	0	0	0
-Annsleigh Anderson	23	2023	12	11	0	54	4	2	13	4	2	0	1	4	0	0	24	1	0	0	1	2	0	31	40	2	0	0	0	0
-Bri Webb	24	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Laura Marraccini	29	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lindsi Cash	30	2023	0	1	0	0	0	0	0	0	0	0	0	0	0	0	13	0	0	0	1	0	0	0	127	6	0	0	0	0
-Natasha Johnson	31	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angelique Jones	33	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	1	0	0	0	0	0	0	0	0	0	0
-Rachel Robinson	36	2023	20	12	0	0	0	0	0	0	0	0	0	0	0	1	7	1	0	1	0	0	0	0	0	0	0	0	0	0
-Kiara Watts	37	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	2	0	33	0	0	0	0	0	0
-Meagan Tyler Curtis	38	2023	452	62	5	2	1	0	0	0	0	0	0	0	0	0	2	0	0	0	0	1	0	23	0	0	0	0	0	0
-Courtney Ward-Tyson	41	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel Love	43	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	11	1	0	0	0	0	0	0	0	0	0	0	0	0
-Courtnee Martinez	44	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	20	1	0	0	0	1	0	0	0	0	0	0	0	0
-Taja Maybee	50	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dawna Zike	52	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	12	2	0	0	0	0	0	0	0	0	0	0	0	0
-Shainna Cato	59	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mila Porter-Lawson	62	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmine Terry	65	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tyee Griffith	70	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nichole Albert	76	2023	0	1	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amari Hollis	77	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Key Cannon	84	2023	5	4	0	187	10	2	0	0	0	0	0	0	0	0	8	0	0	0	1	6	0	54	0	0	0	0	0	0
-Olivia Morgan	85	2023	0	0	0	139	7	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexa Legend	86	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Malaysia Quimby	87	2023	8	2	0	26	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Andy Perez	92	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Phillips	93	2023	51	12	0	0	0	0	0	0	0	0	0	0	0	2	13	9	0	0	0	0	0	0	0	0	0	0	0	0
-Marisa Goddard	99	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Britanni Lusain	1	2023	0	0	0	0	0	0	0	0	0	0	0	4	0	0	24	4	0	0	1	0	0	0	0	0	0	0	0	0
-Sakura Roberson	2	2023	0	0	0	310	9	5	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	43	0	0	0	0	0	0
-Jen Strother	4	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	20	16
-Daisy Avila	5	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Hollie Sanders	7	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Eboni Chambers	8	2023	0	0	0	95	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Katherine Claxton	10	2023	0	0	0	13	1	0	0	0	0	0	0	0	0	2	30	4	0	0	1	0	0	0	0	0	0	0	0	0
-Knengi Martin	11	2023	0	29	1	0	0	0	472	54	25	8	3	0	0	0	2	0	0	0	1	0	0	0	0	0	0	0	0	0
-Colleen Sam Dreiling	12	2023	13	4	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	2	0	0	0	431	14	0	0	0	0
-Kristin Smereczynski	13	2023	0	4	6	0	0	0	49	11	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tarnisha Taylor	14	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jackie Espinoza	15	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jazzmon J Stovall	16	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	16	1	0	0	0	0	0	0	0	0	0	0	0	0
-Sammy Heck	17	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shanise Vann	19	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Herrera	20	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Elliot Nguyen	22	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	1	46	7	0	3	1	3	0	40	0	0	0	0	0	0
-Bryt Felder-Brown	24	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Whitfield	25	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Melina Malaxos	26	2023	280	40	2	0	0	0	0	0	0	0	0	0	0	0	12	0	0	0	1	0	0	0	0	0	0	0	0	0
-Adriana Gutierrez	27	2023	578	103	8	55	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	110	0	0	0	0	0	0
-Kim Cade-Henry	29	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	2	0	0	0	0	0	0	0	0	0	0	0	0
-Christin Stoll	32	2023	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmyn Chachrelle Nguyen	33	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	0	0	0	2	0	0	0	0	0	0	0	0	0
-Bernadette Gambino	34	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Merci Scott	35	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	22	0	0	1	1	1	1	21	0	0	0	0	0	0
-Joann Mae Glasper Mamuyac	36	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mercedes Tyler	39	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	62	3	0	3	4	2	0	4	0	0	0	0	0	0
-Katherine Ott Hicks	41	2023	3	1	0	49	9	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angela Mims	44	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	17	4	0	1	0	0	0	0	0	0	0	0	0	0
-Monica Johnson	51	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ronnika Burks	53	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Madeline Kop	55	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jocelyn Montoya	57	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lelatasiosamoa Vaeao	58	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sabrina Kessler	59	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0
-Alondra Suarez	64	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	19	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rebecca Munoa	65	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rea Schmidt	66	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rebekah LaMie	68	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Johanna Aspenberg	70	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	21	5	0	1	0	0	0	0	0	0	0	0	0	0
-Tanya Luna	77	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Whitney Harrison	85	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tess McCann	91	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyshia Tauaunu	92	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alayah Lewis	93	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Keiloni Kalasa	96	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rebecca Southerland	97	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amiracle Mitchell	0	2023	0	0	0	22	2	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rasan Gore	1	2023	229	57	3	0	0	0	1282	202	99	13	11	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jamie Lock	2	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0
-Regena Jackson	3	2023	22	6	1	287	31	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	85	3	0	0	0	0
-Shaniya Lacey	4	2023	48	6	0	37	4	1	0	0	0	0	0	0	0	0	2	0	0	0	0	4	0	48	0	0	0	0	0	0
-Takera Mitchell	5	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	13	0	0	1	0	0	0	0	0	0	0	0	0	0
-Ida Edwards	6	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	17	6	0	0	0	0	0	0	0	0	0	0	0	0
-Candice Davis	7	2023	105	32	0	50	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alona Alexander	8	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmine Redmon	9	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa McCarron	10	2023	0	0	0	104	10	0	0	0	0	0	0	0	0	0	1	0	0	0	0	2	0	21	96	5	0	0	0	0
-Brittany Bassett	11	2023	0	0	0	28	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
-Mary Woodard	12	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	26	2	0	1	1	12	0	112	1	1	0	0	0	0
-Natalie Nicks	13	2023	0	0	0	224	19	3	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aalicia Norrell	14	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	10	1	0	1	0	1	0	7	0	0	0	0	0	0
-Kymesha Andrew	15	2023	0	0	0	0	0	0	0	0	0	0	0	2	0	0	32	1	0	1	2	0	0	0	0	0	0	0	0	0
-Raven Preston	17	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0
-Doshia Collins	18	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rashida Young	19	2023	0	0	0	419	19	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Corrina Burney	21	2023	25	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-CharLyshia Bradford	23	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	47	4	0	0	0	0	0	0	0	0	0	0	0	0
-LaShanda Griffin	24	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shaniqual Davis	25	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Stephanie Hobson	26	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Anita Brown	28	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-English Bennett	29	2023	30	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
-Ravyn Santiago	30	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shardonay Jenkins	31	2023	1	1	0	0	0	0	0	0	0	0	0	0	0	0	13	3	0	1	2	0	0	0	0	0	0	0	0	0
-LaQunana Cistrunk	32	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jimeriam Jackson	34	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-LaToya Brown	35	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0
-Versace Lee	41	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mariane McClinton	42	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	6	1	0	1	1	1	0	0	0	0	0	0	0	0
-Taurus Pyles	43	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dalphne Armstrong	44	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	2	0	0	0	0	0	0	0	0	0	0	0	0
-LaShanda Williams	45	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	4	0	0	0	0	0	0	0	0	0	0	0	0
-Voldavia Roberts	50	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
-Sarena Shipp	52	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	3	0	0	1	0	0	0	0	0	0	0	0	0
-Myeshia Johnson	54	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LeOndrea McIntyre	55	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sheka Houseton	56	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jalessa Harvey	61	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Robin Cooper	65	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	6	6
-Bethany Hipps	66	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Devon Clay	68	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Patricia Fultz	69	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Madison Jones	71	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Montye Cooke	75	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Michelle Thornton	76	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nicole Pike	81	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-KaNesha Sheriff	88	2023	0	0	0	104	8	1	0	0	0	0	0	0	0	0	1	0	0	0	0	4	0	60	0	0	0	0	0	0
-Tasha Owens-Price	96	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-JaKeira Mallory	99	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	15	11	0	0	1	0	0	0	0	0	0	0	0	0
-Victoria Nichols	0	2023	0	0	0	117	6	0	0	0	0	0	0	0	0	0	1	0	0	0	0	7	0	105	0	0	0	0	0	0
-Jaquela Stewart	1	2023	0	0	0	31	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Trevanna Berryman	3	2023	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Beckham	4	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	19	3	0	0	0	0	0	0	0	0	0	0	0	0
-Crystal Rhodes	5	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0
-Cierra Childress	6	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	0	0	1	0	0	0	0	0	0	0	0	0	0
-Sheila Sickau	7	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lauren Crouch	8	2023	9	15	0	21	2	0	103	43	16	0	5	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-K.J. Johnson	9	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Pasha Johnson-Rivers	10	2023	50	19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Trish Stephens	11	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	1	1	0	0	0	0	0	0	0	0	0
-Keshia Ray	12	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shian Galbreath	14	2023	45	16	0	0	1	0	72	7	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Gomez	15	2023	0	7	0	0	0	0	92	27	8	0	2	0	0	0	0	0	0	0	0	0	0	0	168	7	0	0	0	0
-Tikia Constantine	16	2023	6	5	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	24	0	0	0	0	0	0
-Laura Saettele	17	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kiana Moore	19	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aubrei Crooks	20	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0
-Rocky Ray	21	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ken Gabriel	22	2023	347	56	3	15	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	41	0	0	0	0	0	0
-Trei Brown	24	2023	8	7	0	14	2	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kaitlyn Easton	25	2023	0	0	0	11	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	209	8	0	0	0	0
-Anna Shields	28	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dee Jackson-Ross	30	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kechelle Herring	32	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kassidy Snowden	33	2023	0	0	0	0	0	0	0	0	0	0	0	2	0	0	22	4	0	0	0	4	0	37	0	0	0	0	0	0
-Tinika Burns	35	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	15	1	0	1	0	0	0	0	0	0	0	0	0	0
-Ronnise Wilson	36	2023	63	26	1	5	2	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rose DeLuco	37	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alana Ferguson	38	2023	0	2	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Hana Yocom	41	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jess Sherman	43	2023	0	0	0	11	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tatanisha Young	44	2023	18	4	0	15	1	0	0	0	0	0	0	0	0	0	4	1	0	1	0	2	0	24	0	0	0	0	0	0
-Marielle Alexander	47	2023	0	0	0	40	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	19	0	0	0	0	0	0
-Alana Stewart	48	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelly Whitehead	49	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	4	73	17	0	1	0	0	0	0	0	0	0	0	0	0
-Desiree Spivey	52	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	24	0	0	0	1	0	0	0	0	0	0	0	0	0
-Theresa Honeycutt	53	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tye Ferguson	54	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	1	0	0	0	0	0	0	0	0	0
-Sasha Gomez	55	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	12	2	0	0	2	0	0	0	0	0	0	0	0	0
-Drea Scott	58	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Syreeta Gapelu	61	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	39	6	0	1	0	0	0	0	0	0	0	0	0	0
-Destinnee Banks	62	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Consuela Benson-Blackmon	68	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aspen Williams	70	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Celeste Robinson	71	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Madisen Mode	73	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
-Kiera Smith	74	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cambria Davis	77	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Anna Wilson	78	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel Bailey	80	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Julia Stevenson	82	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ysabella Cobbinah-Fears	86	2023	0	0	0	9	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jordan Krahn	87	2023	0	0	0	23	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Laure Gelis-Diaz	89	2023	0	0	0	0	0	0	0	0	0	0	0	2	0	0	16	0	0	0	0	1	0	0	0	0	0	0	0	0
-Ana Bittencourt	90	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	12	4	0	0	1	0	0	0	0	0	0	0	0	0
-Brenna Morris	29	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	129	4	0	0	0	0
-Mackenzie Grause	92	2023	0	0	0	20	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	244	9	1	0	0	0
-Brittany Cleek	97	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristen London	1	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	21	4	0	1	0	2	0	21	0	0	0	0	0	0
-Jamie Brann	2	2023	0	0	0	5	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	2	0	0	0	0
-Jasmine Thomas	3	2023	12	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	28	0	0	0	0	0	0
-Lydia Morgan	4	2023	0	0	0	48	7	0	0	0	0	0	0	0	0	0	1	0	0	1	0	4	0	89	0	0	0	0	0	0
-Brittany Jones	5	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Breana Griggs	6	2023	0	0	0	29	2	0	0	0	0	0	0	0	0	0	8	1	0	0	0	5	0	47	0	0	0	0	0	0
-Nicole Matheson	7	2023	0	0	0	0	0	0	0	0	0	0	0	2	0	0	25	1	0	1	0	0	0	0	0	0	0	0	0	0
-Zharyah Willis	8	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	0	1	0	0	0	0	0	0	0	0	0
-Wendy Sun	9	2023	96	31	1	32	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	4	0	0	0	0	0	0
-Casey Cubis	12	2023	20	7	1	0	0	0	669	152	57	7	6	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Errin McIsaac	14	2023	0	0	0	207	13	4	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Zshalyn Canfield	15	2023	18	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lamikia Lawson	16	2023	0	0	0	45	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa Vigil	17	2023	0	0	0	15	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	72	0	0	0	0	0	0
-Asiah Walker	18	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelly Washington	19	2023	0	0	0	28	3	0	12	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shequa Fitzgerald	20	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	1	0	0	0	0	0	0	0	0	0
-Alisha Young	21	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	0	0	0
-Grace Cooper	24	2023	171	45	0	14	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Charlee Ford	26	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jade Austin	29	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aspen Verdos	30	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	2	0	0	2	0	0	0	0	0	0	0	0	0
-Gilliana Chau	31	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0
-La Shun Mosley	32	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelli Jones	33	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarai Sifuentes	34	2023	24	11	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Laura St Ruth	35	2023	0	1	0	0	0	0	0	0	0	0	0	0	0	0	23	1	0	0	1	4	0	119	549	17	2	0	2	1
-Britney Derhak	36	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	1	0	1	0	14	0	0	0	0	0	0
-Joselyn Lazaro	38	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amber Craft	40	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	4	48	8	0	1	0	5	0	96	19	1	0	0	0	0
-Grace Murphy	41	2023	0	0	0	72	5	2	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0
-Bailey Paskach	42	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	19	7	0	1	0	0	0	0	0	0	0	0	0	0
-Karla Romero	44	2023	66	26	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Yesenia Quiroga	45	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tara Haddock	46	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brooklyn Waddles	48	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Anastacia Kreider	50	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kara Corcoran	51	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	4	1	0	0	0	0	0	0	0	0	0	0	0	0
-Shannon Drayton	52	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	10	3	0	0	0	0	0	0	0	0	0	0	0	0
-Trevez Bridgewater	53	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jazmin Florez	57	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Whitley Conn	58	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexis Broswell	63	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Morgan Darden	69	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Katie Williams	70	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Sanders	71	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel Van Devender	75	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alondra Rodriguez	76	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carolyn Lampkin	77	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Selena Thomas	78	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Abbie Medlar	80	2023	0	0	0	13	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jenessa White	83	2023	0	0	0	31	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa Speckhals	85	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa Mcguinnis	88	2023	0	0	0	137	8	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
-Olivia Valentine	90	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Whitney Gifford	92	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	1	0	0	0	0	0	0	0	0	0	0
-Aezioni Nakai Fuller	94	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	9	3	0	0	0	0	0	0	0	0	0	0	0	0
-Angel Duran	96	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0
-Katie Margheim	98	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristianna Ibsen	99	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Morgan Smith	0	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mio Yoshisa	1	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jane (Redd) Brinkman	2	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	20	4	0	0	0	0	0	0	0	0	0	0	0	0
-Tina Tela	3	2023	29	12	2	0	0	0	0	0	0	0	0	1	0	0	42	9	0	0	0	0	0	0	0	0	0	0	0	0
-Kayelle Brown	4	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	8	7
-Maya Jamison	5	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelly Stack/Johnston	6	2023	0	0	0	131	3	2	130	6	4	3	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Laura Goetz	7	2023	37	11	1	0	0	0	0	0	0	0	0	3	0	0	43	43	0	1	1	0	0	0	0	0	0	0	0	0
-Ally Cleveland	8	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Memory Ware	9	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sara Galica	10	2023	182	34	6	0	0	0	328	35	12	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Megan Robertson	12	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	37	4	0	1	0	0	0	0	141	4	2	0	13	8
-Erin Miller	14	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	24	2	0	0	1	0	0	0	0	0	0	0	0	0
-Naena Bland	16	2023	0	0	0	241	7	4	0	0	0	0	0	0	0	0	9	0	0	0	1	0	0	0	0	0	0	0	0	0
-Courtney Gray	18	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Hannah Makasini	20	2023	148	38	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Keeysha Cox	21	2023	43	12	0	12	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	60	0	0	0	0	0	0
-Maki Yamagata	22	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lacy Mile	23	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	16	1	0	0	0	0	0	0	0	0	0	0	0	0
-Kiki Peoples	24	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jenna Trahan	25	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Gina Magana	26	2023	279	49	1	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	104	0	0	0	0	0	0
-Kim Krinke	28	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	25	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jane Leroy	29	2023	136	33	1	0	0	0	0	0	0	0	0	1	0	0	14	1	0	0	1	0	0	0	0	0	0	0	0	0
-Sydnee Burns	30	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0
-Ali Olson	31	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	1	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Cannon	32	2023	9	2	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-MaryJane Merriam	33	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	44	1	0	0	0	0
-Amanda Blackwell	36	2023	376	42	3	38	2	1	0	0	0	0	0	0	0	0	1	0	0	0	0	3	0	25	0	0	0	0	0	0
-Lexie Neslen	37	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0
-Morgan Saybold	39	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cayleigh Blackwell	42	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Terry Cornell (Peterson)	45	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Courtney Shaw	47	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LiTara Faatili	48	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	0	0	0	0	0	0	0	0	0
-McKenna Morgan	49	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kellie Erickson	50	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Akira Galeai	54	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessie Warr	55	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Renica Tese/Rueckert	56	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	20	5	0	0	1	0	0	0	0	0	0	0	0	0
-Shondra Carpenter	57	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Talia Ramos	58	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Leialoha Tela	59	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jackie Price	60	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Court	64	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Camille Brimhall	65	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-AJ Roby	66	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	22	10	0	0	0	0	0	0	0	0	0	0	0	0
-Brandi Byrd	67	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Katie Montgomery	68	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	4	2	0	0	0	0	0	0	0	0	0	0	0	0
-Montanna Meier	70	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shauna Loftin	72	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brynne Butterfield	73	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mechelle Nance	75	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	34	9	0	3	0	0	0	0	0	0	0	0	0	0
-Va Leomiti	76	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shannon Richards-Gebbia	77	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Megan Thompson	78	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lanika Manning	80	2023	0	0	0	0	0	0	0	0	0	0	0	2	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0
-Lainie Thompson	84	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	1	0	0	0	0	0	0	0	0	0
-Jessie Beck	86	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Claire Cicchetti	88	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Makayla Brown	89	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Heather Dulin	90	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lanuola Lewis	96	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cindy Cornell	97	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Molly Richardson	1	2024	0	2	0	0	0	0	0	4	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Paige Jones	3	2024	7	5	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Leslie Hubbell	4	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	1	0	0	1	0	0	0	0	0	0	0	0	0
-Sydney Smith	6	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	3	0	0	0	0	1	0	2	0	0	0	0	0	0
-Tia McCants	7	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	89	2	0	0	0	0
-Chrystin Lucas	8	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shanysse Emerenciana	9	2024	0	0	0	19	2	0	0	0	0	0	0	0	0	0	3	0	0	0	0	5	0	29	0	0	0	0	0	0
-Xiarysse Emerenciana	10	2024	6	2	0	53	7	1	0	0	0	0	0	0	0	0	1	0	0	0	0	6	1	149	0	0	0	0	0	0
-Diamond Scott	11	2024	15	5	0	21	2	0	6	7	2	0	2	2	0	0	10	0	0	0	0	2	0	26	0	0	0	0	0	0
-Morgan Augustine	12	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	3	20	4	0	0	1	0	0	0	0	0	0	0	0	0
-Diamond Acklin	15	2024	0	1	0	12	1	0	0	0	0	0	0	0	0	1	9	2	0	0	0	0	0	0	0	0	0	0	0	0
-Deja Terry	17	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lauren Kelly	18	2024	0	0	0	8	2	1	0	0	0	0	0	0	0	0	8	0	0	0	0	1	0	0	0	0	0	0	0	0
-Aurieyall Scott	21	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	6	0	47	0	0	0	0	0	0
-Gina Silvestri	22	2024	51	27	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	1	0	0	0	0	0	0	0	0	0	0
-Harley Foltz	23	2024	7	13	0	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashaniti Broxey	24	2024	0	1	0	71	5	0	0	0	0	0	0	1	0	0	8	0	0	1	0	7	0	72	0	0	0	0	0	0
-Kelsey Prall	25	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	3	0	0	1	0	0	0	0	0	0	0	0	0
-Alyssa Dixon	26	2024	3	9	0	0	0	0	211	67	20	2	10	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
-Margo Smith	28	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	1	0	0	0	0	0	0	0	0	0	0
-Alexandra Holliday	30	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	2	0	6	0	0	0	0	0	0
-Chelsea Parrish	32	2024	0	4	0	7	1	0	12	3	1	0	0	0	0	1	14	5	0	0	0	4	0	99	397	19	0	0	0	0
-Alissa Loatman	33	2024	8	10	0	0	1	0	0	0	0	0	0	0	0	1	23	2	0	1	1	0	0	0	0	0	0	0	0	0
-Shelby Towkach	45	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	1	0	0	0
-Kaytlin Harvey	51	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cheryl Godek	52	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nandi Curtis	53	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jazlyn Villalona	56	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cynthia Williams-Walker	58	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Vanessa Jenkins	65	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shayla Brown	72	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aliyah King	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Pam Melchi	78	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Breana Haines	88	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	0	0	0
-Natalie Laurent	90	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-MaiKia Williams	0	2024	0	0	0	10	1	0	0	0	0	0	0	2	0	0	19	0	0	0	0	2	0	13	0	0	0	0	0	0
-Whitney Jones	2	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	43	1	0	0	0	0
-Anastasia Olavuo	3	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	21	3	0	1	0	0	0	0	0	0	0	0	0	0
-Maria Fautali	4	2024	162	53	2	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	1	234	0	0	0	0	0	0
-Crystal Rhodes	5	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	1	0	0	0	0	0	0	0	0	0
-Cierra Childress	6	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sheila Sickau	7	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	266	7	0	0	5	5
-Lauren Crouch	8	2024	9	2	0	98	10	2	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nashi Catron	13	2024	0	1	0	0	0	0	365	103	40	4	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shian Galbreath	14	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0
-Tikia Constantine	16	2024	6	1	0	41	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ericka Davis	18	2024	32	10	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kiana Moore	19	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Armoni Stevenson	22	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	3	22	7	0	0	2	0	0	0	0	0	0	0	0	0
-Trei Brown	24	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Katherine Lane	26	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Imani Nettles	27	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0
-Maria Acension	28	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Megan McDonald	31	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kassidy Snowden	33	2024	24	6	2	0	0	0	0	0	0	0	0	1	0	1	20	2	0	0	0	7	0	111	0	0	0	0	0	0
-Brooke Tanner	34	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tinika Burns	35	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Ronnise Wilson	36	2024	106	29	1	0	0	0	0	0	0	0	0	1	0	0	17	2	0	1	0	0	0	0	0	0	0	0	0	0
-Samantha Williams	39	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shannon Cooley	40	2024	0	0	0	58	8	1	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aundrea Colbert	42	2024	106	25	0	42	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	71	0	0	0	0	0	0
-Tina Vang	46	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Marielle Alexander	47	2024	28	7	0	141	10	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelly Whitehead	49	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	10	2	0	1	0	0	0	0	0	0	0	0	0	0
-Jen Dulski	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	3	2	0	0	0	0	0	0	0	0	0	0	0	0
-Sydney Wickman	51	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Theresa Honeycutt	53	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Andrea Scott	58	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ida Handel	61	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kylie Edwards	69	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aspen Williams	70	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Troineshia Webb	74	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cambria Davis	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kassandra Payne	78	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Syreeta Gapelu	79	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	25	5	0	0	0	0	0	0	0	0	0	0	0	0
-Cassidy Hollow-Horn	80	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Julia Stevenson	82	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rose DeLuco	87	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alex Specht	88	2024	0	0	0	11	2	1	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ana Bittencourt	90	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	1	0	0	1	0	0	0	0	0	0	0	0	0
-LaDonna Leachman	94	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Cleek	97	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nichelle Blake	0	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	1	0	0	0	0	0	0	0	0	0	0	0	0
-Britnee Sangalan	1	2024	0	0	0	92	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	0	286	0	0	0	0	0	0
-Quiana Ford	2	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	2	0	32	0	0	0	0	0	0
-Tanaysa Henderson	3	2024	0	0	0	31	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cheri Gantt	4	2024	205	56	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ta Shaun Leigh	5	2024	107	13	1	0	0	0	0	0	0	0	0	2	0	3	38	8	0	1	0	4	0	72	0	0	0	0	0	0
-Eby Okonkwo	6	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	6	3	0	0	0	0	0	0	0	0	0	0	0	0
-Ashley Clark	7	2024	0	4	0	0	0	0	447	73	27	7	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Fatasia Smith	8	2024	2	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monique Dingle	11	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennell Thomas	12	2024	0	0	0	0	0	0	207	44	15	3	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LaShantel Wilson	13	2024	0	0	0	0	0	0	0	0	0	0	0	2	0	2	17	9	0	2	1	0	0	0	0	0	0	0	0	0
-Anastasia Bosques	17	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carrie Mills	20	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Karena Brooks	21	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ramzeh Deensie	22	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	19	1	0	0	1	0	0	0	0	0	0	0	0	0
-Kezia Oscar	23	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0
-Tonette Bell	24	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tierra McCormick	26	2024	142	22	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Johnson	27	2024	12	2	0	0	0	0	0	0	0	0	0	1	0	0	4	0	0	0	0	0	0	0	195	10	0	0	10	5
-Jazmine Allen	28	2024	76	23	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	14	0	0	0	0	0	0
-Lauran Glover	30	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tinoi Jones	31	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	3	8	3	0	1	2	0	0	0	0	0	0	0	0	0
-Jordyn White	32	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Candace Burch	33	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alimirah Hall	38	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shannon Brown	48	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	3	18	8	0	0	0	0	0	0	0	0	0	0	0	0
-Tehya Brown	49	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Missy Hastings	51	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kourtney Purham	53	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lisa Fisher	60	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angela Clarke	61	2024	0	0	0	26	3	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bonique Green	63	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angie Murray	65	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christine Norman	66	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Temeka Heard	71	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kasee Hilliard	81	2024	0	0	0	241	16	4	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0
-Myla Somerville	86	2024	0	0	0	0	0	0	0	0	0	0	0	3	0	0	8	2	0	0	0	2	0	12	0	0	0	0	0	0
-Kathryn Floor	87	2024	0	0	0	264	14	4	0	0	0	0	0	0	0	0	0	0	0	0	1	3	0	45	0	0	0	0	0	0
-Ferkeshia Cousar	88	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Faith Rogers	93	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Toniquea Jackson	96	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tanishia Norman	2	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Paytience Kamuta	3	2024	148	30	5	0	0	0	527	62	25	4	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Crys Contreras	4	2024	0	4	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Srey Routh	5	2024	91	22	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Krista Seaman	6	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0
-Michell Zamudio	7	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	0	0	0	0	1	0	0	0	0	0	0	0	0
-Eva Lampert	8	2024	117	11	1	246	9	1	4	3	3	0	0	1	0	1	3	1	0	0	0	0	0	0	0	0	0	0	0	0
-Jazmine Rambo	9	2024	281	53	3	9	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shaunya Kahananui	10	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	2	0	4	0	0	0	0	0	0
-Paulina Lopez	13	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	21	1	0	0	1	0	0	0	0	0	0	0	0	0
-Jocelyn Charette	16	2024	17	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	59	2	0	0	4	4
-Ana Barbosa	17	2024	0	0	0	149	6	1	0	0	0	0	0	2	0	0	11	0	0	0	0	5	0	71	0	0	0	0	0	0
-Andraliah Lee	20	2024	271	45	4	9	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Billie Kennedy-Jefferson	21	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	8	0	0	0	0	0	0
-Molly Tester	23	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	23	4	0	1	0	0	0	0	0	0	0	0	0	0
-Melonie Washington	24	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0
-McKenzie Tolliver	25	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Erica Jackson	26	2024	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ayanna Ford	28	2024	64	9	0	47	6	1	0	0	0	0	0	0	0	0	1	0	0	0	0	7	0	108	0	0	0	0	0	0
-Alexandra Sweet	31	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	12	0	0	0	1	0	0	0	0	0	0	0	1	0
-Amy Steinke	37	2024	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Madalyn Garrison	38	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0
-Samantha Mendez	44	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	31	3	0	2	1	0	0	0	0	0	0	0	0	0
-DaMaree Mitchell	47	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0
-Nova Nystrom	48	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	4	0	0	0	0	0	0	0	0	0	0	0	0
-Olga Valdez	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Charmaine Bradford	51	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	2	0	0	0	0	0	0	0	0	0	0	0	0
-Cana Tulifua	52	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	2	0	0	0	0	0	0	0	0	0	0	0	0
-Naomi Lee	54	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexus Durham	55	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Seini Pailate	56	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-London Hester-Williams	59	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Zay Dollente	60	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Gretchen Pietras	64	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brandy Kite	69	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Greys Bernal	70	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shamira Vega	71	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aleesha Cadogan	72	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-JoVonna Cram	74	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Marlen Garces	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	10	1	0	1	1	0	0	0	0	0	0	0	0	0
-Jacki Waring	81	2024	0	0	0	13	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Molly Cichosz	82	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rayna Lorraine	84	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
-Rosalie Mora	86	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aryan Sjodin	90	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0
-Kenzie Carney	95	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rebecca Banks	97	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bianca Mouton	99	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Erica Mason-Austin	1	2024	0	0	0	15	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	59	0	0	0	0	0	0
-Bria Truxon	2	2024	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
-Erinn Payton	4	2024	34	18	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Starry Bady	5	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Joanna Young	6	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Bassett	7	2024	0	0	0	15	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Charniece Carney	8	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kandy Bortz	10	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carah Johnson	11	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	24	0	0	0	0	0	0
-Brennan Crabtree	12	2024	0	0	0	46	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	271	13	0	0	0	0
-Tessa Ortiz-Marsh	13	2024	27	27	1	0	0	0	171	39	18	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Stacey Kremer	14	2024	0	0	0	84	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1
-Aurree King	15	2024	29	31	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ayshia Slaughter	16	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Marcy Van Hartesveldt	17	2024	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Michelle Dunham	18	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Diamond Griggs Tucker	20	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Pita Lou	21	2024	0	0	0	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lydia Qualls Jarrett	22	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	12	1	0	0	1	1	0	11	0	0	0	0	0	0
-Cortney Mosier	23	2024	6	6	0	0	0	0	0	0	0	0	0	0	0	1	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Neshara Watrous	24	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sydney Blahnik	25	2024	3	9	0	0	0	0	10	4	2	0	0	0	0	0	8	2	0	0	0	0	0	0	0	0	0	0	0	0
-Aireka Fowler	26	2024	4	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	31	0	0	0	0	0	0
-Tiffany Hopkins	27	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	13	4	0	0	1	0	0	0	0	0	0	0	0	0
-Kia Armstrong	28	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dionna Jackson-Ross	30	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	19	5	0	0	0	0	0	0	0	0	0	0	0	0
-Pasha Rivers	33	2024	0	2	0	0	0	0	0	0	0	0	0	0	0	0	16	1	0	0	0	0	0	0	0	0	0	0	0	0
-Baiyinah Rahim	35	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Vanesia Thompson	39	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tiara Woodard	44	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	8	2	0	1	1	0	0	0	0	0	0	0	0	0
-Sasha Stevenson	48	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dmayla Holliday	50	2024	6	2	0	0	0	0	0	0	0	0	0	0	0	4	14	7	0	0	1	0	0	0	0	0	0	0	0	0
-Sheldon Bins	51	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nyshavia Riley-Marsh	52	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0
-Aundrea Radford King	53	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	15	4	0	0	0	0	0	0	0	0	0	0	0	0
-Angel Benson	55	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tosha Bins	58	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jahogony Ezelle	66	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nichole Bressner	69	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shari Cherenfant	70	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Essence Lipscomb	72	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Arlyssa Perry	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lindsay Powell	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lanie Ford	79	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kirstyanna Quinn Pierce	82	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-Asha Evans	85	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Karissa Burnett	88	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	0	0	0	0	3	0	15	0	0	0	0	0	0
-Brooke Mugridge	92	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Fita Boyce-Jennings	99	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Miriah Lopez	1	2024	0	0	0	125	6	1	0	0	0	0	0	0	0	0	25	3	0	2	0	10	0	114	0	0	0	0	0	0
-Marissa Lopez	5	2024	49	20	1	0	0	0	143	40	10	1	4	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Laurisa Hollenshed	7	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jazmin Gamble	9	2024	18	8	0	0	0	0	0	0	0	0	0	0	0	3	23	6	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmine McDonald	10	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	20	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mercedes Pettegrew	11	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Deztine Thomas	14	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mallory Torres	19	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shardae Anderson-Bell	21	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maryfrances Husband	22	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0
-Annsleigh Anderson	23	2024	52	22	0	0	0	0	159	32	10	1	5	0	0	0	6	1	0	0	0	0	0	0	143	4	0	0	0	0
-Sabrina Webb	24	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ryan Meismer-Thompson	26	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Natasha Johnson	31	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	3	10	3	0	0	0	0	0	0	0	0	0	0	0	0
-Lindsey Moore	33	2024	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	1	4	0	82	80	3	0	0	0	0
-Salina Samario	35	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel Robinson	36	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	11	1	0	0	0	0	0	0	0	0	0	0	0	0
-Kiara Watts	37	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Meagan Tyler Curtis	38	2024	259	41	3	30	6	0	0	0	0	0	0	0	0	0	8	0	0	0	0	1	0	15	0	0	0	0	0	0
-Tiffany Gonzales	43	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Courtnee Martinez	44	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	26	4	0	1	1	0	0	0	0	0	0	0	0	0
-Precious Moses	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	16	4	0	0	0	0	0	0	0	0	0	0	0	0
-Mercedes Green	54	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shaiana Cato	59	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mila Porter-Lawson	62	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Ramirez	67	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Echo Le Veil	84	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Olivia Morgan	85	2024	0	0	0	119	6	1	0	0	0	0	0	1	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Malaysia Quimby	87	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Phillips	93	2024	47	13	0	0	0	0	0	0	0	0	0	1	0	1	16	5	0	0	3	0	0	0	0	0	0	0	0	0
-Brittani Lusain	1	2024	0	0	0	65	5	1	0	0	0	0	0	1	0	0	27	1	0	4	2	1	0	34	0	0	0	0	0	0
-Sakura Roberson	2	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Samonah Betts	3	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	4	2	0	0	0	0	0	0	0	0	0	0	0	0
-Jen Strother	4	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	12
-Daisy Avila	5	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristin Smereczynski	7	2024	0	0	0	15	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Natalia Escoto	8	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	27	1	0	0	2	0	0	0	0	0	0	0	0	0
-Markeisha Perry	9	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	2	0	0	0	0	1	0	5	0	0	0	0	0	0
-Katie Claxton	10	2024	0	0	0	99	5	1	0	0	0	0	0	2	0	2	38	4	0	4	4	2	1	2	0	0	0	0	0	0
-Diana Huynh	12	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Samantha Heck	13	2024	0	0	0	10	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nisha Taylor	14	2024	0	0	0	61	3	3	0	0	0	0	0	3	0	0	15	1	0	0	0	4	0	46	0	0	0	0	0	0
-Danny Trainor	17	2024	188	45	5	0	0	0	434	74	29	7	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tahj Reddick	18	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Herrera	20	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alicia Zappia	21	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Elliot (Elisa) Nguyen	22	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	2	0	0	0	0	0	0	0	0	0	0	0	0
-Amber O'Connor	23	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kesz Wesley	24	2024	112	16	2	11	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Melina Malaxos	26	2024	488	89	3	44	1	1	0	0	0	0	0	1	0	0	4	0	0	0	1	0	0	0	0	0	0	0	0	0
-Tori Leech	27	2024	8	1	0	81	5	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	133	6	0	0	0	0
-Kim Cade-Henry	29	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	1	0	0	0	0	0	0	0	0	0	0	0	0
-Angelina Corona	30	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Erica Arie	31	2024	0	0	0	39	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christin Stoll	32	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Merci Scott	35	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	23	0	0	1	2	7	0	139	0	0	0	0	0	0
-Jo-Jo Mamuyac	36	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lena (Magda) Vargas	37	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Katie Ott (Hicks)	41	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Unique Rowan	43	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angela Mims	44	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Conley	45	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Knengi Martin	47	2024	0	0	0	25	2	0	0	0	0	0	0	0	0	2	27	4	0	1	0	0	0	0	0	0	0	0	0	0
-Daniela De La Garza	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monica Johnson	51	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jocelyn Montoya	57	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Fernanda Zaldo	58	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sabrina Kessler	59	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	13	3	0	2	0	0	0	0	0	0	0	0	0	0
-Alox Suarez	64	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	32	1	0	0	0	0	0	0	0	0	0	0	0	0
-Rea Schmidt	66	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kacey Grierson	69	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Johanna Aspenberg	70	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	7	1	0	0	1	0	0	0	89	3	0	0	0	0
-Monique Gonzalez	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tanya Luna	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Whitney Harrison	85	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0
-Ty Dossman	87	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyshia Tauaunu	92	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristen London	0	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	25	3	0	0	0	2	0	23	0	0	0	0	0	0
-Rasan Gore	1	2024	12	11	0	0	0	0	224	36	18	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmine Thomas	2	2024	0	0	0	34	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shucoya Thomas	3	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	141	8	0	0	0	0
-DAjah Scott	4	2024	126	25	2	288	15	3	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shavonne Verdree	5	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	14	3	0	0	0	0	0	0	0	0	0	0	0	0
-Tori Tagaloa	6	2024	15	16	0	0	0	0	284	84	37	5	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Daziah Green	7	2024	0	0	0	10	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kyhle Jamerson	8	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kesha Smith	10	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shanice Cole	11	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	3	23	6	0	0	0	0	0	0	0	0	0	0	0	0
-Ida Edwards	12	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	11	3	0	0	0	0	0	0	0	0	0	0	0	0
-Kristel Reid	14	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	0	0	0	0	0	0	0	0	0
-Coretta Hopkins	15	2024	0	0	0	44	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brooklyn Cousin	16	2024	0	1	0	110	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	26	0	0	0	0	0	0
-Aziah Green	17	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexus Freeman	19	2024	0	0	0	42	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	16	0	0	0	0	0	0
-Missy (Chelseney) Lewis	20	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LaNia Charity	21	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	2	0	9	0	0	0	0	0	0
-Iemah Meno Perry	22	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lawanda Pearson	24	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amber Perry	25	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0
-Ingrid Clevland	28	2024	0	3	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	84	0	0	0	0	0	0
-Charlee Ford	30	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	18	0	0	0	0	2	0	27	0	0	0	0	0	0
-Nicole Morris	32	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-LaCreisha Lane	34	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sckiya Banister	36	2024	123	40	0	150	17	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alex Foley	39	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angie Patton	40	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	35	4	0	0	0	1	0	7	0	0	0	0	0	0
-Angie Wells	41	2024	0	0	0	0	0	0	0	0	0	0	0	2	0	0	23	3	0	1	0	0	0	0	0	0	0	0	0	0
-Briana Gorrell	42	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jazpony Harris	43	2024	0	0	0	8	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bryanna Farrell	44	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	13	0	0	0	0	0	0
-Christian Ross	48	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	3	0	0	0	0	0	0
-Airel Gilliam	49	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shenelle Bush	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alex Perry	54	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Stephanie Lopez	55	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tyneika Jordan	60	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tironeisha Jenee Sheriy	62	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Samantha Vasquez	63	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0
-Monica Pickens	64	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Erica Elliott	65	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bethany Hipps	66	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tiffany Ware	69	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Candace Walker	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kiana Stafford	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0
-Jennifer Green	79	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chelsea Leyerly	82	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Erica Swain	87	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	13	2	0	0	0	0	0	0	0	0	0	0	0	0
-Monisha Kirk	88	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	14	0	0	2	1	1	0	1	0	0	0	0	0	0
-Dee Dalphne Armstrong	91	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0
-Quineshia Leonard	99	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jacqueline Lopez	1	2024	0	0	0	8	1	0	0	0	0	0	0	2	0	0	14	1	0	0	0	7	0	83	0	0	0	0	0	0
-Camille Wilson	2	2024	8	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cheyene Adkins	3	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kiki Stonebraker	4	2024	10	5	0	0	0	0	2	8	3	0	1	0	0	1	16	4	0	0	0	4	0	25	0	0	0	0	0	0
-Kennetta Murry	5	2024	35	12	0	44	7	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Vanessa Palmeri	7	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Hollie Petrie	9	2024	0	11	0	0	0	0	204	57	25	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelly Schaeffer	12	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	12	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah A Levrets	14	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jordan Thomas	15	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	5	0	0	0	0	0	0
-Ikeisha Dobbin	16	2024	35	13	0	2	2	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jo Hutchins	17	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Southall	18	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tiana Bell	20	2024	8	4	0	4	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Cabot	21	2024	3	1	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kritt Tucker	22	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	27	9	0	1	0	0	0	0	0	0	0	0	0	0
-Kris Grimes	26	2024	401	84	3	6	5	0	0	0	0	0	0	0	0	0	5	0	0	0	0	1	0	20	0	0	0	0	0	0
-Kola Shippentower Thompson	29	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Gloria Winner	31	2024	12	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	7	0	0	0	0	0	0
-Tasha Dailey	32	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Jenna Sukle	33	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mitzi Macias	35	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-AuBree Barnes	36	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Gerdes	37	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	18	2	0	0	0	0	0	0	0	0	0	0	0	0
-Terese Bair	40	2024	0	0	0	19	2	0	0	0	0	0	0	0	0	2	4	2	0	0	0	0	0	0	0	0	0	0	0	0
-Rheanna Deeds	41	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany OConnor	42	2024	20	4	0	61	4	0	0	0	0	0	0	0	0	0	16	7	0	1	0	2	0	28	0	0	0	0	0	0
-Christina Landers	44	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	8	2	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Levin	45	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	3	0	29	0	0	0	0	0	0
-Whitney Gifford	47	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	3	19	6	0	0	2	1	0	0	0	0	0	0	0	0
-Tonya Erickson	48	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Anna Malone	58	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Katelyn Bailey	63	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tiffany Cushman	65	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sierra Bakanoff	68	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	3	1	0	0	0	0	0	0	0	0	0	0	0	0
-Loren Diaz	70	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lucille Kituku	74	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Victorianna Dixson	76	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Latia Matthews	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kassiah Moore	78	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashlie Mcdonald	79	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chloe Porter	84	2024	20	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Andrea Jones	85	2024	0	0	0	53	3	0	0	0	0	0	0	1	0	0	18	0	0	0	1	0	0	0	0	0	0	0	0	0
-Taylor Coleman	88	2024	0	0	0	14	3	0	0	0	0	0	0	0	0	0	3	0	0	0	0	1	0	10	144	8	0	0	1	1
-Kaitlynn Dela Pena	95	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ryvan Buchanan	1	2024	0	1	0	57	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Marrhea Everheart	2	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	9	1	0	0	0	0	0	0	0	0	0	0	0	0
-Crystal Reese	5	2024	0	0	0	0	0	0	0	0	0	0	0	2	0	0	11	1	0	1	0	9	0	100	0	0	0	0	0	0
-Shadella Reese	6	2024	9	1	0	44	4	2	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	37	0	0	0	0	0	0
-Mackenzie Dykes	7	2024	27	11	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	28	1	0	0	5	3
-Carol Sauders	8	2024	0	0	0	133	14	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	18	0	0	0	0	0	0
-Lindey Larry	9	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	1	0	0	0	1	0	5	152	8	0	0	0	0
-Renee Langalais	12	2024	16	23	0	0	0	0	382	92	31	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Daisha Lawson	13	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sierra Dejesus	14	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dominique Trappio	15	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristina Cooper	19	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	14	6	0	1	0	0	0	0	0	0	0	0	0	0
-AlNisa Thomas	20	2024	0	0	0	0	0	0	0	0	0	0	0	2	0	2	41	2	0	0	0	0	0	0	0	0	0	0	0	0
-Arnetha Simmons	21	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ebony Minter	22	2024	103	21	0	0	0	0	0	0	0	0	0	0	0	1	6	1	0	1	1	0	0	0	0	0	0	0	0	0
-Cameron Davis	23	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmyn Moxley	25	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Galarza	26	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Khahina Yisrael	27	2024	0	0	0	15	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Storm Cuthbert	28	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	18	1	0	0	0	0	0	0	0	0	0	0	0	0
-Hannah Crittendon	29	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shakira Murphy	31	2024	0	0	0	37	2	1	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jordan Williams	35	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	11	2	0	0	0	1	0	8	0	0	0	0	0	0
-Marica Johnson	37	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Marissa Blash	40	2024	45	16	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nikayla Ramsey	41	2024	228	40	2	96	7	1	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Keresa Taylor	43	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shayla Rogers	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Latasha Cummings	51	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amber Grant	53	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Whitney Porter	55	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kazzette Collins	56	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	18	5	0	0	2	0	0	0	0	0	0	0	0	0
-Saudia Hasan	58	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Denitra Parker	59	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Briana Nesmith	69	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lavonna Collymore	70	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	7	2	0	0	0	0	0	0	0	0	0	0	0	0
-Quiani Miller	74	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tracy Jackson	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Adrienne Jackson	78	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tanea Carlton	79	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dasha Owens	84	2024	6	2	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Taylor Brashears	87	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	13	6	0	0	1	0	0	0	0	0	0	0	0	0
-Sylvana Holmes	88	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alicia Brown	91	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amadi Teemer	92	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sumatra McDaniel	98	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Latangela Dorsey	99	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jane Brinkman	2	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kayelle Brown	4	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maya Jamison	5	2024	27	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelly Stack (Johnston)	6	2024	0	0	0	75	4	1	0	0	0	0	0	0	0	0	10	1	0	0	0	0	0	0	0	0	0	0	0	0
-Laura Goetz	7	2024	135	52	1	0	0	0	223	35	12	1	0	1	0	1	36	6	0	0	0	4	0	46	0	0	0	0	0	0
-Hope Memmott	8	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sara Galica	10	2024	83	28	2	0	0	0	170	34	15	0	2	0	0	0	2	0	0	0	0	0	0	0	5	1	0	0	0	0
-Jadacee Vick	11	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	1	0	0	0	0	0	0	0	0	0	0
-Megan Robertson	12	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	1	0	2	0	0	0	0	228	7	0	0	4	3
-Errin McIssac	13	2024	0	0	0	0	0	0	0	0	0	0	0	3	0	0	15	1	0	0	0	0	0	0	0	0	0	0	0	0
-Erin Miller	14	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	7	0	0	0	0	0	0
-Izabelle Bateman	15	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Naena Bland	16	2024	0	0	0	84	8	0	0	0	0	0	0	1	0	0	9	0	0	0	1	1	0	9	0	0	0	0	0	0
-Victoria Archuleta	17	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Madeline Murphy	18	2024	246	31	3	164	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	49	0	0	0	0	0	0
-Maki Yamagata	22	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	1	0	0	0	0	0	0	0	0	0	0	0	0
-Lacy Mile	23	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jenna Trahan	25	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Gina Magana	26	2024	230	43	1	70	6	0	0	0	0	0	0	0	0	0	8	0	0	0	0	10	0	121	0	0	0	0	0	0
-Kim Krinke	28	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dakota Latimer	30	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ali Olson	31	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	0	0	0	56	2	0	0	0	0
-Jessica Cannon	32	2024	34	7	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-MaryJane Merriam	33	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Morgan Saybolt	39	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nikki Gilbreth	43	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Courtney Shaw	47	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LiTara Faatili	48	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	2	0	0	0	0	0	0	0	0	0	0	0	0
-McKenna Morgan	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Akira Galeai	54	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	6	1	0	0	0	0	0	0	0	0	0	0	0	0
-Jessie Warr	55	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ella Morgan	57	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ally Cleveland	62	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	39	4	0	0	2	0	0	0	0	0	0	0	0	0
-Caitlin Peterson	63	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Court	64	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Katie Montgomery	68	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	7	2	0	0	0	0	0	0	0	0	0	0	0	0
-Montanna Meier	70	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Penny Fagnani	71	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	7	2	0	1	0	0	0	0	0	0	0	0	0	0
-Shauna Loftin	72	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brynne Butterfield	73	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mechelle Nance	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Natasha Stoney	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0
-Megan Thomson	78	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lainie Thompson	84	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-GiGi Chandler	87	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Makayla Brown	89	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cindy Cornell	97	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Satoria Bell	0	2024	17	2	0	0	0	0	203	51	20	2	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-Liz Landry	1	2024	0	0	0	164	11	2	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	38	0	0	0	0	0	0
-Eshombi Singleton	2	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	5	1	0	0	0	1	0	7	0	0	0	0	0	0
-Shantia Creech	3	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Collins	4	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	1	0	17	0	0	0	0	0	0
-Sarah Gomez	5	2024	0	0	0	0	0	0	15	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Olivia Griswold	6	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	17	6	0	0	0	0	0	0	0	0	0	0	0	0
-Michelle Angel	7	2024	0	6	0	0	0	0	170	20	10	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Bushman	8	2024	0	4	0	0	0	0	151	25	14	2	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Allyssa Weatherd	9	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	36	6	0	0	1	0	0	0	0	0	0	0	0	0
-Desiray Mosley	10	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Denise Arceneaux	11	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	5	2	0	0	0	0	0	0	0	0	0	0	0	0
-Hanna McEwen	12	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jewelle Grimsley	13	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	9	3	0	1	0	2	1	107	0	0	0	0	0	0
-Tara Thomas	15	2024	441	67	6	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	50	0	0	0	0	0	0
-Denesha Richardson	16	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Reese Green	17	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nyeisha Wright	18	2024	7	1	0	2	1	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashley Mcbay	20	2024	21	6	2	49	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	88	0	0	0	0	0	0
-Jamie Lock	21	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kahriya Williams	22	2024	63	12	1	19	5	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Stacey Grob	25	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jelani Kelly	27	2024	34	7	1	8	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ebonie Graham	28	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-Arielle Wilks	29	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jakaya Holloway	31	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Janice Mitchell	33	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	1	1	0	0	0	0	0	0	0	0	0
-Cara Wesemann	34	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	246	8	7	5	17	16
-Destanie Yarbrough	36	2024	295	41	4	24	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0
-Timesha Wharton	37	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tracie Williams	38	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mercedes Tyler	39	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	28	5	0	0	1	0	0	0	0	0	0	0	0	0
-Mikaile Fortson	41	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jimeriam Jackson	42	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Deja Douglas	44	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Teasha Martin-Palmer	47	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Jeans	49	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Umeki Webb	51	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
-Fancy Robinson	55	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shaunte Bowman	57	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nicole Grabowski	58	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Elizabeth Jenkins	62	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Janae Hammond	64	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sasha Gomez	68	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amanda Morgan	72	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Renee Fruean	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	11	2	0	0	0	0	0	0	0	0	0	0	0	0
-Lucinda Watkins	76	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alina Markl	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tammie Moore	78	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shavonne Ford	80	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maria Jackson	81	2024	0	0	0	212	15	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah De La Torre	83	2024	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Desirea Mcginnis	84	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Clark	85	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amanda Heilman	87	2024	0	0	0	52	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jarrah Floyde	88	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Semone Simmons	92	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Haley Hagar	98	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amiracle Mitchell	0	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	2	0	0	0	0	1	0	26	0	0	0	0	0	0
-Alyssa McCarron	1	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	1	0	17	233	10	0	0	0	0
-Jasmine Coleman	2	2024	0	0	0	75	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Regena Jackson	3	2024	82	9	2	115	12	3	101	22	11	2	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Montoya Arnold	4	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Takera Mitchell	5	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tenazhia Hinkson	6	2024	0	0	0	10	2	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Candice Davis	7	2024	0	0	0	55	3	0	0	0	0	0	0	0	0	0	2	0	0	0	1	2	0	21	0	0	0	0	0	0
-Melyse Brown	8	2024	41	26	0	0	0	0	567	120	49	8	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Norianna Haynes	9	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	13	0	0	0	0	2	0	30	0	0	0	0	0	0
-Diamond Wright	10	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	18	5	0	0	1	0	0	0	0	0	0	0	0	0
-Nicole Pike	11	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	1	1	0	0	0	0	0	0	0	0	0
-Mary Woodard	12	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	21	3	0	0	0	9	0	201	0	0	0	0	0	0
-Natalie Nicks	13	2024	0	0	0	195	11	3	0	0	0	0	0	0	0	1	3	1	0	1	1	1	0	7	0	0	0	0	0	0
-Aalicia Norrell	14	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	1	6	1	0	0	0	0	0	0	0	0	0	0	0	0
-Kymesha Taylor-Andrew	15	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ketie Leverette	16	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Raven Preston	17	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	1	0	0	0	0	0	0	0	0	0
-Chassidy White	18	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rashida Young	19	2024	0	1	0	194	17	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shanice Wheeler	21	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	14	0	0	0	0	0	0
-Jene Walker	22	2024	143	49	1	24	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Charlyshia Bradford	23	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	15	5	0	0	1	0	0	0	0	0	0	0	0	0
-LaShanda Griffin	24	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shaniqual Davis	25	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Stephanie Hobson	26	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	5	0	0	0	0	0	0
-Anita Brown	28	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0
-English Bennett	29	2024	78	19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ravyn Santiago	30	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	1	0	12	0	0	0	0	0	0
-Shardonay Jenkins	31	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	8	1	0	1	2	0	0	0	0	0	0	0	0	0
-Tasheonna Wilder	33	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Versace Lee	41	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Marianne McClinton	42	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0
-Carla Odom	44	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	24	0	0	0	0	0	0	0	0	0	0	0	0	0
-Joy Longley	48	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Voldavia Roberts	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aleksandra Lukasiewicz	52	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	17	1	0	0	1	0	0	0	0	0	0	0	0	0
-Te Kesha Zorial Williams	53	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Myeisha Johnson	54	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Meredith Mitchiner	56	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jaleesa Harvey	61	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Patricia Fultz	69	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Madison Jones	71	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monique Larrieu	72	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	13	2	0	0	0	0	0	0	0	0	0	0	0	0
-Tenisha Williams	73	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Montye Cook	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kassidi Wynter	82	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	4	11	5	0	5	1	0	0	0	0	0	0	0	0	0
-Jazmin Henderson	85	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kanesha Sheriff	88	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tasha Owens	96	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-JaKeira Mallory	99	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Victoria Nichols	0	2024	3	2	0	97	5	1	0	0	0	0	0	1	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Breana Griggs	2	2024	0	0	0	69	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	73	0	0	0	0	0	0
-Lydia Morgan	4	2024	26	21	0	0	0	0	190	52	17	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Jones	5	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nicole Matheson	7	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	0	0	0
-Na'ava Willis	8	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kaylee Parker	10	2024	52	8	0	57	4	1	92	25	4	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kaire Phelps	13	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	4	0	0	0	0	0	0	0	0	0	0	0	0
-Olivia Grabmayer	15	2024	12	1	0	6	1	0	0	0	0	0	0	1	0	0	13	0	0	0	0	3	0	41	0	0	0	0	0	0
-Alyssa Vigil	17	2024	0	1	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Asiah Walker	18	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Grace Cooper	24	2024	223	56	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	43	0	0	0	0	0	0
-Karla Granados Rodriguez	25	2024	214	61	1	0	1	0	6	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	299	12	1	0	2	1
-Brittney Bjork	29	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	1	0	1	0	1	0	14	0	0	1	0	0	0
-Aspen Baca (Verdos)	30	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	1	0	0	0	0	0	0	0	0	0
-Kelli Jones	33	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarai Sifuentes	34	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	2	0	0	0	0	0	0	0	0	0	0	0	0
-Britney Derhak	36	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amber Craft	40	2024	0	0	0	6	1	0	0	0	0	0	0	2	0	0	25	5	0	1	0	5	0	57	0	0	0	0	0	0
-Bailey Paskach	42	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	5	0	0	1	0	0	0	45	2	0	0	0	0
-Desiree Spivey	44	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	1	0	0	0	0	0	0	0	0	0
-Yesenia Quiroga	45	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tara Page	46	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brooklyn Waddles	48	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rebeca Barrios	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kara Corcoran	51	2024	93	10	2	0	0	0	0	0	0	0	0	0	0	1	22	8	0	0	1	1	0	18	0	0	0	0	0	0
-Alex Johnson	53	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Mayra Capetillo	59	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Markell Marquez	60	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	1	0	0	0	0	0	0	0	0	0
-Alexis Broswell	63	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dominique Woodall	64	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Marcela Ortiz Nava	71	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Morgan	72	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel Van Devender	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carolyn Lampkin	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jenessa White	83	2024	0	0	0	11	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa McGuinnis	88	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Laure Gelis-Diaz	89	2024	0	0	0	0	0	0	0	0	0	0	0	2	0	0	17	1	0	0	0	0	0	0	0	0	0	0	0	0
-Trevez Bridgewater	91	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aezioni Nakai	94	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	2	0	0	0	0	0	0	0	0	0	0	0	0
-Hana Willis	95	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lorenna Duran	96	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carrieann Bedwell	97	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristianna Ibsen	99	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Michelle Oetjen	0	2024	0	4	0	0	0	0	16	13	3	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jamie Brann	1	2024	0	0	0	98	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0
-Cindy Teitsma	3	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kayla Holbert	4	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Malissa Miles	5	2024	0	0	0	11	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sigourney Gonzalez	6	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ariyanna Burns	7	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kalyx Lewis	9	2024	132	31	3	9	2	0	0	0	0	0	0	0	0	0	1	0	0	0	1	6	0	86	0	0	0	0	0	0
-Shawnee Phillips	10	2024	30	16	1	0	0	0	130	38	13	0	4	0	0	0	2	2	0	0	0	0	0	0	0	0	0	0	0	0
-Alysia Bisquera Dominguez	11	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Thaycha Rodriguez	12	2024	1	1	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maha Hawwass	13	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christina Vollrath	14	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mariah Makupson	15	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa Lorbiecki	16	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mahogany Gaines	18	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	22	6	0	0	1	0	0	0	0	0	0	0	0	0
-Darion Mitchell	20	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	2	0	0	0	0	0	0	0	0	0	0	0	0
-Adriana Gutierrez	21	2024	510	104	4	0	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	2	0	63	0	0	0	0	0	0
-Sydney Holt	22	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Ingargiolia	23	2024	33	9	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	230	9	0	0	0	0
-Xiana Dillon	24	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Colangelo	25	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristin Carter	26	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Aleesah Wilson	28	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0
-Carrie Walters	29	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel Lund	30	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Skylar Pringle-Hicks	31	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmine Logan	32	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shalynn Splettstoesser	33	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	2	0	0	0	0	0	0	0	0	0	0	0	0
-Cachrelle Nguyen	36	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	8	1	0	1	0	0	0	0	0	0	0	0	0	0
-Chris Acacio	40	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittaney Warren	43	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LaQuanta Glass	47	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Osmara Gissell Nunez Barrera	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	11	5	0	0	0	0	0	0	45	3	4	1	5	5
-Jaynna Valdez	52	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	0	0	0
-Reina Martin	53	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Felicia Lilo	54	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Girly Tambeagbor	55	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tiffani Penix	58	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-Vanessa Hernandez	60	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	1	0	0	0	0	0	0	0	0	0
-Tawny Hall	63	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shonna Williams	64	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	11	1	0	0	0	0	0	0	0	0	0	0	0	0
-Audra Gutierrez	66	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Hill	68	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	3	0	0	0	0	0	0	0	0	0	0	0	0
-Similiti Lealiki	70	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	16	5	0	0	0	0	0	0	0	0	0	0	0	0
-Dayton Yingling	72	2024	7	4	0	17	1	0	0	0	0	0	0	0	0	0	2	0	0	0	0	2	0	26	0	0	0	0	0	0
-Caitlynn Jones	73	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ariana Gonzalez	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	20	3	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Schwartz	76	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashlea Moore	80	2024	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	18	0	0	0	0	0	0
-Jessica Estes	81	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Courtney Yeoman	87	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rebecca Bautista	90	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessie Huron	93	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alecsys Williams	94	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dora Alvarez	96	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Victoria Reed	97	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Barbriel Crudup	99	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bear McLean	0	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	1	0	19	0	0	0	0	0	0
-Tanisha Norman	2	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Paytience Kamuta	3	2025	19	18	1	0	0	0	302	58	18	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Riah Bentley	5	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Krista Seaman	6	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0
-Mikaile Fortson	7	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	12	2	0	0	0	0	0	0	0	0	0	0	0	0
-Bri Irons	8	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kay Lewis	9	2025	28	7	0	46	7	1	0	0	0	0	0	0	0	0	2	0	0	0	0	11	2	228	0	0	0	0	0	0
-Shaunya Kahananui	10	2025	6	1	0	45	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jocelyn Fernandez	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	1	3	0	23	0	0	0	0	0	0
-Paulina Lopez	13	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	27	2	0	0	1	0	0	0	0	0	0	0	0	0
-Alexis Catton	14	2025	0	1	0	0	0	0	19	15	6	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kathleen Carroll	15	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jocelyn Charette	16	2025	26	2	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	1	0	0	0	248	7	8	4	16	15
-Bianca Mouton	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ana Barbosa Venegas	17	2025	0	0	0	6	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-CiCi Mwendandu	18	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	6	1	0	0	0	0	0	0	0	0	0	0	0	0
-Ikeisha Dobbin	19	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Andraliah Lee	20	2025	272	60	3	0	1	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Stella Martin	21	2025	24	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Molly Tester	23	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	28	6	0	0	0	0	0	0	0	0	0	0	0	0
-Melonie Washington	24	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0
-Joselan Teregeyo	25	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Erica Jackson	26	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	15	0	0	1	0	0	0	0	0	0	0	0	0	0
-Adriana Gutierrez	27	2025	349	70	4	75	6	1	0	0	0	0	0	0	0	0	2	0	0	0	0	7	1	222	0	0	0	0	0	0
-Cinna Ford	28	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexandra Sweet	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	3	20	5	0	1	0	0	0	0	0	0	0	0	0	0
-Kritt Tucker	32	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	20	5	0	0	2	0	0	0	0	0	0	0	0	0
-Venom Garcia	33	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	19	1	0	1	0	0	0	0	0	0	0	0	0	0
-Tasha Wilson	34	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kris Grimes	37	2025	226	36	3	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maddie Garrison	38	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	13	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Erickson	41	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	4	1	0	0	0	0	0	0	0	0	0	0	0	0
-Sooaemalealagi Shelton	42	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-Bre Ward	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0
-Brayana Elmore	44	2025	0	0	0	0	0	0	0	0	0	0	0	2	0	0	12	0	0	0	0	0	0	0	0	0	0	0	0	0
-Victoria Young	45	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Charmaine Bradford-Airy	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	2	0	1	0	0	0	0	0	0	0	0	0	0
-Olga Valdez Lopez	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0
-Josie Ellis	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cana Tulifua	52	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	1	0	0	0	0	0	0	0	0	0	0
-Enedina Gomez	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Naomi Lee	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexus Durham	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	16	5	0	0	0	0	0	0	0	0	0	0	0	0
-Shelby Buren	56	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Avanti Bryant	59	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Zay Dollente	60	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tia Matthew	64	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexa Rummel	69	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexandra Sweet	71	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aleesha Cadogan	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-CC Taualii	74	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mel Garces	77	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	1	0	0	0	0	0	0	0	0	0
-Gabby Madden	79	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jamila Nared	80	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jacki Waring	81	2025	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lauren Butz	83	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rayna Lorraine	84	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monica Salazar	85	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rosalie Mora	86	2025	6	1	0	142	6	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sara Lou	88	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Savannah Congdon	89	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Olivia Quarles	95	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rebecca Banks	97	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Isabel Warren	0	2025	0	1	0	248	17	3	0	0	0	0	0	0	0	0	19	3	0	1	1	1	0	13	591	19	0	0	2	1
-Kali Jones	1	2025	0	0	0	229	12	1	0	0	0	0	0	0	0	1	2	1	0	0	0	9	0	80	0	0	0	0	0	0
-Amare Mercer	2	2025	0	0	0	16	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Caroline Malala	3	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brynn McNabb	4	2025	322	33	3	17	3	0	0	0	0	0	0	0	0	0	4	0	0	0	1	0	0	0	0	0	0	0	0	0
-Dana Harris	5	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Beatriz Rico	6	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	1	31	5	0	0	0	0	0	0	0	0	0	0	0	0
-Aleesah Wilson	11	2025	49	30	2	13	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ty Rodriguez	12	2025	29	21	0	0	0	0	546	113	43	3	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tehya Demski-Hamelin	13	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	1	0	0	0	0	0	0	0	0	0
-Christina Vollrath	14	2025	0	1	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mariah Makupson	15	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa Lorbiecki	16	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	1	0	0	0	0	0	0	0	0	0	0	0	0
-Andrea Wright	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sydney Holt	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1
-Janiah Lee	25	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	3	9	3	0	0	0	0	0	0	0	0	0	0	0	0
-Kristin Carter	26	2025	36	11	1	0	0	0	0	0	0	0	0	0	0	1	28	5	0	0	1	0	0	0	0	0	0	0	0	0
-Malaysia Flowers	27	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carrie Walters	29	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel Lund	30	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0
-Skylar Pringle-Hicks	31	2025	46	10	0	0	0	0	0	0	0	0	0	0	0	0	8	2	0	0	0	1	0	34	0	0	0	0	0	0
-Charnel Archer	32	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Ruiz	35	2025	12	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	27	0	0	0	0	0	0
-Christi Acacio	40	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittaney Warren	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Heather Puletasi	44	2025	4	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	10	0	0	0	0	0	0
-LaQuanta Glass	47	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jordyn Williams	49	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-Jaynna Valdez	52	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	16	3	0	0	0	0	0	0	0	0	0	0	0	0
-Reina Martin	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Girly Tambeahbor	55	2025	0	10	0	10	3	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tiffani Penix	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Courtney Powell	62	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	18	5	0	0	0	0	0	0	0	0	0	0	0	0
-Tawny Hall	63	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Azalia Allen	66	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Hill	68	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	23	7	0	0	1	0	0	0	0	0	0	0	0	0
-Kailima Ross	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dayton Yingling	72	2025	30	19	0	3	1	0	12	1	1	1	0	0	0	0	4	0	0	0	0	3	0	36	0	0	0	0	0	0
-Caitlynn Jones	73	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ariana Gonzales	75	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	33	5	0	0	1	0	0	0	0	0	0	0	0	0
-Ivette Nava Garcia	78	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	4	1	0	0	0	0	0	0	0	0	0	0	0	0
-Brooklyn Rielly	80	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	31	0	0	0	0	3	0	30	0	0	0	0	0	0
-Dominique Maloy	88	2025	133	21	0	25	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	62	0	0	0	0	0	0
-Melissa Merino	89	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chelcie-Maree Augustin-Weaver	93	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	2	0	0	0	0	0	0	0	0	0	0	0	0
-Alecsys Williams	94	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dora Alvarez	96	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Victoria Reed	97	2025	0	1	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sari Stissi	98	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Barbriel Crudup	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Victoria Nichols	0	2025	111	36	0	0	0	0	131	49	17	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Diamond Scott	1	2025	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Xiarysse Emerenciana	2	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Emma Jones	3	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Leslie Hubbell	4	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shanysse Emerenciana	5	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sydney Smith	6	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexandria Clary	7	2025	52	35	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa Logan	8	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ShNiyah Hutchinson	9	2025	9	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Laila Finley	10	2025	127	28	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amber-Lynn Twigg	11	2025	43	30	0	0	0	0	152	46	10	1	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Morgan Augustine	12	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sara Fernandez	13	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mykayla Maddox	14	2025	0	0	0	0	0	0	0	8	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Diamond Acklin	15	2025	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Deja Terry	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lauren Kelly	18	2025	0	0	0	68	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maria J Boira Lopez	19	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Fantasia Roberts	20	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Taylor Wells	21	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexis Evans	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Harley Foltz	23	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashanti Broxey	24	2025	28	2	0	56	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelsey Prall	25	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chantel Strozier	26	2025	7	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Margo Smith	28	2025	11	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Keyarie Fountain	29	2025	8	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexandra Holliday	30	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carolina Duran Correa	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chelsea Parrish	32	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alissa Loatman	33	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Haley Thompson	34	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kaneskiia Oliver	45	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashley Moon	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lindsey Barnes	52	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amy Fox	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Emily Varnadoe	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jazlyn Villalona	56	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cynthia Williams-Walker	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashlyn Jackson	60	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Candis Wall	61	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Vanessa Jenkins	65	2025	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cassandra Wise-Howard	66	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Annelise DeFrank	67	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Richelle Lenoir	69	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aliyah King	75	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Pamela Melchi	78	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kemoni Sharp-Garland	82	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Breana Haines	88	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Countness Glover	90	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jacklyn Dwyer	92	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jahnique Carter	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maggie Justinak	2	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	286	13	0	0	0	0
-Lydia Morgan	4	2025	62	43	1	16	1	0	303	75	27	1	4	0	0	0	2	0	0	0	1	0	0	0	0	0	0	0	0	0
-Brittany Jones	5	2025	4	2	0	0	0	0	0	0	0	0	0	1	0	0	16	0	0	0	1	10	1	218	0	0	0	0	0	0
-Mikal Chancy	8	2025	0	0	0	61	6	0	0	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0
-Olivia Wilson	11	2025	0	0	0	38	4	0	0	0	0	0	0	1	0	0	34	1	0	0	0	0	0	0	0	0	0	0	0	0
-Tatjana Tschirpke	13	2025	0	4	0	0	0	0	61	12	7	0	1	0	0	0	11	0	0	0	0	0	0	0	323	12	0	0	4	3
-Elora Maestas	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa Vigil	17	2025	0	1	0	179	15	1	0	0	0	0	0	0	0	0	13	0	0	0	0	1	0	5	0	0	0	0	0	0
-Kenzie May	20	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Elizabeth Engeldrum	23	2025	7	11	0	0	0	0	0	0	0	0	0	0	0	1	17	1	0	0	0	1	0	0	0	0	0	0	0	0
-Grace Cooper	24	2025	125	55	1	24	3	0	0	0	0	0	0	0	0	1	48	2	0	0	0	5	0	56	0	0	0	0	0	0
-Sarah Menne	25	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kaire Phelps	28	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rabihah Harrison	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelli Jones	33	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Sifuentes	34	2025	0	1	0	0	0	0	0	0	0	0	0	0	0	3	19	5	0	0	0	0	0	0	0	0	0	0	0	0
-Britney Derhak	36	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0
-Joselyn Lazaro	38	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shannon Delarosbil	39	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	2	0	0	0	2	0	7	56	3	0	0	0	0
-Amber Craft	40	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	16	2	0	0	0	1	0	16	0	0	0	0	0	0
-Sherrella Scott	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tara Page	46	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Laque Moen-Davis	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	1	0	0	0	0	0	0	0	0	0	0	0	0
-Yesenia Quiroga	49	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Porsche Yarbough	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kara Cochran	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shannon Drayton	52	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	1	0	0	0	0	0	0	0	0	0	0	0	0
-Jazmin Florez	57	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Whitley Conn	59	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	9	1	0	0	0	0	0	0	68	3	0	0	0	0
-Markell Marquez	60	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	0	0	0	1	0	0	0	0	0	0	0	0	0
-Ella Meyer	64	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0
-Kaleigh Walsh	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amy Van Der Kamp	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Morgan	73	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kyiah VonBorries	76	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carolyn Lampkin	77	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Felicia Lepore	81	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	1	0	2	0	0	0	0	0	0
-Makayla Sutton	82	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jenessa White	83	2025	0	1	0	49	5	0	0	0	0	0	0	0	0	2	11	5	0	0	0	0	0	0	0	0	0	0	0	0
-Trevez Bridgewater	91	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	13	2	0	1	0	0	0	0	0	0	0	0	0	0
-Alexandra Fabela	93	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Hana Willis	95	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lorena Duran	96	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	1	0	0	0	0	0	0	0	0	0	0	0	0
-Whitney Ramsey	97	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-Courtney Williams	98	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	9	2	0	0	0	0	0	0	0	0	0	0	0	0
-Gabrielle Juarbe	0	2025	0	0	0	5	1	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-Kayla Russell	1	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	42	4	0	0	4	0	0	0	0	0	0	0	0	0
-Gina Capardi	2	2025	0	5	0	155	20	0	50	14	5	1	3	0	0	0	1	0	0	0	0	1	0	18	0	0	0	0	0	0
-Monae Clancy	3	2025	5	2	0	0	0	0	0	0	0	0	0	0	0	1	12	1	0	0	2	2	0	10	0	0	0	0	0	0
-Stephanie Fogarty-Yee	6	2025	0	0	0	64	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-India Parker	7	2025	45	13	0	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	3	0	40	0	0	0	0	0	0
-Alexis Parrotta	8	2025	0	0	0	192	13	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	638	28	0	0	0	0
-Amani Perdue	9	2025	25	24	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	2	0	22	0	0	0	0	0	0
-Tatiana Perez	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jane Crosby	12	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-NiaMaya Outlaw	13	2025	0	1	0	0	0	0	0	0	0	0	0	3	0	0	19	0	0	1	1	10	0	157	0	0	0	0	0	0
-Danneille Ayala	14	2025	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Imani Thompson	15	2025	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	32	0	0	0	0	0	0
-Faith Robinson	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Harmine Christina Leo	18	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	27	0	0	0	0	2	1	55	0	0	0	0	0	0
-Shayla Jones	19	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brooke Singer	20	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	8	6
-Madison Grayson	21	2025	0	0	0	285	17	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Athena Reyes	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashley Fung	24	2025	0	0	0	13	2	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-London Ortiz	27	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shannon Burrell	28	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jada Victor	29	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	9	0	0	0	0	0	0
-Karen Mulligan	30	2025	0	1	0	0	0	0	676	137	57	7	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nhandi Brown	31	2025	0	0	0	0	0	0	0	0	0	0	0	3	0	0	18	1	0	0	0	1	0	39	0	0	0	0	0	0
-Nicole Muccio	32	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	11	1	0	1	1	0	0	0	0	0	0	0	0	0
-Danielle Izykowicz	34	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Hadiisha Butts	35	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	4	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Howard	36	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	22	4	0	1	0	0	0	0	0	0	0	0	0	0
-Ebony Goolsby	38	2025	23	18	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmine Bonaparte	42	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kimberly Rose	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	30	6	0	0	2	0	0	0	0	0	0	0	0	0
-Mattique Jones	44	2025	132	45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shayla Thevenin	45	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nicole Fairman	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	32	2	0	0	1	0	0	0	0	0	0	0	0	0
-Morgan Hutchins	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sharolin Sanders	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jada Joyner	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Oluwabunmi Olusina	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Yohnee Miller	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Vianca Borrero	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kandra Davis	60	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Paige Goldsack	61	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-LaDella Alexander	62	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jenyll Alcantara	63	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Eli Rojas	64	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Infinity Brooks	66	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Melissa Uhl	68	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Edeline Sosa	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Elizabeth Mely	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dayna Moneta	75	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Zaire Nelson	80	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0
-Catherine Desire	88	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shamaya Smith	91	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Asia Strickland	92	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	26	6	0	2	0	0	0	0	0	0	0	0	0	0
-Brooke Avery	95	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	4	25	5	0	0	1	0	0	0	0	0	0	0	0	0
-Megan Stier	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bre Griggs	1	2025	29	5	0	75	12	0	0	0	0	0	0	1	0	0	3	1	0	0	0	4	0	27	0	0	0	0	0	0
-Tina Tela	3	2025	70	23	1	9	1	0	0	0	0	0	0	0	0	0	14	1	0	0	1	0	0	0	0	0	0	0	0	0
-Nicole Attleson	5	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	25	5	0	0	0	0	0	0	0	0	0	0	0	0
-Kelly Stack	6	2025	0	0	0	337	14	4	0	0	0	0	0	3	0	0	15	1	0	1	0	0	0	0	0	0	0	0	0	0
-Nicole Chaves	7	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Hope Memmott	8	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sheri Kinder	9	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sara Galica	10	2025	86	34	0	0	0	0	691	135	56	5	3	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittney Bjork	13	2025	51	14	1	13	3	0	0	0	0	0	0	1	0	0	18	1	0	0	0	1	0	23	0	0	0	0	0	0
-Erin Miller	14	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	1	44	3	0	0	0	0	0	0	0	0	0	0	0	0
-Mackenzie Harmer	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Madeline Murphy	18	2025	238	50	1	214	20	0	0	0	0	0	0	0	0	0	16	1	0	0	0	14	0	190	0	0	0	0	0	0
-Megan Robertson	21	2025	16	2	0	0	0	0	0	0	0	0	0	1	0	3	61	15	0	2	0	0	0	0	629	20	4	2	6	5
-Maki Yamagata	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lacy Mile	23	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	1	0	0	0	0	0	0	0	0	0	0	0	0
-Jenna Trahan	25	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kim Krinke	28	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dakota Latimer	30	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa Olson	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	1	0	7	63	3	0	0	0	0
-Jessica Cannon	32	2025	8	7	1	12	2	0	0	0	0	0	0	1	0	0	14	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aria Wagaman	33	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Irlanda Diaz	36	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lexie Neslen	37	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kala Monserret	39	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nikki Gilbreth	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristen Dietz	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Terry Peterson	45	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Courtney Shaw	47	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LiTara Faatili	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	3	0	0	2	0	0	0	0	0	0	0	0	0
-McKenna Morgan	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Danell Robb	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessie Warr	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashley Nguyen Lake	56	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0
-Leialoha Tela	59	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kylie Latimer	62	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0
-Jaclyn Price	63	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Court	64	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	2	0	0	0	0	0	0	0	0	0	0	0	0
-Camille Brimhall	65	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Montana Meier	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Penny Fagnani	71	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
-Shauna Loftin	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brynne Butterfield	73	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Natasha Stoney	77	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Renate Meckl	80	2025	18	4	0	31	4	1	0	0	0	0	0	0	0	0	11	0	0	0	0	2	0	26	0	0	0	0	0	0
-Lainie Thompson	84	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	16	6	0	0	1	0	0	0	0	0	0	0	0	0
-Claire Cicchetti	85	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Melissa Chandler	87	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Makayla Brown	89	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sierra Call-Rust	90	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nancy Toutai	93	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	8	2	0	0	0	0	0	0	0	0	0	0	0	0
-Cindy Cornell	97	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Tinisha Quintana	0	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Taylor Baldwin	0	2025	63	15	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	237	12	0	0	2	2
-MarRhea Everheart	2	2025	0	0	0	0	0	0	0	0	0	0	0	2	0	0	12	0	0	0	1	0	0	0	0	0	0	0	0	0
-Amber Mendes	3	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	25	0	0	0	0	0	0
-Mylashia Johnson	4	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Riian McCray-Smith	5	2025	0	0	0	7	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Daniel Doriscar	6	2025	180	49	0	58	5	0	0	0	0	0	0	0	0	0	2	0	0	0	0	1	0	9	0	0	0	0	0	0
-Brittany Carney	7	2025	0	2	0	0	0	0	13	9	2	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carol Saunders	8	2025	0	0	0	47	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Melany Frierson	9	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jaquela Stewart	10	2025	0	2	0	53	10	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Charon Sweeney	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sharifah Robertson	12	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Daisha Lawson	13	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	0	0	0	0	0	0	0	0	0
-Gina Carnovale	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Renee Langlais	15	2025	11	12	0	0	0	0	407	119	43	3	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Olivia James	16	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Olivia Freeman	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Vann	18	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alysia Joubert	19	2025	0	0	0	63	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brianna Hollins	20	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashton Elliott	21	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ebony Minter	22	2025	205	41	0	17	4	0	0	0	0	0	0	0	0	0	3	1	0	1	0	0	0	0	0	0	0	0	0	0
-Jasmine Nelson	23	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shatonya Spicer	24	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	3	20	5	0	0	1	0	0	0	0	0	0	0	0	0
-Tyteania Whitehead	25	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aaliyah Knox	26	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Khahina Yisrael	27	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Johnson	28	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-ShaDella Reese	29	2025	47	14	2	150	16	2	5	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ravyn Santiago	30	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	0	0	1	1	0	0	0	0	0	0	0	0	0
-Chelsea Borders	32	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	2	0	0	1	0	0	0	0	0	0	0	0	0
-Taneisha Sweetenburg	34	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jordan Williams	35	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lashawna Ervin	36	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kiana Flippin	38	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Clarissa Tullis	39	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelly Rosso	40	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kris Davis	41	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	1	0	0	0	0	0	0	0	0	0
-Desiree Conner	42	2025	0	0	0	14	1	0	0	0	0	0	0	0	0	0	19	0	0	0	0	10	1	211	0	0	0	0	0	0
-RaeJean Marshall	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Janasha Smith	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chanel Cross	45	2025	8	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	6	0	0	0	0	0	0
-Shavonne Verdree	46	2025	14	1	0	0	0	0	14	1	1	0	0	0	0	1	46	6	0	1	0	3	0	45	0	0	0	0	0	0
-LaTasha Cummings	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Marlette Wilber	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kazzette Collins	56	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	2	24	3	0	1	0	0	0	0	0	0	0	0	0	0
-Trayounda Ford	64	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexandria Duper	65	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelly Cammon	66	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Denitra Parker	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kiana Stafford	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Quiani Miller	74	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Montasia Wynn	75	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tracy Jackson	77	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Janelle Small-Williams	79	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angie Patton	80	2025	0	0	0	9	1	0	0	0	0	0	0	1	0	0	33	5	0	2	0	0	0	0	0	0	0	0	0	0
-Kiyana Jones	81	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	1	0	0	0	7	0	129	0	0	0	0	0	0
-Mildred Byrd	83	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Taylor Brashears	87	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	10	0	0	1	0	0	0	0	0	0	0	0	0	0
-Dumatra McDaniel-Walker	88	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Taiyana Murray	89	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Keisha Parker	92	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Pamela Larde	94	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shauntavia Brigham	95	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	22	5	0	0	0	0	0	0	0	0	0	0	0	0
-Wanita McCoy	96	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	2	0	0	1	0	0	0	0	0	0	0	0	0
-Sumatra McDaniel	98	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Latanglia Dorsey	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	9	1	0	0	0	0	0	0	0	0	0	0	0	0
-Ryvan Buchanan	0	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amani El Amin	0	2025	20	6	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittani Lusain	1	2025	31	1	0	0	0	0	0	0	0	0	0	2	0	2	46	8	0	1	0	6	1	132	0	0	0	0	0	0
-Saks Roberson	2	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Joann Mamuyac	3	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Strother	4	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	29	21
-Daisy Avilaromero	5	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Regina Escoto Macias	6	2025	448	66	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	55	0	0	0	0	0	0
-Hollie Sanders	7	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-Markeisha Perry	9	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Katie Claxton	10	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	45	10	0	1	3	0	0	0	0	0	0	0	0	0
-Jamie Blue	11	2025	0	0	0	59	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Diana Huynh	12	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Taranisha Taylor	14	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	17	1	0	1	3	8	1	187	0	0	0	0	0	0
-Ruby Albright	15	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jazzmon JaNae Stovall	16	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0
-Danielle Trainor	17	2025	110	18	2	0	0	0	96	25	14	2	2	0	0	0	0	0	0	0	0	0	0	0	69	2	0	0	0	0
-Meaghan Bossard	18	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tynisha Dossman	19	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	1	0	12	0	0	0	0	0	0
-Jennifer Herrera	20	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aurianna Broughton	21	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Elisa Nguyen	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	41	5	0	0	1	0	0	0	0	0	0	0	0	0
-Jennifer Ingargiola	23	2025	93	15	1	21	4	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kesz Wesley	24	2025	482	58	8	10	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	176	8	0	0	0	0
-Alicia Zappia-Neeley	25	2025	40	3	1	26	2	1	0	0	0	0	0	0	0	0	6	0	0	0	1	0	0	0	0	0	0	0	0	0
-Gianna Zamora	27	2025	7	1	0	44	5	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Yesenia Fragoso Grijalva	28	2025	0	0	0	0	0	0	0	0	0	0	0	2	0	0	11	1	0	0	0	3	0	63	0	0	0	0	0	0
-Kim Cade-Henry	29	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0
-Erica Arie	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christin Stoll	32	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Merci Scott	35	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brianna LaFleur	37	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alena Kuzmova	39	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	5	30	6	0	1	1	0	0	0	0	0	0	0	0	0
-Knengi Martin	47	2025	0	0	0	0	0	0	0	1	0	0	1	0	0	0	19	4	0	0	0	0	0	0	0	0	0	0	0	0
-Daniela Martinez De La Garza	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monica Johnson	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ronnika Burks	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Felicia Lilo	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0
-Maria Trevino	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bianca Threatts	56	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sabrina Kessler	59	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	17	6	0	0	0	0	0	0	0	0	0	0	0	0
-Ruby Watson	62	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nevaeh Simril	63	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rebecca Munoa	65	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rea Schmidt	66	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Alvarez	69	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Petra Johanna Monica Aspenberg	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tanya Luna	77	2025	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa Speckhals	80	2025	0	0	0	25	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alia Karmali	84	2025	89	33	4	0	0	0	97	30	10	1	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Whitney Harrison	85	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christina Jordan	87	2025	0	0	0	6	2	0	0	0	0	0	0	1	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kemmi Crosby	88	2025	10	3	0	3	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Teresa McCann	91	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyshia Tauanuu	92	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	6	0	0	0	0	0	0	0	0	0	0	0	0
-Aliayah Lewis	93	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashley Dame	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-KaMari House	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Miriah Lopez	1	2025	17	3	0	99	8	0	0	0	0	0	0	2	0	0	29	1	0	0	0	6	0	99	0	0	0	0	0	0
-Angie Hamilton	2	2025	117	29	1	0	0	0	0	0	0	0	0	2	0	0	16	2	0	1	0	1	0	0	0	0	0	0	0	0
-Marissa Lopez	5	2025	0	0	0	0	0	0	321	63	23	3	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ricki Alex	6	2025	0	1	0	117	6	1	0	5	0	0	0	0	0	0	3	1	0	0	0	0	0	0	7	1	0	0	0	0
-Laurisa Hollenshed	7	2025	0	1	0	0	0	0	7	3	1	7	0	0	0	4	25	5	0	0	0	0	0	0	0	0	0	0	0	0
-Lanika Manning	8	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	10	1	0	0	0	2	0	24	0	0	0	0	0	0
-Jazmin Gamble	9	2025	549	49	3	83	3	1	0	0	0	0	0	1	0	3	30	4	0	1	1	0	0	0	0	0	0	0	0	0
-Jasmine McDonald	10	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alysia Dominguez	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexis Dixon Fontaine	13	2025	28	8	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	74	0	0	0	0	0	0
-Deztine Thomas	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kayla Chambers	15	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Leslie Medina	18	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	1	0	0	0	0	0	0	0	0
-Mallory Torres	19	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Annsleigh Anderson	23	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	13	1	0	0	0	0	0	0	0	0	0	0	0	0
-Ryan Meismer-Thompson	26	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Natasha Johnson	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	5	1	0	0	0	0	0	0	28	1	0	0	0	0
-Lindsey Moore	33	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Salina Samario	35	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Meagan Curtis	38	2025	506	72	5	0	0	0	0	0	0	0	0	0	0	0	12	4	0	0	0	1	0	16	0	0	0	0	0	0
-Mary Rachel Love	41	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tiffany Gonzales	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lauren Davis	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	40	4	0	1	0	1	0	0	0	0	0	0	0	0
-Precious Moses	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	2	0	0	0	0	0	0	0	0	0	0	0	0
-Dawna Zike	52	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	22	0	0	0	1	0	0	0	113	5	0	0	0	0
-Jessica Jackson	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shaina Cato	59	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Mila Porter Lawson	62	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0
-Darlene Martinez	65	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Ramirez	67	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nayla Cerna	73	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Matalya Johnson	75	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	19	3	0	0	0	0	0	0	0	0	0	0	0	0
-Natasha Jackson	77	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sabrina Casillas	79	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	1	0	0	0	0	0	0	0	0	0	0	0	0
-Aly Montesino	80	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Echo Levell	84	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Olivia Morgan	85	2025	0	1	0	29	2	1	0	0	0	0	0	1	0	0	10	0	0	0	0	4	0	29	0	0	0	0	0	0
-Malaysia Quimby	87	2025	99	14	3	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tina Orrick	90	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	3	13	4	0	1	0	0	0	0	0	0	0	0	0	0
-Jessica Phillips	93	2025	14	4	0	13	1	0	0	0	0	0	0	0	0	1	9	1	0	1	1	0	0	0	0	0	0	0	0	0
-Shardae Bell	95	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0
-Deana Simmons-Guidry	0	2025	20	2	0	13	3	1	47	2	2	0	0	0	0	1	20	10	0	1	1	0	0	0	0	0	0	0	0	0
-Shantia Creech	3	2025	0	0	0	0	0	0	0	0	0	0	0	2	0	0	14	1	0	0	1	0	0	0	0	0	0	0	0	0
-Octavia Langston	6	2025	0	2	0	0	0	0	23	6	2	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Michelle Angel	7	2025	0	7	0	0	0	0	627	99	55	14	5	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Waynicia Thomas	9	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	1	0	0	2	0	0	0	0	0	0	0	0	0
-Cierra Childress	10	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	2	0	0	0	0	0	0	0	0	0	0	0	0
-Denise Arceneaux	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christine Jackman	12	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jewelle Grimsley	13	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	10	0	0	0	0	1	0	23	0	0	0	0	0	0
-Kelli Smith	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chelsie Thompson	16	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alonni Hawkins	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Grace Wiley	18	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	23	2	0	0	0	0	0	0	0	0	0	0	0	0
-Janei Benamon	19	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashley Mcbay	20	2025	131	16	4	111	9	3	0	0	0	0	0	0	0	0	0	0	0	0	0	13	0	166	0	0	0	0	0	0
-Jamie Lock	21	2025	0	0	0	0	0	0	0	0	0	0	0	2	0	0	15	3	0	0	0	2	1	59	0	0	0	0	0	0
-Kerrie Isom	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	21	0	0	1	0	0	0	0	0	0	0	0	0	0
-Summer Mcneal	23	2025	10	2	0	214	15	4	0	0	0	0	0	0	0	0	1	0	0	0	0	2	0	29	0	0	0	0	0	0
-Khadijah Ellison	24	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	2	0	0	0	2	0	16	0	0	0	0	0	0
-Jazmine Rambo	26	2025	198	13	1	64	7	3	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	54	0	0	0	0	0	0
-Anna Tran	28	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Arielle Wilks	29	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0
-Cathy Wabenga	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amber Kimbrough	32	2025	8	1	0	0	0	0	0	0	0	0	0	0	0	1	18	4	0	0	0	0	0	0	0	0	0	0	0	0
-Janice Mitchell	33	2025	218	43	1	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0
-Cara Wesemann	34	2025	0	1	0	25	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	203	7	2	0	32	27
-Armoni Stevenson	35	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	2	0	0	0	0	0	0	0	0	0
-Destanie Yarbrough	36	2025	378	51	6	52	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Timesha Wharton	37	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mercedes Tyler	39	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	2	0	0	0	0	0	0	0	0	0	0	0	0
-Jazpony Harris	40	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aerial Green	41	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jimeriam Jackson	42	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0
-Brooke Denny	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tyara Blades	45	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Teasha Martin-Palmer	47	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Jeans	49	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christine Jaqueth Mason	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	21	3	0	0	1	0	0	0	0	0	0	0	0	0
-Umeki Webb	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Antionette Van	52	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kimberly Thomas	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Fancy Robinson	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	3	0	0	0	0	0	0	0	0	0	0	0	0
-Similti Lealiki	57	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jacora Garry	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristyn Aoake Taylor	59	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Janae Hammond	64	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lily Bell	65	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amanda Morgan	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cierra Beck	74	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Renee Fruean	75	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0
-Lucinda Watkins	76	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tammie Moore	78	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shavonne Ford	80	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maria Jackson	81	2025	0	0	0	140	12	2	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Eloisa Torres Torres	82	2025	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Watson De La Torre	83	2025	0	0	0	89	10	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Desirea Mcginnis	84	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Clark	85	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amanda Heilman	87	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Haley Hagar	98	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Erica Mason-Austin	1	2025	0	0	0	47	7	0	0	0	0	0	0	0	0	0	1	0	0	0	0	2	0	11	0	0	0	0	0	0
-Bria Truxon	2	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Stephanie Miller	3	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Starry Bady	5	2025	0	0	0	0	0	0	0	0	0	0	0	3	0	0	6	0	0	1	0	0	0	0	0	0	0	0	0	0
-Joanna Young	6	2025	18	5	0	101	4	2	0	0	0	0	0	0	0	0	1	0	0	0	0	9	0	131	0	0	0	0	0	0
-Brittany Bassett	7	2025	0	0	0	2	2	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Charniece Carney	8	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Almeira Nicole Rizane	9	2025	60	7	1	0	0	0	8	7	4	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kandy Cooke (Bortz)	10	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-KaNesha Sheriff	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
-Brennan Crabtree	12	2025	0	0	0	26	1	1	0	0	0	0	0	3	0	0	6	0	0	0	0	0	0	0	443	21	0	0	0	0
-Tessa Ortiz-Marsh	13	2025	6	9	0	0	0	0	94	13	8	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Stacey Kremer	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
-Aurree King	15	2025	44	11	0	5	1	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Marcy Van Hartesveldt	17	2025	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Crystal Daniels	19	2025	284	72	1	18	4	0	113	60	16	2	4	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0
-Pita Lou	21	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	2	0	0	0	0	0	0	0	0	0	0	0	0
-Lydia Qualls Jarrett	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
-Cortney Mosier	23	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	38	2	0	0	4	0	0	0	0	0	0	0	0	0
-Jasmyn Moxley	24	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aireka Fowler	26	2025	4	3	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	6	0	99	0	0	0	0	0	0
-Dena Triggs	27	2025	8	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carah Johnson	29	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1
-Dionna Jackson-Ross	30	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	3	55	5	0	1	0	0	0	0	0	0	0	0	0	0
-Hannah Powell	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Pasha Johnson-Rivers	33	2025	307	62	1	36	8	0	0	0	0	0	0	0	0	1	10	1	0	0	0	0	0	0	0	0	0	0	0	0
-Vanesia Thompson	34	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Baiyinah Rahim	35	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jeree Clark	36	2025	1	2	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-Denetria Crawford	37	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	21	3	0	1	0	0	0	0	0	0	0	0	0	0
-Dia'Sha Pearson	39	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	0	0	2	0	16	0	0	0	0	0	0
-Tracy Richmond	42	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmine Johnson	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel Calar	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Katherine Wise	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-DMayla Holliday	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	19	2	0	0	0	0	0	0	0	0	0	0	0	0
-Nyshavia Riley-Marsh	52	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	43	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aundrea King	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	25	3	0	0	0	0	0	0	0	0	0	0	0	0
-Yolanda Johnson	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angela Benson	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jazmyn Freeman	57	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Temeka Washington	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jahogany Ezelle	66	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LaTasha Husband	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Glorena Pugh	71	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Essence Lipscomb	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lindsay Powell	77	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	1	0	0	0	0	0	0	0	0	0	0	0	0
-Kristyanna Pierce	82	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Karissa Burnett	88	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	23	1	0	0	0	0	0	0	0	0	0	0	0	0
-Za Karia Adams	89	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sherrette Spicer	98	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Fita Boyce-Jennings	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	15	2	0	1	2	0	0	0	0	0	0	0	0	0
-Ericka Davis	1	2025	55	13	0	3	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Anastasia Olavuo	3	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	30	1	0	1	0	1	0	7	0	0	0	0	0	0
-Maria Fautali	4	2025	212	63	3	31	3	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Crystal Rhodes	5	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kylee OConnor-Harrel	6	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	7	0	125	25	1	0	0	0	0
-Sheila Sickau	7	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	330	14	0	0	9	8
-Tiia Jansen	9	2025	0	0	0	191	20	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashura Powell	10	2025	0	0	0	61	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LaShanda Griffin	11	2025	2	1	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nashi Catron	13	2025	13	12	0	0	0	0	502	105	52	7	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brenna Morris	14	2025	0	0	0	0	0	0	21	4	3	1	0	0	0	0	0	0	0	0	0	0	0	0	167	8	0	0	0	0
-Solana Sperry	15	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lauria Saettele	17	2025	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Racquell Ray	21	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel Scattergood	23	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Imani Nettles	27	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Darcy Leslie	29	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	38	4	0	0	1	0	0	0	0	0	0	0	0	0
-Aspen Baca	30	2025	14	3	0	3	1	0	0	0	0	0	0	0	0	0	18	5	0	0	0	1	0	2	0	0	0	0	0	0
-Megan McDonald	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kassidy Snowden	33	2025	1	1	0	8	1	0	0	0	0	0	0	4	0	1	30	4	0	1	1	5	0	39	0	0	0	0	0	0
-Brooke Tanner	34	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ronnise Wilson	36	2025	52	20	0	0	0	0	0	0	0	0	0	0	0	1	9	2	0	0	0	3	0	29	0	0	0	0	0	0
-Hannah Leonard	38	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	1	0	0	0	0	0	0	0	0
-Aundrea Colbert	42	2025	14	4	0	205	21	1	0	0	0	0	0	0	0	0	2	0	0	0	0	2	0	23	0	0	0	0	0	0
-Kara Galiunas	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	26	1	0	0	0	0	0	0	0	0	0	0	0	0
-Marielle Alexander	47	2025	0	0	0	19	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jen Dulski	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	10	4	0	0	0	0	0	0	0	0	0	0	0	0
-Theresa Honeycutt	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kyla McBride	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	1	0	0	0	0	0	0	0	0	0
-Brittany OConnor	56	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	15	2	0	1	0	0	0	0	0	0	0	0	0	0
-Andrea Scott	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ida Handel	61	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aspen Williams	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Veronica Wiebold	74	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cambria Davis	77	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kassandra Payne	78	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Syreeta Gapelu	79	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	22	1	0	0	0	0	0	0	0	0	0	0	0	0
-Alexandria Specht	88	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ana Bittencourt	90	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sasha Hendrix	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nichelle Blake	0	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	22	1	0	0	0	0
-Britnee Sangalan	1	2025	0	0	0	53	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	80	0	0	0	0	0	0
-Mackenzie Vest	2	2025	0	0	0	138	10	5	0	0	0	0	0	0	0	0	9	0	0	0	1	1	0	0	0	0	0	0	0	0
-Tanaysa Henderson	3	2025	0	0	0	43	4	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cheri Gantt	4	2025	286	50	2	9	2	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	9	0	0	0	0	0	0
-Tashaun Leigh	5	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	25	2	0	0	2	0	0	0	0	0	0	0	0	0
-Ebele Okonkwo	6	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	8	2	0	0	0	0	0	0	0	0	0	0	0	0
-Ashley Clark	7	2025	42	7	1	0	0	0	442	89	35	8	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Satoria Bell	8	2025	0	0	0	87	9	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Myla Somerville	9	2025	0	0	0	0	0	0	0	0	0	0	0	6	0	0	15	1	0	0	2	3	0	42	0	0	0	0	0	0
-Jessica Johnson	10	2025	0	1	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	128	5	0	0	0	0
-Monique Dingle	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0
-Jennell Thomas	12	2025	15	7	0	0	0	0	431	79	33	7	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lashantel Wilson	13	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	23	2	0	0	1	0	0	0	0	0	0	0	0	0
-Delia Phlatts	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Keena Samuels	15	2025	171	19	3	22	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	6	0	0	0	0	0	0
-Anastasia Bosques	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kiara Ireland	20	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0
-Karena Brooks	21	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ramzeh Deen-Sie	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	23	1	0	0	0	0	0	0	0	0	0	0	0	0
-Kezia Oscar	23	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	28	5	0	3	2	0	0	0	0	0	0	0	0	0
-Antoinette Bell	24	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rocky Baxter	25	2025	62	14	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tierra Mccormick	26	2025	16	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Quiana Ford	27	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	2	0	19	0	0	0	0	0	0
-Jazmine Allen	28	2025	13	18	1	8	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jordyn White	32	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Candace Burch	33	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Natalie Wiggins	36	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angelique Henderson	37	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alimirah Hall	38	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Carolyn Lewis	40	2025	57	6	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Doneisha Hawkins	42	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Deysha Pollard	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christina Copelin	45	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shannon Brown	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	6	2	0	0	0	0	0	0	0	0	0	0	0	0
-Tehya Brown	49	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
-Melissa Hastings	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0
-Kourtney Purham	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kellie Bell	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	3	13	6	0	0	0	0	0	0	0	0	0	0	0	0
-Lesley Farquharson	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sabirah Lucas	59	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lisa Fisher II	60	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0
-Angela Clarke	61	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	13	1	0	0	0	0	0	0	0	0	0	0	0	0
-Bonique Green	63	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Labrille May	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-D. Schafaun Jones	73	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Melissa Faison	76	2025	3	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rosa Climaco	79	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shaquanda Gainey	83	2025	28	3	0	305	21	3	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	4	0	0	0	0	0	0
-Laterricka Smith	86	2025	97	22	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kathryn Floor	87	2025	0	0	0	207	16	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ferkeshia Cousar	88	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	8	2	0	0	1	1	0	0	0	0	0	0	0	0
-Omariyana Womack	89	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	7	1	0	1	0	0	0	0	0	0	0	0	0	0
-Camille Calhoun	91	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	7	1	0	2	0	0	0	0	0	0	0	0	0	0
-Amaris Parker	92	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	5	1	0	1	0	0	0	0	0	0	0	0	0	0
-Helenna Wells	94	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Toniquea Jackson	96	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0
-Brittany Medley	98	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chelsea Whiteside	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	16	2	0	0	0	0	0	0	0	0	0	0	0	0
-Jacqueline Lopez	1	2025	0	1	0	56	5	0	0	0	0	0	0	0	0	1	27	1	0	1	0	11	0	95	0	0	0	0	0	0
-Camille Wilson	2	2025	16	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	11	0	0	0	0	0	0
-Cheyene Adkins	3	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mikayla Kiki Stonebraker	4	2025	67	43	1	0	0	0	537	110	39	3	8	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kennetta Murry	5	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	12	1	0	1	0	0	0	0	0	0	0	0	0	0
-Vanessa Palmeri	7	2025	0	0	0	7	2	0	0	0	0	0	0	0	0	0	13	1	0	1	0	0	0	0	0	0	0	0	0	0
-Sigourney Gonzalez	8	2025	5	5	0	11	1	0	17	3	1	0	1	0	0	0	0	0	0	0	0	1	0	6	0	0	0	0	0	0
-Hollie Petrie	9	2025	0	0	0	38	5	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Holly HannahTodd	10	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nicole Walmer	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelly Schaeffer	12	2025	2	3	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	1	9	0	116	0	0	0	0	0	0
-Tabitha Lefever	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Cabot	21	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	31	2	0	0	3	0	0	0	0	0	0	0	0	0
-Cheyanne Kurth	22	2025	8	2	0	195	5	2	0	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	42	2	1	1	2	2
-Kaitlyn Marie Iverson	28	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	2	0	12	0	0	0	0	0	0
-Kola ShippentowerThompson	29	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	1	0	0	0	0	0	0	0	0	0	0	0	0
-Rebecca Becky Boehme	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amber O Connor	32	2025	47	41	0	22	3	0	0	0	0	0	0	0	0	2	47	10	0	4	4	0	0	0	0	0	0	0	0	0
-Kimberly Normand	34	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	1	0	1	0	0	0	0	0	0
-AuBree Barnes	36	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	6	0	0	0	0	0	0
-Mae Larimer	38	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rheanna Deeds	41	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachell Sims	42	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chris Landers	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Levin	45	2025	16	11	0	14	1	0	0	0	0	0	0	0	0	0	7	0	0	0	0	3	0	26	0	0	0	0	0	0
-Whitney Gifford	47	2025	0	4	0	85	7	0	0	0	0	0	0	0	0	2	24	6	0	1	0	0	0	0	0	0	0	0	0	0
-Erica Mathia	52	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kamsin Lawrence	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	1	1	0	1	0	0	0	0	0	0
-Katelyn Bailey	63	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sierra Bakanoff	68	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Loren Diaz	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Guadalupe Korpie	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kassiah Sage Moore	78	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashlie McDonald	79	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chloe Porter	84	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0
-Andrea Jones	85	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashlea Moore	86	2025	0	4	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Taylor Coleman	88	2025	11	2	0	126	11	1	0	0	0	0	0	0	0	0	24	2	0	0	0	3	0	27	425	20	0	0	2	2
-Alexis Greer	94	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	6	29	12	0	0	1	0	0	0	0	0	0	0	0	0
-Kaitlynn dela Pena	95	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Diamond Brown	0	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kennedy Banks	1	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0
-Christina Jaques	5	2025	3	20	0	0	0	0	216	60	17	0	6	0	0	0	3	0	0	0	0	1	0	10	33	2	0	0	0	0
-Ariyan Hudson	7	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	12	1	0	0	0	1	0	0	0	0	0	0	0	0
-Kyhle Jamerson	8	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Liz LaFisca	9	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	19	0	0	0	0	0	0	0	158	9	0	0	1	1
-Shantel Sherrod	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Coretta Hopkins	15	2025	0	6	0	84	6	0	38	12	7	0	1	2	0	0	10	0	0	1	0	1	0	15	0	0	0	0	0	0
-Chelsa Singer	16	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Loriage Reid	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexus Freeman	19	2025	2	6	0	83	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	83	0	0	0	0	0	0
-Treasure McFarland	20	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Holly Custis	21	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sakendra Gabriel	22	2025	390	65	1	5	2	0	0	0	0	0	0	0	0	0	22	1	0	0	0	6	0	86	0	0	0	0	0	0
-Kayla Fisher	23	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Darian Johnson	24	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kyelah Hodges	25	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Octavia Brown	26	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	9	0	0	0	0	0	0
-Sade Minor	27	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ingrid Cleveland	28	2025	15	1	0	11	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	4	0	31	0	0	0	0	0	0
-Charlee Ford	30	2025	8	4	0	0	0	0	0	0	0	0	0	0	0	1	16	1	0	0	0	2	0	5	0	0	0	0	0	0
-Kimberly Abraham	32	2025	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chrishuna Washington	33	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	12	1	0	0	0	0	0	0	0	0	0	0	0	0
-Erin Fleming	39	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	14	1	0	0	0	0	0	0	0	0	0	0	0	0
-Meagan Robinson	41	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	1	0	0	0	0	0	0	0	0	0	0	0	0
-Briiana Gorrell	42	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Analys Colon	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tatanisha Young	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	15	1	0	0	0	0	0	0	0	0	0	0	0	0
-Reagan Price	45	2025	0	0	0	0	0	0	0	1	0	0	0	0	0	0	18	1	0	0	1	1	0	0	213	7	0	0	0	0
-Blessing Tate	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cyla Simon	52	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Elizabeth Freeland	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carmel Glumac	55	2025	0	0	0	63	5	0	0	0	0	0	0	1	0	0	29	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tyneika Jordan	60	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shabria Hall	63	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monica Pickens	64	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bethany Hipps-Jackson	66	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monique Benitez	74	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	1	0	0	1	0	0	0	0	0	0	0	0	0
-Candace Walker	75	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Green	79	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Luck	90	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Valerie Tyler	91	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	4	0	1	0	0	0	0	0	0	0	0	0	0
-Tatiana Rice	93	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Isis Woods	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tara Thomas	0	2025	103	16	1	92	11	1	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	93	0	0	0	0	0	0
-Alyssa McCarron	1	2025	0	1	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	84	3	0	0	0	0
-Jasmine Coleman	2	2025	0	0	0	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Regena Jackson	3	2025	0	0	0	9	1	0	0	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0
-DAjah Scott	4	2025	125	12	3	204	19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	142	0	0	0	0	0	0
-Takera Mitchell	5	2025	0	0	0	0	0	0	0	0	0	0	0	2	0	1	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tenazhia Hinkson	6	2025	0	0	0	35	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Candice Davis	7	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	2	0	0	0	1	0	13	0	0	0	0	0	0
-Melyse Brown	8	2025	125	23	4	0	0	0	1105	139	78	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristen London	9	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	22	2	0	0	0	2	0	10	0	0	0	0	0	0
-Diamond Wright	10	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	1	0	0	0	1	0	13	0	0	0	0	0	0
-Ashya Elder	11	2025	0	0	0	71	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mary Woodard	12	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Natalie Nicks	13	2025	0	0	0	310	21	3	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aalicia Norrell	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kymesha Taylor	15	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sharketie Leverette	16	2025	48	9	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ileshia Preston	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
-Nyeisha Wright	18	2025	0	0	0	105	6	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rashida Young	19	2025	0	0	0	179	8	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chassidy White	20	2025	5	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shanice Wheeler	21	2025	30	7	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jenea Walker	22	2025	265	40	6	13	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-CharLyshia Bradford	23	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	28	6	0	0	0	0	0	0	0	0	0	0	0	0
-Aezioni Nakai-Fuller	24	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	4	2	0	0	0	0	0	0	0	0	0	0	0	0
-Shaniqual Davis	25	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	1	0	0	0	0	0	0	0	0
-Kahriya Williams	26	2025	38	9	0	0	0	0	0	0	0	0	0	1	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0
-Anita Brown	28	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0
-English Bennett	29	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	2	0	0	0	0	0	0	0	0	0
-Shardonay Jenkins	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	3	9	5	0	1	0	0	0	0	0	0	0	0	0	0
-Adrienne Marsh	33	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	2	0	0	0	0	0	0	0	0	0	0	0	0
-Versace Lee	41	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
-Carla Odom	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	22	3	0	0	1	0	0	0	0	0	0	0	0	0
-LaShanda Williams	45	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	13	2	0	0	0	0	0	0	0	0	0	0	0	0
-Joy Longley	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	2	0	0	0	0	0	0	0	0	0	0	0	0
-Voldavia Roberts	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Myeshia Johnson	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tekesha Zo Williams	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Allyssa Weatherd	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	2	0	0	0	0	0	0	0	0	0	0	0	0
-Tymija Hackett	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Meredith Mitchiner	56	2025	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	1	0	10	8
-Jalessa Harvey	61	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Robin Cooper	65	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tracy Dorcemont	68	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Patricia Fultz	69	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Madison Jones	71	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monique Larrieu	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	3	11	6	0	1	1	0	0	0	0	0	0	0	0	0
-Tenisha Williams	73	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Montye Cooke	75	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kassidi Wynter	82	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	15	4	0	0	1	0	0	0	0	0	0	0	0	0
-Makiya Adams	96	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Eden Henry	97	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-JaKiera Mallory	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	3	2	0	0	0	0	0	0	0	0	0	0	0	0
-Morgan Alston	0	2025	322	57	4	46	4	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Antoinette Harris	1	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	0	0	0
-Leslie Robinson	2	2025	1	3	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Danielle Spearman	3	2025	3	1	0	1	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ciara Anderson	4	2025	0	0	0	105	11	1	0	0	0	0	0	0	0	0	1	0	0	0	0	12	0	189	0	0	0	0	0	0
-Lawanda Pearson	5	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0
-Nicole Matheson	7	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	17	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Teubner	8	2025	215	36	1	0	0	0	1008	133	72	18	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Gabriel Rahming	10	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0
-DeAnna Hightower Riley	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	20	2	0	0	0	0	0	0	0	0	0	0	0	0
-Dajour Miles	12	2025	0	0	0	456	28	11	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	155	0	0	0	0	0	0
-Fanny Feldman	13	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jamie Fornal	14	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	26	2	0	2	0	0	0	0	0	0	0	0	0	0
-Kamaria Massey	15	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Stephanie Raymond-Young	16	2025	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christina Mondragon Schrader	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	277	13	0	0	15	11
-Annicka Griffith	18	2025	0	0	0	212	16	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Antoinae Goodman	19	2025	0	0	0	17	1	0	0	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jianna Schirmacher	20	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chiyanne Thompson	21	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Leeya Zander	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ciera Johnson	24	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0
-Aja Johnson	26	2025	0	0	0	8	1	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0
-Sophia Darwish	27	2025	42	14	0	14	4	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aisling Moloney	28	2025	0	0	0	13	3	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Briann Miller	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tabitha Ayala	32	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel Karos	35	2025	0	2	0	0	0	0	14	6	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Taja Sloss	36	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0
-Monique Tribble	37	2025	2	1	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	1	0	0	0	0	0	0	0	0	0	0
-Ashanti Lewis	45	2025	0	0	0	108	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nathalie Irmer	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monique Pineda	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Topps	52	2025	0	0	0	11	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lasha Morales	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Semeret Abdulkarim	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Arteria Ziegler	56	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	18	2	0	0	1	0	0	0	0	0	0	0	0	0
-Jennifer Schulz	57	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
-Adrienne Procter	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cristina Bukowski	60	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shana Sumers	61	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Myshaunique Loggins	62	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0
-Shayna Allwar	63	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Greys Bernal	64	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shantavia James	66	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rebecca Tillman	67	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0
-Erica Moore	68	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	24	2	0	0	0	0	0	0	0	0	0	0	0	0
-Jonquil Curry	81	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alesia Stewart	86	2025	0	0	0	21	2	1	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0
-Stephanie Daniels	87	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-April Fowlkes	89	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0
-Jadacee Vick	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Laura Burnham	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lanuola Jacobsen	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Breana Griggs	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jane Brinkman	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christina Tela	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maggie Justinak	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nicole Attleson	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelly Johnston	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nicole Chaves	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Olivia Green	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sheri Kinder	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sara Galica	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Natasha Johnson	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Louise Bean	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittney Bjork	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Erin Miller	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Yochem	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nina Wilkerson	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Makayla Edwards	17	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Courtney Gray	18	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Asherah Ulmer	20	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Megan Robertson	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maki Yamagata	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lacy Mile	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Masae Fualole Loua	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jenna Trahan	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Gina Mondragon	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-DaMaree Mitchell	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ayanna Ford	28	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dakota Latimer	30	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa Olson	31	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Cannon	32	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lydia Morgan	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Melanie Bartholomew	34	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bergen Meyer	36	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lexie Neslen	37	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Southall	38	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jadacee Vick	40	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Melanie Hunter	42	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nikki Gilbreth	43	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristen Dietz	44	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Courtney Shaw	47	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LiTara Faatili	48	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ella Morgan	49	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-McKenna Morgan	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tyree Hale	53	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Emry Miller	54	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessie Warr	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashley Nguyen Lake	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ramona Martinez	57	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Leialoha Tela	59	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aezioni Fuller	60	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maria Hernandez Lucio	62	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Court	64	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dorothy Angilau	65	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Katherine Montgomery	68	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Montana Meier	70	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Margaret Pan	71	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LaVerna Tela-Lesa	72	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brynne Butterfield	73	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rosa Egbert	74	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tauva Leiomiti	76	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dorothy Angilau	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Gabrielle Kredel	79	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lanika Manning	80	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Anne Morgan	82	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Emmalee Munns	83	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lainie Thompson	84	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rylee Fenrick	85	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Melissa Chandler	87	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa Vigil	88	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Makayla Brown	89	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sierra Call-Rust	90	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nancy Toutai	93	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Candace Jensen Lopez	96	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cindy Cornell	97	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Najia McGee	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kendra Gabriel	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Desiree Conner	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristi Derouen	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carol Saunders	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Melany Frierson	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jaquela Stewart	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelly Rosso	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashya Elder	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Daisha Lawson	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Gina Carnovale	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Renee Langlais	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mahogany Gaines	18	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Raejean Marshall	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brianna Hollins	20	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashton Elliott	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ebony Minter	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Olivia James	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tashani Cardwell	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexandria Duper	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kayla Vincent	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Johnson	28	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ShaDella Reese	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nikayla Ramsey	31	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chelsea Borders	32	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shermanda Fambro	37	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristen Davis	41	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Taylor Baldwin	42	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Janasha Smith	44	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shavonne Verdree	46	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Latasha Cummings	51	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelsey Walthall	52	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Marlette Wilber	54	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kazzette Collins	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Catherine Norris	66	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Zyaire Xamaica	69	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kiana Stafford	72	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lisa Scurry	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Janelle Small	79	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angie Patton	80	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Zoe Jackson	82	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rebecca Geller	84	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Taylor Brashears	87	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dumatra McDaniel-Walker	88	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shauntavia Brigham	92	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monique Calhoun	93	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Wanita McCoy	96	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sumatra McDaniel	98	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Latanglia Dorsey	99	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Isabel Warren	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kali Jones	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sigourney Gonzalez	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brynn McNabb	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Beatriz Rico	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Antonie	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Marico Davis	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aleesah Wilson	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Thaycha Rodriguez	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tehya Demski-Hamelin	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christina Vollrath	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mariah Makupson	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa Lorbiecki	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Andrea Wright	17	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sydney Holt	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Genessa Bingham	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Courtney Powell	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Janiah Lee	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristin Carter	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aria Wagaman	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carrie Walters	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel Lund	30	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Charnel Archer	32	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Keanu Malala	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittaney Warren	43	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Elizabeth Spence	45	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LaQuanta Glass	47	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jordyn Williams	49	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jayna Valdez	52	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jerrica Davenport	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tiffani Penix	58	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monique Garcia	59	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shonna Williams	60	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tawny Hall	63	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ayana Mcafee	65	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Azalia Allen	66	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Hill	68	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Xebulynn Whitney	69	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kailima Ross	70	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dayton Yingling	72	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Caitlynn Jones	73	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Trevez Bridgewater	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dominique Maloy	88	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chelcie-Maree Weaver	93	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dora Alvarez	96	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Barbriel Crudup	99	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amani El Amin	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittani Lusain	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Joann Mamuyac	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Strother	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Daisy Avila	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Laurisa Hollenshed	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alia Karmali	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Katie Claxton	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jamie Blue	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Diana Huynh	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Natalia Brown Quinones	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Taranisha Taylor	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shonte Williams	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Imelda Elizabeth De Leon	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Danny Trainor	17	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Harmine Christina Leo	18	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tynisha Dossman	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lauren Blaser	20	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Stacy Primeaux	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Elisa Nguyen	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Ingargiola	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kesz Wesley	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alicia Zappia-Neeley	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Melina Malaxos	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Gianna Zamora	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kim Cade-Henry	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christin Stoll	32	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cachrelle Nguyen	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aylin Alejandra Rivera Rivera	36	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Irlanda Diaz	43	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jensine Alvarez	45	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Knengi Martin	47	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Krisja Norman	49	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kyvondra Toalepai	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monica Johnson	51	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ronnika Burks	53	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Felicia Lilo	54	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lorena Diaz	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shelby Presley	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sabrina Kessler	59	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Greys Bernal	64	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rebecca Munoa	65	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rea Schmidt	66	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Johanna Aspenberg	70	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Annamarie Fagnani	71	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tanya Luna	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Martha Gomez	80	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jocelyn Charette	84	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Whitney Harrison	85	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christina Jordan	87	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jazpony Harris	88	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tess McCann	91	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyshia Tauanuu	92	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alayah Lewis	93	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Faatupu Malaulu	95	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Similiti Lealiki	97	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Miriah Lopez	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angie Hamilton	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Marissa Lopez	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ricki Alex	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brooklyn Riley	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jazmin Gamble-Tello	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmine McDonald	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alysia Dominguez Bisquera	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexis Dixon Fontaine	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Crystal Johnson	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kayla Chambers	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mallory Torres	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Darnisha Lee	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-AuBree Barnes	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Annsleigh Anderson	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Olivia Johnson	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ryan Meismer-Thompson	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-AuBree Barnes	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dannielle Lawrence	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Salina Samario	35	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Priscilla Petersen	36	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Laura Bongers	37	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Meagan Curtis	38	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Keisha Howard	40	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel Love	43	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lauren Davis	44	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Precious Moses	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Darlene Martinez	54	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Stephanie Lopez	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashleigh Hayes	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shaina Cato	59	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mila Porter-Lawson	62	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mercy Molina-Guevara	62	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amari Trevino-Beverly	62	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Gabrielle Madden	65	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tiffany Gonzales	70	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Matalya Johnson	75	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angelina Faulkner	76	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Samantha Vasquez	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sabrina Casillas	79	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Echo Le Vell	84	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Olivia Morgan	85	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Malaysia Quimby	87	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tina Orrick	90	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Autumeize Gardner	90	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Phillips	93	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shardae Anderson-Bell	95	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Deana Guidry	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Elizabeth Landry	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Eshombi Singleton	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Collins	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Whitney Palmer	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Anastasia Olavuo	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Michelle Angel	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Waynicia Thomas	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kahriya Williams	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Crystal Daniels	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jewelle Grimsley	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelli Smith	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tara Thomas	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chelsie Thompson	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Grace Wiley	18	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Janei Benamon	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashley McBay	20	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jamie Lock	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kerrie Isom	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Summer McNeal	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Khadijah Ellison	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tatyana Guidry	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jazmine Rambo	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Darcy Leslie	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mikaile Fortson	28	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Arielle Wilks	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cathy Wabenga	31	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amber Kimbrough	32	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cara Wesemann	34	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Armoni Stevenson	35	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Trinity Smith	38	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mercedes Tyler	39	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Phylicia Allen	41	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jimeriam Jackson	42	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kylah Hodges	43	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brooke Denny	44	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tyara Blades	45	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Teasha Martin-Palmer	47	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Trinity Scott-Gooden	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Fannie Robinson	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LeShaunte Bowman	57	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristyn Aoake Taylor	59	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bethany Hipps	65	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amanda Morgan	72	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cierra McGinnis	74	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Renee Fruean	75	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lucinda Watkins	76	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alina Markl	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tammie Moore	78	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shavonne Ford	80	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maria Jackson	81	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Watson De La Torre	83	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Desirea McGinnis	84	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Clark	85	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Treva Mason	86	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amanda Heilman	87	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Grace Mole	88	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Haley Hagar	98	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Isis Woods	99	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jacqueline Lopez	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Camille Wilson	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cheyene Adkins	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kennetta Murry	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Vanessa Palmeri	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Isabelle Bartter	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Holly Hannah	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Anastasia Dawson	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jenna Sukle	17	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Courtney Chidley	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Cabot	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brenda Paz	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kola Thompson	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Erica Mathia	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelsea Phillips	36	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Gerdes	37	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rheanna Deeds	41	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christina Landers	44	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Levin	45	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Whitney Gifford	47	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tianna Bell	52	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carolynn Torve-Williams	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lyrica Arielle Macdonald	61	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Laylee Dieringer	62	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Katelyn Bailey	63	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sydney Jessup	66	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashley Watkins	67	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sierra Cornell	68	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Loren Diaz	70	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Guadalupe Korpie	72	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Karli Singrey	73	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brianna Marks-Green	75	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tori Dixson	76	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Taylor Coleman	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Vernisha Tavares	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kassiah Sage Moore	78	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Britt Hennings	83	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chloe Porter	84	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Andrea Jones	85	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashlea Moore	86	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Taylor Coleman	88	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexis Greer	94	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kaitlynn dela Pena	95	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Winry Vitkovich	96	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nichelle Blake	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Britnee Sangalan	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mackenzie Vest	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tanaysa Henderson	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cheri Gantt	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ta Shaun Leigh	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kiara Ireland	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashley Clark	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Satoria Bell	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Myla Somerville	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jessica Johnson	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monique Dingle	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennell Thomas	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LaShantel Wilson	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Delia Phlatts	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Keena Samuels	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Solina Pascual	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Anastasia Bosques	17	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LaTerricka Smith	18	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kylee OConnor-Harrel	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-AlNisa Thomas	20	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ramzeh Deensie	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kezia Oscar	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Antoinette Bell	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Orianna Baxter	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tierra McCormick	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-MarRhea Everheart	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jazmine Allen	28	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chanel Cross	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kenyatta Sears	30	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tino'j Jones	31	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Candace Burch	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Danielle Spearman	35	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Natalie Wiggins	36	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angelique Henderson	37	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alimirah Hall	38	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Stephanie Pascual	39	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carolyn Lewis	40	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Anna Melton	41	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Doneisha Hawkins	42	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jeanenne Colbert	45	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Riian Smith	46	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Natalia Ceron Parra	47	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shannon Brown	48	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lisa Fisher II	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tia Thompson	52	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kourtney Purham	53	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kellie Bell	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chloe Williams	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lesley Farquharson	58	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Midajah Davis	60	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angela Clarke	61	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bonique Green	63	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Demiera Lockhart	69	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christine Norman	70	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Melissa Faison	76	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tynisha McMillian	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rosa Climaco	79	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Christina Copelin	80	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Breonna Brewer	81	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Naomi Stuger	82	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shaquanda Gainey	83	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Hannah DeGraffinreed	84	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Faith Robinson	85	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmine Ward	86	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ferkeshia Cousar	88	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Emily Rose	89	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chelsea Parrish	91	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Amaris Parker	92	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Omariyana Womack	95	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Toniquea Jackson	96	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sacoyia Todd	97	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chelsea Whiteside	99	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmyn Moxley	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bria Truxon	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Novak	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Starry Bady	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Joanna Young	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany Bassett	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Charon Sweeney	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Julia Mullin	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-KaNesha Sheriff	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brennan Crabtree	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tessa Ortiz-Marsh	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Stacey Kremer	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Auree King	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Stephanie Miller	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Elizabeth Nelson	17	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jamila Gordon	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Timesha Wharton	20	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Candace Rucker	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cortney Mosier	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Abby Pelletier	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tanisha Thermidor	28	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carah Johnson	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dionna Jackson-Ross	30	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kara Gailiunas	32	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Adrienne Marsh	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Vanesia Thompson	34	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Baiyinah Rahim	35	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashley Menchaca	40	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-BriLana Gorrell	41	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tracy Richmond	42	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmine Johnson	43	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dalphine Armstrong	44	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Adrienne Watson	45	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lavinia Culbreath	48	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dmayla Holliday	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Rexrode	51	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Yolanda Johnson	52	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Najae Lewis Elliot	53	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Allyssa Weatherd	54	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angela Morales-Benson	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jazmyn Freeman	57	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ava Travis	60	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Patricia Fultz	69	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Samantha Vasquez	63	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jahogany Ezelle	66	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Erica Moore	68	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LaTasha Husband	70	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lindsay Powell	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristyanna Quinn	82	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmine Edmond	83	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Karissa Burnett	88	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Destini Perry	91	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Fita Boyce-Jennings	99	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shaniya Lacey	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa McCarron	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmine Coleman	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Regena Jackson	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-D'Ajah Scott	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Takera Mitchell	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tenazhia Hinkson	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Candice Davis	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Melyse Brown	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kristen London	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Diamond Wright	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mary Woodard	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Natalie Nicks	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aalicia Norrell	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kymesha Taylor	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-DYana Bolden	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sckiya Banister	18	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rashida Young	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shanice Wheeler	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jene Walker	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Charlyshia Bradford	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Norianna Haynes	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shaniqual Davis	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Meredith Mitchner	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Doshia Collins	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mariane McClinton	28	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shardonay Jenkins	31	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nikki Pike	32	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Versace Lee	41	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Carla Odom	44	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LaShanda Williams	45	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Joy Longley	48	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Voldavia Roberts	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tekesha Williams	53	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shicarea Hutchins	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jalessa Harvey	61	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Myeshia Johnson	64	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Robin Cooper	65	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tracey Dorcemont	68	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Madison Jones	71	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monique Larrieu	72	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tenisha Williams	73	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Montye Cooke	75	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cam Evans	79	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kassidi Wynter	82	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Eden Henry	97	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Yasmene Harris	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Savannah Morefield	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Zomi Anderson	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Anissa Babitu	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Krista Seaman	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jada Hampton	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Vanessa McGinnis	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kay Lewis	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jocelyn Fernandez	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Virginia Kim	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alaina Valmassei	20	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sydney Lambert	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Molly Tester	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kellye Lofquist	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Erica Jackson	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Adriana Gutierrez	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexandra Sweet	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Thalia Sweet	35	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Madalyn Garrison	38	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jennifer Erickson	41	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachell Sims	42	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel Davis	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nina Gomez	53	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Naomi Lee	54	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shelby Buren	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jamari Avery	60	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexa Rummel	69	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ajane Rosen Lawton	74	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-DaNi Jolley	75	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Marlen Garces	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Lauren Butz	83	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Monica Salazar	85	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sav Congdon	89	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chelsea Monsees	90	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Evett Van Beek	96	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sam Rozell	98	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Bianca Mouton	99	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alma Rauline Martinez	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ellie Gilbert	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-LaQue Moen-Davis	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sylvia Sloss	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Inaya Freeman	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jaiden Rogers	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Iyona Copeland	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kris Grimes	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Julysil Paycoan	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kiana Gordon	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Stephanie Elizondo	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Paulina Lopez	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brandi Ransom	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Liv Offenbach	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dorothy Mao	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alexis Contreras	17	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Darla Espinosa	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angelica Sofia Garcia Rivera	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Morgan Lewis	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Franziska Diegel	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shaniqua Bennett	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa Dixon	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Taylor McGhee	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Chyna Cole	28	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Esperanza Poyle Maciel	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brianna Rastello	31	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jenji Lee Hooker	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sydney Dela Cruz	36	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Leilani Caamal	43	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jocelyn Howard	44	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Angelina Tuakalau	45	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sierra Le Grande	46	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nakisha Harris	47	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Olga Valdez	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-ZiArion Hutsell	51	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Courtenay Williams	52	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Charmaine Bradford-Airy	54	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittenee Johnson	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Zay Dollente	60	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mary Lee	62	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sierra Cash	63	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Victoria McIntyre	64	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jasmine Holland	67	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sarah Guerra	72	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Mahiya Ellis	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dominique Stewart-Thomas	82	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rayna Lorraine	84	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyson Azevedo	98	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Claire Nickison	99	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ericka Davis	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Fanny Feldman	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Maria Fautali	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Crystal Rhodes	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Shelia Sickau	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Alyssa Gillespie	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Laila Finley	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ashura Powell	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Olivia Wilson	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Janiah Bond-Clough	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Keyla Rea	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brenna Morris	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Solana Sperry	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rilee Irby	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Marine Paris	17	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jerrica Johnson	18	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Grace Cooper	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Viktoria Donetz	20	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Racquell Ray	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Moriah Thomas	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Diana Johnson	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Imani Nettles	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Zaya Dove	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rachel Slamin	32	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kassidy Snowden	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brooke Tanner	34	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Ronnise Wilson	36	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Hannah Leonard	38	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Aundrea Colbert	42	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Marielle Alexander	47	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kelly Whitehead	49	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Dajia Anderson	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Nova Nyström	52	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Theresa Honeycutt	53	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Kyla McBride	54	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Yohnee Miller	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Brittany OConnor	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Andrea Kelley	58	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Markell Marquez	60	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Rhey Acevedo	63	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Julia Viles	64	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Luma Barbedo	70	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Macie Ables	71	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Najma Muhammad	72	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Veronica Wiebold	74	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Cambria Davis	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jenessa White	83	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Tori Spann	97	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Sasha Hendrix	99	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+COPY public.season_stats (player_name, player_number, season, season_rushing_yards, season_rushing_attempts, season_rushing_touchdowns, season_receiving_yards, season_receiving_attempts, season_receiving_touchdowns, season_passing_yards, season_passing_attempts, season_passing_completions, season_passing_touchdowns, season_offensive_interceptions, season_defensive_interceptions, season_offensive_sacks, season_defensive_sacks, season_tackles, season_tackles_for_loss, season_fumbles, season_forced_fumbles, season_fumble_recoveries, season_special_teams_returns, season_special_teams_touchdowns, season_special_teams_yards, season_punting_yards, season_punting_attempts, season_kicking_attempts, season_kicking_made, season_extra_point_attempts, season_extra_points_made, season_war) FROM stdin;
+Molly Richardson	1	2023	24	26	0	7	1	0	424	137	52	1	11	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.12
+Paige Jones	3	2023	45	18	1	30	4	0	0	0	0	0	0	0	0	0	5	3	0	0	0	1	0	7	0	0	0	0	0	0	0.08
+Leslie Hubbell	4	2023	8	3	0	0	0	0	0	0	0	0	0	0	0	0	17	1	0	0	1	0	0	0	0	0	0	0	0	0	0.04
+Brianna Daniel	5	2023	0	1	0	0	0	0	56	29	8	0	2	0	0	0	0	0	0	0	0	5	0	30	0	0	0	0	0	0	0
+Sydney Smith	6	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	6	0	0	0	0	2	0	22	0	0	0	0	0	0	0.02
+Tiffany Sarroca	7	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chrystin Lucas	8	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	1	0	0	0	0	0	0	0	0	0
+Shanysse Emerenciana	9	2023	7	2	0	48	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	57	0	0	0	0	0	0	0.03
+Xiarysse Emerenciana	10	2023	6	1	0	56	4	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Rebeka Bell	11	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shauna Floyd	18	2023	10	12	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Camise Patterson	20	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aurieyall Scott	21	2023	35	12	0	14	4	0	0	0	0	0	0	0	0	0	2	0	0	0	0	2	0	14	0	0	0	0	0	0	0.03
+Jesseka Forbes	22	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashaniti Broxey	24	2023	7	1	0	180	15	1	0	0	0	0	0	0	0	0	2	0	0	0	0	14	0	150	0	0	0	0	1	1	0.13
+Jessica Salazar	25	2023	19	23	0	17	4	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Rose Bruce	27	2023	1	2	0	0	0	0	0	0	0	0	0	0	0	0	8	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Margo Smith	28	2023	0	0	0	8	1	0	0	0	0	0	0	0	0	0	5	1	0	0	0	2	0	0	0	0	0	0	0	0	0.01
+Elizia Casillas	29	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexandra Holliday	30	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	0	0	1	0	12	0	0	0	0	0	0	0.01
+Chelsea Parrish	32	2023	0	0	0	50	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	9	0	0	0	0	0	0	0.02
+LaRoyia Bauer	33	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	23	2	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Yanah Floridis	44	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	0	0	0	321	14	0	0	0	0	0.01
+Khadijah Jones	45	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Erica Jones	51	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cheryl Godek	52	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jennifer Vinson	53	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexandra Perry	54	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	24	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Ashley Lantz	55	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	7	3	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Kristy Hice-Jones	56	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chantel Talton	60	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cyerius Searcy	61	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Vanessa Jenkins	65	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Riquessa Exum	66	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Arielle Hester	69	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kiana Stafford	72	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sabrina Ceniza	78	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angie Patton	80	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	30	2	0	1	1	2	0	2	0	0	0	0	0	0	0.07
+Breana Haines	88	2023	0	0	0	16	3	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Mikayla Taylor	90	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Danielle Arnold	92	2023	0	0	0	8	1	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Amanda Krauss	99	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dominique Williams	0	2023	0	0	0	159	11	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.11
+Jelisa Fladger	1	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	13	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Deja Mosley	2	2023	7	3	0	89	7	0	13	3	2	0	0	0	0	0	5	0	0	0	0	6	0	63	0	0	0	0	0	0	0.06
+Karmen Henson	3	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	1	0	0	0	0	0	0	0	0	0.01
+Serika Shillingsworth	4	2023	3	1	0	48	5	0	0	0	0	0	0	0	0	0	1	0	0	0	0	7	0	149	0	0	0	0	0	0	0.03
+Latasha Dragon Richardson	5	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Najiaa Michel	6	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+India Parker	7	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Taylor Snoopy Snow	9	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Radiyah Snoop Robertson	10	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Maria Jackson	11	2023	261	72	2	36	7	0	0	2	0	0	0	0	0	0	4	0	0	0	0	7	0	112	0	0	0	0	0	0	0.21
+Alla Ticket Gruzdeva	12	2023	208	62	4	0	0	0	389	109	36	1	6	0	0	0	1	0	0	0	1	0	0	0	349	17	0	0	0	0	0.39
+Nellie Mixon	13	2023	0	0	0	50	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Alexandria Bear McLean	14	2023	2	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Charneice Carney	15	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	1	0	1	0	2	0	13	0	0	0	0	0	0	0.03
+Autumn Dozier	16	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Malak Bentoudjamalak	17	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mandy Rodriguez	18	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Judea McDonald	19	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Vanessa Bell-Carmichael	20	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Nicole Fairman	22	2023	0	0	0	0	0	0	0	0	0	0	0	2	0	0	20	0	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Jasmine Poole	23	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	2	0	0	0	2	0	15	0	0	0	0	0	0	0.02
+Sharea Golson	24	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aireka Fowler	26	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Neshara Watrous	27	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Latasha Cummings	28	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Javanna Wilkins	29	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Shavonne Randolph	30	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Felecia Hawkins	31	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Erica Dabney	32	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Natasha Santiago	33	2023	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Bianca Allen	34	2023	47	15	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Shamia Bell	35	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Meryem Zaefari	36	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tanishia Burch	37	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Annelise Lutz	38	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kiersten Zangl	39	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	22	1	0	1	0	0	0	0	0	0	0	0	0	0	0.04
+Mel Bayani	43	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Beatrice Glinton	45	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+Melissa Uhl	47	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Katie Miller Lite Miller	50	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sharolin Sanders	51	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angelica Venom Garcia	53	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	19	1	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Tatiana Larry	55	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Monique Wilson	56	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mea Williams	57	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ayanna Dunia	60	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Amanda Littorin	64	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ellana Watson	64	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Sabirah BB Lucas	68	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Candace Walker	69	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Melissa Fawcett	72	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0
+Jade Ross	75	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dejanatta Douglas	77	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Ashley Murray	84	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shamika Bama Johnson	86	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittany Turner	88	2023	0	0	0	28	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	9	0	0	0	0	0	0	0.01
+Tyra Williams	92	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Omariyana Womack	95	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	11	5	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Kelsie Young	96	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kayla Lilly	2	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rebecca Banks	3	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Taylor Thatcher	4	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	14	1	0	0	0	1	0	8	33	2	1	0	1	1	0.03
+Srey (Uk) Routh (Thach)	5	2023	248	52	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.22
+Krista Seaman	6	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Rachel Woods	7	2023	26	13	0	0	0	0	582	113	43	5	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.37
+Joalis Rosario	8	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Monique Ani-Opiopio	9	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shaunya Kahananui	10	2023	0	1	0	134	9	3	0	1	0	0	1	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.15
+Mykaleen Hiura	11	2023	2	1	0	10	2	0	0	3	0	0	1	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Virginia Kim	13	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Bryn Langrock	15	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+April Arnold	16	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Tanishia Norman	17	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Haley Brown	18	2023	5	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jackie McCall	19	2023	5	2	0	40	3	0	0	0	0	0	0	0	0	0	26	5	0	0	0	10	0	179	197	8	0	0	4	1	0.07
+Toneyell Shropshire	21	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Molly Tester	23	2023	7	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Corrina Mahiai	26	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Andraliah Lee	31	2023	113	22	1	0	0	0	0	0	0	0	0	0	0	0	16	4	0	0	0	2	0	0	0	0	0	0	0	0	0.12
+Stephanie Howard	32	2023	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amy Steinke	37	2023	2	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Madalyn Garrison	38	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	4	1	0	0	0	3	0	34	0	0	0	0	0	0	0.02
+Rachell Sims	42	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	14	2	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Xaviera Talai	43	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+DaMaree Mitchell	47	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Patricia OConnell	48	2023	15	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Nicole Santos-Adam	50	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aryan Sjodin	52	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	13	1	0	0	1	0	0	0	0	0	0	0	0	0	0.03
+Perenise Liusamoa	53	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	1	0	0	0	0	0	0	0	0	0	0.01
+Naomi Lee	54	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Zay Dollente	60	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Whitney Morrell	69	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shavonne Richardson	70	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	1	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Venisha Ford	71	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aleesha Cadogan	72	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+JoVonna Cram	74	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	1	0	3	0	0	0	0	0	0	0
+Crystal Contreras	76	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alicia Gelles	77	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mahlayshia Dockery	79	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Elizabeth Tapler	80	2023	63	18	0	296	19	2	0	0	0	0	0	0	0	0	5	0	0	0	0	7	0	110	0	0	0	0	0	0	0.25
+Amber Cox	82	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+McKenzie Tolliver	84	2023	4	4	0	77	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0.04
+Catherine Vogt	85	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	0	0	0	0	2	0	14	0	0	0	0	0	0	0.01
+Rosalie Mora	86	2023	0	0	0	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Suellen Siquiera-Fisher	87	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chelsey Nill	88	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	13	4	0	1	0	0	0	0	0	0	0	0	0	0	0.04
+Beth Knieps	95	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Liz Landry	1	2023	7	1	0	276	19	4	0	0	0	0	0	0	0	0	3	0	0	0	0	3	35	91	0	0	0	0	0	0	1.4
+Eshombi Singleton	2	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shantia Creech	3	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	3	1	0	0	1	0	0	0	0	0	0	0	0	0	0.02
+Jessica Collins	4	2023	0	0	0	0	0	0	0	0	0	0	0	4	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Kristi Taylor	5	2023	0	1	0	0	0	0	6	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Olivia Griswold	6	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	4	18	7	0	3	0	0	0	0	0	0	0	0	0	0	0.09
+Michelle Angel	7	2023	12	5	1	0	0	0	65	20	8	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.19
+Brittany Bushman	8	2023	0	12	0	0	0	0	940	114	67	16	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.94
+Allyssa Weatherd	9	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	36	8	0	0	0	0	0	0	0	0	0	0	0	0	0.08
+Desiray Mosley	10	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Deana Simmons-Guidry	11	2023	0	0	0	17	1	0	0	0	0	0	0	0	0	1	21	6	0	0	0	0	14	3	0	0	0	0	0	0	0.51
+Hanna McEwen	12	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	8	0	0	0	1	0	0	0	0	0	0	0	0	0	0.03
+Jewelle Grimsley	13	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tara Thomas	15	2023	290	39	4	65	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	35	188	31	2	0	0	0	0	1.43
+Brittany Satterwhite	17	2023	265	38	4	121	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	1	12	10	0	0	0	0	0	0	0.77
+Nyeisha Wright	18	2023	74	1	0	2	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.07
+Ashley McBay	20	2023	42	11	1	48	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.08
+Denesha Richardson	21	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Kahriya Williams	22	2023	76	15	0	15	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Sabrina Cervantes	35	2023	12	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Kesz Wesley	24	2023	115	17	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.09
+Candace Scaggs	25	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jelani Kelly	27	2023	83	13	1	0	0	0	45	7	4	0	0	0	0	0	3	0	0	0	1	0	0	0	0	0	0	0	0	0	0.11
+Arielle Wilks	29	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jakaya Holloway	31	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	3	0	0	0	1	0	0	0	0	0	0	0	0	0	0.03
+Amber Kimbrough	32	2023	28	5	2	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0.09
+Janice Mitchell	33	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Cara Wesemann	34	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	66	7	1	0	33	31	0.01
+Tracie Williams	38	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jadira Valentin	39	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jazpony Harris	40	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Mikaile Fortson	41	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Deja Douglas	44	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Teasha Martin-Palmer	47	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Daniela Ottaino	48	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessica Jeans	49	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	8	0	2	0	0	0	0	0	0	0	0	0	0	0.05
+Umeki Webb	51	2023	0	0	0	8	2	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0.05
+Angellica Grayson	52	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	3	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Fancy Robinson	55	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+LeShaunte Bowman	57	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Nicole Grabowski	58	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+Latraell Purham	69	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amanda Morgan	72	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Renee Fruean	75	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Lucinda Watkins	76	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tammie Moore	78	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shavonne Ford	80	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Maria Jackson	81	2023	0	0	0	377	26	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.44
+Rachel May	82	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Octavia Langston	83	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Desirea McGinnis	84	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Clark	85	2023	0	0	0	31	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Latoria Randile	86	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	5	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Amanda Heilman	87	2023	0	0	0	80	8	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.07
+Mo Kirk	88	2023	0	0	0	6	1	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Semone Simmons	92	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Haley Hagar	98	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Danielle Galloway	0	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Miriah Lopez	1	2023	0	0	0	125	8	2	0	0	0	0	0	1	0	0	0	0	0	0	0	4	0	33	0	0	0	0	0	0	0.14
+Maria Acension	2	2023	0	0	0	45	2	0	0	0	0	0	0	1	0	0	10	0	0	0	0	1	0	6	0	0	0	0	0	0	0.05
+Cindy Teitsma	3	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cindylou Rasiang	4	2023	26	9	0	0	0	0	151	49	15	1	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.08
+Malissa Miles	5	2023	2	1	0	54	9	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Skylar Pringle-Hicks	6	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Christina Montoya	7	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Samantha Caruth	8	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kalyx Lewis	9	2023	231	58	1	58	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.17
+Megan Biggers	10	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	1	0	0	0	0	1	0	7	6	0.01
+Alysia Bisquera Dominguez	11	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	12	0	0	0	0	0	0	0
+Ty Rodriguez	12	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Maha Hawwass	13	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	9	0	0	0	2	0	0	0	0	0	0	0	0	0	0.04
+Christina Vollrath	14	2023	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mariah Makupson	15	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Khyla Easler	17	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mahogany Gaines	18	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	3	32	9	0	1	0	0	0	0	0	0	0	0	0	0	0.09
+Maikia Williams	19	2023	0	0	0	0	0	0	0	0	0	0	0	2	0	0	25	0	0	3	2	3	0	26	0	0	0	0	0	0	0.1
+Robin Johnson	20	2023	65	33	1	34	1	0	189	48	20	3	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.23
+Marissa Lopez	21	2023	0	0	0	0	0	0	90	14	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.08
+Alejandra Rivera Rivera	22	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jennifer Ingargiola	23	2023	157	31	2	71	9	2	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	12	0	0	0	0	0	0	0.24
+Xiana Dillon	24	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Raquel Sharper	25	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kristin Carter	26	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Malaysia Flowers	27	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Rachel Lund	30	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shalynn Splettstoesser	33	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Serena Smith	36	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Christi Acacio	40	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittaney Warren	43	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Heather Puletasi	44	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Terry Viena	45	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Osmara Gissell Nunez Barrera	50	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	3	16	7	0	3	1	0	0	0	0	0	0	0	0	0	0.09
+Jaynna Valdez	52	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	12	2	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Charlotte CJ Madrid	53	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	3	31	7	0	0	0	6	0	77	219	9	0	0	0	0	0.07
+Felicia Lilo	54	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Monica Johnson	56	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Yvonne LuLu Harris	60	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	1	0	4	0	0	0	0	0	0	0
+Kristine Eisler	64	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Audra Gutierrez	66	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Debrina Wright	67	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessica Hill	68	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Similiti Lealiki	70	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	12	5	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Dayton Yingling	72	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Caitlynn Jones	73	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ariana Gonzalez	75	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	5	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Sarah Schwartz	76	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jessica Estes	81	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Irlanda Diaz	82	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	20	3	0	1	0	0	0	0	0	0	0	0	0	0	0.04
+Kylie Mitchell	88	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Diane Koinva	91	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kimberly Weaver	93	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alecsys Williams	94	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Yamilex Jimenez	95	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	1	0	0	0	0	0	0	0	0	0	0.02
+Dora Alvarez	96	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Victoria Reed	97	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Adriane Utt	98	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Barbriel Davis	99	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Britnee Sangalan	1	2023	0	0	0	95	5	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.11
+Quiana Ford	2	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	0	0	1	0	6	0	94	0	0	0	0	0	0	0.02
+Dasha Jones	3	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cheri Gantt	4	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+TaShaun Leigh	5	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	36	1	0	0	0	2	0	32	0	0	0	0	0	0	0.06
+Ashley Clark	7	2023	5	3	0	0	0	0	584	99	37	7	2	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.49
+Tanaysa Henderson	8	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jasmine Ballard	9	2023	779	92	9	24	2	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	2	1	0.67
+Kea Mercer	10	2023	149	18	3	47	6	2	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	105	0	0	0	0	0	0	0.26
+LaShantel Wilson	13	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	14	2	0	0	1	0	0	0	0	0	0	0	0	0	0.05
+Jeree Clark	14	2023	51	12	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Mickayla Martin	17	2023	0	0	0	6	1	0	0	0	0	0	0	0	0	0	2	6	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Shawntae Barnes	18	2023	48	8	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	17	0	0	0	0	0	0	0.09
+Carrie Mills	20	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Karena Brooks	21	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ramzeh Deen-sie	22	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	1	34	1	0	0	0	3	0	19	0	0	0	0	0	0	0.07
+Antoinette Bell	24	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	2	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Brilynn Fields	25	2023	0	0	0	83	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Tierra McCormick	26	2023	71	14	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Jazmine Allen	28	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tinoi Jones	31	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	1	0	0	0	0	0	0	0	0	0	0.02
+Candace Burch	33	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Natalie Wiggins	36	2023	11	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Natasha Ware	38	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	4	1	0	2	2	0	0	0	0	0	0	0	0	0	0.05
+Charetta Santana	40	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Maya Johnson	43	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Christina Copelin	45	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chantal Thacker Ridlon	47	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	23	3	0	1	0	0	0	0	0	0	0	0	0	0	0.05
+Shannon Nelson-Brown	48	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	13	5	0	1	0	0	0	0	0	0	0	0	0	0	0.04
+Tehya Brown	49	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nichelle Blake	50	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	13	2	0	0	2	0	0	0	0	0	0	0	0	0	0.04
+Missy Hastings	51	2023	0	0	0	0	0	1	0	0	0	0	0	0	0	0	3	3	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Kourtney Purham	53	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Bryanna Shaw	55	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Veronique Pope	56	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	3	3	0	1	0	0	0	0	0	0	0	0	0	0	0.02
+Lace Jennings	57	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Danaisha White	58	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Bonique Green	63	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Porsche Elam	68	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tierra Lassiter	69	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tameka Heard	71	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amanda Walker	74	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	2	0	1	0	0	0	0	0	0	0	0	0	0	0.03
+Viola Hall	75	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lydia Evans	76	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tynisha McMillian	77	2023	5	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	143	6	0	0	0	0	0
+Donnell Finnaman	78	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Kasee Hilliard	81	2023	0	0	0	235	11	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.18
+Sara Thacker	82	2023	0	0	0	94	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.08
+Monique Dingle	86	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+FerKeshia Cousar	88	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	3	20	5	0	0	1	1	0	12	0	0	0	0	0	0	0.06
+Krystal Williams	90	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chelsea Whiteside	91	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Quiniesha Leonard	92	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Faith Rogers	93	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Toniquea Jackson	96	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Danielle Farrell	97	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	1	1	0	0	0	0	0	0	0	0	0	0.02
+Jocelyn Martin	99	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angela Hamilton	2	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	1	0	0	1	0	0	0	0	0	0	0	0	0	0.03
+Raina Royale	5	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jkera Shamburger	5	2023	0	0	0	18	3	0	0	0	0	0	0	0	0	0	2	0	0	0	0	6	0	63	0	0	0	0	0	0	0.01
+Tina Frisby	6	2023	34	29	0	0	0	0	446	74	33	5	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.33
+Laurisa Hollenshed	7	2023	33	5	0	3	1	0	0	0	0	0	0	0	0	4	24	6	0	0	0	3	0	29	0	0	0	0	0	0	0.08
+Jazmin Gamble Tello	9	2023	21	8	0	0	0	0	0	0	0	0	0	0	0	3	1	2	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Ashura Powell	10	2023	6	4	0	10	2	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Nashi Catron	11	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dayanna Rangel	13	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Deztine Thomas	14	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Antoinette Harris	15	2023	6	2	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	2	0	38	0	0	0	0	0	0	0.01
+Mallory Torres	19	2023	0	0	0	3	1	0	0	0	0	0	0	0	0	0	4	0	0	0	0	1	0	7	0	0	0	0	0	0	0.01
+Neese Allen	20	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	1	0	0	0	0	0	0	20	1	0	0	0	0	0.02
+Shardae Bell	21	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Maryfrances Husband	22	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Annsleigh Anderson	23	2023	12	11	0	54	4	2	13	4	2	0	1	4	0	0	24	1	0	0	1	2	0	31	40	2	0	0	0	0	0.19
+Bri Webb	24	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Laura Marraccini	29	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lindsi Cash	30	2023	0	1	0	0	0	0	0	0	0	0	0	0	0	0	13	0	0	0	1	0	0	0	127	6	0	0	0	0	0.03
+Natasha Johnson	31	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angelique Jones	33	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	1	0	0	0	0	0	0	0	0	0	0	0.02
+Rachel Robinson	36	2023	20	12	0	0	0	0	0	0	0	0	0	0	0	1	7	1	0	1	0	0	0	0	0	0	0	0	0	0	0.04
+Kiara Watts	37	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	2	0	33	0	0	0	0	0	0	0.01
+Meagan Tyler Curtis	38	2023	452	62	5	2	1	0	0	0	0	0	0	0	0	0	2	0	0	0	0	1	0	23	0	0	0	0	0	0	0.38
+Courtney Ward-Tyson	41	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rachel Love	43	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	11	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Courtnee Martinez	44	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	20	1	0	0	0	1	0	0	0	0	0	0	0	0	0.03
+Taja Maybee	50	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dawna Zike	52	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	12	2	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Shainna Cato	59	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mila Porter-Lawson	62	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jasmine Terry	65	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tyee Griffith	70	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nichole Albert	76	2023	0	1	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Amari Hollis	77	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Key Cannon	84	2023	5	4	0	187	10	2	0	0	0	0	0	0	0	0	8	0	0	0	1	6	0	54	0	0	0	0	0	0	0.18
+Olivia Morgan	85	2023	0	0	0	139	7	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.1
+Alexa Legend	86	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Malaysia Quimby	87	2023	8	2	0	26	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Andy Perez	92	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessica Phillips	93	2023	51	12	0	0	0	0	0	0	0	0	0	0	0	2	13	9	0	0	0	0	0	0	0	0	0	0	0	0	0.07
+Marisa Goddard	99	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Britanni Lusain	1	2023	0	0	0	0	0	0	0	0	0	0	0	4	0	0	24	4	0	0	1	0	0	0	0	0	0	0	0	0	0.11
+Sakura Roberson	2	2023	0	0	0	310	9	5	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	43	0	0	0	0	0	0	0.31
+Jen Strother	4	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	20	16	0
+Daisy Avila	5	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Hollie Sanders	7	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Eboni Chambers	8	2023	0	0	0	95	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.08
+Katherine Claxton	10	2023	0	0	0	13	1	0	0	0	0	0	0	0	0	2	30	4	0	0	1	0	0	0	0	0	0	0	0	0	0.07
+Knengi Martin	11	2023	0	29	1	0	0	0	472	54	25	8	3	0	0	0	2	0	0	0	1	0	0	0	0	0	0	0	0	0	0.49
+Colleen Sam Dreiling	12	2023	13	4	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	2	0	0	0	431	14	0	0	0	0	0.02
+Kristin Smereczynski	13	2023	0	4	6	0	0	0	49	11	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.22
+Tarnisha Taylor	14	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jackie Espinoza	15	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jazzmon J Stovall	16	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	16	1	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Sammy Heck	17	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shanise Vann	19	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jennifer Herrera	20	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Elliot Nguyen	22	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	1	46	7	0	3	1	3	0	40	0	0	0	0	0	0	0.13
+Bryt Felder-Brown	24	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittany Whitfield	25	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Melina Malaxos	26	2023	280	40	2	0	0	0	0	0	0	0	0	0	0	0	12	0	0	0	1	0	0	0	0	0	0	0	0	0	0.22
+Adriana Gutierrez	27	2023	578	103	8	55	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	110	0	0	0	0	0	0	0.63
+Kim Cade-Henry	29	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Christin Stoll	32	2023	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jasmyn Chachrelle Nguyen	33	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	0	0	0	2	0	0	0	0	0	0	0	0	0	0.03
+Bernadette Gambino	34	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Merci Scott	35	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	22	0	0	1	1	1	1	21	0	0	0	0	0	0	0.09
+Joann Mae Glasper Mamuyac	36	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mercedes Tyler	39	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	62	3	0	3	4	2	0	4	0	0	0	0	0	0	0.16
+Katherine Ott Hicks	41	2023	3	1	0	49	9	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Angela Mims	44	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	17	4	0	1	0	0	0	0	0	0	0	0	0	0	0.05
+Monica Johnson	51	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ronnika Burks	53	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Madeline Kop	55	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jocelyn Montoya	57	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lelatasiosamoa Vaeao	58	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sabrina Kessler	59	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Alondra Suarez	64	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	19	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Rebecca Munoa	65	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rea Schmidt	66	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rebekah LaMie	68	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Johanna Aspenberg	70	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	21	5	0	1	0	0	0	0	0	0	0	0	0	0	0.06
+Tanya Luna	77	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Whitney Harrison	85	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tess McCann	91	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alyshia Tauaunu	92	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alayah Lewis	93	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Keiloni Kalasa	96	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rebecca Southerland	97	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amiracle Mitchell	0	2023	0	0	0	22	2	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Rasan Gore	1	2023	229	57	3	0	0	0	1282	202	99	13	11	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1.11
+Jamie Lock	2	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Regena Jackson	3	2023	22	6	1	287	31	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	85	3	0	0	0	0	0.31
+Shaniya Lacey	4	2023	48	6	0	37	4	1	0	0	0	0	0	0	0	0	2	0	0	0	0	4	0	48	0	0	0	0	0	0	0.08
+Takera Mitchell	5	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	13	0	0	1	0	0	0	0	0	0	0	0	0	0	0.04
+Ida Edwards	6	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	17	6	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Candice Davis	7	2023	105	32	0	50	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.08
+Alona Alexander	8	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jasmine Redmon	9	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alyssa McCarron	10	2023	0	0	0	104	10	0	0	0	0	0	0	0	0	0	1	0	0	0	0	2	0	21	96	5	0	0	0	0	0.05
+Brittany Bassett	11	2023	0	0	0	28	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0.05
+Mary Woodard	12	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	26	2	0	1	1	12	0	112	1	1	0	0	0	0	0.07
+Natalie Nicks	13	2023	0	0	0	224	19	3	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.21
+Aalicia Norrell	14	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	10	1	0	1	0	1	0	7	0	0	0	0	0	0	0.03
+Kymesha Andrew	15	2023	0	0	0	0	0	0	0	0	0	0	0	2	0	0	32	1	0	1	2	0	0	0	0	0	0	0	0	0	0.1
+Raven Preston	17	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Doshia Collins	18	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rashida Young	19	2023	0	0	0	419	19	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.3
+Corrina Burney	21	2023	25	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+CharLyshia Bradford	23	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	47	4	0	0	0	0	0	0	0	0	0	0	0	0	0.07
+LaShanda Griffin	24	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Shaniqual Davis	25	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Stephanie Hobson	26	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Anita Brown	28	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+English Bennett	29	2023	30	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0.08
+Ravyn Santiago	30	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shardonay Jenkins	31	2023	1	1	0	0	0	0	0	0	0	0	0	0	0	0	13	3	0	1	2	0	0	0	0	0	0	0	0	0	0.05
+LaQunana Cistrunk	32	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jimeriam Jackson	34	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LaToya Brown	35	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Versace Lee	41	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mariane McClinton	42	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	6	1	0	1	1	1	0	0	0	0	0	0	0	0	0.03
+Taurus Pyles	43	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dalphne Armstrong	44	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+LaShanda Williams	45	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	4	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Voldavia Roberts	50	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0.01
+Sarena Shipp	52	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	3	0	0	1	0	0	0	0	0	0	0	0	0	0.03
+Myeshia Johnson	54	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LeOndrea McIntyre	55	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sheka Houseton	56	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jalessa Harvey	61	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Robin Cooper	65	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	6	6	0
+Bethany Hipps	66	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Devon Clay	68	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Patricia Fultz	69	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Madison Jones	71	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Montye Cooke	75	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Michelle Thornton	76	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nicole Pike	81	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+KaNesha Sheriff	88	2023	0	0	0	104	8	1	0	0	0	0	0	0	0	0	1	0	0	0	0	4	0	60	0	0	0	0	0	0	0.08
+Tasha Owens-Price	96	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+JaKeira Mallory	99	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	15	11	0	0	1	0	0	0	0	0	0	0	0	0	0.06
+Victoria Nichols	0	2023	0	0	0	117	6	0	0	0	0	0	0	0	0	0	1	0	0	0	0	7	0	105	0	0	0	0	0	0	0.06
+Jaquela Stewart	1	2023	0	0	0	31	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Trevanna Berryman	3	2023	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessica Beckham	4	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	19	3	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Crystal Rhodes	5	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Cierra Childress	6	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	0	0	1	0	0	0	0	0	0	0	0	0	0	0.03
+Sheila Sickau	7	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lauren Crouch	8	2023	9	15	0	21	2	0	103	43	16	0	5	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+K.J. Johnson	9	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Pasha Johnson-Rivers	10	2023	50	19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Trish Stephens	11	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	1	1	0	0	0	0	0	0	0	0	0	0.03
+Keshia Ray	12	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shian Galbreath	14	2023	45	16	0	0	1	0	72	7	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Sarah Gomez	15	2023	0	7	0	0	0	0	92	27	8	0	2	0	0	0	0	0	0	0	0	0	0	0	168	7	0	0	0	0	0.02
+Tikia Constantine	16	2023	6	5	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	24	0	0	0	0	0	0	0
+Laura Saettele	17	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kiana Moore	19	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aubrei Crooks	20	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Rocky Ray	21	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Ken Gabriel	22	2023	347	56	3	15	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	41	0	0	0	0	0	0	0.27
+Trei Brown	24	2023	8	7	0	14	2	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Kaitlyn Easton	25	2023	0	0	0	11	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	209	8	0	0	0	0	0.01
+Anna Shields	28	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dee Jackson-Ross	30	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Kechelle Herring	32	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kassidy Snowden	33	2023	0	0	0	0	0	0	0	0	0	0	0	2	0	0	22	4	0	0	0	4	0	37	0	0	0	0	0	0	0.07
+Tinika Burns	35	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	15	1	0	1	0	0	0	0	0	0	0	0	0	0	0.04
+Ronnise Wilson	36	2023	63	26	1	5	2	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.07
+Rose DeLuco	37	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alana Ferguson	38	2023	0	2	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Hana Yocom	41	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jess Sherman	43	2023	0	0	0	11	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Tatanisha Young	44	2023	18	4	0	15	1	0	0	0	0	0	0	0	0	0	4	1	0	1	0	2	0	24	0	0	0	0	0	0	0.03
+Marielle Alexander	47	2023	0	0	0	40	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	19	0	0	0	0	0	0	0.02
+Alana Stewart	48	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kelly Whitehead	49	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	4	73	17	0	1	0	0	0	0	0	0	0	0	0	0	0.17
+Desiree Spivey	52	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	24	0	0	0	1	0	0	0	0	0	0	0	0	0	0.04
+Theresa Honeycutt	53	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tye Ferguson	54	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	1	0	0	0	0	0	0	0	0	0	0.02
+Sasha Gomez	55	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	12	2	0	0	2	0	0	0	0	0	0	0	0	0	0.04
+Drea Scott	58	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Syreeta Gapelu	61	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	39	6	0	1	0	0	0	0	0	0	0	0	0	0	0.08
+Destinnee Banks	62	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Consuela Benson-Blackmon	68	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aspen Williams	70	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Celeste Robinson	71	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Madisen Mode	73	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0.01
+Kiera Smith	74	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cambria Davis	77	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Anna Wilson	78	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rachel Bailey	80	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Julia Stevenson	82	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ysabella Cobbinah-Fears	86	2023	0	0	0	9	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jordan Krahn	87	2023	0	0	0	23	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Laure Gelis-Diaz	89	2023	0	0	0	0	0	0	0	0	0	0	0	2	0	0	16	0	0	0	0	1	0	0	0	0	0	0	0	0	0.05
+Ana Bittencourt	90	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	12	4	0	0	1	0	0	0	0	0	0	0	0	0	0.04
+Brenna Morris	29	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	129	4	0	0	0	0	0
+Mackenzie Grause	92	2023	0	0	0	20	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	244	9	1	0	0	0	0.01
+Brittany Cleek	97	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kristen London	1	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	21	4	0	1	0	2	0	21	0	0	0	0	0	0	0.05
+Jamie Brann	2	2023	0	0	0	5	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	2	0	0	0	0	0
+Jasmine Thomas	3	2023	12	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	28	0	0	0	0	0	0	0.01
+Lydia Morgan	4	2023	0	0	0	48	7	0	0	0	0	0	0	0	0	0	1	0	0	1	0	4	0	89	0	0	0	0	0	0	0.03
+Brittany Jones	5	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Breana Griggs	6	2023	0	0	0	29	2	0	0	0	0	0	0	0	0	0	8	1	0	0	0	5	0	47	0	0	0	0	0	0	0.03
+Nicole Matheson	7	2023	0	0	0	0	0	0	0	0	0	0	0	2	0	0	25	1	0	1	0	0	0	0	0	0	0	0	0	0	0.07
+Zharyah Willis	8	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	0	1	0	0	0	0	0	0	0	0	0	0.02
+Wendy Sun	9	2023	96	31	1	32	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	4	0	0	0	0	0	0	0.1
+Casey Cubis	12	2023	20	7	1	0	0	0	669	152	57	7	6	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.52
+Errin McIsaac	14	2023	0	0	0	207	13	4	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.23
+Zshalyn Canfield	15	2023	18	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Lamikia Lawson	16	2023	0	0	0	45	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Alyssa Vigil	17	2023	0	0	0	15	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	72	0	0	0	0	0	0	0.01
+Asiah Walker	18	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Kelly Washington	19	2023	0	0	0	28	3	0	12	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Shequa Fitzgerald	20	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	1	0	0	0	0	0	0	0	0	0	0.02
+Alisha Young	21	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Grace Cooper	24	2023	171	45	0	14	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.09
+Charlee Ford	26	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jade Austin	29	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aspen Verdos	30	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	2	0	0	2	0	0	0	0	0	0	0	0	0	0.03
+Gilliana Chau	31	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+La Shun Mosley	32	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kelli Jones	33	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarai Sifuentes	34	2023	24	11	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Laura St Ruth	35	2023	0	1	0	0	0	0	0	0	0	0	0	0	0	0	23	1	0	0	1	4	0	119	549	17	2	0	2	1	0.04
+Britney Derhak	36	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	1	0	1	0	14	0	0	0	0	0	0	0.01
+Joselyn Lazaro	38	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Amber Craft	40	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	4	48	8	0	1	0	5	0	96	19	1	0	0	0	0	0.12
+Grace Murphy	41	2023	0	0	0	72	5	2	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0.11
+Bailey Paskach	42	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	19	7	0	1	0	0	0	0	0	0	0	0	0	0	0.06
+Karla Romero	44	2023	66	26	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Yesenia Quiroga	45	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tara Haddock	46	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Brooklyn Waddles	48	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Anastacia Kreider	50	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kara Corcoran	51	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Shannon Drayton	52	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	10	3	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Trevez Bridgewater	53	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jazmin Florez	57	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Whitley Conn	58	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexis Broswell	63	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Morgan Darden	69	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Katie Williams	70	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittany Sanders	71	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rachel Van Devender	75	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alondra Rodriguez	76	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Carolyn Lampkin	77	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Selena Thomas	78	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Abbie Medlar	80	2023	0	0	0	13	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Jenessa White	83	2023	0	0	0	31	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Alyssa Speckhals	85	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alyssa Mcguinnis	88	2023	0	0	0	137	8	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0.07
+Olivia Valentine	90	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Whitney Gifford	92	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	1	0	0	0	0	0	0	0	0	0	0	0.02
+Aezioni Nakai Fuller	94	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	9	3	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Angel Duran	96	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Katie Margheim	98	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kristianna Ibsen	99	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Morgan Smith	0	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mio Yoshisa	1	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jane (Redd) Brinkman	2	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	20	4	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Tina Tela	3	2023	29	12	2	0	0	0	0	0	0	0	0	1	0	0	42	9	0	0	0	0	0	0	0	0	0	0	0	0	0.17
+Kayelle Brown	4	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	8	7	0
+Maya Jamison	5	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kelly Stack/Johnston	6	2023	0	0	0	131	3	2	130	6	4	3	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.29
+Laura Goetz	7	2023	37	11	1	0	0	0	0	0	0	0	0	3	0	0	43	43	0	1	1	0	0	0	0	0	0	0	0	0	0.27
+Ally Cleveland	8	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Memory Ware	9	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sara Galica	10	2023	182	34	6	0	0	0	328	35	12	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.62
+Megan Robertson	12	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	37	4	0	1	0	0	0	0	141	4	2	0	13	8	0.07
+Erin Miller	14	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	24	2	0	0	1	0	0	0	0	0	0	0	0	0	0.06
+Naena Bland	16	2023	0	0	0	241	7	4	0	0	0	0	0	0	0	0	9	0	0	0	1	0	0	0	0	0	0	0	0	0	0.26
+Courtney Gray	18	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Hannah Makasini	20	2023	148	38	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.1
+Keeysha Cox	21	2023	43	12	0	12	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	60	0	0	0	0	0	0	0.06
+Maki Yamagata	22	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Lacy Mile	23	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	16	1	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Kiki Peoples	24	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jenna Trahan	25	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Gina Magana	26	2023	279	49	1	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	104	0	0	0	0	0	0	0.17
+Kim Krinke	28	2023	0	0	0	0	0	0	0	0	0	0	0	1	0	0	25	0	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Jane Leroy	29	2023	136	33	1	0	0	0	0	0	0	0	0	1	0	0	14	1	0	0	1	0	0	0	0	0	0	0	0	0	0.14
+Sydnee Burns	30	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Ali Olson	31	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Jessica Cannon	32	2023	9	2	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+MaryJane Merriam	33	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	44	1	0	0	0	0	0
+Amanda Blackwell	36	2023	376	42	3	38	2	1	0	0	0	0	0	0	0	0	1	0	0	0	0	3	0	25	0	0	0	0	0	0	0.33
+Lexie Neslen	37	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Morgan Saybold	39	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cayleigh Blackwell	42	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Terry Cornell (Peterson)	45	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Courtney Shaw	47	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LiTara Faatili	48	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+McKenna Morgan	49	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kellie Erickson	50	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Akira Galeai	54	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessie Warr	55	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Renica Tese/Rueckert	56	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	20	5	0	0	1	0	0	0	0	0	0	0	0	0	0.06
+Shondra Carpenter	57	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Talia Ramos	58	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Leialoha Tela	59	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jackie Price	60	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jennifer Court	64	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Camille Brimhall	65	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+AJ Roby	66	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	22	10	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Brandi Byrd	67	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Katie Montgomery	68	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	4	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Montanna Meier	70	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shauna Loftin	72	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brynne Butterfield	73	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mechelle Nance	75	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	2	34	9	0	3	0	0	0	0	0	0	0	0	0	0	0.1
+Va Leomiti	76	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Shannon Richards-Gebbia	77	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Megan Thompson	78	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lanika Manning	80	2023	0	0	0	0	0	0	0	0	0	0	0	2	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Lainie Thompson	84	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	1	0	0	0	0	0	0	0	0	0	0.02
+Jessie Beck	86	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Claire Cicchetti	88	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Makayla Brown	89	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Heather Dulin	90	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lanuola Lewis	96	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cindy Cornell	97	2023	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Molly Richardson	1	2024	0	2	0	0	0	0	0	4	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	-0.03
+Paige Jones	3	2024	7	5	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Leslie Hubbell	4	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	1	0	0	1	0	0	0	0	0	0	0	0	0	0.03
+Sydney Smith	6	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	3	0	0	0	0	1	0	2	0	0	0	0	0	0	0.02
+Tia McCants	7	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	89	2	0	0	0	0	0
+Chrystin Lucas	8	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shanysse Emerenciana	9	2024	0	0	0	19	2	0	0	0	0	0	0	0	0	0	3	0	0	0	0	5	0	29	0	0	0	0	0	0	0.01
+Xiarysse Emerenciana	10	2024	6	2	0	53	7	1	0	0	0	0	0	0	0	0	1	0	0	0	0	6	1	149	0	0	0	0	0	0	0.1
+Diamond Scott	11	2024	15	5	0	21	2	0	6	7	2	0	2	2	0	0	10	0	0	0	0	2	0	26	0	0	0	0	0	0	0.03
+Morgan Augustine	12	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	3	20	4	0	0	1	0	0	0	0	0	0	0	0	0	0.06
+Diamond Acklin	15	2024	0	1	0	12	1	0	0	0	0	0	0	0	0	1	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Deja Terry	17	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Lauren Kelly	18	2024	0	0	0	8	2	1	0	0	0	0	0	0	0	0	8	0	0	0	0	1	0	0	0	0	0	0	0	0	0.05
+Aurieyall Scott	21	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	6	0	47	0	0	0	0	0	0	0.01
+Gina Silvestri	22	2024	51	27	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	1	0	0	0	0	0	0	0	0	0	0	0.04
+Harley Foltz	23	2024	7	13	0	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Ashaniti Broxey	24	2024	0	1	0	71	5	0	0	0	0	0	0	1	0	0	8	0	0	1	0	7	0	72	0	0	0	0	0	0	0.07
+Kelsey Prall	25	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	3	0	0	1	0	0	0	0	0	0	0	0	0	0.03
+Alyssa Dixon	26	2024	3	9	0	0	0	0	211	67	20	2	10	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0.03
+Margo Smith	28	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	1	0	0	0	0	0	0	0	0	0	0	0.02
+Alexandra Holliday	30	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	2	0	6	0	0	0	0	0	0	0.01
+Chelsea Parrish	32	2024	0	4	0	7	1	0	12	3	1	0	0	0	0	1	14	5	0	0	0	4	0	99	397	19	0	0	0	0	0.05
+Alissa Loatman	33	2024	8	10	0	0	1	0	0	0	0	0	0	0	0	1	23	2	0	1	1	0	0	0	0	0	0	0	0	0	0.06
+Shelby Towkach	45	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	1	0	0	0	0.01
+Kaytlin Harvey	51	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cheryl Godek	52	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nandi Curtis	53	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jazlyn Villalona	56	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cynthia Williams-Walker	58	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Vanessa Jenkins	65	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shayla Brown	72	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aliyah King	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Pam Melchi	78	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Breana Haines	88	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Natalie Laurent	90	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+MaiKia Williams	0	2024	0	0	0	10	1	0	0	0	0	0	0	2	0	0	19	0	0	0	0	2	0	13	0	0	0	0	0	0	0.06
+Whitney Jones	2	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	43	1	0	0	0	0	0.01
+Anastasia Olavuo	3	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	21	3	0	1	0	0	0	0	0	0	0	0	0	0	0.04
+Maria Fautali	4	2024	162	53	2	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	1	234	0	0	0	0	0	0	0.18
+Crystal Rhodes	5	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	1	0	0	0	0	0	0	0	0	0	0.01
+Cierra Childress	6	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Sheila Sickau	7	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	266	7	0	0	5	5	0
+Lauren Crouch	8	2024	9	2	0	98	10	2	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.12
+Nashi Catron	13	2024	0	1	0	0	0	0	365	103	40	4	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.2
+Shian Galbreath	14	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Tikia Constantine	16	2024	6	1	0	41	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Ericka Davis	18	2024	32	10	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Kiana Moore	19	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Armoni Stevenson	22	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	3	22	7	0	0	2	0	0	0	0	0	0	0	0	0	0.08
+Trei Brown	24	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Katherine Lane	26	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Imani Nettles	27	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Maria Acension	28	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Megan McDonald	31	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Kassidy Snowden	33	2024	24	6	2	0	0	0	0	0	0	0	0	1	0	1	20	2	0	0	0	7	0	111	0	0	0	0	0	0	0.13
+Brooke Tanner	34	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Tinika Burns	35	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Ronnise Wilson	36	2024	106	29	1	0	0	0	0	0	0	0	0	1	0	0	17	2	0	1	0	0	0	0	0	0	0	0	0	0	0.13
+Samantha Williams	39	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shannon Cooley	40	2024	0	0	0	58	8	1	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.07
+Aundrea Colbert	42	2024	106	25	0	42	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	71	0	0	0	0	0	0	0.07
+Tina Vang	46	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Marielle Alexander	47	2024	28	7	0	141	10	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.11
+Kelly Whitehead	49	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	10	2	0	1	0	0	0	0	0	0	0	0	0	0	0.03
+Jen Dulski	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	3	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Sydney Wickman	51	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Theresa Honeycutt	53	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Andrea Scott	58	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ida Handel	61	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kylie Edwards	69	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aspen Williams	70	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Troineshia Webb	74	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cambria Davis	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kassandra Payne	78	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Syreeta Gapelu	79	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	25	5	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Cassidy Hollow-Horn	80	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Julia Stevenson	82	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rose DeLuco	87	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alex Specht	88	2024	0	0	0	11	2	1	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Ana Bittencourt	90	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	1	0	0	1	0	0	0	0	0	0	0	0	0	0.02
+LaDonna Leachman	94	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittany Cleek	97	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nichelle Blake	0	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Britnee Sangalan	1	2024	0	0	0	92	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	0	286	0	0	0	0	0	0	0.04
+Quiana Ford	2	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	2	0	32	0	0	0	0	0	0	0.01
+Tanaysa Henderson	3	2024	0	0	0	31	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Cheri Gantt	4	2024	205	56	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.2
+Ta Shaun Leigh	5	2024	107	13	1	0	0	0	0	0	0	0	0	2	0	3	38	8	0	1	0	4	0	72	0	0	0	0	0	0	0.2
+Eby Okonkwo	6	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	6	3	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Ashley Clark	7	2024	0	4	0	0	0	0	447	73	27	7	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.36
+Fatasia Smith	8	2024	2	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Monique Dingle	11	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Jennell Thomas	12	2024	0	0	0	0	0	0	207	44	15	3	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.16
+LaShantel Wilson	13	2024	0	0	0	0	0	0	0	0	0	0	0	2	0	2	17	9	0	2	1	0	0	0	0	0	0	0	0	0	0.11
+Anastasia Bosques	17	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Carrie Mills	20	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Karena Brooks	21	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ramzeh Deensie	22	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	19	1	0	0	1	0	0	0	0	0	0	0	0	0	0.04
+Kezia Oscar	23	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Tonette Bell	24	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tierra McCormick	26	2024	142	22	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.2
+Jessica Johnson	27	2024	12	2	0	0	0	0	0	0	0	0	0	1	0	0	4	0	0	0	0	0	0	0	195	10	0	0	10	5	0.03
+Jazmine Allen	28	2024	76	23	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	14	0	0	0	0	0	0	0.04
+Lauran Glover	30	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tinoi Jones	31	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	3	8	3	0	1	2	0	0	0	0	0	0	0	0	0	0.07
+Jordyn White	32	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Candace Burch	33	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alimirah Hall	38	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shannon Brown	48	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	3	18	8	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Tehya Brown	49	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Missy Hastings	51	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kourtney Purham	53	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lisa Fisher	60	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angela Clarke	61	2024	0	0	0	26	3	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Bonique Green	63	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angie Murray	65	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Christine Norman	66	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Temeka Heard	71	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kasee Hilliard	81	2024	0	0	0	241	16	4	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0.26
+Myla Somerville	86	2024	0	0	0	0	0	0	0	0	0	0	0	3	0	0	8	2	0	0	0	2	0	12	0	0	0	0	0	0	0.06
+Kathryn Floor	87	2024	0	0	0	264	14	4	0	0	0	0	0	0	0	0	0	0	0	0	1	3	0	45	0	0	0	0	0	0	0.27
+Ferkeshia Cousar	88	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Faith Rogers	93	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Toniquea Jackson	96	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tanishia Norman	2	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Paytience Kamuta	3	2024	148	30	5	0	0	0	527	62	25	4	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.56
+Crys Contreras	4	2024	0	4	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Srey Routh	5	2024	91	22	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.08
+Krista Seaman	6	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Michell Zamudio	7	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	0	0	0	0	1	0	0	0	0	0	0	0	0	0.02
+Eva Lampert	8	2024	117	11	1	246	9	1	4	3	3	0	0	1	0	1	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0.27
+Jazmine Rambo	9	2024	281	53	3	9	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.24
+Shaunya Kahananui	10	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	2	0	4	0	0	0	0	0	0	0.01
+Paulina Lopez	13	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	21	1	0	0	1	0	0	0	0	0	0	0	0	0	0.04
+Jocelyn Charette	16	2024	17	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	59	2	0	0	4	4	0.01
+Ana Barbosa	17	2024	0	0	0	149	6	1	0	0	0	0	0	2	0	0	11	0	0	0	0	5	0	71	0	0	0	0	0	0	0.15
+Andraliah Lee	20	2024	271	45	4	9	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.26
+Billie Kennedy-Jefferson	21	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	8	0	0	0	0	0	0	0
+Molly Tester	23	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	23	4	0	1	0	0	0	0	0	0	0	0	0	0	0.05
+Melonie Washington	24	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+McKenzie Tolliver	25	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Erica Jackson	26	2024	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ayanna Ford	28	2024	64	9	0	47	6	1	0	0	0	0	0	0	0	0	1	0	0	0	0	7	0	108	0	0	0	0	0	0	0.09
+Alexandra Sweet	31	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	12	0	0	0	1	0	0	0	0	0	0	0	1	0	0.03
+Amy Steinke	37	2024	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Madalyn Garrison	38	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Samantha Mendez	44	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	31	3	0	2	1	0	0	0	0	0	0	0	0	0	0.08
+DaMaree Mitchell	47	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Nova Nystrom	48	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	4	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Olga Valdez	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Charmaine Bradford	51	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Cana Tulifua	52	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Naomi Lee	54	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexus Durham	55	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Seini Pailate	56	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+London Hester-Williams	59	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Zay Dollente	60	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Gretchen Pietras	64	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brandy Kite	69	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Greys Bernal	70	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shamira Vega	71	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aleesha Cadogan	72	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+JoVonna Cram	74	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Marlen Garces	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	10	1	0	1	1	0	0	0	0	0	0	0	0	0	0.04
+Jacki Waring	81	2024	0	0	0	13	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Molly Cichosz	82	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rayna Lorraine	84	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0.01
+Rosalie Mora	86	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aryan Sjodin	90	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Kenzie Carney	95	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rebecca Banks	97	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Bianca Mouton	99	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Erica Mason-Austin	1	2024	0	0	0	15	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	59	0	0	0	0	0	0	0.01
+Bria Truxon	2	2024	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0.01
+Erinn Payton	4	2024	34	18	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Starry Bady	5	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Joanna Young	6	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittany Bassett	7	2024	0	0	0	15	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Charniece Carney	8	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kandy Bortz	10	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Carah Johnson	11	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	24	0	0	0	0	0	0	0
+Brennan Crabtree	12	2024	0	0	0	46	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	271	13	0	0	0	0	0.02
+Tessa Ortiz-Marsh	13	2024	27	27	1	0	0	0	171	39	18	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.13
+Stacey Kremer	14	2024	0	0	0	84	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0.04
+Aurree King	15	2024	29	31	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Ayshia Slaughter	16	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Marcy Van Hartesveldt	17	2024	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Michelle Dunham	18	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Diamond Griggs Tucker	20	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Pita Lou	21	2024	0	0	0	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lydia Qualls Jarrett	22	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	12	1	0	0	1	1	0	11	0	0	0	0	0	0	0.04
+Cortney Mosier	23	2024	6	6	0	0	0	0	0	0	0	0	0	0	0	1	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Neshara Watrous	24	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Sydney Blahnik	25	2024	3	9	0	0	0	0	10	4	2	0	0	0	0	0	8	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Aireka Fowler	26	2024	4	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	31	0	0	0	0	0	0	0
+Tiffany Hopkins	27	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	13	4	0	0	1	0	0	0	0	0	0	0	0	0	0.04
+Kia Armstrong	28	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dionna Jackson-Ross	30	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	19	5	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Pasha Rivers	33	2024	0	2	0	0	0	0	0	0	0	0	0	0	0	0	16	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Baiyinah Rahim	35	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Vanesia Thompson	39	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tiara Woodard	44	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	8	2	0	1	1	0	0	0	0	0	0	0	0	0	0.04
+Sasha Stevenson	48	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dmayla Holliday	50	2024	6	2	0	0	0	0	0	0	0	0	0	0	0	4	14	7	0	0	1	0	0	0	0	0	0	0	0	0	0.07
+Sheldon Bins	51	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Nyshavia Riley-Marsh	52	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Aundrea Radford King	53	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	15	4	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Angel Benson	55	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tosha Bins	58	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jahogony Ezelle	66	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nichole Bressner	69	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shari Cherenfant	70	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Essence Lipscomb	72	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Arlyssa Perry	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lindsay Powell	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lanie Ford	79	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kirstyanna Quinn Pierce	82	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+Asha Evans	85	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Karissa Burnett	88	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	0	0	0	0	3	0	15	0	0	0	0	0	0	0.02
+Brooke Mugridge	92	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Fita Boyce-Jennings	99	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Miriah Lopez	1	2024	0	0	0	125	6	1	0	0	0	0	0	0	0	0	25	3	0	2	0	10	0	114	0	0	0	0	0	0	0.15
+Marissa Lopez	5	2024	49	20	1	0	0	0	143	40	10	1	4	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.11
+Laurisa Hollenshed	7	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jazmin Gamble	9	2024	18	8	0	0	0	0	0	0	0	0	0	0	0	3	23	6	0	0	0	0	0	0	0	0	0	0	0	0	0.07
+Jasmine McDonald	10	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	20	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Mercedes Pettegrew	11	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Deztine Thomas	14	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mallory Torres	19	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shardae Anderson-Bell	21	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Maryfrances Husband	22	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Annsleigh Anderson	23	2024	52	22	0	0	0	0	159	32	10	1	5	0	0	0	6	1	0	0	0	0	0	0	143	4	0	0	0	0	0.08
+Sabrina Webb	24	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ryan Meismer-Thompson	26	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Natasha Johnson	31	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	3	10	3	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Lindsey Moore	33	2024	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	1	4	0	82	80	3	0	0	0	0	0.01
+Salina Samario	35	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rachel Robinson	36	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	11	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Kiara Watts	37	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Meagan Tyler Curtis	38	2024	259	41	3	30	6	0	0	0	0	0	0	0	0	0	8	0	0	0	0	1	0	15	0	0	0	0	0	0	0.25
+Tiffany Gonzales	43	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Courtnee Martinez	44	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	26	4	0	1	1	0	0	0	0	0	0	0	0	0	0.06
+Precious Moses	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	16	4	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Mercedes Green	54	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shaiana Cato	59	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mila Porter-Lawson	62	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jennifer Ramirez	67	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Echo Le Veil	84	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Olivia Morgan	85	2024	0	0	0	119	6	1	0	0	0	0	0	1	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.11
+Malaysia Quimby	87	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jessica Phillips	93	2024	47	13	0	0	0	0	0	0	0	0	0	1	0	1	16	5	0	0	3	0	0	0	0	0	0	0	0	0	0.1
+Brittani Lusain	1	2024	0	0	0	65	5	1	0	0	0	0	0	1	0	0	27	1	0	4	2	1	0	34	0	0	0	0	0	0	0.17
+Sakura Roberson	2	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Samonah Betts	3	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	4	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jen Strother	4	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	12	0
+Daisy Avila	5	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Kristin Smereczynski	7	2024	0	0	0	15	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Natalia Escoto	8	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	27	1	0	0	2	0	0	0	0	0	0	0	0	0	0.07
+Markeisha Perry	9	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	2	0	0	0	0	1	0	5	0	0	0	0	0	0	0.02
+Katie Claxton	10	2024	0	0	0	99	5	1	0	0	0	0	0	2	0	2	38	4	0	4	4	2	1	2	0	0	0	0	0	0	0.28
+Diana Huynh	12	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Samantha Heck	13	2024	0	0	0	10	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Nisha Taylor	14	2024	0	0	0	61	3	3	0	0	0	0	0	3	0	0	15	1	0	0	0	4	0	46	0	0	0	0	0	0	0.19
+Danny Trainor	17	2024	188	45	5	0	0	0	434	74	29	7	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.64
+Tahj Reddick	18	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jennifer Herrera	20	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alicia Zappia	21	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Elliot (Elisa) Nguyen	22	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	2	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Amber O'Connor	23	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kesz Wesley	24	2024	112	16	2	11	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.12
+Melina Malaxos	26	2024	488	89	3	44	1	1	0	0	0	0	0	1	0	0	4	0	0	0	1	0	0	0	0	0	0	0	0	0	0.41
+Tori Leech	27	2024	8	1	0	81	5	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	133	6	0	0	0	0	0.04
+Kim Cade-Henry	29	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Angelina Corona	30	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Erica Arie	31	2024	0	0	0	39	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Christin Stoll	32	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Merci Scott	35	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	23	0	0	1	2	7	0	139	0	0	0	0	0	0	0.06
+Jo-Jo Mamuyac	36	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lena (Magda) Vargas	37	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Katie Ott (Hicks)	41	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unique Rowan	43	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angela Mims	44	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittany Conley	45	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Knengi Martin	47	2024	0	0	0	25	2	0	0	0	0	0	0	0	0	2	27	4	0	1	0	0	0	0	0	0	0	0	0	0	0.08
+Daniela De La Garza	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Monica Johnson	51	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jocelyn Montoya	57	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Fernanda Zaldo	58	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sabrina Kessler	59	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	13	3	0	2	0	0	0	0	0	0	0	0	0	0	0.05
+Alox Suarez	64	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	32	1	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Rea Schmidt	66	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kacey Grierson	69	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Johanna Aspenberg	70	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	7	1	0	0	1	0	0	0	89	3	0	0	0	0	0.03
+Monique Gonzalez	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tanya Luna	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Whitney Harrison	85	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Ty Dossman	87	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alyshia Tauaunu	92	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kristen London	0	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	25	3	0	0	0	2	0	23	0	0	0	0	0	0	0.05
+Rasan Gore	1	2024	12	11	0	0	0	0	224	36	18	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.12
+Jasmine Thomas	2	2024	0	0	0	34	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Shucoya Thomas	3	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	141	8	0	0	0	0	0
+DAjah Scott	4	2024	126	25	2	288	15	3	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.36
+Shavonne Verdree	5	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	14	3	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Tori Tagaloa	6	2024	15	16	0	0	0	0	284	84	37	5	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.31
+Daziah Green	7	2024	0	0	0	10	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Kyhle Jamerson	8	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kesha Smith	10	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shanice Cole	11	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	3	23	6	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Ida Edwards	12	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	11	3	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Kristel Reid	14	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Coretta Hopkins	15	2024	0	0	0	44	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Brooklyn Cousin	16	2024	0	1	0	110	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	26	0	0	0	0	0	0	0.08
+Aziah Green	17	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexus Freeman	19	2024	0	0	0	42	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	16	0	0	0	0	0	0	0.05
+Missy (Chelseney) Lewis	20	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LaNia Charity	21	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	2	0	9	0	0	0	0	0	0	0.01
+Iemah Meno Perry	22	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lawanda Pearson	24	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amber Perry	25	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Ingrid Clevland	28	2024	0	3	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	84	0	0	0	0	0	0	0
+Charlee Ford	30	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	18	0	0	0	0	2	0	27	0	0	0	0	0	0	0.02
+Nicole Morris	32	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+LaCreisha Lane	34	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sckiya Banister	36	2024	123	40	0	150	17	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.13
+Alex Foley	39	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angie Patton	40	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	35	4	0	0	0	1	0	7	0	0	0	0	0	0	0.06
+Angie Wells	41	2024	0	0	0	0	0	0	0	0	0	0	0	2	0	0	23	3	0	1	0	0	0	0	0	0	0	0	0	0	0.07
+Briana Gorrell	42	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jazpony Harris	43	2024	0	0	0	8	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Bryanna Farrell	44	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	13	0	0	0	0	0	0	0
+Christian Ross	48	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	3	0	0	0	0	0	0	0
+Airel Gilliam	49	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shenelle Bush	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alex Perry	54	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Stephanie Lopez	55	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tyneika Jordan	60	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tironeisha Jenee Sheriy	62	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Samantha Vasquez	63	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Monica Pickens	64	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Erica Elliott	65	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Bethany Hipps	66	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tiffany Ware	69	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Candace Walker	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kiana Stafford	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0.01
+Jennifer Green	79	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chelsea Leyerly	82	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Erica Swain	87	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	13	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Monisha Kirk	88	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	14	0	0	2	1	1	0	1	0	0	0	0	0	0	0.06
+Dee Dalphne Armstrong	91	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Quineshia Leonard	99	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jacqueline Lopez	1	2024	0	0	0	8	1	0	0	0	0	0	0	2	0	0	14	1	0	0	0	7	0	83	0	0	0	0	0	0	0.05
+Camille Wilson	2	2024	8	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cheyene Adkins	3	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kiki Stonebraker	4	2024	10	5	0	0	0	0	2	8	3	0	1	0	0	1	16	4	0	0	0	4	0	25	0	0	0	0	0	0	0.03
+Kennetta Murry	5	2024	35	12	0	44	7	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Vanessa Palmeri	7	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Hollie Petrie	9	2024	0	11	0	0	0	0	204	57	25	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Kelly Schaeffer	12	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	12	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Sarah A Levrets	14	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jordan Thomas	15	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	5	0	0	0	0	0	0	0
+Ikeisha Dobbin	16	2024	35	13	0	2	2	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Jo Hutchins	17	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jennifer Southall	18	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tiana Bell	20	2024	8	4	0	4	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Sarah Cabot	21	2024	3	1	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Kritt Tucker	22	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	27	9	0	1	0	0	0	0	0	0	0	0	0	0	0.07
+Kris Grimes	26	2024	401	84	3	6	5	0	0	0	0	0	0	0	0	0	5	0	0	0	0	1	0	20	0	0	0	0	0	0	0.3
+Kola Shippentower Thompson	29	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Gloria Winner	31	2024	12	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	7	0	0	0	0	0	0	0.01
+Tasha Dailey	32	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jenna Sukle	33	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mitzi Macias	35	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+AuBree Barnes	36	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessica Gerdes	37	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	18	2	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Terese Bair	40	2024	0	0	0	19	2	0	0	0	0	0	0	0	0	2	4	2	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Rheanna Deeds	41	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittany OConnor	42	2024	20	4	0	61	4	0	0	0	0	0	0	0	0	0	16	7	0	1	0	2	0	28	0	0	0	0	0	0	0.09
+Christina Landers	44	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	8	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Sarah Levin	45	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	3	0	29	0	0	0	0	0	0	0
+Whitney Gifford	47	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	3	19	6	0	0	2	1	0	0	0	0	0	0	0	0	0.07
+Tonya Erickson	48	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Anna Malone	58	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Katelyn Bailey	63	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tiffany Cushman	65	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sierra Bakanoff	68	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Loren Diaz	70	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lucille Kituku	74	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Victorianna Dixson	76	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Latia Matthews	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kassiah Moore	78	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashlie Mcdonald	79	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chloe Porter	84	2024	20	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Andrea Jones	85	2024	0	0	0	53	3	0	0	0	0	0	0	1	0	0	18	0	0	0	1	0	0	0	0	0	0	0	0	0	0.07
+Taylor Coleman	88	2024	0	0	0	14	3	0	0	0	0	0	0	0	0	0	3	0	0	0	0	1	0	10	144	8	0	0	1	1	0.01
+Kaitlynn Dela Pena	95	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ryvan Buchanan	1	2024	0	1	0	57	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Marrhea Everheart	2	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	9	1	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Crystal Reese	5	2024	0	0	0	0	0	0	0	0	0	0	0	2	0	0	11	1	0	1	0	9	0	100	0	0	0	0	0	0	0.05
+Shadella Reese	6	2024	9	1	0	44	4	2	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	37	0	0	0	0	0	0	0.09
+Mackenzie Dykes	7	2024	27	11	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	28	1	0	0	5	3	0.05
+Carol Sauders	8	2024	0	0	0	133	14	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	18	0	0	0	0	0	0	0.07
+Lindey Larry	9	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	1	0	0	0	1	0	5	152	8	0	0	0	0	0.03
+Renee Langalais	12	2024	16	23	0	0	0	0	382	92	31	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.32
+Daisha Lawson	13	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Sierra Dejesus	14	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dominique Trappio	15	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kristina Cooper	19	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	14	6	0	1	0	0	0	0	0	0	0	0	0	0	0.05
+AlNisa Thomas	20	2024	0	0	0	0	0	0	0	0	0	0	0	2	0	2	41	2	0	0	0	0	0	0	0	0	0	0	0	0	0.1
+Arnetha Simmons	21	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ebony Minter	22	2024	103	21	0	0	0	0	0	0	0	0	0	0	0	1	6	1	0	1	1	0	0	0	0	0	0	0	0	0	0.08
+Cameron Davis	23	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jasmyn Moxley	25	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jennifer Galarza	26	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Khahina Yisrael	27	2024	0	0	0	15	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Storm Cuthbert	28	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	18	1	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Hannah Crittendon	29	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shakira Murphy	31	2024	0	0	0	37	2	1	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Jordan Williams	35	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	11	2	0	0	0	1	0	8	0	0	0	0	0	0	0.02
+Marica Johnson	37	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Marissa Blash	40	2024	45	16	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Nikayla Ramsey	41	2024	228	40	2	96	7	1	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.26
+Keresa Taylor	43	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shayla Rogers	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Latasha Cummings	51	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amber Grant	53	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Whitney Porter	55	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kazzette Collins	56	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	18	5	0	0	2	0	0	0	0	0	0	0	0	0	0.05
+Saudia Hasan	58	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Denitra Parker	59	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Briana Nesmith	69	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lavonna Collymore	70	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	7	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Quiani Miller	74	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tracy Jackson	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Adrienne Jackson	78	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tanea Carlton	79	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dasha Owens	84	2024	6	2	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Taylor Brashears	87	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	13	6	0	0	1	0	0	0	0	0	0	0	0	0	0.05
+Sylvana Holmes	88	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Alicia Brown	91	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amadi Teemer	92	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sumatra McDaniel	98	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Latangela Dorsey	99	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jane Brinkman	2	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Kayelle Brown	4	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Maya Jamison	5	2024	27	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Kelly Stack (Johnston)	6	2024	0	0	0	75	4	1	0	0	0	0	0	0	0	0	10	1	0	0	0	0	0	0	0	0	0	0	0	0	0.08
+Laura Goetz	7	2024	135	52	1	0	0	0	223	35	12	1	0	1	0	1	36	6	0	0	0	4	0	46	0	0	0	0	0	0	0.32
+Hope Memmott	8	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sara Galica	10	2024	83	28	2	0	0	0	170	34	15	0	2	0	0	0	2	0	0	0	0	0	0	0	5	1	0	0	0	0	0.16
+Jadacee Vick	11	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0.02
+Megan Robertson	12	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	1	0	2	0	0	0	0	228	7	0	0	4	3	0.03
+Errin McIssac	13	2024	0	0	0	0	0	0	0	0	0	0	0	3	0	0	15	1	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Erin Miller	14	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	7	0	0	0	0	0	0	0
+Izabelle Bateman	15	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Naena Bland	16	2024	0	0	0	84	8	0	0	0	0	0	0	1	0	0	9	0	0	0	1	1	0	9	0	0	0	0	0	0	0.08
+Victoria Archuleta	17	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Madeline Murphy	18	2024	246	31	3	164	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	49	0	0	0	0	0	0	0.29
+Maki Yamagata	22	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Lacy Mile	23	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jenna Trahan	25	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Gina Magana	26	2024	230	43	1	70	6	0	0	0	0	0	0	0	0	0	8	0	0	0	0	10	0	121	0	0	0	0	0	0	0.19
+Kim Krinke	28	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Dakota Latimer	30	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ali Olson	31	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	0	0	0	56	2	0	0	0	0	0.01
+Jessica Cannon	32	2024	34	7	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+MaryJane Merriam	33	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Morgan Saybolt	39	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Nikki Gilbreth	43	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Courtney Shaw	47	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LiTara Faatili	48	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+McKenna Morgan	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Akira Galeai	54	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Jessie Warr	55	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ella Morgan	57	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ally Cleveland	62	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	39	4	0	0	2	0	0	0	0	0	0	0	0	0	0.08
+Caitlin Peterson	63	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jennifer Court	64	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Katie Montgomery	68	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	7	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Montanna Meier	70	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Penny Fagnani	71	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	7	2	0	1	0	0	0	0	0	0	0	0	0	0	0.03
+Shauna Loftin	72	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brynne Butterfield	73	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mechelle Nance	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Natasha Stoney	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Megan Thomson	78	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lainie Thompson	84	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+GiGi Chandler	87	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Makayla Brown	89	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cindy Cornell	97	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Satoria Bell	0	2024	17	2	0	0	0	0	203	51	20	2	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0.17
+Liz Landry	1	2024	0	0	0	164	11	2	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	38	0	0	0	0	0	0	0.14
+Eshombi Singleton	2	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	5	1	0	0	0	1	0	7	0	0	0	0	0	0	0.02
+Shantia Creech	3	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Jessica Collins	4	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	1	0	17	0	0	0	0	0	0	0.01
+Sarah Gomez	5	2024	0	0	0	0	0	0	15	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Olivia Griswold	6	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	17	6	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Michelle Angel	7	2024	0	6	0	0	0	0	170	20	10	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.12
+Brittany Bushman	8	2024	0	4	0	0	0	0	151	25	14	2	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.11
+Allyssa Weatherd	9	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	36	6	0	0	1	0	0	0	0	0	0	0	0	0	0.08
+Desiray Mosley	10	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Denise Arceneaux	11	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	5	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Hanna McEwen	12	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jewelle Grimsley	13	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	9	3	0	1	0	2	1	107	0	0	0	0	0	0	0.07
+Tara Thomas	15	2024	441	67	6	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	50	0	0	0	0	0	0	0.41
+Denesha Richardson	16	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Reese Green	17	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Nyeisha Wright	18	2024	7	1	0	2	1	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Ashley Mcbay	20	2024	21	6	2	49	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	88	0	0	0	0	0	0	0.1
+Jamie Lock	21	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Kahriya Williams	22	2024	63	12	1	19	5	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.07
+Stacey Grob	25	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jelani Kelly	27	2024	34	7	1	8	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Ebonie Graham	28	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+Arielle Wilks	29	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jakaya Holloway	31	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Janice Mitchell	33	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	1	1	0	0	0	0	0	0	0	0	0	0.03
+Cara Wesemann	34	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	246	8	7	5	17	16	0
+Destanie Yarbrough	36	2024	295	41	4	24	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0.3
+Timesha Wharton	37	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tracie Williams	38	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mercedes Tyler	39	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	28	5	0	0	1	0	0	0	0	0	0	0	0	0	0.06
+Mikaile Fortson	41	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jimeriam Jackson	42	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Deja Douglas	44	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Teasha Martin-Palmer	47	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessica Jeans	49	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Umeki Webb	51	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0.01
+Fancy Robinson	55	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shaunte Bowman	57	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nicole Grabowski	58	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Elizabeth Jenkins	62	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Janae Hammond	64	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sasha Gomez	68	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amanda Morgan	72	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Renee Fruean	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	11	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Lucinda Watkins	76	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alina Markl	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tammie Moore	78	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shavonne Ford	80	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Maria Jackson	81	2024	0	0	0	212	15	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.14
+Sarah De La Torre	83	2024	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Desirea Mcginnis	84	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Clark	85	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amanda Heilman	87	2024	0	0	0	52	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Jarrah Floyde	88	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Semone Simmons	92	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Haley Hagar	98	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amiracle Mitchell	0	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	2	0	0	0	0	1	0	26	0	0	0	0	0	0	0.02
+Alyssa McCarron	1	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	1	0	17	233	10	0	0	0	0	0.01
+Jasmine Coleman	2	2024	0	0	0	75	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Regena Jackson	3	2024	82	9	2	115	12	3	101	22	11	2	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.36
+Montoya Arnold	4	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Takera Mitchell	5	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Tenazhia Hinkson	6	2024	0	0	0	10	2	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Candice Davis	7	2024	0	0	0	55	3	0	0	0	0	0	0	0	0	0	2	0	0	0	1	2	0	21	0	0	0	0	0	0	0.04
+Melyse Brown	8	2024	41	26	0	0	0	0	567	120	49	8	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.49
+Norianna Haynes	9	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	13	0	0	0	0	2	0	30	0	0	0	0	0	0	0.03
+Diamond Wright	10	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	18	5	0	0	1	0	0	0	0	0	0	0	0	0	0.04
+Nicole Pike	11	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	1	1	0	0	0	0	0	0	0	0	0	0.02
+Mary Woodard	12	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	21	3	0	0	0	9	0	201	0	0	0	0	0	0	0.05
+Natalie Nicks	13	2024	0	0	0	195	11	3	0	0	0	0	0	0	0	1	3	1	0	1	1	1	0	7	0	0	0	0	0	0	0.22
+Aalicia Norrell	14	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	1	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Kymesha Taylor-Andrew	15	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Ketie Leverette	16	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Raven Preston	17	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	1	0	0	0	0	0	0	0	0	0	0.01
+Chassidy White	18	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rashida Young	19	2024	0	1	0	194	17	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.22
+Shanice Wheeler	21	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	14	0	0	0	0	0	0	0
+Jene Walker	22	2024	143	49	1	24	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.11
+Charlyshia Bradford	23	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	15	5	0	0	1	0	0	0	0	0	0	0	0	0	0.05
+LaShanda Griffin	24	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shaniqual Davis	25	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Stephanie Hobson	26	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	5	0	0	0	0	0	0	0
+Anita Brown	28	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0.02
+English Bennett	29	2024	78	19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Ravyn Santiago	30	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	1	0	12	0	0	0	0	0	0	0.01
+Shardonay Jenkins	31	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	8	1	0	1	2	0	0	0	0	0	0	0	0	0	0.04
+Tasheonna Wilder	33	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Versace Lee	41	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Marianne McClinton	42	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Carla Odom	44	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	24	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Joy Longley	48	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Voldavia Roberts	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aleksandra Lukasiewicz	52	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	17	1	0	0	1	0	0	0	0	0	0	0	0	0	0.04
+Te Kesha Zorial Williams	53	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Myeisha Johnson	54	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Meredith Mitchiner	56	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jaleesa Harvey	61	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Patricia Fultz	69	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Madison Jones	71	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Monique Larrieu	72	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	13	2	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Tenisha Williams	73	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Montye Cook	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kassidi Wynter	82	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	4	11	5	0	5	1	0	0	0	0	0	0	0	0	0	0.1
+Jazmin Henderson	85	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kanesha Sheriff	88	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tasha Owens	96	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+JaKeira Mallory	99	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Victoria Nichols	0	2024	3	2	0	97	5	1	0	0	0	0	0	1	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.1
+Breana Griggs	2	2024	0	0	0	69	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	73	0	0	0	0	0	0	0.03
+Lydia Morgan	4	2024	26	21	0	0	0	0	190	52	17	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.13
+Brittany Jones	5	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nicole Matheson	7	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Na'ava Willis	8	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kaylee Parker	10	2024	52	8	0	57	4	1	92	25	4	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.15
+Kaire Phelps	13	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	4	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Olivia Grabmayer	15	2024	12	1	0	6	1	0	0	0	0	0	0	1	0	0	13	0	0	0	0	3	0	41	0	0	0	0	0	0	0.04
+Alyssa Vigil	17	2024	0	1	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Asiah Walker	18	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Grace Cooper	24	2024	223	56	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	43	0	0	0	0	0	0	0.17
+Karla Granados Rodriguez	25	2024	214	61	1	0	1	0	6	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	299	12	1	0	2	1	0.14
+Brittney Bjork	29	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	1	0	1	0	1	0	14	0	0	1	0	0	0	0.02
+Aspen Baca (Verdos)	30	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	1	0	0	0	0	0	0	0	0	0	0.01
+Kelli Jones	33	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarai Sifuentes	34	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Britney Derhak	36	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amber Craft	40	2024	0	0	0	6	1	0	0	0	0	0	0	2	0	0	25	5	0	1	0	5	0	57	0	0	0	0	0	0	0.09
+Bailey Paskach	42	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	5	0	0	1	0	0	0	45	2	0	0	0	0	0.04
+Desiree Spivey	44	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	1	0	0	0	0	0	0	0	0	0	0.02
+Yesenia Quiroga	45	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tara Page	46	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brooklyn Waddles	48	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rebeca Barrios	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kara Corcoran	51	2024	93	10	2	0	0	0	0	0	0	0	0	0	0	1	22	8	0	0	1	1	0	18	0	0	0	0	0	0	0.17
+Alex Johnson	53	2024	0	0	0	0	0	0	0	0	0	0	0	1	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Mayra Capetillo	59	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Markell Marquez	60	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	1	0	0	0	0	0	0	0	0	0	0.02
+Alexis Broswell	63	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dominique Woodall	64	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Marcela Ortiz Nava	71	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittany Morgan	72	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rachel Van Devender	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Carolyn Lampkin	77	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jenessa White	83	2024	0	0	0	11	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Alyssa McGuinnis	88	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Laure Gelis-Diaz	89	2024	0	0	0	0	0	0	0	0	0	0	0	2	0	0	17	1	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Trevez Bridgewater	91	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aezioni Nakai	94	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Hana Willis	95	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lorenna Duran	96	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Carrieann Bedwell	97	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kristianna Ibsen	99	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Michelle Oetjen	0	2024	0	4	0	0	0	0	16	13	3	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jamie Brann	1	2024	0	0	0	98	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0.05
+Cindy Teitsma	3	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kayla Holbert	4	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Malissa Miles	5	2024	0	0	0	11	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Sigourney Gonzalez	6	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ariyanna Burns	7	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kalyx Lewis	9	2024	132	31	3	9	2	0	0	0	0	0	0	0	0	0	1	0	0	0	1	6	0	86	0	0	0	0	0	0	0.18
+Shawnee Phillips	10	2024	30	16	1	0	0	0	130	38	13	0	4	0	0	0	2	2	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Alysia Bisquera Dominguez	11	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Thaycha Rodriguez	12	2024	1	1	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Maha Hawwass	13	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Christina Vollrath	14	2024	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mariah Makupson	15	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Alyssa Lorbiecki	16	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Mahogany Gaines	18	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	22	6	0	0	1	0	0	0	0	0	0	0	0	0	0.06
+Darion Mitchell	20	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Adriana Gutierrez	21	2024	510	104	4	0	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	2	0	63	0	0	0	0	0	0	0.37
+Sydney Holt	22	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jennifer Ingargiolia	23	2024	33	9	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	230	9	0	0	0	0	0.02
+Xiana Dillon	24	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Colangelo	25	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Kristin Carter	26	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Aleesah Wilson	28	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Carrie Walters	29	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rachel Lund	30	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Skylar Pringle-Hicks	31	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jasmine Logan	32	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shalynn Splettstoesser	33	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Cachrelle Nguyen	36	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	8	1	0	1	0	0	0	0	0	0	0	0	0	0	0.03
+Chris Acacio	40	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittaney Warren	43	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LaQuanta Glass	47	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Osmara Gissell Nunez Barrera	50	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	11	5	0	0	0	0	0	0	45	3	4	1	5	5	0.04
+Jaynna Valdez	52	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Reina Martin	53	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Felicia Lilo	54	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Girly Tambeagbor	55	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tiffani Penix	58	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+Vanessa Hernandez	60	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	1	0	0	0	0	0	0	0	0	0	0.01
+Tawny Hall	63	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shonna Williams	64	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	1	11	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Audra Gutierrez	66	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessica Hill	68	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	3	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Similiti Lealiki	70	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	16	5	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Dayton Yingling	72	2024	7	4	0	17	1	0	0	0	0	0	0	0	0	0	2	0	0	0	0	2	0	26	0	0	0	0	0	0	0.01
+Caitlynn Jones	73	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ariana Gonzalez	75	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	2	20	3	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Sarah Schwartz	76	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashlea Moore	80	2024	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	18	0	0	0	0	0	0	0
+Jessica Estes	81	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Courtney Yeoman	87	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rebecca Bautista	90	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessie Huron	93	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alecsys Williams	94	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dora Alvarez	96	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Victoria Reed	97	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Barbriel Crudup	99	2024	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Bear McLean	0	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	1	0	19	0	0	0	0	0	0	0.01
+Tanisha Norman	2	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Paytience Kamuta	3	2025	19	18	1	0	0	0	302	58	18	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.31
+Riah Bentley	5	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Krista Seaman	6	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Mikaile Fortson	7	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	12	2	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Bri Irons	8	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kay Lewis	9	2025	28	7	0	46	7	1	0	0	0	0	0	0	0	0	2	0	0	0	0	11	2	228	0	0	0	0	0	0	0.14
+Shaunya Kahananui	10	2025	6	1	0	45	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Jocelyn Fernandez	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	1	3	0	23	0	0	0	0	0	0	0.01
+Paulina Lopez	13	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	27	2	0	0	1	0	0	0	0	0	0	0	0	0	0.05
+Alexis Catton	14	2025	0	1	0	0	0	0	19	15	6	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	-0.02
+Kathleen Carroll	15	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jocelyn Charette	16	2025	26	2	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	1	0	0	0	248	7	8	4	16	15	0.02
+Bianca Mouton	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Ana Barbosa Venegas	17	2025	0	0	0	6	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+CiCi Mwendandu	18	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Ikeisha Dobbin	19	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Andraliah Lee	20	2025	272	60	3	0	1	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0.23
+Stella Martin	21	2025	24	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Molly Tester	23	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	28	6	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Melonie Washington	24	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Joselan Teregeyo	25	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Erica Jackson	26	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	15	0	0	1	0	0	0	0	0	0	0	0	0	0	0.04
+Adriana Gutierrez	27	2025	349	70	4	75	6	1	0	0	0	0	0	0	0	0	2	0	0	0	0	7	1	222	0	0	0	0	0	0	0.4
+Cinna Ford	28	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexandra Sweet	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	3	20	5	0	1	0	0	0	0	0	0	0	0	0	0	0.06
+Kritt Tucker	32	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	20	5	0	0	2	0	0	0	0	0	0	0	0	0	0.07
+Venom Garcia	33	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	19	1	0	1	0	0	0	0	0	0	0	0	0	0	0.04
+Tasha Wilson	34	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kris Grimes	37	2025	226	36	3	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0.21
+Maddie Garrison	38	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	13	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Jennifer Erickson	41	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Sooaemalealagi Shelton	42	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Bre Ward	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Brayana Elmore	44	2025	0	0	0	0	0	0	0	0	0	0	0	2	0	0	12	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Victoria Young	45	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Charmaine Bradford-Airy	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	2	0	1	0	0	0	0	0	0	0	0	0	0	0.03
+Olga Valdez Lopez	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Josie Ellis	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cana Tulifua	52	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	1	0	0	0	0	0	0	0	0	0	0	0.02
+Enedina Gomez	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Naomi Lee	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexus Durham	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	16	5	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Shelby Buren	56	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Avanti Bryant	59	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Zay Dollente	60	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tia Matthew	64	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexa Rummel	69	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexandra Sweet	71	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aleesha Cadogan	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+CC Taualii	74	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mel Garces	77	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	1	0	0	0	0	0	0	0	0	0	0.02
+Gabby Madden	79	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jamila Nared	80	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jacki Waring	81	2025	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lauren Butz	83	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rayna Lorraine	84	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Monica Salazar	85	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rosalie Mora	86	2025	6	1	0	142	6	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.1
+Sara Lou	88	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Savannah Congdon	89	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Olivia Quarles	95	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Rebecca Banks	97	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Isabel Warren	0	2025	0	1	0	248	17	3	0	0	0	0	0	0	0	0	19	3	0	1	1	1	0	13	591	19	0	0	2	1	0.27
+Kali Jones	1	2025	0	0	0	229	12	1	0	0	0	0	0	0	0	1	2	1	0	0	0	9	0	80	0	0	0	0	0	0	0.15
+Amare Mercer	2	2025	0	0	0	16	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Caroline Malala	3	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brynn McNabb	4	2025	322	33	3	17	3	0	0	0	0	0	0	0	0	0	4	0	0	0	1	0	0	0	0	0	0	0	0	0	0.27
+Dana Harris	5	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Beatriz Rico	6	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	1	31	5	0	0	0	0	0	0	0	0	0	0	0	0	0.07
+Aleesah Wilson	11	2025	49	30	2	13	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.1
+Ty Rodriguez	12	2025	29	21	0	0	0	0	546	113	43	3	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.33
+Tehya Demski-Hamelin	13	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	1	0	0	0	0	0	0	0	0	0	0.02
+Christina Vollrath	14	2025	0	1	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mariah Makupson	15	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alyssa Lorbiecki	16	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Andrea Wright	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sydney Holt	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0
+Janiah Lee	25	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	3	9	3	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Kristin Carter	26	2025	36	11	1	0	0	0	0	0	0	0	0	0	0	1	28	5	0	0	1	0	0	0	0	0	0	0	0	0	0.11
+Malaysia Flowers	27	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Carrie Walters	29	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rachel Lund	30	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Skylar Pringle-Hicks	31	2025	46	10	0	0	0	0	0	0	0	0	0	0	0	0	8	2	0	0	0	1	0	34	0	0	0	0	0	0	0.04
+Charnel Archer	32	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessica Ruiz	35	2025	12	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	27	0	0	0	0	0	0	0.01
+Christi Acacio	40	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittaney Warren	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Heather Puletasi	44	2025	4	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	10	0	0	0	0	0	0	0
+LaQuanta Glass	47	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jordyn Williams	49	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jaynna Valdez	52	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	16	3	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Reina Martin	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Girly Tambeahbor	55	2025	0	10	0	10	3	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Tiffani Penix	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Courtney Powell	62	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	18	5	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Tawny Hall	63	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Azalia Allen	66	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessica Hill	68	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	23	7	0	0	1	0	0	0	0	0	0	0	0	0	0.07
+Kailima Ross	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dayton Yingling	72	2025	30	19	0	3	1	0	12	1	1	1	0	0	0	0	4	0	0	0	0	3	0	36	0	0	0	0	0	0	0.06
+Caitlynn Jones	73	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ariana Gonzales	75	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	33	5	0	0	1	0	0	0	0	0	0	0	0	0	0.07
+Ivette Nava Garcia	78	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Brooklyn Rielly	80	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	31	0	0	0	0	3	0	30	0	0	0	0	0	0	0.06
+Dominique Maloy	88	2025	133	21	0	25	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	62	0	0	0	0	0	0	0.08
+Melissa Merino	89	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chelcie-Maree Augustin-Weaver	93	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Alecsys Williams	94	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dora Alvarez	96	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Victoria Reed	97	2025	0	1	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sari Stissi	98	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Barbriel Crudup	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Victoria Nichols	0	2025	111	36	0	0	0	0	131	49	17	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.07
+Diamond Scott	1	2025	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Xiarysse Emerenciana	2	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Emma Jones	3	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Leslie Hubbell	4	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shanysse Emerenciana	5	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sydney Smith	6	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexandria Clary	7	2025	52	35	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Alyssa Logan	8	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ShNiyah Hutchinson	9	2025	9	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Laila Finley	10	2025	127	28	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.09
+Amber-Lynn Twigg	11	2025	43	30	0	0	0	0	152	46	10	1	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.07
+Morgan Augustine	12	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sara Fernandez	13	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mykayla Maddox	14	2025	0	0	0	0	0	0	0	8	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	-0.01
+Diamond Acklin	15	2025	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Deja Terry	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lauren Kelly	18	2025	0	0	0	68	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Maria J Boira Lopez	19	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Fantasia Roberts	20	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Taylor Wells	21	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexis Evans	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Harley Foltz	23	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashanti Broxey	24	2025	28	2	0	56	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Kelsey Prall	25	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chantel Strozier	26	2025	7	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Margo Smith	28	2025	11	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Keyarie Fountain	29	2025	8	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexandra Holliday	30	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Carolina Duran Correa	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chelsea Parrish	32	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alissa Loatman	33	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Haley Thompson	34	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kaneskiia Oliver	45	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashley Moon	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lindsey Barnes	52	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amy Fox	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Emily Varnadoe	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jazlyn Villalona	56	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cynthia Williams-Walker	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashlyn Jackson	60	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Candis Wall	61	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Vanessa Jenkins	65	2025	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cassandra Wise-Howard	66	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Annelise DeFrank	67	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Richelle Lenoir	69	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aliyah King	75	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Pamela Melchi	78	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kemoni Sharp-Garland	82	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Breana Haines	88	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Countness Glover	90	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jacklyn Dwyer	92	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jahnique Carter	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Maggie Justinak	2	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	286	13	0	0	0	0	0.01
+Lydia Morgan	4	2025	62	43	1	16	1	0	303	75	27	1	4	0	0	0	2	0	0	0	1	0	0	0	0	0	0	0	0	0	0.21
+Brittany Jones	5	2025	4	2	0	0	0	0	0	0	0	0	0	1	0	0	16	0	0	0	1	10	1	218	0	0	0	0	0	0	0.08
+Mikal Chancy	8	2025	0	0	0	61	6	0	0	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Olivia Wilson	11	2025	0	0	0	38	4	0	0	0	0	0	0	1	0	0	34	1	0	0	0	0	0	0	0	0	0	0	0	0	0.08
+Tatjana Tschirpke	13	2025	0	4	0	0	0	0	61	12	7	0	1	0	0	0	11	0	0	0	0	0	0	0	323	12	0	0	4	3	0.03
+Elora Maestas	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alyssa Vigil	17	2025	0	1	0	179	15	1	0	0	0	0	0	0	0	0	13	0	0	0	0	1	0	5	0	0	0	0	0	0	0.14
+Kenzie May	20	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Elizabeth Engeldrum	23	2025	7	11	0	0	0	0	0	0	0	0	0	0	0	1	17	1	0	0	0	1	0	0	0	0	0	0	0	0	0.03
+Grace Cooper	24	2025	125	55	1	24	3	0	0	0	0	0	0	0	0	1	48	2	0	0	0	5	0	56	0	0	0	0	0	0	0.18
+Sarah Menne	25	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kaire Phelps	28	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rabihah Harrison	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kelli Jones	33	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Sifuentes	34	2025	0	1	0	0	0	0	0	0	0	0	0	0	0	3	19	5	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Britney Derhak	36	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Joselyn Lazaro	38	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shannon Delarosbil	39	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	2	0	0	0	2	0	7	56	3	0	0	0	0	0.01
+Amber Craft	40	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	16	2	0	0	0	1	0	16	0	0	0	0	0	0	0.03
+Sherrella Scott	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tara Page	46	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Laque Moen-Davis	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Yesenia Quiroga	49	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Porsche Yarbough	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kara Cochran	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shannon Drayton	52	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jazmin Florez	57	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Whitley Conn	59	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	9	1	0	0	0	0	0	0	68	3	0	0	0	0	0.02
+Markell Marquez	60	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	0	0	0	1	0	0	0	0	0	0	0	0	0	0.02
+Ella Meyer	64	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Kaleigh Walsh	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amy Van Der Kamp	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittany Morgan	73	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kyiah VonBorries	76	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Carolyn Lampkin	77	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Felicia Lepore	81	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	1	0	2	0	0	0	0	0	0	0
+Makayla Sutton	82	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jenessa White	83	2025	0	1	0	49	5	0	0	0	0	0	0	0	0	2	11	5	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Trevez Bridgewater	91	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	13	2	0	1	0	0	0	0	0	0	0	0	0	0	0.04
+Alexandra Fabela	93	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Hana Willis	95	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lorena Duran	96	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Whitney Ramsey	97	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+Courtney Williams	98	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Gabrielle Juarbe	0	2025	0	0	0	5	1	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Kayla Russell	1	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	42	4	0	0	4	0	0	0	0	0	0	0	0	0	0.11
+Gina Capardi	2	2025	0	5	0	155	20	0	50	14	5	1	3	0	0	0	1	0	0	0	0	1	0	18	0	0	0	0	0	0	0.1
+Monae Clancy	3	2025	5	2	0	0	0	0	0	0	0	0	0	0	0	1	12	1	0	0	2	2	0	10	0	0	0	0	0	0	0.04
+Stephanie Fogarty-Yee	6	2025	0	0	0	64	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+India Parker	7	2025	45	13	0	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	3	0	40	0	0	0	0	0	0	0.02
+Alexis Parrotta	8	2025	0	0	0	192	13	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	638	28	0	0	0	0	0.09
+Amani Perdue	9	2025	25	24	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	2	0	22	0	0	0	0	0	0	0.02
+Tatiana Perez	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jane Crosby	12	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+NiaMaya Outlaw	13	2025	0	1	0	0	0	0	0	0	0	0	0	3	0	0	19	0	0	1	1	10	0	157	0	0	0	0	0	0	0.09
+Danneille Ayala	14	2025	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Imani Thompson	15	2025	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	32	0	0	0	0	0	0	0
+Faith Robinson	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Harmine Christina Leo	18	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	27	0	0	0	0	2	1	55	0	0	0	0	0	0	0.07
+Shayla Jones	19	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brooke Singer	20	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	8	6	0
+Madison Grayson	21	2025	0	0	0	285	17	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.33
+Athena Reyes	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashley Fung	24	2025	0	0	0	13	2	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+London Ortiz	27	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shannon Burrell	28	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jada Victor	29	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	9	0	0	0	0	0	0	0
+Karen Mulligan	30	2025	0	1	0	0	0	0	676	137	57	7	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.48
+Nhandi Brown	31	2025	0	0	0	0	0	0	0	0	0	0	0	3	0	0	18	1	0	0	0	1	0	39	0	0	0	0	0	0	0.07
+Nicole Muccio	32	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	11	1	0	1	1	0	0	0	0	0	0	0	0	0	0.04
+Danielle Izykowicz	34	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Hadiisha Butts	35	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	4	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Brittany Howard	36	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	22	4	0	1	0	0	0	0	0	0	0	0	0	0	0.06
+Ebony Goolsby	38	2025	23	18	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Jasmine Bonaparte	42	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kimberly Rose	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	30	6	0	0	2	0	0	0	0	0	0	0	0	0	0.08
+Mattique Jones	44	2025	132	45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Shayla Thevenin	45	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nicole Fairman	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	32	2	0	0	1	0	0	0	0	0	0	0	0	0	0.06
+Morgan Hutchins	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sharolin Sanders	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jada Joyner	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Oluwabunmi Olusina	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Yohnee Miller	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Vianca Borrero	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kandra Davis	60	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Paige Goldsack	61	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+LaDella Alexander	62	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jenyll Alcantara	63	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Eli Rojas	64	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Infinity Brooks	66	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Melissa Uhl	68	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Edeline Sosa	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Elizabeth Mely	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dayna Moneta	75	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Zaire Nelson	80	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Catherine Desire	88	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shamaya Smith	91	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Asia Strickland	92	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	26	6	0	2	0	0	0	0	0	0	0	0	0	0	0.08
+Brooke Avery	95	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	4	25	5	0	0	1	0	0	0	0	0	0	0	0	0	0.07
+Megan Stier	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Bre Griggs	1	2025	29	5	0	75	12	0	0	0	0	0	0	1	0	0	3	1	0	0	0	4	0	27	0	0	0	0	0	0	0.07
+Tina Tela	3	2025	70	23	1	9	1	0	0	0	0	0	0	0	0	0	14	1	0	0	1	0	0	0	0	0	0	0	0	0	0.1
+Nicole Attleson	5	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	25	5	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Kelly Stack	6	2025	0	0	0	337	14	4	0	0	0	0	0	3	0	0	15	1	0	1	0	0	0	0	0	0	0	0	0	0	0.36
+Nicole Chaves	7	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Hope Memmott	8	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sheri Kinder	9	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sara Galica	10	2025	86	34	0	0	0	0	691	135	56	5	3	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0.51
+Brittney Bjork	13	2025	51	14	1	13	3	0	0	0	0	0	0	1	0	0	18	1	0	0	0	1	0	23	0	0	0	0	0	0	0.1
+Erin Miller	14	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	1	44	3	0	0	0	0	0	0	0	0	0	0	0	0	0.09
+Mackenzie Harmer	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Madeline Murphy	18	2025	238	50	1	214	20	0	0	0	0	0	0	0	0	0	16	1	0	0	0	14	0	190	0	0	0	0	0	0	0.28
+Megan Robertson	21	2025	16	2	0	0	0	0	0	0	0	0	0	1	0	3	61	15	0	2	0	0	0	0	629	20	4	2	6	5	0.17
+Maki Yamagata	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Lacy Mile	23	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Jenna Trahan	25	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kim Krinke	28	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dakota Latimer	30	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alyssa Olson	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	1	0	7	63	3	0	0	0	0	0.01
+Jessica Cannon	32	2025	8	7	1	12	2	0	0	0	0	0	0	1	0	0	14	0	0	0	0	0	0	0	0	0	0	0	0	0	0.08
+Aria Wagaman	33	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Irlanda Diaz	36	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lexie Neslen	37	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kala Monserret	39	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nikki Gilbreth	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kristen Dietz	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Terry Peterson	45	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Courtney Shaw	47	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LiTara Faatili	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	3	0	0	2	0	0	0	0	0	0	0	0	0	0.03
+McKenna Morgan	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Danell Robb	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessie Warr	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashley Nguyen Lake	56	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Leialoha Tela	59	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kylie Latimer	62	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jaclyn Price	63	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jennifer Court	64	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Camille Brimhall	65	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Montana Meier	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Penny Fagnani	71	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0.01
+Shauna Loftin	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brynne Butterfield	73	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Natasha Stoney	77	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Renate Meckl	80	2025	18	4	0	31	4	1	0	0	0	0	0	0	0	0	11	0	0	0	0	2	0	26	0	0	0	0	0	0	0.07
+Lainie Thompson	84	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	16	6	0	0	1	0	0	0	0	0	0	0	0	0	0.05
+Claire Cicchetti	85	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Melissa Chandler	87	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Makayla Brown	89	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sierra Call-Rust	90	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Nancy Toutai	93	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	8	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Cindy Cornell	97	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Tinisha Quintana	0	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Taylor Baldwin	0	2025	63	15	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	237	12	0	0	2	2	0.06
+MarRhea Everheart	2	2025	0	0	0	0	0	0	0	0	0	0	0	2	0	0	12	0	0	0	1	0	0	0	0	0	0	0	0	0	0.05
+Amber Mendes	3	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	25	0	0	0	0	0	0	0
+Mylashia Johnson	4	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Riian McCray-Smith	5	2025	0	0	0	7	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Daniel Doriscar	6	2025	180	49	0	58	5	0	0	0	0	0	0	0	0	0	2	0	0	0	0	1	0	9	0	0	0	0	0	0	0.12
+Brittany Carney	7	2025	0	2	0	0	0	0	13	9	2	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	-0.01
+Carol Saunders	8	2025	0	0	0	47	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Melany Frierson	9	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jaquela Stewart	10	2025	0	2	0	53	10	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Charon Sweeney	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sharifah Robertson	12	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Daisha Lawson	13	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Gina Carnovale	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Renee Langlais	15	2025	11	12	0	0	0	0	407	119	43	3	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.27
+Olivia James	16	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Olivia Freeman	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Vann	18	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alysia Joubert	19	2025	0	0	0	63	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Brianna Hollins	20	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashton Elliott	21	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ebony Minter	22	2025	205	41	0	17	4	0	0	0	0	0	0	0	0	0	3	1	0	1	0	0	0	0	0	0	0	0	0	0	0.12
+Jasmine Nelson	23	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Shatonya Spicer	24	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	3	20	5	0	0	1	0	0	0	0	0	0	0	0	0	0.06
+Tyteania Whitehead	25	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aaliyah Knox	26	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Khahina Yisrael	27	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Brittany Johnson	28	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+ShaDella Reese	29	2025	47	14	2	150	16	2	5	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.23
+Ravyn Santiago	30	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	0	0	1	1	0	0	0	0	0	0	0	0	0	0.03
+Chelsea Borders	32	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	2	0	0	1	0	0	0	0	0	0	0	0	0	0.03
+Taneisha Sweetenburg	34	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jordan Williams	35	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lashawna Ervin	36	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Kiana Flippin	38	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Clarissa Tullis	39	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kelly Rosso	40	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Kris Davis	41	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	1	0	0	0	0	0	0	0	0	0	0.01
+Desiree Conner	42	2025	0	0	0	14	1	0	0	0	0	0	0	0	0	0	19	0	0	0	0	10	1	211	0	0	0	0	0	0	0.06
+RaeJean Marshall	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Janasha Smith	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chanel Cross	45	2025	8	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	6	0	0	0	0	0	0	0.01
+Shavonne Verdree	46	2025	14	1	0	0	0	0	14	1	1	0	0	0	0	1	46	6	0	1	0	3	0	45	0	0	0	0	0	0	0.1
+LaTasha Cummings	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Marlette Wilber	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kazzette Collins	56	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	2	24	3	0	1	0	0	0	0	0	0	0	0	0	0	0.07
+Trayounda Ford	64	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexandria Duper	65	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kelly Cammon	66	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Denitra Parker	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kiana Stafford	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Quiani Miller	74	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Montasia Wynn	75	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tracy Jackson	77	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Janelle Small-Williams	79	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angie Patton	80	2025	0	0	0	9	1	0	0	0	0	0	0	1	0	0	33	5	0	2	0	0	0	0	0	0	0	0	0	0	0.09
+Kiyana Jones	81	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	1	0	0	0	7	0	129	0	0	0	0	0	0	0.02
+Mildred Byrd	83	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Taylor Brashears	87	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	10	0	0	1	0	0	0	0	0	0	0	0	0	0	0.03
+Dumatra McDaniel-Walker	88	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Taiyana Murray	89	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Keisha Parker	92	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Pamela Larde	94	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shauntavia Brigham	95	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	22	5	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Wanita McCoy	96	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	2	2	0	0	1	0	0	0	0	0	0	0	0	0	0.02
+Sumatra McDaniel	98	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Latanglia Dorsey	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	9	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Ryvan Buchanan	0	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amani El Amin	0	2025	20	6	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Brittani Lusain	1	2025	31	1	0	0	0	0	0	0	0	0	0	2	0	2	46	8	0	1	0	6	1	132	0	0	0	0	0	0	0.17
+Saks Roberson	2	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Joann Mamuyac	3	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jennifer Strother	4	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	29	21	0
+Daisy Avilaromero	5	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Regina Escoto Macias	6	2025	448	66	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	55	0	0	0	0	0	0	0.41
+Hollie Sanders	7	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+Markeisha Perry	9	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Katie Claxton	10	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	45	10	0	1	3	0	0	0	0	0	0	0	0	0	0.13
+Jamie Blue	11	2025	0	0	0	59	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Diana Huynh	12	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Taranisha Taylor	14	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	17	1	0	1	3	8	1	187	0	0	0	0	0	0	0.11
+Ruby Albright	15	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jazzmon JaNae Stovall	16	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Danielle Trainor	17	2025	110	18	2	0	0	0	96	25	14	2	2	0	0	0	0	0	0	0	0	0	0	0	69	2	0	0	0	0	0.2
+Meaghan Bossard	18	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Tynisha Dossman	19	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	1	0	0	0	1	0	12	0	0	0	0	0	0	0.01
+Jennifer Herrera	20	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aurianna Broughton	21	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Elisa Nguyen	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	41	5	0	0	1	0	0	0	0	0	0	0	0	0	0.08
+Jennifer Ingargiola	23	2025	93	15	1	21	4	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.12
+Kesz Wesley	24	2025	482	58	8	10	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	176	8	0	0	0	0	0.49
+Alicia Zappia-Neeley	25	2025	40	3	1	26	2	1	0	0	0	0	0	0	0	0	6	0	0	0	1	0	0	0	0	0	0	0	0	0	0.11
+Gianna Zamora	27	2025	7	1	0	44	5	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Yesenia Fragoso Grijalva	28	2025	0	0	0	0	0	0	0	0	0	0	0	2	0	0	11	1	0	0	0	3	0	63	0	0	0	0	0	0	0.05
+Kim Cade-Henry	29	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Erica Arie	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Christin Stoll	32	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Merci Scott	35	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brianna LaFleur	37	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alena Kuzmova	39	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	5	30	6	0	1	1	0	0	0	0	0	0	0	0	0	0.1
+Knengi Martin	47	2025	0	0	0	0	0	0	0	1	0	0	1	0	0	0	19	4	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Daniela Martinez De La Garza	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Monica Johnson	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ronnika Burks	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Felicia Lilo	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Maria Trevino	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Bianca Threatts	56	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sabrina Kessler	59	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	17	6	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Ruby Watson	62	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nevaeh Simril	63	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rebecca Munoa	65	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rea Schmidt	66	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittany Alvarez	69	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Petra Johanna Monica Aspenberg	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tanya Luna	77	2025	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Alyssa Speckhals	80	2025	0	0	0	25	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Alia Karmali	84	2025	89	33	4	0	0	0	97	30	10	1	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.21
+Whitney Harrison	85	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Christina Jordan	87	2025	0	0	0	6	2	0	0	0	0	0	0	1	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Kemmi Crosby	88	2025	10	3	0	3	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Teresa McCann	91	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alyshia Tauanuu	92	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	6	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Aliayah Lewis	93	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashley Dame	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+KaMari House	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Miriah Lopez	1	2025	17	3	0	99	8	0	0	0	0	0	0	2	0	0	29	1	0	0	0	6	0	99	0	0	0	0	0	0	0.13
+Angie Hamilton	2	2025	117	29	1	0	0	0	0	0	0	0	0	2	0	0	16	2	0	1	0	1	0	0	0	0	0	0	0	0	0.15
+Marissa Lopez	5	2025	0	0	0	0	0	0	321	63	23	3	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.17
+Ricki Alex	6	2025	0	1	0	117	6	1	0	5	0	0	0	0	0	0	3	1	0	0	0	0	0	0	7	1	0	0	0	0	0.1
+Laurisa Hollenshed	7	2025	0	1	0	0	0	0	7	3	1	7	0	0	0	4	25	5	0	0	0	0	0	0	0	0	0	0	0	0	0.29
+Lanika Manning	8	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	10	1	0	0	0	2	0	24	0	0	0	0	0	0	0.03
+Jazmin Gamble	9	2025	549	49	3	83	3	1	0	0	0	0	0	1	0	3	30	4	0	1	1	0	0	0	0	0	0	0	0	0	0.52
+Jasmine McDonald	10	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Alysia Dominguez	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexis Dixon Fontaine	13	2025	28	8	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	74	0	0	0	0	0	0	0.01
+Deztine Thomas	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kayla Chambers	15	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Leslie Medina	18	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	1	0	0	0	0	0	0	0	0	0
+Mallory Torres	19	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Annsleigh Anderson	23	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	13	1	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Ryan Meismer-Thompson	26	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Natasha Johnson	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	5	1	0	0	0	0	0	0	28	1	0	0	0	0	0.01
+Lindsey Moore	33	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Salina Samario	35	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Meagan Curtis	38	2025	506	72	5	0	0	0	0	0	0	0	0	0	0	0	12	4	0	0	0	1	0	16	0	0	0	0	0	0	0.43
+Mary Rachel Love	41	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Tiffany Gonzales	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lauren Davis	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	40	4	0	1	0	1	0	0	0	0	0	0	0	0	0.08
+Precious Moses	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Dawna Zike	52	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	22	0	0	0	1	0	0	0	113	5	0	0	0	0	0.04
+Jessica Jackson	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shaina Cato	59	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Mila Porter Lawson	62	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0
+Darlene Martinez	65	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jennifer Ramirez	67	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nayla Cerna	73	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Matalya Johnson	75	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	19	3	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Natasha Jackson	77	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sabrina Casillas	79	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Aly Montesino	80	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Echo Levell	84	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Olivia Morgan	85	2025	0	1	0	29	2	1	0	0	0	0	0	1	0	0	10	0	0	0	0	4	0	29	0	0	0	0	0	0	0.07
+Malaysia Quimby	87	2025	99	14	3	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.15
+Tina Orrick	90	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	3	13	4	0	1	0	0	0	0	0	0	0	0	0	0	0.05
+Jessica Phillips	93	2025	14	4	0	13	1	0	0	0	0	0	0	0	0	1	9	1	0	1	1	0	0	0	0	0	0	0	0	0	0.05
+Shardae Bell	95	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Deana Simmons-Guidry	0	2025	20	2	0	13	3	1	47	2	2	0	0	0	0	1	20	10	0	1	1	0	0	0	0	0	0	0	0	0	0.14
+Shantia Creech	3	2025	0	0	0	0	0	0	0	0	0	0	0	2	0	0	14	1	0	0	1	0	0	0	0	0	0	0	0	0	0.06
+Octavia Langston	6	2025	0	2	0	0	0	0	23	6	2	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Michelle Angel	7	2025	0	7	0	0	0	0	627	99	55	14	5	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.7
+Waynicia Thomas	9	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	1	0	0	2	0	0	0	0	0	0	0	0	0	0.03
+Cierra Childress	10	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Denise Arceneaux	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Christine Jackman	12	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jewelle Grimsley	13	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	10	0	0	0	0	1	0	23	0	0	0	0	0	0	0.03
+Kelli Smith	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chelsie Thompson	16	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Alonni Hawkins	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Grace Wiley	18	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	23	2	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Janei Benamon	19	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashley Mcbay	20	2025	131	16	4	111	9	3	0	0	0	0	0	0	0	0	0	0	0	0	0	13	0	166	0	0	0	0	0	0	0.34
+Jamie Lock	21	2025	0	0	0	0	0	0	0	0	0	0	0	2	0	0	15	3	0	0	0	2	1	59	0	0	0	0	0	0	0.09
+Kerrie Isom	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	21	0	0	1	0	0	0	0	0	0	0	0	0	0	0.04
+Summer Mcneal	23	2025	10	2	0	214	15	4	0	0	0	0	0	0	0	0	1	0	0	0	0	2	0	29	0	0	0	0	0	0	0.24
+Khadijah Ellison	24	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	2	0	0	0	2	0	16	0	0	0	0	0	0	0.02
+Jazmine Rambo	26	2025	198	13	1	64	7	3	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	54	0	0	0	0	0	0	0.25
+Anna Tran	28	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Arielle Wilks	29	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Cathy Wabenga	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amber Kimbrough	32	2025	8	1	0	0	0	0	0	0	0	0	0	0	0	1	18	4	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Janice Mitchell	33	2025	218	43	1	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0.15
+Cara Wesemann	34	2025	0	1	0	25	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	203	7	2	0	32	27	0.01
+Armoni Stevenson	35	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	2	0	0	0	0	0	0	0	0	0	0.03
+Destanie Yarbrough	36	2025	378	51	6	52	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.43
+Timesha Wharton	37	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Mercedes Tyler	39	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Jazpony Harris	40	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aerial Green	41	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jimeriam Jackson	42	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Brooke Denny	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tyara Blades	45	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Teasha Martin-Palmer	47	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessica Jeans	49	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Christine Jaqueth Mason	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	21	3	0	0	1	0	0	0	0	0	0	0	0	0	0.05
+Umeki Webb	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Antionette Van	52	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kimberly Thomas	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Fancy Robinson	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	3	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Similti Lealiki	57	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jacora Garry	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kristyn Aoake Taylor	59	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Janae Hammond	64	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Lily Bell	65	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amanda Morgan	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cierra Beck	74	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Renee Fruean	75	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Lucinda Watkins	76	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tammie Moore	78	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shavonne Ford	80	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Maria Jackson	81	2025	0	0	0	140	12	2	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.13
+Eloisa Torres Torres	82	2025	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Watson De La Torre	83	2025	0	0	0	89	10	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.14
+Desirea Mcginnis	84	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Clark	85	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amanda Heilman	87	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Haley Hagar	98	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Erica Mason-Austin	1	2025	0	0	0	47	7	0	0	0	0	0	0	0	0	0	1	0	0	0	0	2	0	11	0	0	0	0	0	0	0.03
+Bria Truxon	2	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Stephanie Miller	3	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Starry Bady	5	2025	0	0	0	0	0	0	0	0	0	0	0	3	0	0	6	0	0	1	0	0	0	0	0	0	0	0	0	0	0.06
+Joanna Young	6	2025	18	5	0	101	4	2	0	0	0	0	0	0	0	0	1	0	0	0	0	9	0	131	0	0	0	0	0	0	0.12
+Brittany Bassett	7	2025	0	0	0	2	2	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Charniece Carney	8	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Almeira Nicole Rizane	9	2025	60	7	1	0	0	0	8	7	4	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Kandy Cooke (Bortz)	10	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+KaNesha Sheriff	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
+Brennan Crabtree	12	2025	0	0	0	26	1	1	0	0	0	0	0	3	0	0	6	0	0	0	0	0	0	0	443	21	0	0	0	0	0.09
+Tessa Ortiz-Marsh	13	2025	6	9	0	0	0	0	94	13	8	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.08
+Stacey Kremer	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+Aurree King	15	2025	44	11	0	5	1	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Marcy Van Hartesveldt	17	2025	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Crystal Daniels	19	2025	284	72	1	18	4	0	113	60	16	2	4	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0.26
+Pita Lou	21	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Lydia Qualls Jarrett	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
+Cortney Mosier	23	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	38	2	0	0	4	0	0	0	0	0	0	0	0	0	0.1
+Jasmyn Moxley	24	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aireka Fowler	26	2025	4	3	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	6	0	99	0	0	0	0	0	0	0
+Dena Triggs	27	2025	8	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Carah Johnson	29	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0
+Dionna Jackson-Ross	30	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	3	55	5	0	1	0	0	0	0	0	0	0	0	0	0	0.11
+Hannah Powell	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Pasha Johnson-Rivers	33	2025	307	62	1	36	8	0	0	0	0	0	0	0	0	1	10	1	0	0	0	0	0	0	0	0	0	0	0	0	0.22
+Vanesia Thompson	34	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Baiyinah Rahim	35	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jeree Clark	36	2025	1	2	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Denetria Crawford	37	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	21	3	0	1	0	0	0	0	0	0	0	0	0	0	0.05
+Dia'Sha Pearson	39	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	0	0	2	0	16	0	0	0	0	0	0	0.01
+Tracy Richmond	42	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jasmine Johnson	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rachel Calar	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Katherine Wise	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+DMayla Holliday	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	19	2	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Nyshavia Riley-Marsh	52	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	43	0	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Aundrea King	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	25	3	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Yolanda Johnson	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angela Benson	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jazmyn Freeman	57	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Temeka Washington	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jahogany Ezelle	66	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LaTasha Husband	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Glorena Pugh	71	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Essence Lipscomb	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lindsay Powell	77	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Kristyanna Pierce	82	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Karissa Burnett	88	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	23	1	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Za Karia Adams	89	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sherrette Spicer	98	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Fita Boyce-Jennings	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	15	2	0	1	2	0	0	0	0	0	0	0	0	0	0.06
+Ericka Davis	1	2025	55	13	0	3	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Anastasia Olavuo	3	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	30	1	0	1	0	1	0	7	0	0	0	0	0	0	0.07
+Maria Fautali	4	2025	212	63	3	31	3	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.25
+Crystal Rhodes	5	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kylee OConnor-Harrel	6	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	7	0	125	25	1	0	0	0	0	0.01
+Sheila Sickau	7	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	330	14	0	0	9	8	0
+Tiia Jansen	9	2025	0	0	0	191	20	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.26
+Ashura Powell	10	2025	0	0	0	61	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+LaShanda Griffin	11	2025	2	1	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Nashi Catron	13	2025	13	12	0	0	0	0	502	105	52	7	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.45
+Brenna Morris	14	2025	0	0	0	0	0	0	21	4	3	1	0	0	0	0	0	0	0	0	0	0	0	0	167	8	0	0	0	0	0.04
+Solana Sperry	15	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lauria Saettele	17	2025	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Racquell Ray	21	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Rachel Scattergood	23	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Imani Nettles	27	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Darcy Leslie	29	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	38	4	0	0	1	0	0	0	0	0	0	0	0	0	0.07
+Aspen Baca	30	2025	14	3	0	3	1	0	0	0	0	0	0	0	0	0	18	5	0	0	0	1	0	2	0	0	0	0	0	0	0.04
+Megan McDonald	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Kassidy Snowden	33	2025	1	1	0	8	1	0	0	0	0	0	0	4	0	1	30	4	0	1	1	5	0	39	0	0	0	0	0	0	0.13
+Brooke Tanner	34	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Ronnise Wilson	36	2025	52	20	0	0	0	0	0	0	0	0	0	0	0	1	9	2	0	0	0	3	0	29	0	0	0	0	0	0	0.05
+Hannah Leonard	38	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	1	0	0	0	0	0	0	0	0	0
+Aundrea Colbert	42	2025	14	4	0	205	21	1	0	0	0	0	0	0	0	0	2	0	0	0	0	2	0	23	0	0	0	0	0	0	0.14
+Kara Galiunas	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	26	1	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Marielle Alexander	47	2025	0	0	0	19	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jen Dulski	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	10	4	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Theresa Honeycutt	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kyla McBride	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	1	0	0	0	0	0	0	0	0	0	0.01
+Brittany OConnor	56	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	15	2	0	1	0	0	0	0	0	0	0	0	0	0	0.03
+Andrea Scott	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ida Handel	61	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aspen Williams	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Veronica Wiebold	74	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cambria Davis	77	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kassandra Payne	78	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Syreeta Gapelu	79	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	22	1	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Alexandria Specht	88	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ana Bittencourt	90	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sasha Hendrix	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Nichelle Blake	0	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	22	1	0	0	0	0	0
+Britnee Sangalan	1	2025	0	0	0	53	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	80	0	0	0	0	0	0	0.03
+Mackenzie Vest	2	2025	0	0	0	138	10	5	0	0	0	0	0	0	0	0	9	0	0	0	1	1	0	0	0	0	0	0	0	0	0.25
+Tanaysa Henderson	3	2025	0	0	0	43	4	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Cheri Gantt	4	2025	286	50	2	9	2	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	9	0	0	0	0	0	0	0.21
+Tashaun Leigh	5	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	25	2	0	0	2	0	0	0	0	0	0	0	0	0	0.07
+Ebele Okonkwo	6	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	8	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Ashley Clark	7	2025	42	7	1	0	0	0	442	89	35	8	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.52
+Satoria Bell	8	2025	0	0	0	87	9	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.14
+Myla Somerville	9	2025	0	0	0	0	0	0	0	0	0	0	0	6	0	0	15	1	0	0	2	3	0	42	0	0	0	0	0	0	0.12
+Jessica Johnson	10	2025	0	1	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	128	5	0	0	0	0	0
+Monique Dingle	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jennell Thomas	12	2025	15	7	0	0	0	0	431	79	33	7	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.41
+Lashantel Wilson	13	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	23	2	0	0	1	0	0	0	0	0	0	0	0	0	0.04
+Delia Phlatts	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Keena Samuels	15	2025	171	19	3	22	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	6	0	0	0	0	0	0	0.19
+Anastasia Bosques	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Kiara Ireland	20	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Karena Brooks	21	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ramzeh Deen-Sie	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	23	1	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Kezia Oscar	23	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	28	5	0	3	2	0	0	0	0	0	0	0	0	0	0.09
+Antoinette Bell	24	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rocky Baxter	25	2025	62	14	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Tierra Mccormick	26	2025	16	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Quiana Ford	27	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	2	0	19	0	0	0	0	0	0	0.01
+Jazmine Allen	28	2025	13	18	1	8	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Jordyn White	32	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Candace Burch	33	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Natalie Wiggins	36	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angelique Henderson	37	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Alimirah Hall	38	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Carolyn Lewis	40	2025	57	6	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Doneisha Hawkins	42	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Deysha Pollard	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Christina Copelin	45	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shannon Brown	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	6	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Tehya Brown	49	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0.01
+Melissa Hastings	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kourtney Purham	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kellie Bell	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	3	13	6	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Lesley Farquharson	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sabirah Lucas	59	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lisa Fisher II	60	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Angela Clarke	61	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	13	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Bonique Green	63	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Labrille May	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+D. Schafaun Jones	73	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Melissa Faison	76	2025	3	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Rosa Climaco	79	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shaquanda Gainey	83	2025	28	3	0	305	21	3	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	4	0	0	0	0	0	0	0.26
+Laterricka Smith	86	2025	97	22	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Kathryn Floor	87	2025	0	0	0	207	16	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.23
+Ferkeshia Cousar	88	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	8	2	0	0	1	1	0	0	0	0	0	0	0	0	0.03
+Omariyana Womack	89	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	7	1	0	1	0	0	0	0	0	0	0	0	0	0	0.03
+Camille Calhoun	91	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	7	1	0	2	0	0	0	0	0	0	0	0	0	0	0.03
+Amaris Parker	92	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	5	1	0	1	0	0	0	0	0	0	0	0	0	0	0.02
+Helenna Wells	94	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Toniquea Jackson	96	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0.01
+Brittany Medley	98	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chelsea Whiteside	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	16	2	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Jacqueline Lopez	1	2025	0	1	0	56	5	0	0	0	0	0	0	0	0	1	27	1	0	1	0	11	0	95	0	0	0	0	0	0	0.08
+Camille Wilson	2	2025	16	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	11	0	0	0	0	0	0	0.01
+Cheyene Adkins	3	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mikayla Kiki Stonebraker	4	2025	67	43	1	0	0	0	537	110	39	3	8	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.32
+Kennetta Murry	5	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	12	1	0	1	0	0	0	0	0	0	0	0	0	0	0.03
+Vanessa Palmeri	7	2025	0	0	0	7	2	0	0	0	0	0	0	0	0	0	13	1	0	1	0	0	0	0	0	0	0	0	0	0	0.03
+Sigourney Gonzalez	8	2025	5	5	0	11	1	0	17	3	1	0	1	0	0	0	0	0	0	0	0	1	0	6	0	0	0	0	0	0	0
+Hollie Petrie	9	2025	0	0	0	38	5	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Holly HannahTodd	10	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nicole Walmer	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kelly Schaeffer	12	2025	2	3	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	1	9	0	116	0	0	0	0	0	0	0.02
+Tabitha Lefever	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Cabot	21	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	31	2	0	0	3	0	0	0	0	0	0	0	0	0	0.08
+Cheyanne Kurth	22	2025	8	2	0	195	5	2	0	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	42	2	1	1	2	2	0.17
+Kaitlyn Marie Iverson	28	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	2	0	12	0	0	0	0	0	0	0
+Kola ShippentowerThompson	29	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	1	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Rebecca Becky Boehme	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amber O Connor	32	2025	47	41	0	22	3	0	0	0	0	0	0	0	0	2	47	10	0	4	4	0	0	0	0	0	0	0	0	0	0.2
+Kimberly Normand	34	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	1	0	1	0	0	0	0	0	0	0.01
+AuBree Barnes	36	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	6	0	0	0	0	0	0	0
+Mae Larimer	38	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Rheanna Deeds	41	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rachell Sims	42	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chris Landers	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Levin	45	2025	16	11	0	14	1	0	0	0	0	0	0	0	0	0	7	0	0	0	0	3	0	26	0	0	0	0	0	0	0.02
+Whitney Gifford	47	2025	0	4	0	85	7	0	0	0	0	0	0	0	0	2	24	6	0	1	0	0	0	0	0	0	0	0	0	0	0.11
+Erica Mathia	52	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kamsin Lawrence	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	1	1	0	1	0	0	0	0	0	0	0.02
+Katelyn Bailey	63	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sierra Bakanoff	68	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Loren Diaz	70	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Guadalupe Korpie	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kassiah Sage Moore	78	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashlie McDonald	79	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chloe Porter	84	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Andrea Jones	85	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashlea Moore	86	2025	0	4	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Taylor Coleman	88	2025	11	2	0	126	11	1	0	0	0	0	0	0	0	0	24	2	0	0	0	3	0	27	425	20	0	0	2	2	0.14
+Alexis Greer	94	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	6	29	12	0	0	1	0	0	0	0	0	0	0	0	0	0.1
+Kaitlynn dela Pena	95	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Diamond Brown	0	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kennedy Banks	1	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0
+Christina Jaques	5	2025	3	20	0	0	0	0	216	60	17	0	6	0	0	0	3	0	0	0	0	1	0	10	33	2	0	0	0	0	0.03
+Ariyan Hudson	7	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	12	1	0	0	0	1	0	0	0	0	0	0	0	0	0.03
+Kyhle Jamerson	8	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Liz LaFisca	9	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	19	0	0	0	0	0	0	0	158	9	0	0	1	1	0.03
+Shantel Sherrod	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Coretta Hopkins	15	2025	0	6	0	84	6	0	38	12	7	0	1	2	0	0	10	0	0	1	0	1	0	15	0	0	0	0	0	0	0.1
+Chelsa Singer	16	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Loriage Reid	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexus Freeman	19	2025	2	6	0	83	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	83	0	0	0	0	0	0	0.04
+Treasure McFarland	20	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Holly Custis	21	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sakendra Gabriel	22	2025	390	65	1	5	2	0	0	0	0	0	0	0	0	0	22	1	0	0	0	6	0	86	0	0	0	0	0	0	0.25
+Kayla Fisher	23	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Darian Johnson	24	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kyelah Hodges	25	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Octavia Brown	26	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	9	0	0	0	0	0	0	0
+Sade Minor	27	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Ingrid Cleveland	28	2025	15	1	0	11	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	4	0	31	0	0	0	0	0	0	0.01
+Charlee Ford	30	2025	8	4	0	0	0	0	0	0	0	0	0	0	0	1	16	1	0	0	0	2	0	5	0	0	0	0	0	0	0.03
+Kimberly Abraham	32	2025	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chrishuna Washington	33	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	12	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Erin Fleming	39	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	14	1	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Meagan Robinson	41	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Briiana Gorrell	42	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Analys Colon	43	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tatanisha Young	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	15	1	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Reagan Price	45	2025	0	0	0	0	0	0	0	1	0	0	0	0	0	0	18	1	0	0	1	1	0	0	213	7	0	0	0	0	0.04
+Blessing Tate	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Cyla Simon	52	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Elizabeth Freeland	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Carmel Glumac	55	2025	0	0	0	63	5	0	0	0	0	0	0	1	0	0	29	0	0	0	0	0	0	0	0	0	0	0	0	0	0.08
+Tyneika Jordan	60	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shabria Hall	63	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Monica Pickens	64	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Bethany Hipps-Jackson	66	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Monique Benitez	74	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	1	0	0	1	0	0	0	0	0	0	0	0	0	0.02
+Candace Walker	75	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jennifer Green	79	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittany Luck	90	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Valerie Tyler	91	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	4	0	1	0	0	0	0	0	0	0	0	0	0	0.03
+Tatiana Rice	93	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Isis Woods	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tara Thomas	0	2025	103	16	1	92	11	1	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	93	0	0	0	0	0	0	0.19
+Alyssa McCarron	1	2025	0	1	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	84	3	0	0	0	0	0.01
+Jasmine Coleman	2	2025	0	0	0	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Regena Jackson	3	2025	0	0	0	9	1	0	0	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+DAjah Scott	4	2025	125	12	3	204	19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	142	0	0	0	0	0	0	0.29
+Takera Mitchell	5	2025	0	0	0	0	0	0	0	0	0	0	0	2	0	1	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Tenazhia Hinkson	6	2025	0	0	0	35	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Candice Davis	7	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	2	0	0	0	1	0	13	0	0	0	0	0	0	0.01
+Melyse Brown	8	2025	125	23	4	0	0	0	1105	139	78	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+Kristen London	9	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	22	2	0	0	0	2	0	10	0	0	0	0	0	0	0.03
+Diamond Wright	10	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17	1	0	0	0	1	0	13	0	0	0	0	0	0	0.03
+Ashya Elder	11	2025	0	0	0	71	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Mary Woodard	12	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Natalie Nicks	13	2025	0	0	0	310	21	3	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.25
+Aalicia Norrell	14	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kymesha Taylor	15	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Sharketie Leverette	16	2025	48	9	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Ileshia Preston	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Nyeisha Wright	18	2025	0	0	0	105	6	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.08
+Rashida Young	19	2025	0	0	0	179	8	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.15
+Chassidy White	20	2025	5	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shanice Wheeler	21	2025	30	7	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.05
+Jenea Walker	22	2025	265	40	6	13	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.33
+CharLyshia Bradford	23	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	28	6	0	0	0	0	0	0	0	0	0	0	0	0	0.06
+Aezioni Nakai-Fuller	24	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	4	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Shaniqual Davis	25	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	1	0	0	0	0	0	0	0	0	0
+Kahriya Williams	26	2025	38	9	0	0	0	0	0	0	0	0	0	1	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Anita Brown	28	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+English Bennett	29	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	2	0	0	0	0	0	0	0	0	0	0.02
+Shardonay Jenkins	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	3	9	5	0	1	0	0	0	0	0	0	0	0	0	0	0.05
+Adrienne Marsh	33	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Versace Lee	41	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0.01
+Carla Odom	44	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	2	22	3	0	0	1	0	0	0	0	0	0	0	0	0	0.05
+LaShanda Williams	45	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	13	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Joy Longley	48	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	2	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Voldavia Roberts	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Myeshia Johnson	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tekesha Zo Williams	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Allyssa Weatherd	54	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	2	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Tymija Hackett	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Meredith Mitchiner	56	2025	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	1	1	0	10	8	0
+Jalessa Harvey	61	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Robin Cooper	65	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tracy Dorcemont	68	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Patricia Fultz	69	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Madison Jones	71	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Monique Larrieu	72	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	3	11	6	0	1	1	0	0	0	0	0	0	0	0	0	0.06
+Tenisha Williams	73	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Montye Cooke	75	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kassidi Wynter	82	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	15	4	0	0	1	0	0	0	0	0	0	0	0	0	0.04
+Makiya Adams	96	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Eden Henry	97	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+JaKiera Mallory	99	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	1	3	2	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Morgan Alston	0	2025	322	57	4	46	4	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.34
+Antoinette Harris	1	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Leslie Robinson	2	2025	1	3	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Danielle Spearman	3	2025	3	1	0	1	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ciara Anderson	4	2025	0	0	0	105	11	1	0	0	0	0	0	0	0	0	1	0	0	0	0	12	0	189	0	0	0	0	0	0	0.09
+Lawanda Pearson	5	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Nicole Matheson	7	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	17	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Sarah Teubner	8	2025	215	36	1	0	0	0	1008	133	72	18	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1.16
+Gabriel Rahming	10	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+DeAnna Hightower Riley	11	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	20	2	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Dajour Miles	12	2025	0	0	0	456	28	11	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	155	0	0	0	0	0	0	0.58
+Fanny Feldman	13	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jamie Fornal	14	2025	0	0	0	0	0	0	0	0	0	0	0	1	0	0	26	2	0	2	0	0	0	0	0	0	0	0	0	0	0.07
+Kamaria Massey	15	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Stephanie Raymond-Young	16	2025	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Christina Mondragon Schrader	17	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	277	13	0	0	15	11	0
+Annicka Griffith	18	2025	0	0	0	212	16	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.14
+Antoinae Goodman	19	2025	0	0	0	17	1	0	0	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Jianna Schirmacher	20	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chiyanne Thompson	21	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Leeya Zander	22	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Ciera Johnson	24	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Aja Johnson	26	2025	0	0	0	8	1	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Sophia Darwish	27	2025	42	14	0	14	4	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.03
+Aisling Moloney	28	2025	0	0	0	13	3	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Briann Miller	31	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	0	0	0	0.02
+Tabitha Ayala	32	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Rachel Karos	35	2025	0	2	0	0	0	0	14	6	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Taja Sloss	36	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Monique Tribble	37	2025	2	1	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	1	0	0	0	0	0	0	0	0	0	0	0.02
+Ashanti Lewis	45	2025	0	0	0	108	6	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.08
+Nathalie Irmer	50	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Monique Pineda	51	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Sarah Topps	52	2025	0	0	0	11	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Lasha Morales	53	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Semeret Abdulkarim	55	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Arteria Ziegler	56	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	18	2	0	0	1	0	0	0	0	0	0	0	0	0	0.04
+Jennifer Schulz	57	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Adrienne Procter	58	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cristina Bukowski	60	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shana Sumers	61	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Myshaunique Loggins	62	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Shayna Allwar	63	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Greys Bernal	64	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shantavia James	66	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Rebecca Tillman	67	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0.01
+Erica Moore	68	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	24	2	0	0	0	0	0	0	0	0	0	0	0	0	0.04
+Jonquil Curry	81	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alesia Stewart	86	2025	0	0	0	21	2	1	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0.04
+Stephanie Daniels	87	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+April Fowlkes	89	2025	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	1	0	0	0	0	0	0	0	0	0	0	0	0	0.01
+Jadacee Vick	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Laura Burnham	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lanuola Jacobsen	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Breana Griggs	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jane Brinkman	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Christina Tela	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Maggie Justinak	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nicole Attleson	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kelly Johnston	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nicole Chaves	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Olivia Green	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sheri Kinder	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sara Galica	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Natasha Johnson	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Louise Bean	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittney Bjork	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Erin Miller	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Yochem	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nina Wilkerson	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Makayla Edwards	17	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Courtney Gray	18	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Asherah Ulmer	20	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Megan Robertson	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Maki Yamagata	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lacy Mile	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Masae Fualole Loua	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jenna Trahan	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Gina Mondragon	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+DaMaree Mitchell	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ayanna Ford	28	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dakota Latimer	30	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alyssa Olson	31	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessica Cannon	32	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lydia Morgan	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Melanie Bartholomew	34	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Bergen Meyer	36	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lexie Neslen	37	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jennifer Southall	38	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jadacee Vick	40	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Melanie Hunter	42	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nikki Gilbreth	43	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kristen Dietz	44	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Courtney Shaw	47	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LiTara Faatili	48	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ella Morgan	49	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+McKenna Morgan	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tyree Hale	53	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Emry Miller	54	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessie Warr	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashley Nguyen Lake	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ramona Martinez	57	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Leialoha Tela	59	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aezioni Fuller	60	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Maria Hernandez Lucio	62	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jennifer Court	64	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dorothy Angilau	65	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Katherine Montgomery	68	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Montana Meier	70	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Margaret Pan	71	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LaVerna Tela-Lesa	72	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brynne Butterfield	73	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rosa Egbert	74	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tauva Leiomiti	76	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dorothy Angilau	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Gabrielle Kredel	79	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lanika Manning	80	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Anne Morgan	82	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Emmalee Munns	83	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lainie Thompson	84	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rylee Fenrick	85	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Melissa Chandler	87	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alyssa Vigil	88	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Makayla Brown	89	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sierra Call-Rust	90	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nancy Toutai	93	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Candace Jensen Lopez	96	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cindy Cornell	97	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Najia McGee	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kendra Gabriel	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Desiree Conner	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kristi Derouen	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Carol Saunders	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Melany Frierson	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jaquela Stewart	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kelly Rosso	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashya Elder	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Daisha Lawson	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Gina Carnovale	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Renee Langlais	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mahogany Gaines	18	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Raejean Marshall	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brianna Hollins	20	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashton Elliott	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ebony Minter	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Olivia James	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tashani Cardwell	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexandria Duper	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kayla Vincent	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittany Johnson	28	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ShaDella Reese	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nikayla Ramsey	31	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chelsea Borders	32	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shermanda Fambro	37	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kristen Davis	41	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Taylor Baldwin	42	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Janasha Smith	44	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shavonne Verdree	46	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Latasha Cummings	51	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kelsey Walthall	52	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Marlette Wilber	54	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kazzette Collins	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Catherine Norris	66	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Zyaire Xamaica	69	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kiana Stafford	72	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lisa Scurry	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Janelle Small	79	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angie Patton	80	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Zoe Jackson	82	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rebecca Geller	84	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Taylor Brashears	87	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dumatra McDaniel-Walker	88	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shauntavia Brigham	92	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Monique Calhoun	93	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Wanita McCoy	96	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sumatra McDaniel	98	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Latanglia Dorsey	99	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Isabel Warren	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kali Jones	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sigourney Gonzalez	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brynn McNabb	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Beatriz Rico	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Antonie	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Marico Davis	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aleesah Wilson	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Thaycha Rodriguez	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tehya Demski-Hamelin	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Christina Vollrath	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mariah Makupson	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alyssa Lorbiecki	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Andrea Wright	17	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sydney Holt	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Genessa Bingham	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Courtney Powell	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Janiah Lee	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kristin Carter	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aria Wagaman	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Carrie Walters	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rachel Lund	30	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Charnel Archer	32	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Keanu Malala	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittaney Warren	43	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Elizabeth Spence	45	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LaQuanta Glass	47	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jordyn Williams	49	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jayna Valdez	52	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jerrica Davenport	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tiffani Penix	58	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Monique Garcia	59	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shonna Williams	60	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tawny Hall	63	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ayana Mcafee	65	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Azalia Allen	66	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessica Hill	68	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Xebulynn Whitney	69	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kailima Ross	70	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dayton Yingling	72	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Caitlynn Jones	73	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Trevez Bridgewater	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dominique Maloy	88	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chelcie-Maree Weaver	93	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dora Alvarez	96	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Barbriel Crudup	99	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amani El Amin	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittani Lusain	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Joann Mamuyac	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jennifer Strother	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Daisy Avila	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Laurisa Hollenshed	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alia Karmali	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Katie Claxton	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jamie Blue	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Diana Huynh	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Natalia Brown Quinones	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Taranisha Taylor	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shonte Williams	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Imelda Elizabeth De Leon	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Danny Trainor	17	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Harmine Christina Leo	18	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tynisha Dossman	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lauren Blaser	20	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Stacy Primeaux	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Elisa Nguyen	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jennifer Ingargiola	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kesz Wesley	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alicia Zappia-Neeley	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Melina Malaxos	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Gianna Zamora	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kim Cade-Henry	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Christin Stoll	32	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cachrelle Nguyen	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aylin Alejandra Rivera Rivera	36	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Irlanda Diaz	43	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jensine Alvarez	45	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Knengi Martin	47	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Krisja Norman	49	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kyvondra Toalepai	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Monica Johnson	51	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ronnika Burks	53	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Felicia Lilo	54	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lorena Diaz	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shelby Presley	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sabrina Kessler	59	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Greys Bernal	64	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rebecca Munoa	65	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rea Schmidt	66	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Johanna Aspenberg	70	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Annamarie Fagnani	71	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tanya Luna	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Martha Gomez	80	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jocelyn Charette	84	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Whitney Harrison	85	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Christina Jordan	87	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jazpony Harris	88	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tess McCann	91	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alyshia Tauanuu	92	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alayah Lewis	93	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Faatupu Malaulu	95	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Similiti Lealiki	97	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Miriah Lopez	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angie Hamilton	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Marissa Lopez	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ricki Alex	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brooklyn Riley	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jazmin Gamble-Tello	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jasmine McDonald	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alysia Dominguez Bisquera	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexis Dixon Fontaine	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Crystal Johnson	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kayla Chambers	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mallory Torres	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Darnisha Lee	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+AuBree Barnes	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Annsleigh Anderson	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Olivia Johnson	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ryan Meismer-Thompson	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+AuBree Barnes	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dannielle Lawrence	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Salina Samario	35	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Priscilla Petersen	36	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Laura Bongers	37	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Meagan Curtis	38	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Keisha Howard	40	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rachel Love	43	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lauren Davis	44	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Precious Moses	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Darlene Martinez	54	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Stephanie Lopez	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashleigh Hayes	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shaina Cato	59	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mila Porter-Lawson	62	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mercy Molina-Guevara	62	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amari Trevino-Beverly	62	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Gabrielle Madden	65	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tiffany Gonzales	70	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Matalya Johnson	75	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angelina Faulkner	76	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Samantha Vasquez	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sabrina Casillas	79	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Echo Le Vell	84	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Olivia Morgan	85	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Malaysia Quimby	87	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tina Orrick	90	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Autumeize Gardner	90	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessica Phillips	93	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shardae Anderson-Bell	95	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Deana Guidry	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Elizabeth Landry	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Eshombi Singleton	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessica Collins	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Whitney Palmer	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Anastasia Olavuo	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Michelle Angel	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Waynicia Thomas	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kahriya Williams	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Crystal Daniels	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jewelle Grimsley	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kelli Smith	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tara Thomas	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chelsie Thompson	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Grace Wiley	18	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Janei Benamon	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashley McBay	20	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jamie Lock	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kerrie Isom	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Summer McNeal	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Khadijah Ellison	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tatyana Guidry	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jazmine Rambo	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Darcy Leslie	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mikaile Fortson	28	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Arielle Wilks	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cathy Wabenga	31	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amber Kimbrough	32	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cara Wesemann	34	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Armoni Stevenson	35	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Trinity Smith	38	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mercedes Tyler	39	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Phylicia Allen	41	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jimeriam Jackson	42	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kylah Hodges	43	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brooke Denny	44	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tyara Blades	45	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Teasha Martin-Palmer	47	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Trinity Scott-Gooden	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Fannie Robinson	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LeShaunte Bowman	57	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kristyn Aoake Taylor	59	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Bethany Hipps	65	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amanda Morgan	72	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cierra McGinnis	74	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Renee Fruean	75	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lucinda Watkins	76	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alina Markl	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tammie Moore	78	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shavonne Ford	80	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Maria Jackson	81	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Watson De La Torre	83	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Desirea McGinnis	84	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Clark	85	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Treva Mason	86	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amanda Heilman	87	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Grace Mole	88	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Haley Hagar	98	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Isis Woods	99	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jacqueline Lopez	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Camille Wilson	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cheyene Adkins	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kennetta Murry	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Vanessa Palmeri	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Isabelle Bartter	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Holly Hannah	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Anastasia Dawson	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jenna Sukle	17	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Courtney Chidley	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Cabot	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brenda Paz	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kola Thompson	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Erica Mathia	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kelsea Phillips	36	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessica Gerdes	37	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rheanna Deeds	41	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Christina Landers	44	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Levin	45	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Whitney Gifford	47	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tianna Bell	52	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Carolynn Torve-Williams	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lyrica Arielle Macdonald	61	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Laylee Dieringer	62	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Katelyn Bailey	63	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sydney Jessup	66	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashley Watkins	67	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sierra Cornell	68	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Loren Diaz	70	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Guadalupe Korpie	72	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Karli Singrey	73	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brianna Marks-Green	75	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tori Dixson	76	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Taylor Coleman	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Vernisha Tavares	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kassiah Sage Moore	78	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Britt Hennings	83	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chloe Porter	84	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Andrea Jones	85	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashlea Moore	86	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Taylor Coleman	88	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexis Greer	94	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kaitlynn dela Pena	95	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Winry Vitkovich	96	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nichelle Blake	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Britnee Sangalan	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mackenzie Vest	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tanaysa Henderson	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cheri Gantt	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ta Shaun Leigh	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kiara Ireland	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashley Clark	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Satoria Bell	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Myla Somerville	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jessica Johnson	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Monique Dingle	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jennell Thomas	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LaShantel Wilson	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Delia Phlatts	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Keena Samuels	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Solina Pascual	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Anastasia Bosques	17	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LaTerricka Smith	18	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kylee OConnor-Harrel	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+AlNisa Thomas	20	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ramzeh Deensie	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kezia Oscar	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Antoinette Bell	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Orianna Baxter	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tierra McCormick	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+MarRhea Everheart	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jazmine Allen	28	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chanel Cross	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kenyatta Sears	30	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tino'j Jones	31	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Candace Burch	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Danielle Spearman	35	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Natalie Wiggins	36	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angelique Henderson	37	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alimirah Hall	38	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Stephanie Pascual	39	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Carolyn Lewis	40	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Anna Melton	41	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Doneisha Hawkins	42	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jeanenne Colbert	45	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Riian Smith	46	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Natalia Ceron Parra	47	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shannon Brown	48	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lisa Fisher II	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tia Thompson	52	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kourtney Purham	53	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kellie Bell	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chloe Williams	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lesley Farquharson	58	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Midajah Davis	60	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angela Clarke	61	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Bonique Green	63	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Demiera Lockhart	69	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Christine Norman	70	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Melissa Faison	76	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tynisha McMillian	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rosa Climaco	79	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Christina Copelin	80	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Breonna Brewer	81	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Naomi Stuger	82	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shaquanda Gainey	83	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Hannah DeGraffinreed	84	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Faith Robinson	85	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jasmine Ward	86	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ferkeshia Cousar	88	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Emily Rose	89	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chelsea Parrish	91	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Amaris Parker	92	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Omariyana Womack	95	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Toniquea Jackson	96	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sacoyia Todd	97	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chelsea Whiteside	99	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jasmyn Moxley	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Bria Truxon	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Novak	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Starry Bady	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Joanna Young	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittany Bassett	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Charon Sweeney	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Julia Mullin	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+KaNesha Sheriff	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brennan Crabtree	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tessa Ortiz-Marsh	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Stacey Kremer	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Auree King	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Stephanie Miller	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Elizabeth Nelson	17	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jamila Gordon	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Timesha Wharton	20	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Candace Rucker	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cortney Mosier	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Abby Pelletier	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tanisha Thermidor	28	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Carah Johnson	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dionna Jackson-Ross	30	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kara Gailiunas	32	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Adrienne Marsh	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Vanesia Thompson	34	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Baiyinah Rahim	35	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashley Menchaca	40	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+BriLana Gorrell	41	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tracy Richmond	42	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jasmine Johnson	43	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dalphine Armstrong	44	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Adrienne Watson	45	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lavinia Culbreath	48	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dmayla Holliday	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Rexrode	51	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Yolanda Johnson	52	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Najae Lewis Elliot	53	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Allyssa Weatherd	54	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angela Morales-Benson	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jazmyn Freeman	57	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ava Travis	60	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Patricia Fultz	69	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Samantha Vasquez	63	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jahogany Ezelle	66	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Erica Moore	68	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LaTasha Husband	70	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lindsay Powell	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kristyanna Quinn	82	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jasmine Edmond	83	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Karissa Burnett	88	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Destini Perry	91	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Fita Boyce-Jennings	99	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shaniya Lacey	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alyssa McCarron	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jasmine Coleman	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Regena Jackson	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+D'Ajah Scott	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Takera Mitchell	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tenazhia Hinkson	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Candice Davis	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Melyse Brown	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kristen London	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Diamond Wright	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mary Woodard	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Natalie Nicks	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aalicia Norrell	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kymesha Taylor	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+DYana Bolden	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sckiya Banister	18	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rashida Young	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shanice Wheeler	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jene Walker	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Charlyshia Bradford	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Norianna Haynes	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shaniqual Davis	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Meredith Mitchner	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Doshia Collins	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mariane McClinton	28	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shardonay Jenkins	31	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nikki Pike	32	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Versace Lee	41	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Carla Odom	44	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LaShanda Williams	45	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Joy Longley	48	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Voldavia Roberts	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tekesha Williams	53	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shicarea Hutchins	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jalessa Harvey	61	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Myeshia Johnson	64	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Robin Cooper	65	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tracey Dorcemont	68	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Madison Jones	71	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Monique Larrieu	72	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tenisha Williams	73	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Montye Cooke	75	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cam Evans	79	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kassidi Wynter	82	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Eden Henry	97	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Yasmene Harris	0	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Savannah Morefield	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Zomi Anderson	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Anissa Babitu	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Krista Seaman	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jada Hampton	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Vanessa McGinnis	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kay Lewis	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jocelyn Fernandez	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Virginia Kim	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alaina Valmassei	20	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sydney Lambert	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Molly Tester	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kellye Lofquist	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Erica Jackson	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Adriana Gutierrez	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexandra Sweet	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Thalia Sweet	35	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Madalyn Garrison	38	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jennifer Erickson	41	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rachell Sims	42	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rachel Davis	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nina Gomez	53	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Naomi Lee	54	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shelby Buren	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jamari Avery	60	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexa Rummel	69	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ajane Rosen Lawton	74	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+DaNi Jolley	75	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Marlen Garces	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lauren Butz	83	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Monica Salazar	85	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sav Congdon	89	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chelsea Monsees	90	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Evett Van Beek	96	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sam Rozell	98	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Bianca Mouton	99	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alma Rauline Martinez	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ellie Gilbert	2	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+LaQue Moen-Davis	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sylvia Sloss	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Inaya Freeman	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jaiden Rogers	6	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Iyona Copeland	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kris Grimes	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Julysil Paycoan	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kiana Gordon	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Stephanie Elizondo	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Paulina Lopez	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brandi Ransom	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Liv Offenbach	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dorothy Mao	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alexis Contreras	17	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Darla Espinosa	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angelica Sofia Garcia Rivera	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Morgan Lewis	23	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Franziska Diegel	24	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shaniqua Bennett	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alyssa Dixon	26	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Taylor McGhee	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chyna Cole	28	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Esperanza Poyle Maciel	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brianna Rastello	31	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jenji Lee Hooker	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sydney Dela Cruz	36	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Leilani Caamal	43	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jocelyn Howard	44	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Angelina Tuakalau	45	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sierra Le Grande	46	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nakisha Harris	47	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Olga Valdez	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ZiArion Hutsell	51	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Courtenay Williams	52	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Charmaine Bradford-Airy	54	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittenee Johnson	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Zay Dollente	60	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mary Lee	62	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sierra Cash	63	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Victoria McIntyre	64	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jasmine Holland	67	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sarah Guerra	72	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Mahiya Ellis	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dominique Stewart-Thomas	82	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rayna Lorraine	84	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alyson Azevedo	98	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Claire Nickison	99	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ericka Davis	1	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Fanny Feldman	3	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Maria Fautali	4	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Crystal Rhodes	5	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Shelia Sickau	7	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Alyssa Gillespie	8	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Laila Finley	9	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ashura Powell	10	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Olivia Wilson	11	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Janiah Bond-Clough	12	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Keyla Rea	13	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brenna Morris	14	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Solana Sperry	15	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rilee Irby	16	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Marine Paris	17	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jerrica Johnson	18	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Grace Cooper	19	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Viktoria Donetz	20	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Racquell Ray	21	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Moriah Thomas	22	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Diana Johnson	25	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Imani Nettles	27	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Zaya Dove	29	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rachel Slamin	32	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kassidy Snowden	33	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brooke Tanner	34	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Ronnise Wilson	36	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Hannah Leonard	38	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aundrea Colbert	42	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Marielle Alexander	47	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kelly Whitehead	49	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Dajia Anderson	50	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nova Nyström	52	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Theresa Honeycutt	53	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Kyla McBride	54	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Yohnee Miller	55	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Brittany OConnor	56	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Andrea Kelley	58	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Markell Marquez	60	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rhey Acevedo	63	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Julia Viles	64	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Luma Barbedo	70	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Macie Ables	71	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Najma Muhammad	72	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Veronica Wiebold	74	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Cambria Davis	77	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jenessa White	83	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Tori Spann	97	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sasha Hendrix	99	2026	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 \.
 
 
@@ -12260,5 +12261,5 @@ ALTER TABLE ONLY public.trade
 -- PostgreSQL database dump complete
 --
 
-\unrestrict F18aRKiyYv5ujjXLfTYwf5ndD0RYFe72wiYxBh5Om1luB0BwG63h58zrwZqfOhC
+\unrestrict hUEccLJSy1qa148I2hIc97d3tA3rI3KcU6pKdYRfQPXDIL3wtySHmytFqbthUQq
 
