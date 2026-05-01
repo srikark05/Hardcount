@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict KWM8frMEPClm8yEN8AWZXtzRithhfROWvexUujhWw0OkeDMreKGfNgj0tHoVOHE
+\restrict lcSEoPD302GwdM81ZeSjXLWu5jixVbNZnKgztlcxzrZVnYtpB8WpdYz5eONazP6
 
 -- Dumped from database version 16.13 (Homebrew)
 -- Dumped by pg_dump version 16.13 (Homebrew)
@@ -11937,6 +11937,8 @@ COPY public.staging_wnfc_teams (team_index, team_name, division, team_website, h
 --
 
 COPY public.team (team_id, name, division, address, titles, president, tv_tag) FROM stdin;
+50	Oregon Ravens	Northwest	Portland, OR	0	\N	ORA
+57	Washington Prodigy	Atlantic	Washington, DC	0	\N	WPR
 39	Atlanta Phoenix	Atlantic	Atlanta, GA	0	\N	APH
 40	Atlanta Truth	Atlantic	GA	0	\N	ATR
 41	Chicago Winds	Central	IL	0	\N	CWI
@@ -11948,14 +11950,12 @@ COPY public.team (team_id, name, division, address, titles, president, tv_tag) F
 47	Las Vegas Silver Stars	Pacific	NV	0	\N	LVS
 48	Los Angeles Legends	Pacific	CA	0	\N	LAL
 49	Mississippi Panthers	Central	MS	0	\N	MPA
-50	Oregon Ravens	Northwest	\N	0	\N	ORA
 51	Philly Phantomz	Atlantic	PA	0	\N	PPH
 52	San Diego Rebellion	Pacific	CA	0	\N	SDR
 53	Seattle Majestics	Northwest	WA	0	\N	SMA
 54	Tennesse Trojans	Central	TN	0	\N	TTR
 55	Texas Elite Spartans	Central	TX	0	\N	TES
 56	Utah Falconz	Northwest	UT	0	\N	UFA
-57	Washington Prodigy	Atlantic	\N	0	\N	WPR
 58	Golden State Storm	Pacific	CA	0	\N	GSS
 \.
 
@@ -12258,5 +12258,5 @@ ALTER TABLE ONLY public.trade
 -- PostgreSQL database dump complete
 --
 
-\unrestrict KWM8frMEPClm8yEN8AWZXtzRithhfROWvexUujhWw0OkeDMreKGfNgj0tHoVOHE
+\unrestrict lcSEoPD302GwdM81ZeSjXLWu5jixVbNZnKgztlcxzrZVnYtpB8WpdYz5eONazP6
 
