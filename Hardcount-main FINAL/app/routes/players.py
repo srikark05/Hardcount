@@ -1,11 +1,92 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 from app import run_all, run_one
+import json
+import os
 
 players_bp = Blueprint('players', __name__)
 
 OFFENSE_POSITIONS = ('QB', 'RB', 'WR', 'TE', 'OL', 'OT', 'OG', 'OC', 'FB')
 DEFENSE_POSITIONS = ('DL', 'DE', 'DT', 'LB', 'CB', 'SS', 'FS', 'DB', 'NT')
 SPECIAL_POSITIONS = ('K', 'P', 'LS', 'KR', 'PR')
+
+config_path = os.path.join(os.path.dirname(__file__), '..', 'config.json')
+with open(config_path) as f:
+    config = json.load(f)
+
+POINTS_PER_WIN = config['points_per_win']
+WAR_WEIGHTS = {
+    'season_rushing_yards': config['stat_weights'].get('rushing_yards', 0),
+    'season_receiving_yards': config['stat_weights'].get('receiving_yards', 0),
+    'season_passing_yards': config['stat_weights'].get('passing_yards', 0),
+    'season_rushing_touchdowns': config['stat_weights'].get('touchdowns', 0),
+    'season_passing_touchdowns': config['stat_weights'].get('touchdowns', 0),
+    'season_receiving_touchdowns': config['stat_weights'].get('touchdowns', 0),
+    'season_tackles': config['stat_weights'].get('tackles', 0),
+    'season_defensive_sacks': config['stat_weights'].get('sacks', 0),
+    'season_defensive_interceptions': config['stat_weights'].get('interceptions', 0),
+    'season_tackles_for_loss': config['stat_weights'].get('tackles_for_loss', 0),
+    'season_forced_fumbles': config['stat_weights'].get('fumbles', 0),
+    'season_fumble_recoveries': 0,
+    'season_offensive_interceptions': config['stat_weights'].get('interceptions', 0),
+}
+
+def calculate_replacement_levels_by_position(season):
+    query = """
+    SELECT p.position,
+           AVG(ss.season_rushing_yards) as avg_rushing_yards,
+           AVG(ss.season_receiving_yards) as avg_receiving_yards,
+           AVG(ss.season_passing_yards) as avg_passing_yards,
+           AVG(ss.season_rushing_touchdowns) as avg_rushing_touchdowns,
+           AVG(ss.season_passing_touchdowns) as avg_passing_touchdowns,
+           AVG(ss.season_receiving_touchdowns) as avg_receiving_touchdowns,
+           AVG(ss.season_tackles) as avg_tackles,
+           AVG(ss.season_defensive_sacks) as avg_defensive_sacks,
+           AVG(ss.season_defensive_interceptions) as avg_defensive_interceptions,
+           AVG(ss.season_tackles_for_loss) as avg_tackles_for_loss,
+           AVG(ss.season_forced_fumbles) as avg_forced_fumbles,
+           AVG(ss.season_fumble_recoveries) as avg_fumble_recoveries,
+           AVG(ss.season_offensive_interceptions) as avg_offensive_interceptions
+    FROM season_stats ss
+    JOIN player p ON p.player_id = ss.player_id
+    WHERE ss.season = %s
+    GROUP BY p.position
+    """
+    rows = run_all(query, params=(season,))
+    replacement = {}
+    for row in rows:
+        pos = row['position']
+        replacement[pos] = {
+            'season_rushing_yards': row['avg_rushing_yards'] or 0,
+            'season_receiving_yards': row['avg_receiving_yards'] or 0,
+            'season_passing_yards': row['avg_passing_yards'] or 0,
+            'season_rushing_touchdowns': row['avg_rushing_touchdowns'] or 0,
+            'season_passing_touchdowns': row['avg_passing_touchdowns'] or 0,
+            'season_receiving_touchdowns': row['avg_receiving_touchdowns'] or 0,
+            'season_tackles': row['avg_tackles'] or 0,
+            'season_defensive_sacks': row['avg_defensive_sacks'] or 0,
+            'season_defensive_interceptions': row['avg_defensive_interceptions'] or 0,
+            'season_tackles_for_loss': row['avg_tackles_for_loss'] or 0,
+            'season_forced_fumbles': row['avg_forced_fumbles'] or 0,
+            'season_fumble_recoveries': row['avg_fumble_recoveries'] or 0,
+            'season_offensive_interceptions': row['avg_offensive_interceptions'] or 0,
+        }
+    return replacement
+
+def calculate_war(stats, replacement):
+    total = 0.0
+    for field, weight in WAR_WEIGHTS.items():
+        player_val = float(stats.get(field) or 0)
+        repl_val = float(replacement.get(field) or 0)
+        total += (player_val - repl_val) * weight
+    return round(total / POINTS_PER_WIN, 3)
+
+
+def annotate_season_stats_rows(rows, position, replacement_by_season):
+    for row in rows:
+        season = row['season']
+        repl = replacement_by_season.get(season, {}).get(position, {})
+        row['season_war'] = calculate_war(row, repl)
+    return rows
 
 @players_bp.route('/players')
 def index():
@@ -114,11 +195,16 @@ def detail(player_id):
             season_receiving_yards, season_receiving_attempts, season_receiving_touchdowns,
             season_passing_yards, season_passing_attempts, season_passing_completions, season_passing_touchdowns,
             season_tackles, season_defensive_sacks, season_defensive_interceptions,
-            season_tackles_for_loss, season_forced_fumbles, season_fumble_recoveries
+            season_tackles_for_loss, season_forced_fumbles, season_fumble_recoveries,
+            season_offensive_interceptions
         FROM season_stats
         WHERE player_id = %s
         ORDER BY season DESC
     """, params=(player_id,))
+
+    seasons = set(row['season'] for row in season_stats if row['season'])
+    replacement_by_season = {season: calculate_replacement_levels_by_position(season) for season in seasons}
+    season_stats = annotate_season_stats_rows(season_stats, player['position'], replacement_by_season)
 
     career_stats = run_one("""
         SELECT
@@ -134,10 +220,14 @@ def detail(player_id):
             COALESCE(SUM(season_defensive_interceptions), 0) AS career_interceptions,
             COALESCE(SUM(season_tackles_for_loss), 0) AS career_tfl,
             COALESCE(SUM(season_forced_fumbles), 0) AS career_forced_fumbles,
-            COALESCE(SUM(season_fumble_recoveries), 0) AS career_fumble_recoveries
+            COALESCE(SUM(season_fumble_recoveries), 0) AS career_fumble_recoveries,
+            COALESCE(SUM(season_offensive_interceptions), 0) AS career_offensive_interceptions
         FROM season_stats
         WHERE player_id = %s
     """, params=(player_id,))
+
+    career_stats = career_stats or {}
+    career_stats['career_war'] = round(sum(r.get('season_war', 0) for r in season_stats), 3)
 
     teams = run_all("""
         SELECT DISTINCT t.name AS team_name, t.team_id, pf.season
@@ -174,11 +264,16 @@ def career(player_id):
             season_receiving_yards, season_receiving_attempts, season_receiving_touchdowns,
             season_passing_yards, season_passing_attempts, season_passing_completions, season_passing_touchdowns,
             season_tackles, season_defensive_sacks, season_defensive_interceptions,
-            season_tackles_for_loss, season_forced_fumbles, season_fumble_recoveries
+            season_tackles_for_loss, season_forced_fumbles, season_fumble_recoveries,
+            season_offensive_interceptions
         FROM season_stats
         WHERE player_id = %s
         ORDER BY season DESC
     """, params=(player_id,))
+
+    seasons = set(row['season'] for row in season_stats if row['season'])
+    replacement_by_season = {season: calculate_replacement_levels_by_position(season) for season in seasons}
+    season_stats = annotate_season_stats_rows(season_stats, player['position'], replacement_by_season)
 
     career_stats = run_one("""
         SELECT
@@ -194,10 +289,14 @@ def career(player_id):
             COALESCE(SUM(season_defensive_interceptions), 0) AS career_interceptions,
             COALESCE(SUM(season_tackles_for_loss), 0) AS career_tfl,
             COALESCE(SUM(season_forced_fumbles), 0) AS career_forced_fumbles,
-            COALESCE(SUM(season_fumble_recoveries), 0) AS career_fumble_recoveries
+            COALESCE(SUM(season_fumble_recoveries), 0) AS career_fumble_recoveries,
+            COALESCE(SUM(season_offensive_interceptions), 0) AS career_offensive_interceptions
         FROM season_stats
         WHERE player_id = %s
     """, params=(player_id,))
+
+    career_stats = career_stats or {}
+    career_stats['career_war'] = round(sum(r.get('season_war', 0) for r in season_stats), 3)
 
     teams = run_all("""
         SELECT DISTINCT t.name AS team_name, t.team_id, pf.season
@@ -228,7 +327,7 @@ def legacy_detail(name, number):
         return redirect(url_for('players.detail', player_id=player['player_id']))
 
     player = run_one("""
-        SELECT name, number, dob, position, weight, height, war
+        SELECT player_id, name, number, dob, position, weight, height, war
         FROM player
         WHERE name = %s AND number = %s
     """, params=(name, number))
@@ -243,11 +342,18 @@ def legacy_detail(name, number):
             season_receiving_yards, season_receiving_attempts, season_receiving_touchdowns,
             season_passing_yards, season_passing_attempts, season_passing_completions, season_passing_touchdowns,
             season_tackles, season_defensive_sacks, season_defensive_interceptions,
-            season_tackles_for_loss, season_forced_fumbles, season_fumble_recoveries
+            season_tackles_for_loss, season_forced_fumbles, season_fumble_recoveries,
+            season_offensive_interceptions
         FROM season_stats
         WHERE player_name = %s AND player_number = %s
         ORDER BY season DESC
     """, params=(name, number))
+
+    season_stats = annotate_season_stats_rows(season_stats)
+
+    career_stats = {
+        'career_war': round(sum(r.get('season_war', 0) for r in season_stats), 3)
+    }
 
     teams = run_all("""
         SELECT DISTINCT t.name AS team_name, t.team_id, pf.season
@@ -260,6 +366,7 @@ def legacy_detail(name, number):
     return render_template('players/detail.html',
         player=player,
         season_stats=season_stats,
+        career_stats=career_stats,
         teams=teams,
         career_view=False
     )
