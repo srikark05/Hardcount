@@ -35,7 +35,6 @@
         <th>Home</th>
         <th>Away</th>
         <th>Score</th>
-        <th>Location</th>
       </tr>
     </thead>
     <tbody>
@@ -47,10 +46,9 @@
         <td><span class="team-badge">{{ g.home_team_name }}</span></td>
         <td><span class="team-badge">{{ g.away_team_name }}</span></td>
         <td class="highlight">{{ g.score or '—' }}</td>
-        <td class="text-muted">{{ g.address or '—' }}</td>
       </tr>
       {% else %}
-      <tr><td colspan="7" class="text-center text-muted" style="padding:2rem">No games found.</td></tr>
+      <tr><td colspan="6" class="text-center text-muted" style="padding:2rem">No games found.</td></tr>
       {% endfor %}
     </tbody>
   </table>
